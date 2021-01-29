@@ -481,8 +481,9 @@ screen and (max-height: 300px) {
     position: relative;
     background: #FFF;
     padding: 25px;
+	border-radius: 6px;
     width: auto;
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto;
 }
 

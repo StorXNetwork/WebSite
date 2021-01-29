@@ -8424,6 +8424,16 @@ button.bg-dark:hover {
     margin-left: auto !important
 }
 
+
+@media (max-width:991px) {
+	.mb-sx-5 {
+		margin-bottom: 3rem !important;
+	}
+	.mb-sx-4 {
+		margin-bottom: 2.5rem !important;
+	}
+}
+	
 @media (min-width:576px) {
     .m-sm-0 {
         margin: 0 !important

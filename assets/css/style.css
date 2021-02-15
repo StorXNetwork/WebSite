@@ -64,7 +64,46 @@ Table of Content:
   color: #fff;
 }
 .scroll-top:hover, .scroll-top:focus {
-  background: #fe0400;
+  background: #e14024;
+}
+
+
+
+
+.scroll-top {
+    background-color: #ed8619;
+    height: 20px;
+    width: 40px;
+    margin: 0.5em 0;
+    position: fixed;
+}
+.scroll-top:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 12px solid #ed8619;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    position: absolute;
+    top: -12px;
+    right: 0%;
+}
+.scroll-top:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 12px solid #ed8619;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    position: absolute;
+    bottom: -12px;
+    right: 0%;
+}
+.scroll-top:hover.scroll-top:before, .scroll-top:focus.scroll-top:before {
+  border-bottom-color: #e14024;
+}
+.scroll-top:hover.scroll-top:after, .scroll-top:focus.scroll-top:after {
+  border-top-color: #e14024;
 }
 
 /* Preloader */
@@ -666,7 +705,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   color: #fff;
 }
 .mha_2 .navbar .right_nav li .theme_btn {
-  background: #ff0400;
+  background: #e14024;
 }
 .mha_2 .navbar .right_nav li .theme_btn:hover, .mha_2 .navbar .right_nav li .theme_btn:focus {
   background: #5079f7;
@@ -769,9 +808,9 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 }
 
 .ba_3 {
-  background-image: -moz-linear-gradient(-23deg, #133E9C 0%, #4a46fe 99%);
-  background-image: -webkit-linear-gradient(-23deg, #133E9C 0%, #4a46fe 99%);
-  background-image: -ms-linear-gradient(-23deg, #133E9C 0%, #4a46fe 99%);
+  background-image: -moz-linear-gradient(-30deg, #0d1e42 0%, #4a46fe 75%);
+  background-image: -webkit-linear-gradient(-30deg, #0d1e42 0%, #4a46fe 75%);
+  background-image: -ms-linear-gradient(-30deg, #0d1e42 0%, #4a46fe 75%);
   position: relative;
   padding-top: 180px;
   z-index: 1;
@@ -1096,7 +1135,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
     font-size: 16px;
 }
 .why_storx .services_item .introducing-list .introducing-list-item i {
-    color: #ff0400;
+    color: #e14024;
     margin-right: 10px;
     margin-top: 5px;
 }
@@ -1107,7 +1146,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 .why_storx .services_item:hover .img_c.i-2, .why_storx .services_item:focus .img_c.i-2, .why_storx .services_item.active .img_c.i-2,
 .why_storx .services_item:hover .img_c.i-3, .why_storx .services_item:focus .img_c.i-3, .why_storx .services_item.active .img_c.i-3,
 .why_storx .services_item:hover .img_c.i-4, .why_storx .services_item:focus .img_c.i-4, .why_storx .services_item.active .img_c.i-4 {
-      color: #fe0400;
+      color: #e14024;
 }
 .why_storx .services_item a {
   font: 500 20px/32px "Poppins", sans-serif;
@@ -1369,7 +1408,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   padding: 27px 0;
 }
 .platform_features .platform:hover h3, .platform_features .platform:focus h3 {
-  color: #fe0400;
+  color: #e14024;
 }
 .platform_features .platform a {
   display: block;
@@ -1378,7 +1417,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   padding: 27px 0;
 }
 .platform_features .platform a:hover, .platform_features .platform a:focus {
-  color: #fe0400;
+  color: #e14024;
 }
 .platform_features .platform p {
   font-size: 16px;
@@ -1898,7 +1937,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 	padding-bottom: 20px;
 }
 .contribute-block .revenue .introducing-list-item i {
-    color: #ff0400;
+    color: #e14024;
     margin-right: 10px;
     margin-top: 5px;
 }
@@ -2054,10 +2093,12 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   transform: rotate(180deg);
 }
 .faq_area .frequently .faq p {
-  padding: 0 30px 30px;
+  padding: 10px 30px 20px;
   background: #FFFFFF;
 }
-
+.faq_area .frequently .faq p:last-child {
+  padding-top: 0px;
+}
 .fa_2 {
   padding: 100px 0;
 }
@@ -3209,10 +3250,10 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   padding-bottom: 17px;
 }
 .decentralized_solution .smarter_text .media:hover .heding, .decentralized_solution .smarter_text .media:focus .heading {
-  color: #fe0400;
+  color: #e14024;
 }
 .decentralized_solution .smarter_text .media .media-body .heding:hover, .decentralized_solution .smarter_text .media .media-body .heding:focus {
-  color: #fe0400;
+  color: #e14024;
 }
 .decentralized_solution .smarter_text .media .media-body p {
   font-size: 16px;
@@ -3341,7 +3382,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 }
 .welcome_content .t_p {
   /*max-width: 530px;*/
-  border-left: 4px solid #ff0400;
+  border-left: 4px solid #e14024;
   padding-left: 23px;
   /*margin-bottom: 25px;*/
 }
@@ -3591,9 +3632,8 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   display: inline-block;
   color: #575757;
   font-size: 18px;
-  line-height: 44px;
-  width: 44px;
-  border-radius: 50%;
+  line-height: 34px;
+  width: 34px;
   text-align: center;
 }
 .footer_social li a:hover, .footer_social li a:focus, .footer_social li a.active {

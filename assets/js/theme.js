@@ -105,10 +105,20 @@ For Mega menu and Mobile menu
                 type: 'image',
                 removalDelay: 500,
                 callbacks: {
-                    beforeOpen: function () { 
-                        this.st.image.markup = this.st.image.markup.replace('mfp-figure', 'mfp-figure mfp-with-anim');
-                        this.st.mainClass = this.st.el.attr('data-effect');
-                    }
+                    //beforeOpen: function () { 
+                        //this.st.image.markup = this.st.image.markup.replace('mfp-figure', 'mfp-figure mfp-with-anim');
+                        //this.st.mainClass = this.st.el.attr('data-effect');
+						
+                    //}
+					
+				    beforeOpen: function() {
+						$('body').addClass('mfp-active');
+					},
+					beforeClose: function() {
+						$('body').removeClass('mfp-active');
+					}
+					
+		
                 },
                 closeOnContentClick: true,
                 midClick: true

@@ -3332,45 +3332,46 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   color: #fff;
 }
 
-.quick_contact {
+.experience_cta_block {
   display: block;
   overflow: hidden;
-  background: url("../images/get-bg.jpg") no-repeat center;
+  background: url("../images/experience_cta-bg.jpg") no-repeat center;
   text-align: center;
   background-size: cover;
+  background-attachment: fixed;
   padding: 70px 0 70px;
 }
-.quick_contact h2 {
+.experience_cta_block h2 {
   font: 500 36px/45px "Poppins", sans-serif;
   color: #fff;
   padding-bottom: 40px;
 }
-.quick_contact h6 {
+.experience_cta_block h6 {
   color: #fff;
   font: 400 22px/1 "Poppins", sans-serif;
 }
-.quick_contact p {
+.experience_cta_block p {
   color: #fff;
   padding-top: 30px;
   padding-bottom: 25px;
 }
-.quick_contact .theme_btn {
+.experience_cta_block .theme_btn {
   background: #254a81;
   margin: 0 9px;
   margin-bottom: 10px;
   border: 2px solid #254a81;
 }
-.quick_contact .theme_btn:hover, .quick_contact .theme_btn:focus {
+.experience_cta_block .theme_btn:hover, .experience_cta_block .theme_btn:focus {
   background: transparent;
   color: #FFFFFF;
   border: 2px solid #FFFFFF;
 }
-.quick_contact .create {
+.experience_cta_block .create {
   background: #fff;
   color: #254a81;
   border: 2px solid #fff;
 }
-.quick_contact .create:hover, .quick_contact .create:focus {
+.experience_cta_block .create:hover, .experience_cta_block .create:focus {
   background: transparent;
   color: #FFFFFF;
   border: 2px solid #FFFFFF;
@@ -4187,7 +4188,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   font-size: 14px;
   display: flex;
   align-items: center;
-  line-height: 28px;
+  line-height: 22px;
 }
 .footer_2 .cr_2 .footer_social {
   padding: 0;
@@ -4655,7 +4656,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
     margin: 0 auto 30px;
   }
 
-  .quick_contact h2 {
+  .experience_cta_block h2 {
     font-size: 26px;
     line-height: 30px;
   }
@@ -4881,6 +4882,10 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
     padding-left: 0;
     padding-top: 20px;
   }
+  .bounty_area .tittle h4 {font-size: 18px;}
+  .bounty-box-2 .btn-block .btn-hover {font-size: 13px;font-weight:600;}
+  .bounty-modal header h3 {font: 500 18px/24px "Poppins", sans-serif;}
+  
 }
 @media (max-width: 450px) {
   .main_header_area .navbar .navbar_supported ul li.dropdown .home_drop {

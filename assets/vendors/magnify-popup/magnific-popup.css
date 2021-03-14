@@ -480,10 +480,11 @@ screen and (max-height: 300px) {
 .white-popup {
     position: relative;
     background: #FFF;
-    padding: 25px;
+    /*padding: 25px;*/
+	padding: 25px 15px 25px 25px;
 	border-radius: 6px;
     width: auto;
-    max-width: 600px;
+    max-width: 750px;
     margin: 0 auto;
 }
 

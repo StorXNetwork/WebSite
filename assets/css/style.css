@@ -21,26 +21,27 @@ Table of Content:
 /*Color Variables*/
 /* Button Style */
 @import url(bootstrap.min.css);
-@import url("../vendors/font-awesome/v5.9.0/all.css");
-/*@import url(../vendors/font-awesome/css/font-awesome.css);*/
+@import url(../vendors/font-awesome/v5.9.0/all.css);
 @import url(../vendors/flat-icon/flaticon.css);
 @import url(../vendors/animate-css/animate.css);
 @import url(../vendors/owl-carousel/owl.carousel.min.css);
 @import url(../vendors/magnify-popup/magnific-popup.css);
 @import url(../vendors/bootstrap-selector/nice-select.css);
 @import url(../vendors/jquery-ui/jquery-ui.min.css);
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&amp;display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800&display=swap');
+
 .theme_btn {
   color: #fff;
   text-align: center;
-  font: 400 18px/50px "Poppins", sans-serif;
-  display: inline-block;
-  padding: 0 20px;
+  font: 400 17px/25px "Poppins", sans-serif;
+  display: inline-block;  
+  /*padding: 0 20px;*/
+  padding: 8px 30px;
   background: #254a81;
   border: 2px solid #254a81;
-  z-index: 1;
-  border-radius: 6px;
-  min-width: 181px;
+  /*z-index: 1;*/
+  border-radius: 100px;
+  min-width: 180px;
   cursor: pointer;
 }
 .theme_btn:hover, .theme_btn:focus {
@@ -147,7 +148,7 @@ Table of Content:
 /*----------------------------------------------------*/
 /*Prefix Styles*/
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif!important;
   /*Section Fix*/
   /*Ancore*/
 }
@@ -155,7 +156,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
   margin: 0;
 }
 body p {
-  color: rgba(24, 24, 24, 0.8);
+  color: rgba(24, 24, 24, 0.6);
   margin: 0;
   font: 400 16px/28px "Poppins", sans-serif;
 }
@@ -1133,6 +1134,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 .why_storx .services_item .introducing-list .introducing-list-item {
     display: flex;
     font-size: 16px;
+	color: rgba(24, 24, 24, 0.6);
 }
 .why_storx .services_item .introducing-list .introducing-list-item i {
     color: #e14024;
@@ -1571,6 +1573,8 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   color: #fff;
   font-size: 20px;
   line-height: 56px;
+
+
   width: 56px;
   height: 56px;
   border-radius: 50%;
@@ -1937,7 +1941,8 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 	padding-bottom: 20px;
 }
 .contribute-block .revenue .introducing-list-item i {
-    color: #e14024;
+    font-size: 14px;
+	color: #e14024;
     margin-right: 10px;
     margin-top: 5px;
 }
@@ -1947,7 +1952,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 	background: #254a81;
     border: 2px solid #254a81;
     z-index: 1;
-	border-radius: 6px;
+	border-radius: 100px;
 }
 .contribute-block .revenue .theme_btn:hover {
 	background: transparent;
@@ -3039,7 +3044,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   border-radius: 6px;
   background: #fff;
   border: 1px solid #e6e6e6;
-  font: 400 16px/40px "Poppins", sans-serif;
+  font: 400 16px/30px "Poppins", sans-serif;
   color: rgba(83, 112, 151, 0.6);
   height: auto;
   padding: 10px;
@@ -3166,6 +3171,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   font: 400 16px/28px "Poppins", sans-serif;
   color: rgba(24, 24, 24, 0.8);
 }
+
 .contact_info .info a:hover {
   color: #5079f7;
 }
@@ -3522,7 +3528,508 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   background-image: -ms-linear-gradient(-23deg, #58f5ff 0%, #97c6f6 100%);
 }
 
-/*----------------------------------------------------*/
+
+/*----------------- Bounty Area -----------------*/
+.bounty_area {
+  display: block;
+  overflow: hidden;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  background-image: -moz-linear-gradient(90deg, #fcfaff 1%, white 100%);
+  background-image: -webkit-linear-gradient(90deg, #fcfaff 1%, white 100%);
+  background-image: -ms-linear-gradient(90deg, #fcfaff 1%, white 100%);
+  position: relative;
+  z-index: 1;
+}
+.bounty_area:before {
+  content: "";
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  background: url("../images/experience-shape.png") no-repeat;
+  z-index: -1;
+  height: 300px;
+  width: 190px;
+}
+/*.bounty_area:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../images/exprence-bss.png") no-repeat;
+  z-index: -1;
+  height: 207px;
+  width: 100%;
+}*/
+.bounty_area .tittle {
+  display: block;
+  padding-bottom: 110px;
+  text-align: left;
+}
+.bounty_area .tittle h4 {
+  font: 400 20px "Poppins", sans-serif;
+  color: #382c4d;
+  padding-left: 5px;
+}
+.bounty_area .tittle h4 i {
+  border-radius: 10px;
+  background-image: -moz-linear-gradient(145deg, #9d62ff 0%, #96c0ff 0%, #e865fa 100%);
+  background-image: -webkit-linear-gradient(145deg, #9d62ff 0%, #96c0ff 0%, #e865fa 100%);
+  background-image: -ms-linear-gradient(145deg, #9d62ff 0%, #96c0ff 0%, #e865fa 100%);
+  box-shadow: 0px 20px 12px 0px rgba(195, 174, 210, 0.35);
+  width: 65px;
+  line-height: 65px;
+  text-align: center;
+  color: #fff;
+  display: inline-block;
+  font-size: 35px;
+  margin-right: 35px;
+}
+.bounty_area .tittle h2 {
+  font: 700 52px/62px "Josefin Sans", sans-serif;
+  color: #382c4d;
+  padding-top: 30px;
+}
+.bounty_area .tittle h2 b {
+  display: inline-block;
+  border-bottom: 2px solid #382c4d;
+  line-height: 48px;
+}
+.bounty_area .experience {
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 0px 26px 0px rgba(224, 222, 226, 0.35);
+  padding: 60px 45px;
+  margin-bottom: 30px;
+}
+.bounty_area .experience .icons {
+  position: relative;
+  margin: 0 auto;
+  height: 73px;
+  width: 73px;
+  display: block;
+  border: 2px dotted #f07fb8;
+  border-radius: 10px;
+  z-index: 1;
+}
+.bounty_area .experience .icons:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: -moz-linear-gradient(-135deg, #9d62ff 0%, #fc6194 0%, #df77fd 100%);
+  background-image: -webkit-linear-gradient(-135deg, #9d62ff 0%, #fc6194 0%, #df77fd 100%);
+  background-image: -ms-linear-gradient(-135deg, #9d62ff 0%, #fc6194 0%, #df77fd 100%);
+  box-shadow: 0px 20px 12px 0px rgba(195, 174, 210, 0.35);
+  width: 70px;
+  height: 70px;
+  display: block;
+  border-radius: 7px;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+.bounty_area .experience .icons span {
+  color: #fff;
+  font-family: "Font Awesome 5 Free";
+  font-size: 26px;
+  line-height: 50px;
+  border: 2px dotted #fff;
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  border-radius: 10px;
+  margin-top: 10px;
+  height: 50px;
+  font-weight: 900;
+}
+.bounty_area .experience .icons_2 {
+  border-color: #db7efc;
+}
+.bounty_area .experience .icons_2:after {
+  background-image: -moz-linear-gradient(-135deg, #8f49f9 0%, #9d62ff 0%, #df77fd 100%);
+  background-image: -webkit-linear-gradient(-135deg, #8f49f9 0%, #9d62ff 0%, #df77fd 100%);
+  background-image: -ms-linear-gradient(-135deg, #8f49f9 0%, #9d62ff 0%, #df77fd 100%);
+}
+.bounty_area .experience .icons_3 {
+  border-color: #9ee0f1;
+}
+.bounty_area .experience .icons_3:after {
+  background-image: -moz-linear-gradient(-135deg, #9d62ff 0%, #64eefe 0%, #e7b8fd 100%);
+  background-image: -webkit-linear-gradient(-135deg, #9d62ff 0%, #64eefe 0%, #e7b8fd 100%);
+  background-image: -ms-linear-gradient(-135deg, #9d62ff 0%, #64eefe 0%, #e7b8fd 100%);
+}
+.bounty_area .experience .heading {
+  font: 500 18px "Poppins", sans-serif;
+  color: #282331;
+  display: block;
+  padding-top: 35px;
+  line-height: 22px;
+}
+.bounty_area .experience .heading:hover, .bounty_area .experience .heading:focus {
+  color: #fc396b;
+}
+.bounty_area .experience p {
+  color: rgba(40, 35, 49, 0.8);
+  font-family: "Poppins", sans-serif;
+  padding: 0px 0px 15px 0px;
+  margin: 0px;
+  line-height: 18px;
+}
+.bounty_area .experience .read_more {
+  text-align: center;
+  border-radius: 50%;
+  background-color: #ffe8ee;
+  box-shadow: 0px 8px 12px 0px rgba(195, 174, 210, 0.35);
+  width: 40px;
+  line-height: 40px;
+  color: #fff;
+  margin: 0 auto;
+  display: block;
+}
+.bounty_area .experience .read_more:hover, .bounty_area .experience .read_more:focus {
+  background: #9a64f8;
+}
+.bounty_area .experience:hover .read_more, .bounty_area .experience:focus .read_more {
+  background: #fc396b;
+}
+
+.ea_2 {
+  padding-top: 40px;
+}
+.ea_2 .experience {
+  text-align: left;
+}
+.ea_2 .experience .icons {
+  margin: 0;
+  text-align: center;
+}
+.ea_2 .experience .icons span {
+  border: 0;
+}
+.ea_2 .experience .icons_3 {
+  border-color: #9bdff1;
+}
+.ea_2 .experience .icons_3:after {
+  background-image: -moz-linear-gradient(-135deg, #64eefe 0%, #62ffd8 0%, #b9ffad 100%);
+  background-image: -webkit-linear-gradient(-135deg, #64eefe 0%, #62ffd8 0%, #b9ffad 100%);
+  background-image: -ms-linear-gradient(-135deg, #64eefe 0%, #62ffd8 0%, #b9ffad 100%);
+}
+.ea_2 .experience .read_more {
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+.ea_2 .experience .read_more span {
+  font: 400 16px "Poppins", sans-serif;
+  color: #282331;
+  position: absolute;
+  left: 50px;
+  top: 7px;
+  opacity: 0;
+  transition: all 300ms linear 0s;
+}
+.ea_2 .experience .read_more:hover span, .ea_2 .experience .read_more:focus span {
+  opacity: 1;
+}
+/*----------------- Bounty Area -----------------*/
+
+
+/*----------------- Bounty Area -----------------*/
+.bounty-box {border-radius: 5px;display: block;position: relative;background-color:#FFFFFF;height:100%;-webkit-box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.05);-moz-box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.05);box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.05);}
+.bounty-box .image-container {display: -ms-flexbox;display: flex;text-align: center;-ms-flex-align: center;align-items: center;font: 0/0 a;}
+.bounty-box .image-container img {margin: auto;width: 100%;max-height: 100%;-o-object-fit: contain;object-fit: contain;border-top-left-radius:5px;border-top-right-radius:5px;}
+.bounty-box .content {padding: 0px 15px;min-height:292px;}
+.bounty-box .content h3{font: 500 18px "Poppins", sans-serif;font-weight:500;line-height:24px;text-align: left;padding-top: 10px;}
+.bounty-box .content h4.highlight {font-size:18px;color:#ed8619;font-style:italic;font-weight:400;line-height: 20px;margin-top: 15px;margin-bottom: 15px;}
+.bounty-box .content h4.highlight.small {font-size:15px;}
+.bounty-box .content p {font-size:14px;line-height:20px;font-weight:300;min-height:165px;}
+.bounty-box .btn-block {padding: 0px 15px;justify-content: space-around;width: 100%;  position: absolute;right: 0;bottom: 5px;left: 0;}
+.bounty-box .btn-block .btn-hover {padding: 8px 0px;flex-grow: 1;width:49.1%;margin: 0px;}
+.btn-block.no-width {width: inherit;display: inline;}
+
+.flex-container {padding:0;margin:0;list-style:none;display:flex;}
+.space-between {justify-content:space-between;}
+
+.bounty-box .progress-labels {border-top:1px dashed #e3e7ed;border-bottom:1px dashed #e3e7ed;padding:8px;margin-bottom:15px;background:rgba(249, 250, 252, 0.5);}
+.bounty-box .progress-labels .timer{font-size:12px;color:#a2a2a2;font-weight:600;}
+.bounty-box .progress-labels .timer i{font-size: 16px;width:14px;height:16px;color:#a2a2a2;margin-right:10px;vertical-align:middle;}
+.bounty-box .progress-labels .timer span{vertical-align:middle;}
+.bounty-box .progress-labels .status{font-size:13px;color:#ed8619;font-weight:300;}
+.bounty-box .progress-labels .status.finished{color:#ff6a00;}
+
+.btn-hover{font-size:14px;font-weight:400;color:#fff;cursor:pointer;padding:8px 14px;text-align:center;border:none;background-size:300% 100%;border-radius:5px;moz-transition:all .4s ease-in-out;-o-transition:all .4s ease-in-out;-webkit-transition:all .4s ease-in-out;transition:all .4s ease-in-out}
+.btn-hover.color-2 {background: #254a81;color: #FFFFFF;border: 2px solid #254a81;border-radius: 6px;cursor: pointer;}
+.btn-hover.color-1 {background: transparent;color: #254a81;border: 2px solid #254a81;border-radius: 6px;cursor: pointer;}
+.btn-hover.color-1:hover{background: #254a81;color: #FFFFFF;border: 2px solid #254a81;moz-transition: all .4s ease-in-out;-o-transition: all .4s ease-in-out;-webkit-transition: all .4s ease-in-out;transition: all .4s ease-in-out;text-decoration: none!important;}
+.btn-hover.color-2:hover{background: transparent;color: #254a81;border: 2px solid #254a81;moz-transition: all .4s ease-in-out;-o-transition: all .4s ease-in-out;-webkit-transition: all .4s ease-in-out;transition: all .4s ease-in-out;text-decoration: none!important;}
+/*----------------- Bounty Area -----------------*/
+
+
+/*----------------- Bounty Area 1 -----------------*/
+.bounty-box-1 {border-radius: 5px;display: block;position: relative;background-color:#f6f7f9;height:100%;}
+.bounty-box-1 .image-container {display: -ms-flexbox;display: flex;text-align: center;-ms-flex-align: center;align-items: center;font: 0/0 a;}
+.bounty-box-1 .image-container img {margin: auto;width: 100%;max-height: 100%;-o-object-fit: contain;object-fit: contain;border-top-left-radius:5px;border-top-right-radius:5px;}
+.bounty-box-1 .content {padding:25px;min-height:273px;}
+.bounty-box-1 .content h3{font: 500 20px "Poppins", sans-serif;font-weight:500;line-height:24px;text-align: left;}
+.bounty-box-1 .content h4.highlight {font-size:18px;color:#ed8619;font-style:italic;font-weight:400;line-height: 20px;margin-top: 15px;margin-bottom: 15px;}
+.bounty-box-1 .content h4.highlight.small {font-size:15px;}
+.bounty-box-1 .content p {font-size:14px;line-height:20px;font-weight:300;min-height:165px;}
+.bounty-box-1 .btn-block {padding: 0px 25px;justify-content: space-around;width: 100%;  position: absolute;right: 0;bottom: 20px;left: 0;}
+.bounty-box-1 .btn-block .btn-hover {padding: 4px 0px;flex-grow: 1;width:49.1%;margin: 0px;}
+.btn-block.no-width {width: inherit;display: inline;}
+
+.flex-container {padding:0;margin:0;list-style:none;display:flex;}
+.space-between {justify-content:space-between;}
+
+.bounty-box-1 .progress-labels {border-top:1px dashed #e3e7ed;border-bottom:1px dashed #e3e7ed;padding:8px;margin-bottom:15px;background:rgba(249, 250, 252, 0.5);}
+.bounty-box-1 .progress-labels .timer{font-size:12px;color:#a2a2a2;font-weight:600;}
+.bounty-box-1 .progress-labels .timer i{font-size: 16px;width:14px;height:16px;color:#a2a2a2;margin-right:10px;vertical-align:middle;}
+.bounty-box-1 .progress-labels .timer span{vertical-align:middle;}
+.bounty-box-1 .progress-labels .status{font-size:13px;color:#ed8619;font-weight:300;}
+.bounty-box-1 .progress-labels .status.finished{color:#ff6a00;}
+
+.bounty-box-1 .btn-block .btn-hover{font-size:16px;font-weight:500;color:#fff;cursor:pointer;padding:4px 0px;text-align:center;border:none;background-size:300% 100%;border-radius:5px;moz-transition:all .4s ease-in-out;-o-transition:all .4s ease-in-out;-webkit-transition:all .4s ease-in-out;transition:all .4s ease-in-out}
+.bounty-box-1 .btn-block .btn-hover.color-2 {background: transparent;color: rgb(28, 28, 225);cursor: pointer;border:none;text-align: right;text-transform: uppercase;}
+.bounty-box-1 .btn-block .btn-hover.color-2::after {margin-left: .125em;margin-right: .3em;display: inline;content: "↗";transition: all .1s ease-in-out 0s;font-style: normal;
+}
+.bounty-box-1 .btn-block .btn-hover.color-1 {background: transparent;color: #254a81;cursor: pointer;border:none;text-align: left;text-transform: uppercase;}
+.bounty-box-1 .btn-block .btn-hover.color-1:hover{text-decoration:underline!important;;moz-transition: all .4s ease-in-out;-o-transition: all .4s ease-in-out;-webkit-transition: all .4s ease-in-out;transition: all .4s ease-in-out;}
+.bounty-box-1 .btn-block .btn-hover.color-2:hover{text-decoration:underline!important;moz-transition: all .4s ease-in-out;-o-transition: all .4s ease-in-out;-webkit-transition: all .4s ease-in-out;transition: all .4s ease-in-out;}
+/*----------------- Bounty Area 1 -----------------*/
+
+
+/*----------------- Bounty Area 2 -----------------*/
+.bounty-box-2 {border-radius: 6px;display: block;position: relative;background-color: #f7f8fa;border: 1px solid #e2e8f0;height:100%;}
+.bounty-box-2:hover {background-color:#5878ff;border-color: #5878ff;-webkit-box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.05);-moz-box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.05);box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.05);moz-transition: all .4s ease-in-out;-o-transition: all .4s ease-in-out;-webkit-transition: all .4s ease-in-out;transition: all .4s ease-in-out;}
+.bounty-box-2 .image-container {display: -ms-flexbox;display: flex;text-align: center;-ms-flex-align: center;align-items: center;font: 0/0 a;}
+.bounty-box-2 .image-container img {margin: auto;width: 100%;max-height: 100%;-o-object-fit: contain;object-fit: contain;border-top-left-radius:5px;border-top-right-radius:5px;}
+.bounty-box-2 .content {padding:25px;min-height:318px;}
+.bounty-box-2 .content h3{font: 600 18px "Poppins", sans-serif;font-weight:500;line-height:22px;letter-spacing: -0.3px;text-align: left;}
+.bounty-box-2 .content h4.highlight {font-size:18px;color:#ed8619;font-style:italic;font-weight:400;line-height: 20px;margin-top: 15px;margin-bottom: 15px;}
+.bounty-box-2 .content h4.highlight.small {font-size:15px;}
+.bounty-box-2 .content p {font-size:14px;line-height:20px;font-weight:400;min-height:165px;}
+.bounty-box-2 .btn-block {padding: 0px 25px;justify-content: space-around;width: 100%;  position: absolute;right: 0;bottom: 8px;left: 0;}
+.bounty-box-2 .btn-block .btn-hover {padding: 4px 0px;flex-grow: 1;width:49.1%;margin: 0px;}
+.btn-block.no-width {width: inherit;display: inline;}
+
+.flex-container {padding:0;margin:0;list-style:none;display:flex;}
+.space-between {justify-content:space-between;}
+
+.bounty-box-2 .progress-labels {border-top:1px dashed #e3e7ed;border-bottom:1px dashed #e3e7ed;padding:8px;margin-bottom:15px;background:rgba(249, 250, 252, 0.5);}
+.bounty-box-2 .progress-labels .timer{font-size:12px;color:#a2a2a2;font-weight:600;}
+.bounty-box-2 .progress-labels .timer i{font-size: 16px;width:14px;height:16px;color:#a2a2a2;margin-right:7px;vertical-align:middle;}
+.bounty-box-2 .progress-labels .timer span{vertical-align:middle;}
+.bounty-box-2 .progress-labels .status{font-size:13px;color:#04d414;font-weight:400;}
+.bounty-box-2 .progress-labels .status.finished{color:#ff6a00;}
+
+.bounty-box-2 .btn-block .btn-hover{font-size:15px;font-weight:500;color:#fff;cursor:pointer;padding:8px 0px;text-align:center;border:none;background-size:300% 100%;border-radius:5px;moz-transition:all .4s ease-in-out;-o-transition:all .4s ease-in-out;-webkit-transition:all .4s ease-in-out;transition:all .4s ease-in-out}
+.bounty-box-2 .btn-block .btn-hover.color-2 {color: #343a40;cursor: pointer;text-align: center;background-color: #FFFFFF;border: 1px solid #e2e8f0;border-radius:100px;}
+.bounty-box-2 .btn-block .btn-hover.color-2::after {margin-left: .125em;margin-right: .3em;display: inline;content: "↗";transition: all .1s ease-in-out 0s;font-style: normal;
+}
+.bounty-box-2 .btn-block .btn-hover.color-1 {margin-bottom:15px;color: #343a40;cursor: pointer;text-align: center;background-color: #FFFFFF;border: 1px solid #e2e8f0;border-radius:100px;}
+.bounty-box-2 .btn-block .btn-hover.color-1:hover{color: rgb(28, 28, 225);moz-transition: all .4s ease-in-out;-o-transition: all .4s ease-in-out;-webkit-transition: all .4s ease-in-out;transition: all .4s ease-in-out;}
+.bounty-box-2 .btn-block .btn-hover.color-2:hover{color:rgb(28, 28, 225);moz-transition: all .4s ease-in-out;-o-transition: all .4s ease-in-out;-webkit-transition: all .4s ease-in-out;transition: all .4s ease-in-out;}
+
+.bounty-box-2:hover .content h3 {color:#FFFFFF;moz-transition: all .4s ease-in-out;-o-transition: all .4s ease-in-out;-webkit-transition: all .4s ease-in-out;transition: all .4s ease-in-out;}
+.bounty-box-2:hover .content h4.highlight {color:#fde900;moz-transition: all .4s ease-in-out;-o-transition: all .4s ease-in-out;-webkit-transition: all .4s ease-in-out;transition: all .4s ease-in-out;}
+.bounty-box-2:hover .content p.text-muted {color:#FFFFFF!important;moz-transition: all .4s ease-in-out;-o-transition: all .4s ease-in-out;-webkit-transition: all .4s ease-in-out;transition: all .4s ease-in-out;}
+.bounty-box-2:hover .progress-labels {border-top-color: #183dde;border-bottom-color: #183dde;background: rgb(64 100 253);moz-transition: all .4s ease-in-out;-o-transition: all .4s ease-in-out;-webkit-transition: all .4s ease-in-out;transition: all .4s ease-in-out;}
+.bounty-box-2:hover .progress-labels .timer {color: #ffffff;moz-transition: all .4s ease-in-out;-o-transition: all .4s ease-in-out;-webkit-transition: all .4s ease-in-out;transition: all .4s ease-in-out;}
+.bounty-box-2:hover .progress-labels .timer i {color: #bbe6ff;moz-transition: all .4s ease-in-out;-o-transition: all .4s ease-in-out;-webkit-transition: all .4s ease-in-out;transition: all .4s ease-in-out;}
+.bounty-box-2:hover .progress-labels .status {color: #ffffff;moz-transition: all .4s ease-in-out;-o-transition: all .4s ease-in-out;-webkit-transition: all .4s ease-in-out;transition: all .4s ease-in-out;}
+.bounty-box-2:hover .btn-block .btn-hover.color-1, .bounty-box-2:hover .btn-block .btn-hover.color-2 {color:#254a81;moz-transition: all .4s ease-in-out;-o-transition: all .4s ease-in-out;-webkit-transition: all .4s ease-in-out;transition: all .4s ease-in-out;}
+.bounty-box-2:hover .btn-block .btn-hover.color-1:hover, .bounty-box-2:hover .btn-block .btn-hover.color-2:hover {color:rgb(28, 28, 225);moz-transition: all .4s ease-in-out;-o-transition: all .4s ease-in-out;-webkit-transition: all .4s ease-in-out;transition: all .4s ease-in-out;}
+
+.bounty-modal header {background: #f7f8fa;margin: -25px -15px 0px -25px;padding: 15px 40px 15px 25px;margin-bottom: 10px;border-top-left-radius: 6px;border-top-right-radius: 6px;}
+.bounty-modal header h3 {color: #212529;margin: 0;font: 500 20px/26px "Poppins", sans-serif;margin-bottom:0px;}
+.bounty-modal .bounty-modal-content p {color: rgba(24, 24, 24, 0.6);margin: 0;font: 400 16px/26px "Poppins", sans-serif;padding: 10px 0px 5px 0px;}
+.bounty-modal .bounty-modal-content .orderList {font-size: 16px;color: #002752;}
+.bounty-modal .bounty-modal-content .orderList ol {margin-left: 35px;}
+.bounty-modal .bounty-modal-content .orderList ol li {margin-bottom: 10px;}
+
+.bounty-modal .bounty-modal-content .sub-header {color: #212529;margin: 0;font: 500 16px/20px "Poppins", sans-serif;padding-bottom:0px;margin-bottom:10px;}
+.bounty-modal .bounty-modal-content .bug-bounty__list {padding: 5px 14px;}
+.bounty-modal .bounty-modal-content .bug-bounty__li {color: rgba(24, 24, 24, 0.6);margin: 0;font: 400 15px/22px "Poppins", sans-serif;list-style: none;margin-bottom: 7px;margin-left: 10px;}
+.bounty-modal .bounty-modal-content .bug-bounty__li:before {content: "";display: inline-block;width: 7px;height: 11px;border-color: #2196f3;border-style: solid;border-width: 0 2px 2px 0;margin-right: 12px;margin-left: -20px;transform: rotate(45deg);}
+.bounty-modal .bounty-modal-content .bug-bounty__li--minus {color: rgba(24, 24, 24, 0.6);margin: 0;font: 400 15px/22px "Poppins", sans-serif;list-style: none;margin-bottom: 7px;margin-left: 12px;}
+.bounty-modal .bounty-modal-content .bug-bounty__li--minus:before {content: "";display: inline-block;width: 2px;height: 16px;background-color: #f44336;background-color: var(--red);border-radius: 100px;margin-right: 16px;margin-left: -18px;vertical-align: -2px;transform: rotate(90deg);}
+
+.rewards-tableFormat {display: flex;color: rgba(24, 24, 24, 0.6);margin: 12px 0px 12px 0px!important;font: 400 16px/26px "Poppins", sans-serif;}
+.rewards-tableFormat-left {width: 100px;color: #2196f3;font-weight: 500;}
+
+.popup-scroll{
+  /* Overflow Scroll */
+  overflow-y: scroll;
+  max-height: 420px;
+  padding:0 1em 0 0;
+}
+/* custom scrollbars - webkit only */
+.popup-scroll::-webkit-scrollbar {background-color:#EEE;width:10px;}
+.popup-scroll::-webkit-scrollbar-thumb {
+	border:1px #EEE solid;border-radius:2px;background:#777;
+	-webkit-box-shadow: 0 0 8px #555 inset;box-shadow: 0 0 8px #555 inset;
+	-webkit-transition: all .3s ease-out;transition: all .3s ease-out;
+	}
+.popup-scroll::-webkit-scrollbar-track {-webkit-box-shadow: 0 0 2px #ccc;box-shadow: 0 0 2px #ccc;}	
+/*----------------- Bounty Area 2 -----------------*/
+
+/*----------------- Bounty Area 3 -----------------*/
+.bounty-box-3 {border: 1px solid rgba(12,21,46,.08);border-radius: 5px;display: block;position: relative;background-color:#f7f9fb;height:100%;moz-transition: all .4s ease-in-out;-o-transition: all .4s ease-in-out;-webkit-transition: all .4s ease-in-out;transition: all .4s ease-in-out;}
+.bounty-box-3:hover {background-color:rgb(247, 249, 251, 0.5);-webkit-box-shadow: 0px 0px 15px 0px rgba(137, 166, 254, 0.5);-moz-box-shadow: 0px 0px 15px 0px rgba(137, 166, 254, 0.5);box-shadow: 0px 0px 15px 0px rgba(137, 166, 254, 0.5);}
+.bounty-box-3 .image-container {display: -ms-flexbox;display: flex;text-align: center;-ms-flex-align: center;align-items: center;font: 0/0 a;}
+.bounty-box-3 .image-container img {margin: auto;width: 100%;max-height: 100%;-o-object-fit: contain;object-fit: contain;border-top-left-radius:5px;border-top-right-radius:5px;}
+.bounty-box-3 .content {padding:25px;display:flex;align-items:center;justify-content:space-between;}
+.bounty-box-3 .content .bounty-name-price {margin-bottom:0px;padding-right:50px;}
+.bounty-box-3 .content h3{font: 500 20px "Poppins", sans-serif;font-weight:500;line-height:24px;text-align: left;margin-bottom: 20px;}
+.bounty-box-3 .content .highlight {font-size:18px;color:#ed8619;font-style:italic;font-weight:400;line-height: 20px;text-align:center;padding:5px 20px;background:#FFFFFF;border-radius:100px;display: inline-block;}
+.bounty-box-3 .content .highlight.small {font-size:14px;}
+.bounty-box-3 .content p {font-size:14px;line-height:22px;font-weight:300;margin: 15px 0px 10px;}
+
+.flex-container {padding:0;margin:0;list-style:none;display:flex;}
+.space-between {justify-content:space-between;}
+
+.bounty-box-3 .progress-labels {padding:8px;margin-top:10px;}
+.bounty-box-3 .progress-labels .timer{font-size:12px;color:#a2a2a2;font-weight:600;margin-right: 5px;}
+.bounty-box-3 .progress-labels .timer i{font-size: 16px;width:14px;height:16px;color:#a2a2a2;margin-right:6px;vertical-align:middle;}
+.bounty-box-3 .progress-labels .timer span{vertical-align:middle;}
+.bounty-box-3 .progress-labels .status{font-size:13px;color:#09c709;font-weight:500;}
+.bounty-box-3 .progress-labels .status.finished{color:#ff6a00;}
+
+.bounty-box-3 .btn-block.no-width {width: inherit;display: inline;}
+.bounty-box-3 .btn-block {padding: 0px;width: inherit;text-align: right;}
+.bounty-box-3 .btn-block .btn-hover{font-size:16px;font-weight:500;color:#fff;padding: 6px 15px!important;margin:0px;cursor:pointer;padding:4px 0px;text-align:center;border:none;background-size:300% 100%;border-radius:5px;min-width: 180px;display: block;moz-transition:all .4s ease-in-out;-o-transition:all .4s ease-in-out;-webkit-transition:all .4s ease-in-out;transition:all .4s ease-in-out}
+.bounty-box-3 .btn-block .btn-hover.color-2 {color: #343a40;cursor: pointer;text-align: center;background-color: #FFFFFF;border: 1px solid #e2e8f0;border-radius:100px;}
+.bounty-box-3 .btn-block .btn-hover.color-2:hover{color: #FFFFFF;background: #254a81;moz-transition: all .4s ease-in-out;-o-transition: all .4s ease-in-out;-webkit-transition: all .4s ease-in-out;transition: all .4s ease-in-out;}
+.bounty-box-3 .btn-block .btn-hover.color-2::after {margin-left: .125em;margin-right: .3em;display: inline;content: "↗";transition: all .1s ease-in-out 0s;font-style: normal;
+}
+.bounty-box-3 .btn-block .btn-hover.color-1 {margin-bottom:15px;color: #343a40;cursor: pointer;text-align: center;background-color: #FFFFFF;border: 1px solid #e2e8f0;border-radius:100px;}
+.bounty-box-3 .btn-block .btn-hover.color-1:hover{color: #FFFFFF;background: #254a81;moz-transition: all .4s ease-in-out;-o-transition: all .4s ease-in-out;-webkit-transition: all .4s ease-in-out;transition: all .4s ease-in-out;}
+
+@media (max-width: 767px) {
+	.bounty-box-3 .content {
+		flex-direction: column;
+    	align-items: flex-start;
+	}
+	.bounty-box-3 .content .bounty-name-price {
+		padding-right: 0px;	
+	}
+	.bounty-box-3 .btn-block .btn-hover.color-1 {margin-bottom: 10px;}
+	.bounty-box-3 .btn-block {
+		margin-top: 15px;
+	}
+}
+/*----------------- Bounty Area 3 -----------------*/
+
+
+/*----------------- Testimonial Area -----------------*/
+.testimonial_area {
+    display: block;
+    overflow: hidden;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-image: -moz-linear-gradient(90deg, #fcfaff 1%, white 100%);
+    background-image: -webkit-linear-gradient(90deg, #fcfaff 1%, white 100%);
+    background-image: -ms-linear-gradient(90deg, #fcfaff 1%, white 100%);
+    position: relative;
+    z-index: 1;
+}
+.testimonial_area .tittle {
+  padding-bottom: 120px;
+}
+.testimonial_area .tittle span {
+  background-image: -moz-linear-gradient(-135deg, #7570f5 0%, #9979fb 100%);
+  background-image: -webkit-linear-gradient(-135deg, #7570f5 0%, #9979fb 100%);
+  background-image: -ms-linear-gradient(-135deg, #7570f5 0%, #9979fb 100%);
+  box-shadow: 0px 20px 12px 0px rgba(211, 177, 252, 0.35);
+}
+.testimonial_area .testimonial_slid .owl-stage-outer {
+  padding: 15px;
+  margin: -15px;
+}
+.testimonial_area .testimonial_slid img {
+  width: auto;
+}
+.testimonial_area .testimonial_slid .testimonial {
+  background: #fff;
+  box-shadow: 0px 0px 18px 0px rgba(215, 215, 215, 0.35);
+  padding: 50px 40px 80px;
+  transition: all 300ms linear 0s;
+  position: relative;
+  z-index: 1;
+}
+.testimonial_area .testimonial_slid .testimonial:after {
+  content: "";
+  position: absolute;
+  bottom: 40px;
+  left: 70px;
+  background: url("../images/quate.png") no-repeat;
+  width: 330px;
+  height: 360px;
+  z-index: -1;
+}
+.testimonial_area .testimonial_slid .testimonial .client {
+  max-width: 200px;
+  text-align: center;
+  display: block;
+  padding-bottom: 40px;
+}
+.testimonial_area .testimonial_slid .testimonial .client img {
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.testimonial_area .testimonial_slid .testimonial .client a {
+  display: block;
+  font: 400 22px/1 "Poppins", sans-serif;
+  color: rgba(56, 44, 77, 0.902);
+  padding: 15px 0 10px;
+}
+.testimonial_area .testimonial_slid .testimonial .client h6 {
+  color: rgba(40, 35, 49, 0.8);
+  font: 400 18px/1 "Poppins", sans-serif;
+}
+.testimonial_area .testimonial_slid .testimonial p {
+  font-size: 20px;
+  line-height: 30px;
+  color: #382c4d;
+}
+.testimonial_area .testimonial_slid .testimonial:hover, .testimonial_area .testimonial_slid .testimonial:focus {
+  background-image: -moz-linear-gradient(35deg, #ff3c68 0%, #ff777e 100%);
+  background-image: -webkit-linear-gradient(35deg, #ff3c68 0%, #ff777e 100%);
+  background-image: -ms-linear-gradient(35deg, #ff3c68 0%, #ff777e 100%);
+}
+.testimonial_area .testimonial_slid .testimonial:hover:after, .testimonial_area .testimonial_slid .testimonial:focus:after {
+  opacity: 0.1;
+}
+.testimonial_area .testimonial_slid .testimonial:hover .client a, .testimonial_area .testimonial_slid .testimonial:focus .client a {
+  color: rgba(255, 255, 255, 0.9);
+}
+.testimonial_area .testimonial_slid .testimonial:hover .client h6, .testimonial_area .testimonial_slid .testimonial:focus .client h6 {
+  color: rgba(255, 255, 255, 0.8);
+}
+.testimonial_area .testimonial_slid .testimonial:hover p, .testimonial_area .testimonial_slid .testimonial:focus p {
+  color: #fff;
+}
+.testimonial_area .testimonial_slid .owl-dots {
+  display: block;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+.testimonial_area .testimonial_slid .owl-dots .owl-dot {
+  height: 6px;
+  width: 18px;
+  margin: 0 6px;
+  background: #e5e5e5;
+}
+.testimonial_area .testimonial_slid .owl-dots .owl-dot:hover, .testimonial_area .testimonial_slid .owl-dots .owl-dot:focus, .testimonial_area .testimonial_slid .owl-dots .owl-dot.active {
+  height: 6px;
+  background: #fb1030;
+}
+/*----------------- Testimonial Area -----------------*/
+
+
+/*----------------- Footer Area -----------------*/
 .footer_area {
   display: block;
   overflow: hidden;
@@ -3690,6 +4197,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 .footer_2 .cr_2 .c_p {
   float: right;
 }
+/*----------------- Footer Area -----------------*/
 
 /*----------------------------------------------------*/
 @media (max-width: 1600px) {
@@ -4030,7 +4538,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
     padding-bottom: 50px;
   }
   .pages_banner p {
-    padding-bottom: 50px;
+    padding-bottom: 35px;
   }
   /*.pages_banner h2 {
     padding-top: 0;

@@ -118,6 +118,32 @@ For Mega menu and Mobile menu
 	
 	
 	/* ---------------------------------------------- /*
+	 * Slider
+	/* ---------------------------------------------- */
+    storeX.sliderArea = function(){
+        if ( $('.testimonial_slid').length ){ 
+            $('.testimonial_slid').owlCarousel({
+            	loop: false,
+            	margin: 30,
+            	nav: false,
+				dots: true,
+            	responsive: {
+            		0: {
+            			items: 1
+            		}, 
+            		767: {
+            			items: 2
+            		},
+					991: {
+            			items: 3
+            		}
+            	}
+            })
+        };
+    };  
+	
+	
+	/* ---------------------------------------------- /*
 	 * Scroll to top
 	/* ---------------------------------------------- */
     storeX.scrollToTop = function(){
@@ -148,6 +174,7 @@ For Mega menu and Mobile menu
 		storeX.MegaMenu(),
 		storeX.OnePage(),
 		storeX.magnificPopup(),
+		storeX.sliderArea(),
 		storeX.scrollToTop()
 	});
 

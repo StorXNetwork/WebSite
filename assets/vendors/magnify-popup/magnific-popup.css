@@ -462,28 +462,6 @@ screen and (max-height: 300px) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* text-based popup styling */
 .white-popup {
     position: relative;
@@ -624,6 +602,7 @@ screen and (max-height: 300px) {
 }
 
 
+/* ====== no body scroll after popup opened ====== */
 body {
 	-webkit-overflow-scrolling: touch;
 }

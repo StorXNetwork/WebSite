@@ -1078,8 +1078,8 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   background-color: white;
   padding: 30px 20px;
   height: 100%;
-  /*max-width: 370px;*/
-  margin: 0 auto 15px;
+  /*max-width: 370px;
+  margin: 0 auto 15px;*/
   transition: all 300ms linear 0s;
   box-shadow: 0px 0px 30px 0px rgba(137, 166, 254, 0.1);
 }
@@ -1101,9 +1101,9 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 .why_storx .services_item .img_c i {
 	color: #fff;
     font-size: 20px;
-    line-height: 56px;
-    width: 56px;
-    height: 56px;
+    line-height: 45px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
 	margin-right: 8px;
     text-align: center;
@@ -1128,14 +1128,33 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 }
 .why_storx .services_item .introducing-list {
     list-style-type: none;
-    padding-left: 50px;
+    padding-left: 55px;
     padding-top: 15px;
 }
 .why_storx .services_item .introducing-list .introducing-list-item {
-    display: flex;
-    font-size: 16px;
+    /*display: flex;*/
+	font-size: 16px;
 	color: rgba(24, 24, 24, 0.6);
+	line-height: 22px;
+	margin-bottom: 6px;
 }
+.why_storx .services_item .introducing-list .introducing-list-item:last-child {
+    margin-bottom: 0px;
+}
+.introducing-list li::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 11px;
+    border-color: #2196f3;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    margin-right: 13px;
+    margin-left: -20px;
+    transform: rotate(45deg );
+    margin-top: 4px;
+}
+
 .why_storx .services_item .introducing-list .introducing-list-item i {
     color: #e14024;
     margin-right: 10px;
@@ -1352,14 +1371,14 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   box-shadow: 0px 0px 30px 0px rgba(137, 166, 254, 0.35);
 }
 .platform_features .platform .icons {
-  width: 76px;
-  height: 76px;
-  margin: 0 auto;
-  border-radius: 50%;
-  display: block;
-  line-height: 76px;
-  position: relative;
-  z-index: 1;
+    width: 65px;
+    height: 65px;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: block;
+    line-height: 65px;
+    position: relative;
+    z-index: 1;
 }
 .platform_features .platform .icons:before, .platform_features .platform .icons.platform_row:after, .platform_features .platform .meet_yop .meet_row .icons.yop_video:after, .meet_yop .meet_row .platform_features .platform .icons.yop_video:after {
   content: "";
@@ -1382,8 +1401,8 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   top: 0;
   bottom: 0;
   z-index: -1;
-  width: 76px;
-  height: 76px;
+  width: 65px;
+  height: 65px;
   margin: 0 auto;
   border-radius: 50%;
   animation: rotation infinite 5s linear;
@@ -1391,7 +1410,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 .platform_features .platform .icons i:before, .platform_features .platform .icons i.platform_row:after, .platform_features .platform .icons .meet_yop .meet_row i.yop_video:after, .meet_yop .meet_row .platform_features .platform .icons i.yop_video:after {
   color: #5079f7;
   font-size: 33px;
-  line-height: 76px;
+  line-height: 65px;
 }
 .platform_features .platform .icons i:after {
   content: "";
@@ -3390,7 +3409,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 .welcome_content .t_p {
   /*max-width: 530px;*/
   border-left: 4px solid #e14024;
-  padding-left: 23px;
+  padding-left: 15px;
   /*margin-bottom: 25px;*/
 }
 .welcome_content .media {
@@ -3801,15 +3820,15 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 
 
 /*----------------- Bounty Area 2 -----------------*/
-.bounty-box-2 {border-radius: 6px;display: block;position: relative;background-color: #f7f8fa;border: 1px solid #e2e8f0;height:100%;}
+.bounty-box-2 {border-radius: 6px;display: block;position: relative;background-color: #f2f4f9;border: 1px solid #e2e8f0;height:100%;}
 .bounty-box-2:hover {background-color:#5878ff;border-color: #5878ff;-webkit-box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.05);-moz-box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.05);box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.05);moz-transition: all .4s ease-in-out;-o-transition: all .4s ease-in-out;-webkit-transition: all .4s ease-in-out;transition: all .4s ease-in-out;}
 .bounty-box-2 .image-container {display: -ms-flexbox;display: flex;text-align: center;-ms-flex-align: center;align-items: center;font: 0/0 a;}
 .bounty-box-2 .image-container img {margin: auto;width: 100%;max-height: 100%;-o-object-fit: contain;object-fit: contain;border-top-left-radius:5px;border-top-right-radius:5px;}
-.bounty-box-2 .content {padding:25px;min-height:318px;}
-.bounty-box-2 .content h3{font: 600 18px "Poppins", sans-serif;font-weight:500;line-height:22px;letter-spacing: -0.3px;text-align: left;}
+.bounty-box-2 .content {padding:25px;}
+.bounty-box-2 .content h3{font: 500 19px/26px "Poppins", sans-serif!important;font-weight:500;line-height:22px;letter-spacing: -0.3px;text-align: left;}
 .bounty-box-2 .content h4.highlight {font-size:18px;color:#ed8619;font-style:italic;font-weight:400;line-height: 20px;margin-top: 15px;margin-bottom: 15px;}
 .bounty-box-2 .content h4.highlight.small {font-size:15px;}
-.bounty-box-2 .content p {font-size:14px;line-height:20px;font-weight:400;min-height:165px;}
+.bounty-box-2 .content p {font-size:14px;line-height:20px;font-weight:400;min-height:180px;}
 .bounty-box-2 .btn-block {padding: 0px 25px;justify-content: space-around;width: 100%;  position: absolute;right: 0;bottom: 8px;left: 0;}
 .bounty-box-2 .btn-block .btn-hover {padding: 4px 0px;flex-grow: 1;width:49.1%;margin: 0px;}
 .btn-block.no-width {width: inherit;display: inline;}
@@ -3825,11 +3844,11 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 .bounty-box-2 .progress-labels .status.finished{color:#ff6a00;}
 
 .bounty-box-2 .btn-block .btn-hover{font-size:15px;font-weight:500;color:#fff;cursor:pointer;padding:8px 0px;text-align:center;border:none;background-size:300% 100%;border-radius:5px;moz-transition:all .4s ease-in-out;-o-transition:all .4s ease-in-out;-webkit-transition:all .4s ease-in-out;transition:all .4s ease-in-out}
-.bounty-box-2 .btn-block .btn-hover.color-2 {color: #343a40;cursor: pointer;text-align: center;background-color: #FFFFFF;border: 1px solid #e2e8f0;border-radius:100px;}
+.bounty-box-2 .btn-block .btn-hover.color-1 {margin-bottom:15px;color: #343a40;cursor: pointer;text-align: center;background-color: #FFFFFF;border: 1px solid #e2e8f0;border-radius:100px;width: 34%;}
+.bounty-box-2 .btn-block .btn-hover.color-1:hover{color: rgb(28, 28, 225);moz-transition: all .4s ease-in-out;-o-transition: all .4s ease-in-out;-webkit-transition: all .4s ease-in-out;transition: all .4s ease-in-out;}
+.bounty-box-2 .btn-block .btn-hover.color-2 {color: #343a40;cursor: pointer;text-align: center;background-color: #FFFFFF;border: 1px solid #e2e8f0;border-radius:100px;width: 64%;}
 .bounty-box-2 .btn-block .btn-hover.color-2::after {margin-left: .125em;margin-right: .3em;display: inline;content: "↗";transition: all .1s ease-in-out 0s;font-style: normal;
 }
-.bounty-box-2 .btn-block .btn-hover.color-1 {margin-bottom:15px;color: #343a40;cursor: pointer;text-align: center;background-color: #FFFFFF;border: 1px solid #e2e8f0;border-radius:100px;}
-.bounty-box-2 .btn-block .btn-hover.color-1:hover{color: rgb(28, 28, 225);moz-transition: all .4s ease-in-out;-o-transition: all .4s ease-in-out;-webkit-transition: all .4s ease-in-out;transition: all .4s ease-in-out;}
 .bounty-box-2 .btn-block .btn-hover.color-2:hover{color:rgb(28, 28, 225);moz-transition: all .4s ease-in-out;-o-transition: all .4s ease-in-out;-webkit-transition: all .4s ease-in-out;transition: all .4s ease-in-out;}
 
 .bounty-box-2:hover .content h3 {color:#FFFFFF;moz-transition: all .4s ease-in-out;-o-transition: all .4s ease-in-out;-webkit-transition: all .4s ease-in-out;transition: all .4s ease-in-out;}
@@ -3845,11 +3864,12 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 .bounty-modal header {background: #f7f8fa;margin: -25px -15px 0px -25px;padding: 15px 40px 15px 25px;margin-bottom: 10px;border-top-left-radius: 6px;border-top-right-radius: 6px;}
 .bounty-modal header h3 {color: #212529;margin: 0;font: 500 20px/26px "Poppins", sans-serif;margin-bottom:0px;}
 .bounty-modal .bounty-modal-content p {color: rgba(24, 24, 24, 0.6);margin: 0;font: 400 16px/26px "Poppins", sans-serif;padding: 10px 0px 5px 0px;}
+.bounty-modal .bounty-modal-content p span.fw5 {color: rgba(33, 37, 41, 0.9);font-weight:500;}
 .bounty-modal .bounty-modal-content .orderList {font-size: 16px;color: #002752;}
 .bounty-modal .bounty-modal-content .orderList ol {margin-left: 35px;}
 .bounty-modal .bounty-modal-content .orderList ol li {margin-bottom: 10px;}
 
-.bounty-modal .bounty-modal-content .sub-header {color: #212529;margin: 0;font: 500 16px/20px "Poppins", sans-serif;padding-bottom:0px;margin-bottom:10px;}
+.bounty-modal .bounty-modal-content .sub-header {color: #212529;margin: 0;font: 500 17px/20px "Poppins", sans-serif;padding-bottom:0px;margin-bottom:10px;}
 .bounty-modal .bounty-modal-content .bug-bounty__list {padding: 5px 14px;}
 .bounty-modal .bounty-modal-content .bug-bounty__li {color: rgba(24, 24, 24, 0.6);margin: 0;font: 400 15px/22px "Poppins", sans-serif;list-style: none;margin-bottom: 7px;margin-left: 10px;}
 .bounty-modal .bounty-modal-content .bug-bounty__li:before {content: "";display: inline-block;width: 7px;height: 11px;border-color: #2196f3;border-style: solid;border-width: 0 2px 2px 0;margin-right: 12px;margin-left: -20px;transform: rotate(45deg);}
@@ -4883,7 +4903,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
     padding-top: 20px;
   }
   .bounty_area .tittle h4 {font-size: 18px;}
-  .bounty-box-2 .btn-block .btn-hover {font-size: 13px;font-weight:600;}
+  .bounty-box-2 .btn-block .btn-hover {font-size: 14px;}
   .bounty-modal header h3 {font: 500 18px/24px "Poppins", sans-serif;}
   
 }

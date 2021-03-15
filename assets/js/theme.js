@@ -3,12 +3,12 @@ For Mega menu and Mobile menu
 --------------------------------*/
 (function($){
 	"use strict";
-	var storeX = {};
+	var StorX = {};
 
     /* ---------------------------------------------- /*
 	 * Preloader
 	/* ---------------------------------------------- */
-    storeX.preloader = function(){
+    StorX.preloader = function(){
         if( $('.preloader').length ){
             $(window).on('load', function() {
                 $('.preloader').fadeOut();
@@ -21,7 +21,7 @@ For Mega menu and Mobile menu
 	/* ---------------------------------------------- /*
 	 * Header Fixed
 	/* ---------------------------------------------- */
-	storeX.HeaderFixd = function() {
+	StorX.HeaderFixd = function() {
 		var HscrollTop  = $(window).scrollTop();  
 	    if (HscrollTop >= 100) {
 	       $('header').addClass('fixed-header');
@@ -35,7 +35,7 @@ For Mega menu and Mobile menu
 	/* ---------------------------------------------- /*
 	 * Menu Close
 	/* ---------------------------------------------- */
-    storeX.MenuClose = function(){
+    StorX.MenuClose = function(){
       $('.navbar-nav .nav-link').on('click', function() {
        var toggle = $('.navbar-toggler').is(':visible');
        if (toggle) {
@@ -48,7 +48,7 @@ For Mega menu and Mobile menu
 	/* ---------------------------------------------- /*
 	 * Mega Menu
 	/* ---------------------------------------------- */
-	storeX.MegaMenu = function() {
+	StorX.MegaMenu = function() {
 		var mDropdown = $(".m-dropdown-toggle") 
 		mDropdown.on("click", function() {
 	        $(this).parent().toggleClass("open-menu-parent");
@@ -61,7 +61,7 @@ For Mega menu and Mobile menu
 	/* ---------------------------------------------- /*
 	 * One Page
 	/* ---------------------------------------------- */
-    storeX.OnePage = function(){
+    StorX.OnePage = function(){
         $('header a[href*="#"]:not([href="#"]), footer a[href*="#"]:not([href="#"]), .got-to a[href*="#"]:not([href="#"])').on('click', function() {
             if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {
               var target = $(this.hash);
@@ -80,7 +80,7 @@ For Mega menu and Mobile menu
 	/* ---------------------------------------------- /*
 	 * Magnificpopup
 	/* ---------------------------------------------- */
-    storeX.magnificPopup = function() {
+    StorX.magnificPopup = function() {
         if ($('.popup-youtube, .open-popup-form, .partner_img').length) { 
             //Video Popup
             $('.popup-youtube').magnificPopup({
@@ -131,7 +131,7 @@ For Mega menu and Mobile menu
 	/* ---------------------------------------------- /*
 	 * Slider
 	/* ---------------------------------------------- */
-    storeX.sliderArea = function(){
+    StorX.sliderArea = function(){
         if ( $('.testimonial_slid').length ){ 
             $('.testimonial_slid').owlCarousel({
             	loop: false,
@@ -157,14 +157,20 @@ For Mega menu and Mobile menu
 	/* ---------------------------------------------- /*
 	 * Scroll to top
 	/* ---------------------------------------------- */
-    storeX.scrollToTop = function(){
+    StorX.scrollToTop = function(){
         if ($('.scroll-top').length) {  
             $(window).on('scroll', function () {
-                if ($(this).scrollTop() > 200) {
-                    $('.scroll-top').fadeIn();
-                } else {
-                    $('.scroll-top').fadeOut();
-                }
+                //if ($(this).scrollTop() > 400) {
+                    //$('.scroll-top').fadeIn();
+                //} else {
+                    //$('.scroll-top').fadeOut();
+                //}
+				if ($(this).scrollTop() > 400) {
+				  $('.scroll-top').addClass('show');
+				} else {
+				  $('.scroll-top').removeClass('show');
+				}
+				
             }); 
             //Click event to scroll to top
             $('.scroll-top').on('click', function () {
@@ -179,19 +185,19 @@ For Mega menu and Mobile menu
 	
 	// Document on Ready
 	$(document).on("ready", function(){
-		storeX.preloader(),
-		storeX.HeaderFixd(),
-		storeX.MenuClose(),
-		storeX.MegaMenu(),
-		storeX.OnePage(),
-		storeX.magnificPopup(),
-		storeX.sliderArea(),
-		storeX.scrollToTop()
+		StorX.preloader(),
+		StorX.HeaderFixd(),
+		StorX.MenuClose(),
+		StorX.MegaMenu(),
+		StorX.OnePage(),
+		StorX.magnificPopup(),
+		StorX.sliderArea(),
+		StorX.scrollToTop()
 	});
 
 	// Document on Scrool
 	$(window).on("scroll", function(){
-		storeX.HeaderFixd();
+		StorX.HeaderFixd();
 	});
 
 	// Window on Resize

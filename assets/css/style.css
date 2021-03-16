@@ -1956,6 +1956,9 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   padding-bottom: 20px;
 }
 
+.contribute-block .revenue .introducing-list {
+    margin-left:25px;
+}
 .contribute-block .revenue .introducing-list-item {
     display: flex;
     font: 500 17px/23px "Poppins", sans-serif;

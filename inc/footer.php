@@ -20,7 +20,7 @@
                         <ul class="footer_nav">
                             <li><a href="storx_whitepaper_v1.pdf" target="_blank">Whitepaper</a></li>
                             <li><a href="documents">Documents</a></li>
-                            <li><a href="community">Community</a></li>
+                            <li><a href="contribute">Contribute</a></li>
                             <li><a href="ecosystem-partner">Ecosystem Partner</a></li>
                         </ul>
                     </div>

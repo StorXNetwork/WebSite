@@ -66,12 +66,12 @@ include('inc/header.php') ?>
                             </thead>
                             <tbody>
                                 <tr class="primary-bg">
-                                    <th scope="row"><img src="assets/images/pricing-logos/storx-logo.png" class="img-responsive b2-comparison-logo" style="width: 125px; height: 44px;" alt="Store X Cloud Storage" /></th>
+                                    <th scope="row"><img src="assets/images/pricing-logos/storx-logo.png" class="img-responsive b2-comparison-logo" style="width: 125px; height: auto;" alt="StorX Cloud Storage" /></th>
                                     <td class="bh" style="color: #2aa72a;">$0.010</td>
                                     <td class="bh" style="color: #2aa72a;">$0.02</td>
                                 </tr>
                                 <tr class="secondary-bg">
-                                    <th scope="row"><img src="assets/images/pricing-logos/amazon-logo.png" class="img-responsive b2-comparison-logo" style="width: 125px; height: 44px;" alt="Amazon S3 Storage" /></th>
+                                    <th scope="row"><img src="assets/images/pricing-logos/amazon-logo.png" class="img-responsive b2-comparison-logo" style="width: 125px; height: auto;" alt="Amazon S3 Storage" /></th>
                                     <td style="line-height: 20px;">
                                         $0.021<br />
                                         <span class="comparison-blue">+320%</span>
@@ -82,7 +82,7 @@ include('inc/header.php') ?>
                                     </td>
                                 </tr>
                                 <tr class="secondary-bg">
-                                    <th scope="row"><img src="assets/images/pricing-logos/microsoft-logo.png" class="img-responsive b2-comparison-logo" style="width: 125px; height: 44px;" alt="Microsoft Azure Cloud Storage" /></th>
+                                    <th scope="row"><img src="assets/images/pricing-logos/microsoft-logo.png" class="img-responsive b2-comparison-logo" style="width: 125px; height: auto;" alt="Microsoft Azure Cloud Storage" /></th>
                                     <td>
                                         $0.018<br />
                                         <span class="comparison-blue">+260%</span>
@@ -93,7 +93,7 @@ include('inc/header.php') ?>
                                     </td>
                                 </tr>
                                 <tr class="secondary-bg">
-                                    <th scope="row"><img src="assets/images/pricing-logos/google-cloud-logo.png" class="img-responsive b2-comparison-logo" style="width: 125px; height: 44px;" alt="Google Cloud Storage" /></th>
+                                    <th scope="row"><img src="assets/images/pricing-logos/google-cloud-logo.png" class="img-responsive b2-comparison-logo" style="width: 125px; height: auto;" alt="Google Cloud Storage" /></th>
                                     <td>
                                         $0.020 <br />
                                         <span class="comparison-blue">+300%</span>

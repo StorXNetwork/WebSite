@@ -736,7 +736,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   border-bottom: 1px solid #eaeef6;
 }
 .banner_area h2 {
-  font: 500 50px/55px "Poppins", sans-serif;
+  font: 500 45px/50px "Poppins", sans-serif;
   color: #254a81;
   padding-bottom: 5px;
   padding-top: 60px;
@@ -840,7 +840,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   z-index: -1;
 }
 .ba_3 .banner_con {
-  padding-top: 80px;
+  padding-top: 75px;
 }
 .ba_3 h4 {
   color: #fff;
@@ -940,7 +940,17 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   top: 230px;
   animation: rotation infinite 10s linear;
 }
-
+.pages_banner .theme_btn {
+    margin-top:30px;
+	background: #fff;
+    color: #254a81;
+    border: 2px solid #fff;
+}
+.pages_banner .theme_btn:hover, .pages_banner .theme_btn:focus {
+  background: transparent;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+}
 .pb_2 {
   background: url("../images/banner-bg.jpg") no-repeat;
   background-size: cover;
@@ -2075,7 +2085,40 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 }
 }
 
-/*----------------------------------------------------*/
+/*------------------ About -------------------*/
+.about_area {
+  display: block;
+  overflow: hidden;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  position: relative;
+  z-index: 1;
+}
+.about_area:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -20%;
+    background: url(../images/bgcircles.svg) no-repeat;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-size: 450px;
+    background-position: 2% 50%;
+}
+.about_area .tittle {
+  display: block;
+  padding-bottom: 110px;
+  text-align: left;
+}
+.about_area .tittle h4 {
+  font: 400 20px "Poppins", sans-serif;
+  color: #382c4d;
+  padding-left: 5px;
+}
+/*------------------ About -------------------*/
+
+/*------------------ FAQs -------------------*/
 .faq_area {  
   display: block;
   background: #f7f8fa;
@@ -3411,11 +3454,18 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   color: #254a81;
   padding-bottom: 30px;
 }
-.welcome_content .t_p {
-  /*max-width: 530px;*/
+.welcome_content .t_p {  
   border-left: 4px solid #e14024;
+  /*max-width: 530px;*/
   padding-left: 15px;
-  /*margin-bottom: 25px;*/
+  margin-bottom: 20px;
+}
+.welcome_content .t_p.fw-6 {  
+  font-weight: 600;
+}
+.welcome_content .t_p.no-border {  
+  border-left: none;
+  padding-left: 0px;
 }
 .welcome_content .media {
   max-width: 540px;
@@ -3610,11 +3660,6 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   display: inline-block;
   font-size: 35px;
   margin-right: 35px;
-}
-.bounty_area .tittle h2 {
-  font: 700 52px/62px "Josefin Sans", sans-serif;
-  color: #382c4d;
-  padding-top: 30px;
 }
 .bounty_area .tittle h2 b {
   display: inline-block;
@@ -4264,7 +4309,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   }
 
   .ba_3 {
-    padding-bottom: 150px;
+    padding-bottom: 175px;
   }
   .ba_3 .rs_banner {
     display: block;

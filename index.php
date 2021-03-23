@@ -8,12 +8,12 @@ include('inc/header.php') ?>
 <section id="" class="banner_area ba_3">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 banner_con">
-                <h2 class="wow fadeInUp">Distributed Cloud Storage Network</h2>
-                <p class="wow fadeInUp" data-wow-delay="0.3s">Experience the faster, safer, more affordable and completely decentralized enterprise-grade cloud storage network.</p>
+            <div class="col-lg-7 banner_con">
+                <h2 class="wow fadeInUp">Distributed Cloud Storage Powered by XinFin Blockchain Network</h2>
+                <p class="wow fadeInUp" data-wow-delay="0.3s">The StorX mainnet is here and STORX is a XRC-20 utility token that powers StorX data storage Marketplace. Setup Node and earn STORX and Store Data and pay using STORX token.</p>
                 <!--<a href="#" class="theme_btn wow fadeInUp" data-wow-delay="0.7s">Create Account</a>-->
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-5">
                 <div class="banner_i wow fadeInUp">
                     <img src="assets/images/cloud-storage-place.png" alt="" class="images" />
                 </div>
@@ -25,14 +25,16 @@ include('inc/header.php') ?>
 <!-- Banner Area -->
 
 <!-- About Cloud Storage -->
-<section id="about" class="welcome_content pt-5">
-    <div class="container">
-        <h2 class="wow fadeInUp">Truly Decentralized Cloud Storage</h2>
-        <p class="t_p wow fadeInUp" data-wow-delay="0.3s">
-            StorX helps you securely encrypt, fragment and then distribute important data across multiple hosting nodes spread worldwide. StorX provides a democratic marketplace for hosting data, replacing the centralized intermediaries
-            with a decentralized blockchain network. Exercise complete control and grant access over your data sets without any centralized intermediary.
-        </p>
-    </div>
+<section id="about" class="welcome_content text-center pt-5">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h2 class="wow fadeInUp">Truly Decentralized Cloud Storage</h2>
+				<p class="t_p no-border wow fadeInUp" data-wow-delay="0.3s">StorX helps you securely encrypt, fragment and then distribute important data across multiple hosting nodes spread worldwide. StorX provides a democratic marketplace for hosting data, replacing the centralized intermediaries with a decentralized blockchain network. Exercise complete control and grant access over your data sets without any centralized intermediary.</p>
+				<p class="t_p no-border mb-0 fw-6 wow fadeInUp" data-wow-delay="0.4s"><a href="host-node">Host A node</a> & Earn STORX or Pay STORX and <a href="store-data">Store Data</a> over Distributed Cloud Storage.</strong></p>
+			</div>
+		</div>
+	</div>
 </section>
 <!-- About Cloud Storage -->
 
@@ -117,68 +119,70 @@ include('inc/header.php') ?>
 <section class="experience_cta_block">
     <div class="container">
         <h2 class="wow fadeInUp">Experience Decentralized Cloud Storage</h2>
-        <a href="#" class="theme_btn wow fadeInUp" data-wow-delay="0.1s">Host a Node</a>
-        <a href="#" class="theme_btn create wow fadeInUp" data-wow-delay="0.2s">Store Data</a>
+        <a href="host-node" class="theme_btn wow fadeInUp" data-wow-delay="0.1s">Host a Node</a>
+        <a href="store-data" class="theme_btn create wow fadeInUp" data-wow-delay="0.2s">Store Data</a>
     </div>
 </section>
 <!-- Experience Decentralized Cloud Storage -->
 
 <!-- Why StorX -->
 <section id="whyStorX" class="why_storx">
-    <div class="container">
-        <h2 class="wow fadeInUp">Why StorX?</h2>
-        <div class="row d-flex services_row">
-            <!-- services_item -->
-            <div class="col-lg-6 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.2s">
-                <div class="services_item">
-                    <span class="img_c"><i class="fa fa-thumbs-up"></i> Reliable Platform</span>
-
-                    <ul class="introducing-list">
-                        <li class="introducing-list-item">Thoroughly Tested for Quality Assurance</li>
-                        <li class="introducing-list-item">Dedicated support delivered directly by our engineers</li>
-                        <li class="introducing-list-item">Work faster and collaborate seamlessly</li>
-                        <li class="introducing-list-item">Enterprise grade SLA up to 24/7</li>
-                    </ul>
+	<div class="container">
+                <h2 class="mb-3">How StorX Works?</h2>
+                <p class="text-center">StorX is a peer to peer decentralized Storage Network.</p>
+                
+                <div class="row">
+                	<div class="col-lg-12">
+               	    	<img src="assets/images/how-storx-works.jpg" alt="How StorX Works?" class="img-fluid">
+                    </div>
                 </div>
+                <!--<div class="row d-flex services_row">
+                    <div class="col-lg-6 col-md-6 mb-4">
+                        <div class="services_item">
+                            <span class="img_c"><i class="fa fa-thumbs-up"></i> Reliable Platform</span>
+                            <ul class="introducing-list">
+                                <li class="introducing-list-item">Thoroughly Tested for Quality Assurance</li>
+                                <li class="introducing-list-item">Dedicated support delivered directly by our engineers</li>
+                                <li class="introducing-list-item">Work faster and collaborate seamlessly</li>
+                                <li class="introducing-list-item">Enterprise grade SLA up to 24/7</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 mb-4">
+                        <div class="services_item">
+                            <span class="img_c i-2"><i class="fas fa-medal"></i> Enterprise-Grade</span>
+                            <ul class="introducing-list">
+                                <li class="introducing-list-item">Enterprise-grade security features and hardening</li>
+                                <li class="introducing-list-item">Early notifications about critical security issues</li>
+                                <li class="introducing-list-item">Early security patches</li>
+                                <li class="introducing-list-item">Pro active security consulting to review and harden your instance</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 mb-4">
+                        <div class="services_item">
+                            <span class="img_c i-3"><i class="fa fa-check"></i> Expertise</span>
+                            <ul class="introducing-list">
+                                <li class="introducing-list-item">Our experts help you migrate to StorX</li>
+                                <li class="introducing-list-item">Access to documentation and the knowledge base</li>
+                                <li class="introducing-list-item">Access to expertise around scaling, security and best practices</li>
+                                <li class="introducing-list-item">Access to optional workshops and training</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 mb-4">
+                        <div class="services_item">
+                            <span class="img_c i-4"><i class="fa fa-shield-alt"></i> Advanced Security</span>
+                            <ul class="introducing-list">
+                                <li class="introducing-list-item">Encrypt and Safely Distribute Data Across Multiple Nodes on Decentralized Network</li>
+                                <li class="introducing-list-item">Secure your data against internal and external security threats</li>
+                                <li class="introducing-list-item">Securely access data across multiple device</li>
+                                <li class="introducing-list-item">Share securely with confidence and ease</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>-->
             </div>
-            <!-- services_item -->
-            <div class="col-lg-6 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="services_item">
-                    <span class="img_c i-2"><i class="fas fa-medal"></i> Enterprise-Grade</span>
-                    <ul class="introducing-list">
-                        <li class="introducing-list-item">Enterprise-grade security features and hardening</li>
-                        <li class="introducing-list-item">Early notifications about critical security issues</li>
-                        <li class="introducing-list-item">Early security patches</li>
-                        <li class="introducing-list-item">Pro active security consulting to review and harden your instance</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- services_item -->
-            <div class="col-lg-6 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.4s">
-                <div class="services_item">
-                    <span class="img_c i-3"><i class="fa fa-check"></i> Expertise</span>
-                    <ul class="introducing-list">
-                        <li class="introducing-list-item">Our experts help you migrate to StorX</li>
-                        <li class="introducing-list-item">Access to documentation and the knowledge base</li>
-                        <li class="introducing-list-item">Access to expertise around scaling, security and best practices</li>
-                        <li class="introducing-list-item">Access to optional workshops and training</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- services_item -->
-            <div class="col-lg-6 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="services_item">
-                    <span class="img_c i-4"><i class="fa fa-shield-alt"></i> Advanced Security</span>
-                    <ul class="introducing-list">
-                        <li class="introducing-list-item">Encrypt and Safely Distribute Data Across Multiple Nodes on Decentralized Network</li>
-                        <li class="introducing-list-item">Secure your data against internal and external security threats</li>
-                        <li class="introducing-list-item">Securely access data across multiple device</li>
-                        <li class="introducing-list-item">Share securely with confidence and ease</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
 </section>
 <!-- Why StorX -->
 

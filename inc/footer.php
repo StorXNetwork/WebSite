@@ -2,44 +2,40 @@
         <footer class="footer_area footer_2">
             <div class="container">
                 <div class="footer_inner row">
-                    <div class="footer_widget col-lg-4 col-sm-12 wow fadeIn" data-wow-delay="0.2s">
+                    <div class="footer_widget col-lg-5 col-sm-12 wow fadeIn" data-wow-delay="0.2s">
                         <img src="assets/images/storx-logo-light.png" width="150" height="42" />
                         <p>Experience the faster, safer, more affordable and completely decentralized enterprise-grade cloud storage network.</p>
                     </div>
                     <div class="footer_widget col-lg-2 col-sm-6 wow fadeIn" data-wow-delay="0.4s">
-                        <h4>Community</h4>
+                        <h4>StorX</h4>
                         <ul class="footer_nav">
-                            <li><a href="about">About StorX</a></li>
-                            <li><a href="how-storx-work">How StorX Work</a></li>
-                            <li><a href="support">Community Support</a></li>
-                            <li><a href="roadmap">Roadmap</a></li>
+                            <li><a href="host-node">Host a Node</a></li>
+                            <li><a href="store-data">Store Data</a></li>
+                            <li><a href="storx-token">About STORX Token</a></li>
                         </ul>
                     </div>
                     <div class="footer_widget col-lg-2 fw_3 col-sm-6 wow fadeIn" data-wow-delay="0.6s">
-                        <h4>Resources</h4>
+                        <h4>Community</h4>
                         <ul class="footer_nav">
-                            <li><a href="storx_whitepaper_v1.pdf" target="_blank">Whitepaper</a></li>
-                            <li><a href="documents">Documents</a></li>
-                            <li><a href="contribute">Contribute</a></li>
-                            <li><a href="ecosystem-partner">Ecosystem Partner</a></li>
+                            <li><a href="community-bounty">Community Bounty</a></li>
+                            <li><a href="support">Community Support</a></li>
                         </ul>
                     </div>
                     <div class="footer_widget col-lg-2 fw_3 col-sm-6 wow fadeIn" data-wow-delay="0.8s">
-                        <h4>Tokenomics</h4>
+                        <h4>Resource</h4>
                         <ul class="footer_nav">
-                            <li><a href="token-distribution">Token Distribution</a></li>
-                            <li><a href="role-of-token">Role of Token</a></li>
-                            <li><a href="get-storx-coin">Get StorX Coin</a></li>
-                            <li><a href="community-bounty">Contribute & Get Bounty</a></li>
+                            <li><a href="storx_whitepaper_v1.pdf" target="_blank">Whitepaper</a></li>
+                            <li><a href="roadmap">Roadmap</a></li>
+                            <!--<li><a href="token-distribution">Token Distribution</a></li>-->
                         </ul>
                     </div>
-                    <div class="footer_widget col-lg-2 col-sm-6 wow fadeIn" data-wow-delay="1s">
+                    <!--<div class="footer_widget col-lg-2 col-sm-6 wow fadeIn" data-wow-delay="1s">
                         <h4>Legal</h4>
                         <ul class="footer_nav">
                             <li><a href="terms-of-use">Terms of Use</a></li>
                             <li><a href="privacy-policy">Privacy Policy</a></li>
                         </ul>
-                    </div>
+                    </div>-->
                 </div>
                 <div class="copy_right cr_2">
                     <div class="row">

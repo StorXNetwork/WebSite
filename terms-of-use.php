@@ -36,7 +36,7 @@ include('inc/header.php') ?>
                         </p>
                         <p><b>SCOPE OF TERMS</b></p>
                         <p>
-                            These Terms apply to the StorX websites located at www.StorX.com and all StorX owned and/or operated websites that are linked to www.StorX.com by StorX and its subsidiaries, including StorX websites around the
+                            These Terms apply to the StorX websites located at www.StorX.tech and all StorX owned and/or operated websites that are linked to www.StorX.tech by StorX and its subsidiaries, including StorX websites around the
                             world and secure areas of the websites (the "StorX Websites"). These Terms also apply to any and all online resources, materials, download areas, tools, and interactive venues provided on the StorX Websites,
                             including without limitation, blogs, community forums, chat rooms, discussion sites, knowledge centers, service offerings information (hereinafter, "Online Mediums"), both now and in the future. StorX may also
                             publish medium-specific terms of use in which event, these Terms shall remain in full force and effect to the extent that the Terms do not conflict with the medium-specific terms of use.

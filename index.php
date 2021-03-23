@@ -119,8 +119,8 @@ include('inc/header.php') ?>
 <section class="experience_cta_block">
     <div class="container">
         <h2 class="wow fadeInUp">Experience Decentralized Cloud Storage</h2>
-        <a href="host-node" class="theme_btn wow fadeInUp" data-wow-delay="0.1s">Host a Node</a>
-        <a href="store-data" class="theme_btn create wow fadeInUp" data-wow-delay="0.2s">Store Data</a>
+        <a href="host-node" class="theme_btn">Host a Node</a>
+        <a href="store-data" class="theme_btn create">Store Data</a>
     </div>
 </section>
 <!-- Experience Decentralized Cloud Storage -->

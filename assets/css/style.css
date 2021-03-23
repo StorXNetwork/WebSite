@@ -48,6 +48,7 @@ Table of Content:
   background: transparent;
   border: 2px solid #254a81;
   color: #254a81;
+  text-decoration:none;
 }
 
 /* Scroll Top */
@@ -195,6 +196,10 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   outline: none;
   text-decoration: none;
   transition: all 300ms linear 0s;
+}
+body a:focus, body a:hover {
+	color: #007bff;
+	text-decoration: underline;
 }
 .ib {font-style:italic;font-weight:600;}
 
@@ -712,6 +717,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 }
 .mha_2 .navbar .right_nav li .theme_btn:hover, .mha_2 .navbar .right_nav li .theme_btn:focus {
   background: #5079f7;
+  text-decoration:none;
 }
 .mha_2.navbar_fixed {
 	background: #FFFFFF;
@@ -4162,6 +4168,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 }
 .footer_area .footer_widget .footer_nav li a:hover, .footer_area .footer_widget .footer_nav li a:focus {
   color: #b0b4b9;
+  text-decoration:none;
 }
 .footer_area .footer_widget.fw_2 {
   padding-left: 40px;

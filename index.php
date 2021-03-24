@@ -133,7 +133,9 @@ include('inc/header.php') ?>
                 
                 <div class="row">
                 	<div class="col-lg-12">
-               	    	<img src="assets/images/how-storx-works.jpg" alt="How StorX Works?" class="img-fluid">
+               	    	<div class="how-storx-works-graph text-center">
+                        	<img src="assets/images/how-storx-works.jpg" alt="How StorX Works?" class="img-fluid">
+                        </div>
                     </div>
                 </div>
                 <!--<div class="row d-flex services_row">

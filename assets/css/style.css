@@ -54,6 +54,8 @@ Table of Content:
   text-decoration:none;
 }
 
+.extra-pb {padding-bottom: 125px!important;}
+
 /* Scroll Top */
 .scroll-top {
   position: fixed;
@@ -1059,6 +1061,10 @@ body a:focus, body a:hover {
   text-align: center;
   max-width: 510px;
   margin: 0 auto;
+}
+.why_storx .how-storx-works-graph img {width:85%;}
+@media (max-width: 991px) {
+	.why_storx .how-storx-works-graph img {width:100%;}
 }
 .why_storx .services_row {
   padding-top: 50px;
@@ -4073,10 +4079,8 @@ body a:focus, body a:hover {
 /*----------------- Token Area -----------------*/
 .token_area {
   display: block;
-  overflow: hidden;
   padding-top: 80px;
   padding-bottom: 60px;
-  position: relative;
   z-index: 1;
 }
 .token_area .tittle {
@@ -4100,6 +4104,49 @@ body a:focus, body a:hover {
     font: 500 36px/46px "Poppins", sans-serif;
     color: #254a81;
     padding-bottom: 30px;
+}
+
+.tokenmetrics_block {
+	padding: 35px 25px;
+	margin-top: -150px;
+	background: #FFFFFF;
+	border-radius: 6px;
+	-webkit-box-shadow: 0 2px 5px 3px rgba(12, 21, 46, 0.1);
+    box-shadow: 0 2px 5px 3px rgba(12, 21, 46, 0.1)
+}
+
+
+#pieChart {
+  min-width: 310px;
+  height: 310px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.legends.list-icon {
+    list-style: none;
+    padding-left: 0;
+}
+.legends.list-icon li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.legends.list-icon i {
+    font-size: 18px;
+    margin-right: 14px;
+    margin-left: -20px;
+}
+.legends.list-icon .blue {
+    color: #058DC7 !important;
+}
+.legends.list-icon .green {
+    color: #50B432 !important;
+}
+.legends.list-icon .red {
+    color: #ED561B !important;
+}
+.legends.list-icon .yellow {
+    color: #DDDF00 !important;
 }
 /*----------------- Token Area -----------------*/
 

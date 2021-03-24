@@ -83,6 +83,7 @@
         <!-- Extra Plugin -->
         <script src="assets/vendors/animate-css/wow.min.js"></script>
         <script src="assets/vendors/magnify-popup/jquery.magnific-popup.min.js"></script>
+        <script src="assets/vendors/chart/chart.js"></script>
 
         <!-- Custom js -->
         <script src="assets/js/theme.js"></script>

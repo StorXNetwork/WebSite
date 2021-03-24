@@ -4124,29 +4124,29 @@ body a:focus, body a:hover {
 }
 .legends.list-icon {
     list-style: none;
-    padding-left: 0;
+    padding-left: 14px;
 }
 .legends.list-icon li {
     font-size: 16px;
-    margin-bottom: 10px;
-    margin-left: 20px;
+    margin-bottom: 15px;
+    margin-left: 30px;
 }
 .legends.list-icon i {
     font-size: 18px;
     margin-right: 14px;
-    margin-left: -20px;
-}
-.legends.list-icon .blue {
-    color: #058DC7 !important;
+    margin-left: -30px;
 }
 .legends.list-icon .green {
-    color: #50B432 !important;
+    color: #27a88a !important;
+}
+.legends.list-icon .blue {
+    color: #7335a6 !important;
 }
 .legends.list-icon .red {
-    color: #ED561B !important;
+    color: #f84f67 !important;
 }
 .legends.list-icon .yellow {
-    color: #DDDF00 !important;
+    color: #fca302 !important;
 }
 /*----------------- Token Area -----------------*/
 
@@ -4894,10 +4894,14 @@ body a:focus, body a:hover {
     padding-bottom: 50px;
   }
 
-  .welcome_content h2, .apis_data h2, .why_storx h2 {
+  .welcome_content h2, .apis_data h2, .why_storx h2, .token_area h2 {
     font-size: 26px;
     line-height: 30px;
   }
+  
+  .token-box .content {padding: 30px;}
+   
+  .token-box .content h3 {font-size:22px!important;line-height:30px!important;}
 
   .apis_data h4 {
     padding-top: 50px;

@@ -1,9 +1,9 @@
 // JavaScript Document
 Highcharts.chart('pieChart', {
-    colors: ['#058DC7', '#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572',   
-             '#FF9655', '#000000', '#6AF9C4'],
+    colors: ['#27a88a', '#7335a6', '#f84f67', '#fca302'],
 	chart: {
-        plotBackgroundColor: null,
+        backgroundColor: '#f7f8fa',
+		plotBackgroundColor: '#f7f8fa',
         plotBorderWidth: null,
         plotShadow: false,
         type: 'pie'
@@ -41,19 +41,19 @@ Highcharts.chart('pieChart', {
         //name: 'Brands',
         colorByPoint: true,
         data: [{
-            name: 'Founders, Advisors, Core Team Members & Community',
-            y: 40.00
+            name: 'Foundation/Ecosystem Development and Bounty',
+            y: 50.00
         }, {
-            name: 'Ecosystem Development',
-            y: 26.67
+            name: 'Co-founders, Advisors and Core Team Members',
+            y: 20.00
             //sliced: true,
             //selected: true
         }, {
-            name: 'Contingency',
-            y: 6.66
+            name: 'Pre-Placement/ICO Placement',
+            y: 20.00
         }, {
-            name: 'Pre Placement',
-            y: 26.67
+            name: 'Contingency',
+            y: 10.00
         }]
     }]
 });

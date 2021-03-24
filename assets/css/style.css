@@ -4311,7 +4311,8 @@ body a:focus, body a:hover {
 .footer_area .footer_widget p {
   font: 400 14px/20px "Poppins", sans-serif;
   color: #7e8b9c;
-  padding-top:15px;
+  padding-top: 15px;
+  padding-right: 50px;
 }
 .footer_area .footer_widget .footer_nav li a {
   font: 400 14px/30px "Poppins", sans-serif;
@@ -4403,7 +4404,7 @@ body a:focus, body a:hover {
   color: rgba(255, 255, 255, 0.8);
 }
 .footer_2 .copy_right .footer_social {
-  float: right;
+  /*float: right;*/
   padding-top: 4px;
   padding-right: 25px;
 }
@@ -4421,11 +4422,12 @@ body a:focus, body a:hover {
 }
 .footer_2 .cr_2 .footer_social {
   padding: 0;
-  display: inline-block;
-  float: right;
+  /*display: inline-block;
+  float: right;*/
+  text-align: center;
 }
 .footer_2 .cr_2 .c_p {
-  float: right;
+  /*float: right;*/
 }
 /*----------------- Footer Area -----------------*/
 
@@ -4700,6 +4702,8 @@ body a:focus, body a:hover {
   .footer_2 .cr_2 .c_p {
     padding-top: 0;
   }
+  
+  .footer_area .footer_widget p {padding-right: 50px;}
 
   .banner_area .banner_i {
     padding-top: 50px;

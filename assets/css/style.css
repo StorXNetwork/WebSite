@@ -939,7 +939,7 @@ body a:focus, body a:hover {
   color: #fff;
   font: 500 40px/1 "Poppins", sans-serif;
   padding-bottom: 20px;
-  padding-top: 85px;
+  padding-top: 60px;
 }
 .pages_banner p {
   color: rgba(255, 255, 255, 0.8);
@@ -1167,6 +1167,7 @@ body a:focus, body a:hover {
 	.why_storx .how-storx-works-graph img {padding:10px;}
 }
 @media (max-width: 767px) {
+	.why_storx .how-storx-works-graph img {top: -20px;}
 	.btn-play {font-size: 16px;}.btn i {font-size: 16px;width: 35px;height: 35px;line-height:35px;}
 }
 .why_storx .services_row {
@@ -4396,7 +4397,7 @@ body a:focus, body a:hover {
 	color: rgba(24, 24, 24, 0.6);
     line-height: 1.5;
 }
-
+.steps-block {background:#FFFFFF;border-radius:6px;padding:20px 10px;}
 .step-indicator {
     border-collapse: separate;
     display: table;
@@ -4428,7 +4429,7 @@ body a:focus, body a:hover {
 .step-indicator .caption {
     color: rgba(24,24,24,.6);
     font: 400 18px/26px Poppins,sans-serif;
-	padding: 11px 16px;
+	padding: 10px 10px;
 }
 .step-indicator .caption span {
     color: #ed8619;
@@ -5123,6 +5124,8 @@ body a:focus, body a:hover {
     font-size: 26px;
     line-height: 30px;
   }
+  
+  .store-data-block h3 {font-size: 18px;line-height: 24px;}
   
   .token-box .content {padding: 30px;}
    

@@ -5025,7 +5025,7 @@ body a:focus, body a:hover {
   }
 
   .ba_3 {
-    padding-bottom: 0;
+    padding-bottom: 50px;
   }
   .ba_3:before, .platform_features .ba_3.platform_row:after, .meet_yop .meet_row .ba_3.yop_video:after {
     display: none;
@@ -5139,7 +5139,7 @@ body a:focus, body a:hover {
   }
 
   .banner_area {
-    padding-top: 200px;
+    padding-top: 180px;
   }
   .banner_area h2 {
     font-size: 25px;

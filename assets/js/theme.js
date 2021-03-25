@@ -90,6 +90,16 @@ For Mega menu and Mobile menu
                 removalDelay: 160,
                 preloader: false, 
                 fixedContentPos: false,
+				 
+				callbacks: {
+					beforeOpen: function() {
+						$('body').addClass('mfp-active');
+					},
+					beforeClose: function() {
+						$('body').removeClass('mfp-active');
+					}
+				}
+				 
             });
 			
 			// Content popups

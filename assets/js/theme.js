@@ -84,7 +84,7 @@ For Mega menu and Mobile menu
         if ($('.popup-youtube, .open-popup-form, .partner_img').length) { 
             //Video Popup
             $('.popup-youtube').magnificPopup({
-                disableOn: 700,
+                //disableOn: 700,
                 type: 'iframe',
                 mainClass: 'mfp-fade',
                 removalDelay: 160,

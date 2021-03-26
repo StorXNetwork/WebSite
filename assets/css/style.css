@@ -4397,7 +4397,11 @@ body a:focus, body a:hover {
 	color: rgba(24, 24, 24, 0.6);
     line-height: 1.5;
 }
-.steps-block {background:#FFFFFF;border-radius:6px;padding:35px 10px;}
+.steps-block {
+	background: #f7f8fa;
+    border-radius: 8px;
+	padding:35px 15px;
+}
 .step-indicator {
     border-collapse: separate;
     display: table;
@@ -4466,6 +4470,27 @@ body a:focus, body a:hover {
 }
 /*----------------- Store Data Area -----------------*/
 
+/*----------------- Host Node Area -----------------*/
+.host-node-block {
+    display: block;
+    overflow: hidden;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.host-node-block h2 {
+    font: 500 36px/46px "Poppins", sans-serif;
+    color: #254a81;
+    padding-bottom: 30px;
+}
+
+.host-node-block .introducing-list {
+    margin-left: 35px;
+}
+.host-node-block .introducing-list .introducing-list-item {
+    font-size: 15px;
+	padding-bottom: 15px;
+}
+/*----------------- Host Node Area -----------------*/
 
 /*----------------- Login Signup Area -----------------*/
 /*----------------- Login Signup Area -----------------*/
@@ -5125,6 +5150,11 @@ body a:focus, body a:hover {
     line-height: 30px;
   }
   
+  .host-node-block h2 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+    
   .store-data-block h3 {font-size: 18px;line-height: 24px;}
   
   .token-box .content {padding: 30px;}

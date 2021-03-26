@@ -2281,27 +2281,78 @@ body a:focus, body a:hover {
   position: relative;
   z-index: 1;
 }
-.about_area:before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: -20%;
-    background: url(../images/bgcircles.svg) no-repeat;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    background-size: 450px;
-    background-position: 2% 50%;
-}
 .about_area .tittle {
   display: block;
   padding-bottom: 110px;
   text-align: left;
 }
+.about_area h2 {
+    font: 500 36px/46px "Poppins", sans-serif;
+    color: #254a81;
+    padding-bottom: 30px;
+}
 .about_area .tittle h4 {
   font: 400 20px "Poppins", sans-serif;
   color: #382c4d;
   padding-left: 5px;
+}
+.about_area p {font: 400 18px/28px "Poppins", sans-serif;}
+.card {
+    height: 100%;
+    border-radius: 10px;
+    transition: all .1s ease-in-out;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 5%);
+    border: 1px #eaeaea;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 25px;
+}
+.team-card-image {
+    height: 128px;
+    width: 128px;
+    margin-bottom: 25px;
+}
+.profile-name {
+    color: #254a81;
+	font-size: 20px;
+    line-height: 22px;
+    font-weight: 600;
+	margin-bottom: .5rem;
+}
+.profile-designation {
+    color: #0b1547;
+    opacity: .6;
+    font-size: 16px!important;
+    line-height: 20px;
+	margin-bottom: .5rem;
+}
+.profile-description {
+    color: #0b1547;
+    opacity: .8;
+    font-size: 16px!important;
+    line-height: 25px;
+	text-align: center;
+}
+.team-social-icons {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    padding: 0 12px;
+}
+.team-social-icons a {
+    color:rgba(0, 123, 255, 0.7);
+	background: #f7f8fa;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 100%;
+}
+.team-social-icons a:hover, .team-social-icons a:focus {
+    color:rgba(0, 123, 255, 1);
 }
 /*------------------ About -------------------*/
 

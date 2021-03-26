@@ -173,18 +173,36 @@ transform: rotate(-135deg);
 
 .login-btn {
     font-weight: 400!important;
-	color: #fff !important;
+	color: #FFFFFF !important;
     font-size: 16px !important;
     line-height: 33px;
     padding: 0 15px;
-    background: #e14024;
+    background: transparent;
     height: 35px;
-	border: 2px solid #e14024;
+	border: 2px solid #FFFFFF;
     border-radius: 5px;
     letter-spacing: 0.4px;
 }
 .login-btn:hover, .login-btn:focus {
-    background: #254a81;
-	color: #FFFFFF;
-    border-color: #254a81;
+    background: #FFFFFF;
+	color: #007bff !important;
+    border-color: #FFFFFF;
+}
+
+.fixed-header .login-btn {
+    font-weight: 400!important;
+	color: #FFFFFF !important;
+    font-size: 16px !important;
+    line-height: 33px;
+    padding: 0 15px;
+    background: #2582ff;
+    height: 35px;
+	border: 2px solid #2582ff;
+    border-radius: 5px;
+    letter-spacing: 0.4px;
+}
+.fixed-header .login-btn:hover, .login-btn:focus {
+    background: #0059d0;
+	color: #FFFFFF !important;
+    border-color: #0059d0;
 }

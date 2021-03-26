@@ -4605,7 +4605,6 @@ body a:focus, body a:hover {
 .footer_area .footer_widget .footer_nav li a {
   font: 400 14px/30px "Poppins", sans-serif;
   color: #7e8b9c;
-  display: block;
 }
 .footer_area .footer_widget .footer_nav li a:hover, .footer_area .footer_widget .footer_nav li a:focus {
   color: #b0b4b9;

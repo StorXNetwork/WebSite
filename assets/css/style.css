@@ -55,6 +55,7 @@ Table of Content:
 }
 
 .extra-pb {padding-bottom: 125px!important;}
+.extra-pb200 {padding-bottom: 200px!important;}
 
 /* Scroll Top */
 .scroll-top {
@@ -3673,7 +3674,7 @@ body a:focus, body a:hover {
 }
 .white-btn {
   background: #fff!important;
-  color: #2582ff!important;
+  color: #382c4d!important;
   border: 2px solid #fff!important;
 }
 .white-btn:hover, .white-btn:focus {
@@ -4555,8 +4556,8 @@ body a:focus, body a:hover {
   background-size: cover;
 }
 .github-contribute_block {
-    padding: 60px 50px;
-    margin-top: -220px;
+    padding: 35px 30px;
+    margin-top: -190px;
     background: #2582ff;
     border-radius: 6px;
 	text-align: center;
@@ -4571,8 +4572,6 @@ body a:focus, body a:hover {
 	font-size: 18px;
 	color: #FFFFFF;
 	padding: 20px 0px 30px 0px;
-	max-width: 600px;
-	margin: 0 auto;
 }
 .github-contribute_block::before {padding-top:500px;}
 .footer_area .footer_logo {
@@ -4641,9 +4640,9 @@ body a:focus, body a:hover {
   color: rgba(36, 36, 37, 0.8);
   line-height: 38px;
 }
-.footer_area .copy_right p a {
+/*.footer_area .copy_right p a {
   color: rgba(36, 36, 37, 0.8);
-}
+}*/
 .footer_area .copy_right p a:hover, .footer_area .copy_right p a:focus {
   color: #5079f7;
 }
@@ -4707,11 +4706,11 @@ body a:focus, body a:hover {
 .footer_2 .copy_right p img {
   margin-right: 20px;
 }
-.footer_2 .copy_right p a {
+/*.footer_2 .copy_right p a {
   color: rgba(255, 255, 255, 0.8);
-}
+}*/
 .footer_2 .copy_right .footer_social {
-  /*float: right;*/
+  float: right;
   padding-top: 4px;
   padding-right: 25px;
 }
@@ -4723,18 +4722,17 @@ body a:focus, body a:hover {
 }
 .footer_2 .cr_2 .copyright {
   font-size: 14px;
-  display: flex;
   align-items: center;
   line-height: 22px;
 }
 .footer_2 .cr_2 .footer_social {
   padding: 0;
-  /*display: inline-block;
-  float: right;*/
+  display: inline-block;
+  float: right;
   text-align: center;
 }
 .footer_2 .cr_2 .c_p {
-  /*float: right;*/
+  float: right;
 }
 /*----------------- Footer Area -----------------*/
 
@@ -5158,6 +5156,14 @@ body a:focus, body a:hover {
   .footer_area .copy_right .c_nav, .footer_area .copy_right p {
     text-align: center;
   }
+  
+  .github-contribute_block h2 {
+	font: 500 28px/34px "Poppins", sans-serif;
+	}
+	.github-contribute_block p {
+		font-size: 18px;
+		padding: 20px 0px 25px 0px;
+	}
 
   .platform_features h2 {
     font-size: 26px;
@@ -5351,6 +5357,17 @@ body a:focus, body a:hover {
     float: none;
     text-align: center;
     padding-top: 20px;
+  }
+  
+  .github-contribute_block {
+    padding: 30px 25px;
+  }
+  .github-contribute_block h2 {
+    font: 500 24px/28px "Poppins", sans-serif;
+  }
+  .github-contribute_block p {
+    font-size: 16px;
+    line-height: 22px;
   }
 
   .banner_area {

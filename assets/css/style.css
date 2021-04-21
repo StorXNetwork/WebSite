@@ -30,6 +30,8 @@ Table of Content:
 @import url(../vendors/jquery-ui/jquery-ui.min.css);
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+
 .grey_bg {
 	background: #f7f8fa;
 }

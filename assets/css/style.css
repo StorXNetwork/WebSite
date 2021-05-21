@@ -5623,6 +5623,10 @@ body a:focus, body a:hover {
   .pricing_area .plan h2 {
     font-size: 30px;
   }
+  
+  .pricing_area .plan ul li {
+    font-size: 15px;
+  }
 
   .faq_area h2 {
     font-size: 26px;

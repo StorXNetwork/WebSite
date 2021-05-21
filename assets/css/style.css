@@ -2498,32 +2498,49 @@ body a:focus, body a:hover {
 .pricing_area .nav-tabs {
   border: 0;
   box-shadow: 0px 0px 20px 0px rgba(218, 218, 218, 0.45);
-  background: #1be394;
+  background: linear-gradient(to right, #f9c204, #ed841a);
   border-radius: 30px;
-  height: 29px;
+  height: 30px;
   width: 60px;
   display: block;
   margin: 0 auto;
   padding: 3px;
-  margin-bottom: 60px;
+  margin-top: 40px;
+  margin-bottom: 10px;
 }
 .pricing_area .nav-tabs li {
   display: inline-block;
 }
-.pricing_area .nav-tabs li:before, .pricing_area .nav-tabs .platform_features li.platform_row:after, .platform_features .pricing_area .nav-tabs li.platform_row:after {
-  content: "Monthly Billing";
+/*.pricing_area .nav-tabs li:before, .pricing_area .nav-tabs .platform_features li.platform_row:after, .platform_features .pricing_area .nav-tabs li.platform_row:after {
+  content: "Individual";
   font: 400 22px/1 "Poppins", sans-serif;
   color: #525252;
   position: absolute;
-  margin-left: -170px;
+  margin-left: -120px;
 }
 .pricing_area .nav-tabs li:last-child:before, .pricing_area .nav-tabs .platform_features li.platform_row:last-child:after, .platform_features .pricing_area .nav-tabs li.platform_row:last-child:after {
-  content: "Annual Billing";
+  content: "Enterprise";
   margin-left: 40px;
+}*/
+.pricing_area .nav-tabs li a .left-text {
+    font-size: 20px;
+	font-weight: 400;
+	line-height:1;
+    color: #525252;
+    position: absolute;
+    margin-left: -110px;
+}
+.pricing_area .nav-tabs li a .right-text {
+    font-size: 20px;
+	font-weight: 400;
+	line-height:1;
+    color: #525252;
+    position: absolute;
+    margin-left: 42px;
 }
 .pricing_area .nav-tabs li a {
-  width: 23px;
-  height: 23px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   background: transparent;
   display: block;
@@ -2532,38 +2549,58 @@ body a:focus, body a:hover {
   background: #fff;
 }
 .pricing_area .tab-content {
-  border: 1px solid #eeeeee;
-  padding-top: 70px;
-  padding-bottom: 40px;
+  /*border: 1px solid #eeeeee;*/
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.pricing_area .tab-content > .tab-pane.fade {
+  transition: opacity .15s linear;
 }
 .pricing_area .plan {
-  max-width: 370px;
+  height: 100%;
+  /*max-width: 370px;
   padding: 0 40px;
-  border-right: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;*/
+  padding: 25px;
+  background: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgb(0 0 0 / 10%);
+  
+  flex-grow: 1;
+  display: flex;
+  position: relative;
+  flex-direction: column;
 }
 .pricing_area .plan:last-child {
   border-right: 0;
 }
 .pricing_area .plan h4 {
-  font: 500 28px/1 "Poppins", sans-serif;
-  color: #525252;
-  padding-bottom: 15px;
+  font: 500 20px/1 "Poppins", sans-serif;
+  color: #2582ff;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+}
+.pricing_area .plan h1 {
+  font: 600 36px/1 "Poppins", sans-serif;
+  color: #1be394;
 }
 .pricing_area .plan h2 {
-  font: 600 50px/1 "Poppins", sans-serif;
+  font: 600 32px/1 "Poppins", sans-serif;
   color: #1be394;
 }
 .pricing_area .plan h2 small {
-  font: 500 28px/1 "Poppins", sans-serif;
+  font: 400 16px/1 "Poppins", sans-serif;
+  padding-left: 5px;
 }
 .pricing_area .plan h6 {
-  font: 400 16px/1 "Poppins", sans-serif;
-  color: #525252;
-  padding-top: 10px;
-  padding-bottom: 20px;
+  font: 400 14px/1 "Poppins", sans-serif;
+  color: #9c9c9c;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
   position: relative;
 }
-.pricing_area .plan h6:after {
+/*.pricing_area .plan h6:after {
   content: "";
   left: 0;
   bottom: 0;
@@ -2571,30 +2608,40 @@ body a:focus, body a:hover {
   height: 2px;
   background: #eeeeee;
   position: absolute;
-}
+}*/
 .pricing_area .plan h5 {
   font: 500 22px/1 "Poppins", sans-serif;
   color: #525252;
   padding-top: 38px;
 }
 .pricing_area .plan ul {
-  padding: 20px 0;
-  padding-bottom: 30px;
+    margin-top: 15px;
+    padding: 15px 0;
+    padding-bottom: 25px;
+    border-top: 1px solid #d8d9da;
 }
 .pricing_area .plan ul li {
-  font: 400 15px/40px "Poppins", sans-serif;
+  font: 400 13.6px/26px "Poppins", sans-serif;
   color: #525252;
 }
 .pricing_area .plan ul li i {
   color: #1be394;
-  font-size: 16px;
-  padding-right: 10px;
+  font-size: 13px;
+  padding-right: 6px;
+}
+.pricing_area .plan ul li.c_1 {
+  color: #dcdce0 !important;
 }
 .pricing_area .plan ul li .c_2 {
   color: #fdc5c5;
 }
+.pricing_area .plan .price-btn-block {
+    align-self: flex-start;
+    margin-top: auto;
+}
 .pricing_area .plan .theme_btn {
-  min-width: 224px;
+  /*min-width: 224px;*/
+  padding: 8px 20px !important;
 }
 .pricing_area .plan .tb_2 {
   background: #1be394;
@@ -2602,12 +2649,16 @@ body a:focus, body a:hover {
 .pricing_area .plan .tb_2:hover, .pricing_area .plan .tb_2:focus {
   background: #5079f7;
 }
+.pricing_area .plan_2 h1 {
+  color: #7961a7;
+}
 .pricing_area .plan_2 h2 {
-  color: #5079f7;
+  color: #7961a7;
 }
 .pricing_area .plan_2 ul li i {
   color: #5079f7;
 }
+
 .pricing_area .plan_3 h2 {
   color: #c48dfd;
 }
@@ -2620,6 +2671,37 @@ body a:focus, body a:hover {
 .pricing_area .plan_3 .theme_btn:hover, .pricing_area .plan_3 .theme_btn:focus {
   background: #5079f7;
 }
+.pricing_blocks .col-sm-gap {padding-left: 8px;padding-right: 8px;}
+
+.gradient-text {
+  color: #7fdd85;
+  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: hue 1s infinite linear;
+}
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+.fw-4 {font-weight: 400!important;}
+.fw-5 {font-weight: 500!important;}
+.fw-6 {font-weight: 600!important;}
+.fw-8 {font-weight: 800!important;}
+
+.fs-12 {font-size: 12px!important;}
+.fs-14 {font-size: 14px!important;}
+.fs-16 {font-size: 16px!important;}
+.fs-18 {font-size: 18px!important;}
+.fs-20 {font-size: 20px!important;}
+.fs-22 {font-size: 22px!important;}
+.fs-24 {font-size: 24px!important;}
+.fs-26 {font-size: 26px!important;}
 
 /*----------------------------------------------------*/
 .our_blog_area {
@@ -5196,7 +5278,7 @@ body a:focus, body a:hover {
     padding-top: 0;
   }
   .pricing_area .tab-content .plan {
-    border: 1px solid #eeeeee !important;
+    /*border: 1px solid #eeeeee !important;*/
     padding: 30px 20px;
   }
 
@@ -5382,8 +5464,9 @@ body a:focus, body a:hover {
   }
 
   .pricing_area .tab-content .plan {
-    max-width: 370px;
-    margin: 0 auto 30px;
+    /*max-width: 370px;
+    margin: 0 auto 30px;*/
+	padding: 25px 20px;
   }
 
   .strategy_area h2, .management_area .management h2, .management_area .highlights h2, .management_area .have_idea h2 {
@@ -5532,6 +5615,13 @@ body a:focus, body a:hover {
   .pricing_area .tab-content {
     padding-left: 15px;
     padding-right: 15px;
+  } 
+  
+  .pricing_area .plan h1 {
+    font-size: 34px;
+  }
+  .pricing_area .plan h2 {
+    font-size: 30px;
   }
 
   .faq_area h2 {
@@ -5603,7 +5693,7 @@ body a:focus, body a:hover {
     text-align: left;
     font: 500 36px/45px "Poppins", sans-serif;
     color: #254a81;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
 }
 .pricing_area p {
     padding-top: 0px;
@@ -5738,16 +5828,3 @@ table.pricing-table th span.fw-5 {
 .storx_applications:hover, .storx_applications .services_item a:focus {
   color: #5079f7;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

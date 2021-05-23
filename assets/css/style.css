@@ -750,13 +750,15 @@ body a:focus, body a:hover {
   border-bottom: 1px solid #eaeef6;
 }
 .banner_area h2 {
-  font: 500 45px/50px "Poppins", sans-serif;
+  /*font: 500 45px/50px "Poppins", sans-serif;*/
+  font: 500 32px/44px "Poppins", sans-serif;
   color: #254a81;
   padding-bottom: 5px;
   padding-top: 60px;
 }
 .banner_area p {
   font-size: 18px;
+  line-height: 26px;
   padding-top: 20px;
 }
 .banner_area .theme_btn {
@@ -829,11 +831,13 @@ body a:focus, body a:hover {
   background-image: -webkit-linear-gradient(-30deg, #0d1e42 0%, #4a46fe 75%);
   background-image: -ms-linear-gradient(-30deg, #0d1e42 0%, #4a46fe 75%);
   position: relative;
-  padding-top: 180px;
+  /*padding-top: 180px;*/
+  padding-top: 190px;
   padding-bottom: 150px;
   z-index: 1;
 }
-.ba_3:before, .platform_features .ba_3.platform_row:after {
+/*.ba_3:before, .platform_features .ba_3.platform_row:after {*/
+.platform_features .ba_3.platform_row:after {
   content: "";
   position: absolute;
   left: 0;
@@ -848,14 +852,14 @@ body a:focus, body a:hover {
   content: "";
   position: absolute;
   right: 0;
-  bottom: 120px;
-  background: url("../images/banner-bg-shap.png") no-repeat right bottom;
+  bottom: 30px;
+  background: url("../images/banner-bg-shap-home.png") no-repeat right bottom;
   height: 100%;
   width: 100%;
   z-index: -1;
 }
 .ba_3 .banner_con {
-  padding-top: 75px;
+  /*padding-top: 75px;*/
 }
 .ba_3 h4 {
   color: #fff;
@@ -1499,7 +1503,7 @@ body a:focus, body a:hover {
   box-shadow: 0px 0px 30px 0px rgba(186, 184, 191, 0.35);
   margin: 0 auto 15px;
   text-align: center;
-  padding: 30px 20px;
+  padding: 30px 50px;
   transition: all 300ms linear 0s;
 }
 .platform_features .platform:hover, .platform_features .platform:focus {
@@ -1683,7 +1687,7 @@ body a:focus, body a:hover {
     max-width: 100%;
 	border-radius: 10px;
 }
-.platform_features .yop_video .popup-youtube {
+/*.platform_features .yop_video .popup-youtube {
 	position: absolute;
     top: calc(50% - 40px);
     left: calc(50% - 40px);
@@ -1718,8 +1722,176 @@ body a:focus, body a:hover {
     position: absolute;
     right: -5px;
     top: -5px;
-    /*z-index: -1;*/
+}*/
+
+/* ============================================================== 
+     Video Button Play
+=================================================================== */
+.video-play-button {  
+  -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    box-sizing: content-box;
+    color: #ffffff;
+    display: block;
+    font-size: 40px;
+    /*width: 40px;*/
+    height: 40px;
+    left: 50%;
+    line-height: 40px;
+    margin-top: 25px;
+    padding: 0 0 0 10px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 10;
 }
+
+.text-dark .video-play-button {
+  color: #4ac4f3;
+}
+
+.video-play-button:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: #ed4a19 repeat scroll 0 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-animation: pulse-border 1500ms ease-out infinite;
+  animation: pulse-border 1500ms ease-out infinite;
+}
+
+.video-play-button:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: #ed4a19 repeat scroll 0 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  transition: all 200ms;
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  -ms-transition: all 200ms;
+  -o-transition: all 200ms;
+}
+.video-play-button:hover,
+.video-play-button:focus {
+  color: #ffffff;
+  text-decoration: none;
+}
+.video-play-button:hover:after {
+  background-color: #ed4a19;
+}
+
+
+.banner_con.simple-video .video-play-button {
+  color: #4ac4f3;
+}
+.banner_con.simple-video .video-play-button:before {
+  background: #ffffff repeat scroll 0 0;
+}
+.banner_con.simple-video .video-play-button:after {
+  background: #ffffff repeat scroll 0 0;
+}
+.banner_con.simple-video .video-play-button:hover,
+.banner_con.simple-video .video-play-button:focus {
+  color: #4ac4f3;
+  text-decoration: none;
+  /*background-color: #ffffff;*/
+}
+.banner_con.simple-video .video-play-button:hover:after {
+  background-color: #ffffff;
+}
+
+@-webkit-keyframes pulse-border {
+  0% {
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-border {
+  0% {
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
+}
+.video-play-button i {
+  display: block;
+  position: relative;
+  z-index: 3;
+}
+
+
+
+.banner_con.simple-video a {
+    float: left;
+    text-align: center;
+}
+.banner_con.simple-video .video-play-button {
+    bottom: inherit;
+    float: left;
+    left: 0;
+    margin-left: -50px;
+    position: relative;
+    top: 8px;
+    transform: inherit;
+    font-size: 20px;
+    padding: 0;
+}
+.banner_con.simple-video .video-play-button::before {
+    height: 46px;
+    width: 46px;
+}
+.banner_con.simple-video .video-play-button::after {
+    height: 46px;
+    width: 46px;
+}
+.banner_con.simple-video .video-play-button i {
+    line-height: 40px;
+}
+.banner_con.simple-video .video-play-button span {
+	top: -40px;
+    left: 125px;
+	padding-left: 0px;
+	display: inline;
+}
+
+/* ============================================================== 
+     Video Button Play
+=================================================================== */
 
 /*----------------------------------------------------*/
 .cloud_agency_area {
@@ -4954,11 +5126,13 @@ body a:focus, body a:hover {
   }
 
   .ba_3 {
-    padding-bottom: 175px;
+    /*padding-bottom: 175px;*/
+	padding-bottom: 120px;
   }
   .ba_3 .rs_banner {
     display: block;
-    max-width: 100%;
+    /*max-width: 100%;*/
+	max-width: 105%;
   }
 }
 @media (max-width: 1199px) {
@@ -4972,7 +5146,8 @@ body a:focus, body a:hover {
   }
 
   .banner_area h2 {
-    font-size: 40px;
+    font-size: 26px;
+	line-height: 36px;
     padding-top: 0;
   }
 
@@ -5163,6 +5338,11 @@ body a:focus, body a:hover {
   .main_header_area .navbar .right_nav li .get_m {
     display: inline-block;
   }
+  
+  .ba_3 .rs_banner {
+    display: block;
+    max-width: 100%;
+   }
 
   .footer_area .footer_logo {
     margin-bottom: 40px;
@@ -5320,6 +5500,10 @@ body a:focus, body a:hover {
   .contact_info .quick_call {
     padding: 50px 15px;
   }
+  
+  .platform_features .platform {
+    padding: 30px 25px;
+  }
 
   .platform_features .platform_row:before, .platform_features .platform_row:after {
     display: none;
@@ -5387,6 +5571,11 @@ body a:focus, body a:hover {
   .experience_cta_block h2 {
     font-size: 26px;
     line-height: 30px;
+  }
+  
+   .banner_area h2 {
+    font-size: 25px;
+    line-height: 34px;
   }
 
   .ba_2 .banner_con {
@@ -5562,7 +5751,7 @@ body a:focus, body a:hover {
   }
   .banner_area h2 {
     font-size: 25px;
-    line-height: 30px;
+    line-height: 34px;
   }
   .banner_area p {
     font-size: 16px;
@@ -5630,7 +5819,7 @@ body a:focus, body a:hover {
   }
   
   .pricing_area .plan ul li {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .faq_area h2 {
@@ -5683,6 +5872,12 @@ body a:focus, body a:hover {
   .ba_3 span {
     display: block;
     padding-left: 0;
+  }
+  
+  .experience_cta_block .theme_btn {
+    margin: 0 2px;
+	padding: 10px 20px;
+	min-width: 150px;
   }
 
   .strategy_area .visit_website {

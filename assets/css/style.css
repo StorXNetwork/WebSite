@@ -1739,7 +1739,7 @@ body a:focus, body a:hover {
     height: 40px;
     left: 50%;
     line-height: 40px;
-    margin-top: 25px;
+    /*margin-top: 25px;*/
     padding: 0 0 0 10px;
     position: absolute;
     top: 50%;
@@ -1866,7 +1866,7 @@ body a:focus, body a:hover {
     left: 0;
     margin-left: -50px;
     position: relative;
-    top: 8px;
+    top: 25px;
     transform: inherit;
     font-size: 20px;
     padding: 0;
@@ -5875,7 +5875,7 @@ body a:focus, body a:hover {
   }
   
   .experience_cta_block .theme_btn {
-    margin: 0 2px;
+    margin: 5px 2px;
 	padding: 10px 20px;
 	min-width: 150px;
   }

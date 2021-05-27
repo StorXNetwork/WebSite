@@ -2620,15 +2620,24 @@ body a:focus, body a:hover {
   max-width: 970px;
   margin: 0 auto;
 }
+.faq_area .frequently h2 {
+  text-align: left;
+  font: 500 26px/28px "Poppins", sans-serif;
+  color: #254a81;
+  padding-bottom: 35px;
+}
 .faq_area .frequently .faq a {
-  font: 500 18px/27px "Poppins", sans-serif;
+  font: 500 16px/22px "Poppins", sans-serif;
   color: #201818;
   display: block;
   border-bottom: 1px solid #f7f8fa;
-  padding: 20px 30px;
+  padding: 15px 30px;
   background: #FFFFFF;
   position: relative;
   padding-right: 50px;
+}
+.faq_area .frequently .faq a:hover, .faq_area .frequently .faq a:focus {
+  text-decoration: none;
 }
 .faq_area .frequently .faq a:after {
   content: "\f106";
@@ -2639,7 +2648,20 @@ body a:focus, body a:hover {
   font-weight: 900;
   font-size: 22px;
   color: #201818;
-  top: 20px;
+  /*top: 20px;*/
+  top: 30%;
+  transition: all 300ms linear 0s;
+}
+.faq_area .frequently .faq a:before {
+  content: "\f111";
+  position: absolute;
+  top: 0;
+  left: 12px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 7px;
+  color: #ababab;
+  top: 15px;
   transition: all 300ms linear 0s;
 }
 .faq_area .frequently .faq a.collapsed {
@@ -2649,12 +2671,45 @@ body a:focus, body a:hover {
 .faq_area .frequently .faq a.collapsed:after {
   transform: rotate(180deg);
 }
-.faq_area .frequently .faq p {
-  padding: 10px 30px 20px;
+.faq .faq-ans {
+  padding: 12px 25px 16px;
   background: #FFFFFF;
 }
+.faq .faq-ans ol {
+  font-size: 15px;
+  color: rgba(24, 24, 24, 0.6);
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+.faq .faq-ans ol li {
+  list-style-type: decimal;
+  padding-bottom: 6px;
+}
+.faq_area .frequently p {
+  font-size: 15px;
+  line-height: 24px;
+  padding: 0px 0px 10px 0px;
+}
+.faq_area .frequently .faq p {
+  font-size: 15px;
+  line-height: 24px;
+  padding: 0px 0px 10px 0px;
+  background: #FFFFFF;
+}
+.faq_area .frequently .faq p a {
+  color: rgb(28, 28, 225);
+  text-decoration: none;
+  font-size: inherit;
+  font-weight: inherit;
+  padding: 0px;
+  display: contents;
+}
+.faq_area .frequently .faq p a:hover {
+  color: rgb(28, 28, 225);
+  text-decoration: underline;
+}
 .faq_area .frequently .faq p:last-child {
-  padding-top: 0px;
+  padding-bottom: 0px;
 }
 .fa_2 {
   padding: 100px 0;
@@ -2757,8 +2812,12 @@ body a:focus, body a:hover {
   color: #1be394;
 }
 .pricing_area .plan h2 {
-  font: 600 32px/1 "Poppins", sans-serif;
+  font: 600 22px/1 "Poppins", sans-serif;
   color: #1be394;
+  letter-spacing: -0.75px;
+}
+.pricing_area .plan h2 .token-value {
+  font: 600 30px/1 "Poppins", sans-serif;
 }
 .pricing_area .plan h2 small {
   font: 400 16px/1 "Poppins", sans-serif;
@@ -2875,10 +2934,10 @@ body a:focus, body a:hover {
 .fs-24 {font-size: 24px!important;}
 .fs-26 {font-size: 26px!important;}
 
-.letter-spacing-2 {letter-spacing: 0.125rem;}
-.letter-spacing-4 {letter-spacing: 0.250rem;}
-.letter-spacing-6 {letter-spacing: 0.500rem;}
-.letter-spacing-8 {letter-spacing: 0.750rem;}
+.letter-spacing-2 {letter-spacing: 0.125rem!important;}
+.letter-spacing-4 {letter-spacing: 0.250rem!important;}
+.letter-spacing-6 {letter-spacing: 0.500rem!important;}
+.letter-spacing-8 {letter-spacing: 0.750rem!important;}
 
 /*----------------------------------------------------*/
 .our_blog_area {
@@ -5224,6 +5283,14 @@ body a:focus, body a:hover {
   .main_header_area .navbar .right_nav li .get_m {
     display: none;
   }
+}
+@media only screen and (max-width: 1199px) and (min-width: 991px)  {
+	.pricing_area .plan h2 {
+    	font-size: 18px;
+	}
+	.pricing_area .plan h2 .token-value {
+    	font-size: 28px;
+	}
 }
 @media (max-width: 991px) {
   .main_header_area {

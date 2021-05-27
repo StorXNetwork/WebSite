@@ -2675,6 +2675,9 @@ body a:focus, body a:hover {
   padding: 12px 25px 16px;
   background: #FFFFFF;
 }
+.faq .faq-ans .table {
+  color: rgba(24, 24, 24, 0.6);
+}
 .faq .faq-ans ol {
   font-size: 15px;
   color: rgba(24, 24, 24, 0.6);

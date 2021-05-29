@@ -1,6 +1,7 @@
 // JavaScript Document
 Highcharts.chart('pieChart', {
-    colors: ['#27a88a', '#7335a6', '#f84f67', '#fca302'],
+    //colors: ['#e900d2', '#f72828', '#f84f67', '#fca302', '#1f96fc', '#54efbc', '#e900d2', '#7be215', '#7335a6', '#27a88a'],
+	colors: ['#f93232', '#f80094', '#a440b8', '#6c40b8', '#0772de', '#00d96c', '#7bd422', '#f5cc00', '#f2a200', '#ff9500', '#ff9500', '#e04b00'],
 	chart: {
         backgroundColor: '#f7f8fa',
 		plotBackgroundColor: '#f7f8fa',
@@ -28,7 +29,8 @@ Highcharts.chart('pieChart', {
 			dataLabels: {
                 enabled: true,
                 format: '<b>{point.percentage:.2f} %</b>',
-                distance: -50,
+				style: { fontFamily: '\'Lato\', sans-serif', lineHeight: '14px', fontSize: '9px', textOutline: false },
+                distance: -30,
                 filter: {
                     property: 'percentage',
                     operator: '>',
@@ -41,19 +43,34 @@ Highcharts.chart('pieChart', {
         //name: 'Brands',
         colorByPoint: true,
         data: [{
-            name: 'Foundation/Ecosystem Development and Bounty',
-            y: 50.00
+            name: 'Private Placement',
+            y: 7.00
         }, {
-            name: 'Co-founders, Advisors and Core Team Members',
-            y: 20.00
+            name: 'Seed Round',
+            y: 10.00
             //sliced: true,
             //selected: true
         }, {
-            name: 'Pre-Placement/ICO Placement',
-            y: 20.00
+            name: 'Community Placement',
+            y: 23.00
         }, {
-            name: 'Contingency',
+			name: 'Core Team',
+            y: 17.50
+        }, {
+			name: 'Technology Ops',
+            y: 2.50
+        }, {
+			name: 'Data Farming Reward',
+            y: 12.30
+        }, {
+			name: 'Ecosystems Adoption Rewards',
+            y: 12.70
+        }, {
+			name: 'Contingency',
             y: 10.00
+        }, {
+            name: 'Partnership, Market Making & Listing',
+            y: 5.00
         }]
     }]
 });

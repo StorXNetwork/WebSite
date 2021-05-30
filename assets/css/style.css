@@ -1672,6 +1672,9 @@ body a:focus, body a:hover {
     z-index: 1;
     margin-bottom: 50px;
 }
+.platform_features .yop_video .video-play-button {
+	left: 50%;
+}
 .platform_features .yop_video:before, .platform_features .yop_video:after {
     content: "";
     position: absolute;

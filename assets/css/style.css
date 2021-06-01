@@ -193,6 +193,12 @@ body iframe {
 body i:before, body .platform_features i.platform_row:after, .platform_features body i.platform_row:after {
   margin-left: 0px !important;
 }
+a {
+color: rgb(28, 28, 225);
+}
+a:hover, a:focus {
+color: rgb(28, 28, 225);
+}
 body a, body .btn, body button {
   outline: none;
   transition: all 300ms linear 0s;
@@ -206,7 +212,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
   transition: all 300ms linear 0s;
 }
 body a:focus, body a:hover {
-	color: #007bff;
+	color: rgb(28, 28, 225);
 	text-decoration: underline;
 }
 .ib {font-style:italic;font-weight:600;}
@@ -4684,7 +4690,10 @@ body a:focus, body a:hover {
 	-webkit-box-shadow: 0 2px 5px 3px rgba(12, 21, 46, 0.1);
     box-shadow: 0 2px 5px 3px rgba(12, 21, 46, 0.1)
 }
-
+.tokenmetrics_block p {
+	font-weight: 500;
+	line-height: 22px;
+}
 
 #pieChart {
   min-width: 310px;
@@ -5014,9 +5023,6 @@ body a:focus, body a:hover {
 	max-width: 150px;
 	height: auto;
 }
-
-/*----------------- Login Signup Area -----------------*/
-/*----------------- Login Signup Area -----------------*/
 
 /*----------------- Footer Area -----------------*/
 .footer_area {
@@ -6051,7 +6057,7 @@ body a:focus, body a:hover {
   }
 }
 
-/*----------------------------------------------------*/
+/*---------------------- Pricing Area ------------------*/
 .pricing_area {
     display: block;
     overflow: hidden;
@@ -6209,3 +6215,84 @@ table.pricing-table th span.fw-5 {
   font-size: 14px;
   padding: 6px 22px;
 }
+
+
+
+
+
+
+/*----------------- Exchange Listing Area -----------------*/
+.exchange-listing .list-block {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+.exchange-listing .list-block > li {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    -ms-flex: 0 0 33%;
+    flex: 0 0 33%;
+    width: 33%;
+	max-width: 33%;
+    margin: 0;
+    position: relative;
+    padding-left: 32px;
+    margin: 20px 0;
+}
+@media (max-width: 991px) {
+.exchange-listing .list-block > li {
+    -ms-flex: 0 0 49%;
+    flex: 0 0 49%;
+    width: 49%;
+	max-width: 49%;
+}
+}
+@media (max-width:575.98px) {
+.exchange-listing .list-block > li {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    width: 100%;
+	max-width: 100%;
+}
+}
+.exchange-listing .list-block > li::before {
+    position: absolute;
+    left: 0;
+    top: 11px;
+    width: 22px;
+    height: 2px;
+    background: #ed8619;
+    content: "";
+}
+.exchange-listing .list-block > li span {
+    font-size: 17px;
+    color: rgba(24, 24, 24, 0.8);
+    margin: 0;
+}
+.exchange-listing .list-block > li p {
+    font-size: 18px;
+	font-weight: 600;
+    margin: 0;
+}
+.exchange-listing p {
+    line-height: 24px;
+	margin-bottom: 15px;
+}
+.exchange-listing p a {
+    font-size: 15px;
+}
+.link-break-out{
+	text-align:left;
+	overflow-wrap:break-word;
+	word-wrap:break-word;
+	-ms-word-break:break-all;
+	word-break:break-all;
+	word-break:break-word;
+	-ms-hyphens:auto;
+	-moz-hyphens:auto;
+	-webkit-hyphens:auto;
+	hyphens:auto;
+}
+/*----------------- Exchange Listing Area -----------------*/

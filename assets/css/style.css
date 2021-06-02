@@ -838,7 +838,7 @@ body a:focus, body a:hover {
   background-image: -ms-linear-gradient(-30deg, #0d1e42 0%, #4a46fe 75%);
   position: relative;
   /*padding-top: 180px;*/
-  padding-top: 190px;
+  padding-top: 210px;
   padding-bottom: 150px;
   z-index: 1;
 }
@@ -846,10 +846,10 @@ body a:focus, body a:hover {
 .platform_features .ba_3.platform_row:after {
   content: "";
   position: absolute;
-  left: 0;
+  left: 0;  width: 100%;
+
   right: 0;
   bottom: 0;
-  width: 100%;
   background: url("../images/banner-angle-shap.png") no-repeat;
   height: 139px;
   z-index: -1;
@@ -5885,14 +5885,15 @@ body a:focus, body a:hover {
   }
 
   .banner_area {
-    padding-top: 160px;
+    padding-top: 200px;
   }
   .banner_area h2 {
     font-size: 25px;
     line-height: 34px;
   }
   .banner_area p {
-    font-size: 16px;
+    font-size: 14px;
+	line-height: 20px;
   }
   .testimonial_area .testimonial_s h2 {
     font-size: 25px;

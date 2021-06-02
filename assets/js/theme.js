@@ -24,10 +24,12 @@ For Mega menu and Mobile menu
 	StorX.HeaderFixd = function() {
 		var HscrollTop  = $(window).scrollTop();  
 	    if (HscrollTop >= 100) {
-	       $('header').addClass('fixed-header');
+	       $('header').addClass('fixed-header');		   
+		   $(".top-header-area").css("display", "none");
 	    }
 	    else {
 	       $('header').removeClass('fixed-header');
+		   $(".top-header-area").css("display", "block");
 	    }
 	}
 
@@ -43,8 +45,17 @@ For Mega menu and Mobile menu
        }
       });
     }	
-
-
+	
+	
+	/* ---------------------------------------------- /*
+	 * Menu Color change
+	/* ---------------------------------------------- */
+	StorX.MenuColorChange = function() {
+		$(".navbar-toggler").click(function(){
+    		$(".header-nav").toggleClass("menuColorChange");
+		});
+	}
+	
 	/* ---------------------------------------------- /*
 	 * Mega Menu
 	/* ---------------------------------------------- */
@@ -199,13 +210,14 @@ For Mega menu and Mobile menu
 		StorX.HeaderFixd(),
 		StorX.MenuClose(),
 		StorX.MegaMenu(),
+		StorX.MenuColorChange(),
 		StorX.OnePage(),
 		StorX.magnificPopup(),
 		StorX.sliderArea(),
 		StorX.scrollToTop()
 	});
 
-	// Document on Scrool
+	// Document on Scroll
 	$(window).on("scroll", function(){
 		StorX.HeaderFixd();
 	});

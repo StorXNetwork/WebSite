@@ -5763,6 +5763,7 @@ body a:focus, body a:hover {
   }
   .pages_banner p {
     font-size: 16px;
+	line-height: 24px;
   }
 
   .people_behind h2, .contribute-block h2 {
@@ -5918,6 +5919,14 @@ body a:focus, body a:hover {
   }
   
   .ba_3:after {
+	background-size: contain;
+  }
+
+  .pages_banner {
+	padding-top: 150px;
+  }
+    
+  .pages_banner:after {
 	background-size: contain;
   }
 

@@ -172,7 +172,48 @@ For Mega menu and Mobile menu
             	}
             })
         };
-    };  
+    };
+	
+	
+	
+	
+	/* ---------------------------------------------- /*
+	 * Client Logo Slider
+	/* ---------------------------------------------- */
+    StorX.clSlide = function(){
+        if ( $('.cl_slide').length ){ 
+            $('.cl_slide').owlCarousel({				
+				nav: false,
+				loop: true,
+				margin: 60,
+				dots: false,
+				autoplay: true,
+				autoplaySpeed: 1200,
+				autoplayTimeout: 4000,
+				autoplayHoverPause: true,
+				
+            	responsive: {
+            		0: {
+            			items: 2, 
+            		}, 
+            		575: {
+            			items: 2, 
+						margin: 30,
+            		}, 
+            		767: {
+            			items: 3, 
+						margin: 30,
+            		}, 
+            		991: {
+            			items: 4
+            		},
+            		1199: {
+            			items: 5
+            		}
+            	}
+            })
+        };
+    };
 	
 	
 	/* ---------------------------------------------- /*
@@ -214,6 +255,7 @@ For Mega menu and Mobile menu
 		StorX.OnePage(),
 		StorX.magnificPopup(),
 		StorX.sliderArea(),
+		StorX.clSlide(),
 		StorX.scrollToTop()
 	});
 

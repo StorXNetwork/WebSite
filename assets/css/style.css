@@ -1457,11 +1457,22 @@ body a:focus, body a:hover {
   text-align: center;
   padding-top: 70px;
   padding-bottom: 40px;
+  position: relative;
+}
+.media_area:before, .media_area:after {
+    content: "";
+    position: absolute;
+    right: 20%;
+    top: -35px;
+    background: url(../images/dots-sm-2.png) no-repeat;
+    height: 226px;
+    width: 215px;
+    z-index: -1;
 }
 .media_area h2 {
     font: 500 36px/45px "Poppins", sans-serif;
     color: #254a81;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 .media_area h6 {
   display: block;
@@ -5727,6 +5738,10 @@ body a:focus, body a:hover {
     font-size: 26px!important;
     line-height: 30px!important;
   }
+  
+  .media_area h2 {
+   padding-bottom: 10px;
+  }
 
   .store-data-block h1 {
     font-size: 28px;
@@ -6314,3 +6329,7 @@ table.pricing-table th span.fw-5 {
 	hyphens:auto;
 }
 /*----------------- Exchange Listing Area -----------------*/
+
+
+
+

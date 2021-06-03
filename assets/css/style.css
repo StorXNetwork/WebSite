@@ -937,8 +937,8 @@ body a:focus, body a:hover {
   overflow: hidden;
   position: relative;
   z-index: 1;
-  padding-top: 100px;
-  padding-bottom: 75px;  
+  padding-top: 125px;
+  padding-bottom: 55px;  
   background-image: -moz-linear-gradient(-23deg, #133E9C 0%, #4a46fe 99%);
   background-image: -webkit-linear-gradient(-23deg, #133E9C 0%, #4a46fe 99%);
   background-image: -ms-linear-gradient(-23deg, #133E9C 0%, #4a46fe 99%);
@@ -1450,34 +1450,42 @@ body a:focus, body a:hover {
   max-width: 290px;
 }
 
-/*----------------------------------------------------*/
-.client_logo_area {
+/*------------------------ Media logo ----------------------*/
+.media_area {
   display: block;
   overflow: hidden;
   text-align: center;
   padding-top: 70px;
+  padding-bottom: 40px;
 }
-.client_logo_area h6 {
+.media_area h2 {
+    font: 500 36px/45px "Poppins", sans-serif;
+    color: #254a81;
+    padding-bottom: 10px;
+}
+.media_area h6 {
   display: block;
   overflow: hidden;
   font: 400 18px/30px "Poppins", sans-serif;
   color: rgba(24, 24, 24, 0.8);
   padding-bottom: 35px;
 }
-.client_logo_area .cl_slide {
+.media_area .cl_slide {
   cursor: w-resize;
 }
-.client_logo_area .cl_slide img {
+.media_area .cl_slide img {
   width: auto;
   margin: 0 auto;
 }
-.client_logo_area .cl_slide .item {
+.media_area .cl_slide .item {
   height: 85px;
   width: 100%;
   display: flex;
   align-items: center;
 }
 
+
+/*------------------------ Platform features ----------------------*/
 .platform_features {
   display: block;
   overflow: hidden;
@@ -2341,7 +2349,7 @@ body a:focus, body a:hover {
     content: "";
     display: block;
     position: absolute;
-    bottom: -4px;
+    bottom: -2px;
     width: 100%;
     height: 1px;
     background-color: rgba(82,0,198,.17);
@@ -4983,7 +4991,7 @@ body a:focus, body a:hover {
 }
 
 .host-node-block h3 {
-    font: 500 30px/36px "Poppins", sans-serif;
+    font: 500 28px/34px "Poppins", sans-serif;
     color: #254a81;
     padding-bottom: 30px;
 }
@@ -5715,7 +5723,7 @@ body a:focus, body a:hover {
     padding-bottom: 50px;
   }
 
-  .welcome_content h2, .apis_data h2, .why_storx h2, .token_area h2, .platform_features h2, .ecosytem_partners h2, .storx_applications h2 {
+  .welcome_content h2, .apis_data h2, .why_storx h2, .token_area h2, .platform_features h2, .ecosytem_partners h2, .storx_applications h2, .media_area h2 {
     font-size: 26px!important;
     line-height: 30px!important;
   }

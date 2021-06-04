@@ -1,6 +1,5 @@
 // JavaScript Document
 Highcharts.chart('pieChart', {
-    //colors: ['#e900d2', '#f72828', '#f84f67', '#fca302', '#1f96fc', '#54efbc', '#e900d2', '#7be215', '#7335a6', '#27a88a'],
 	colors: ['#f93232', '#f80094', '#a440b8', '#6c40b8', '#0772de', '#00d96c', '#7bd422', '#f5cc00', '#f2a200', '#ff9500', '#ff9500', '#e04b00'],
 	chart: {
         backgroundColor: '#f7f8fa',

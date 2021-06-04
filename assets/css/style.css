@@ -6370,3 +6370,50 @@ table.pricing-table th span.fw-5 {
 }
 /*----------------- Exchange Listing Area -----------------*/
 
+
+
+
+.table-header {
+    font-weight: 500;
+	text-align: left!important;
+	/* Background color */
+    background: #d5eaf0;
+    /* Stick to the left */
+    left: 0;
+    position: sticky;
+    /* Displayed on top of other rows when scrolling */
+    z-index: 9;
+	min-width: 200px;
+	
+	border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.custom-table tbody tr.spacer td {
+    padding: 0 !important;
+    height: 0px;
+    border-radius: 0 !important;
+    background: transparent !important;
+}
+.custom-table-responsive {
+    font-size: 13px;
+}
+.custom-table-responsive .table td, .custom-table-responsive .table th {
+	padding: .65rem 0.75rem .65rem .95rem;
+    vertical-align: middle;
+	text-align: center;
+    border-top: 1px solid #f5f5f5;
+}
+.custom-table-responsive .table thead th {
+	background: #9DD929;
+    font-weight: 600;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+.custom-table-responsive .fas {
+	color: #00d96c;
+}
+.custom-table-responsive .asterisk {
+    color: #f2a200 !important;
+}

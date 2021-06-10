@@ -9,7 +9,7 @@
 *	Header
 -------------------------*/
 .navbar {padding: .75rem 1rem!important;}
-@media (max-width: 575px) {.top-header-area {font-size: 11px!important;padding: 10px 5px!important;}.top-header-area a {font-size: 11px!important;}}
+@media (max-width: 575px) {.top-header-area {font-size: 12px!important;padding: 10px 5px!important;}.top-header-area a {font-size: 11.6px!important;}}
 @media (min-width: 992px) { .header-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 99; padding: 0; }
   .header-nav .navbar { padding: 0; }
   .header-nav .navbar-brand .light-logo { display: block; }

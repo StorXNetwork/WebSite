@@ -2901,6 +2901,13 @@ body a:focus, body a:hover {
 .pricing_area .plan ul li {
   font: 400 13.6px/26px "Poppins", sans-serif;
   color: #525252;
+  line-height: 20px;
+  margin-left: 20px;
+  text-indent: -10px;
+  margin-bottom: 7px;
+}
+.pricing_area .plan ul li:last-child {
+  margin-bottom: 0px;
 }
 .pricing_area .plan ul li i {
   color: #1be394;

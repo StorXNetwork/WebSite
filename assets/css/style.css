@@ -955,7 +955,7 @@ body a:focus, body a:hover {
 }
 .pages_banner h2 {
   color: #fff;
-  font: 500 40px/1 "Poppins", sans-serif;
+  font: 400 40px/1 "Poppins", sans-serif;
   padding-bottom: 20px;
   padding-top: 60px;
 }
@@ -5142,6 +5142,11 @@ body a:focus, body a:hover {
 .footer_area .footer_logo .app_btn a:hover, .footer_area .footer_logo .app_btn a:focus {
   box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.5);
 }
+.footer_area .footer_widget.col-lg-2 {
+  -ms-flex: 0 0 19.666667%;
+  flex: 0 0 19.666667%;
+  max-width: 19.666667%;
+}
 .footer_area .footer_widget {
   padding-bottom: 50px;
 }
@@ -5154,10 +5159,10 @@ body a:focus, body a:hover {
   font: 400 13px/20px "Poppins", sans-serif;
   color: #7e8b9c;
   padding-top: 15px;
-  padding-right: 50px;
+  padding-right: 20px;
 }
 .footer_area .footer_widget .footer_nav li a {
-  font: 400 14px/30px "Poppins", sans-serif;
+  font: 400 14px/26px "Poppins", sans-serif;
   color: #7e8b9c;
 }
 .footer_area .footer_widget .footer_nav li a:hover, .footer_area .footer_widget .footer_nav li a:focus {
@@ -5268,6 +5273,45 @@ body a:focus, body a:hover {
 }
 .footer_2 .cr_2 .c_p {
   float: right;
+}
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+.footer_area .footer_widget.col-md-6 {
+    -ms-flex: 0 0 100%!important;
+    flex: 0 0 100%!important;
+    max-width: 100%!important;
+}
+.footer_area .footer_widget.col-lg-2 {
+    -ms-flex: 0 0 24.666667%;
+    flex: 0 0 24.666667%;
+    max-width: 24.666667%;
+}
+}
+@media screen and (max-width: 991px) {
+.footer_area .footer_widget p {
+    padding-right: 0px!important;
+}
+.footer_area .footer_widget.col-md-6 {
+    -ms-flex: 0 0 100%!important;
+    flex: 0 0 100%!important;
+    max-width: 100%!important;
+}
+.footer_area .footer_widget.col-lg-2 {
+    -ms-flex: 0 0 49.666667%;
+    flex: 0 0 49.666667%;
+    max-width: 49.666667%;
+}
+}
+@media screen and (max-width: 576px) {
+	.footer_area .footer_widget.col-md-6 {
+    -ms-flex: 0 0 100%!important;
+    flex: 0 0 100%!important;
+    max-width: 100%!important;
+}
+.footer_area .footer_widget.col-lg-2 {
+    -ms-flex: 0 0 100%!important;
+    flex: 0 0 100%!important;
+    max-width: 100%!important;
+}
 }
 /*----------------- Footer Area -----------------*/
 
@@ -6217,12 +6261,37 @@ table.pricing-table th span.fw-5 {
 .terms_area ol.ur {
 	margin-left: 40px;
 	font: 400 16px/28px "Poppins", sans-serif;
-	color: rgba(24, 24, 24, 0.8);
+	color: rgba(24, 24, 24, 0.6);
 }
 .privacy_area ol.ur li,
 .terms_area ol.ur li {
 	list-style-type: upper-roman;
-	padding-bottom: 6px;
+	padding-bottom: 10px;
+    line-height: 26px;
+}
+.privacy_area ol.la,
+.terms_area ol.la {
+	margin-left: 40px;
+	font: 400 16px/28px "Poppins", sans-serif;
+	color: rgba(24, 24, 24, 0.6);
+}
+.privacy_area ol.la li,
+.terms_area ol.la li {
+	list-style-type: lower-alpha;
+	padding-bottom: 10px;
+    line-height: 26px;
+}
+.privacy_area ol.ur li::marker,
+.terms_area ol.ur li::marker,
+.privacy_area ol.la li::marker,
+.terms_area ol.la li::marker {
+	font-weight: 600;
+}
+.privacy_area ol.la li ol.ur li,
+.terms_area ol.la li ol.ur li {
+	list-style-type: upper-roman;
+	padding-bottom: 10px;
+    line-height: 26px;
 }
 /*------------ Terms and Privacy Policy ------------*/
 

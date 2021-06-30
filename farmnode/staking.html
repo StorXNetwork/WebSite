@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>StorX Farm Node</title>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+
+    <link href="assets/css/fonts.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+    
+    <!--Navbar Start-->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky">
+            <div class="container">
+                <!-- LOGO -->
+                <a class="logo" href="index.html">
+                    <img src="assets/images/storx-logo-light.png" alt="" class="logo-light" />
+                    <img src="assets/images/storx-logo.png" alt="" class="logo-dark" />
+                </a>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Right side toggle and nav items -->
+                    <ul class="navbar-nav ml-auto" id="mySidenav">
+                        <li class="nav-item button">
+                            <a class="btn nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item button">
+                            <a class="btn nav-link" href="staking.html">Staking</a>
+                        </li>
+                        <li class="nav-item button">
+                            <a class="btn nav-link" href="tx-history.html">TX History</a>
+                        </li>
+                    </ul>
+                    <!-- Right side toggle and nav items -->
+                </div>
+                
+                <div class="mobile-footer-block">
+                    <ul class="navbar-nav mobile-footer-nav">
+                        <li class="nav-item button">
+                            <a href="#" class="btn nav-link" data-toggle="modal" data-target="#centermodal">Connect Wallet</a>
+                        </li>
+                        <li class="nav-item button">
+                        	<!--themeSwitcher Start-->
+                            <div class="themeSwitcher">
+                                <button id="theme-toggle" class="btn btn-link btn-sm small theme-toggle" type="button">
+                                <span class="d-block-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></span>
+                                <span class="d-block-dark"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></span>
+                            </button>
+                            </div>
+                            <!--themeSwitcher End-->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Navbar End -->
+
+    <!-- home start -->
+    <section class="bg-home bg-gradient red" id="home">
+        <!-- Particle Js -->
+        <div id="particles-js" class="particles-js"></div>
+    </section>
+    <!-- home end -->
+
+    <!-- Connect Wallet start -->
+    <section class="block-overlap pb-5">
+    	<div class="container">
+        	<div class="row text-center">
+            	<div class="col-sm-12 col-md-12 col-lg-10 offset-lg-1">
+                	<div class="stats-box p-4">
+                    	<h4 class="mb-2">Please Connect Wallet</h4>
+                        <p>Connect your wallet from the list to stake SRX.</p>
+                        <button class="btn btn-rounded btn-info" data-toggle="modal" data-target="#centermodal">Connect wallet</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <!-- Connet Wallet end -->
+    
+
+    <!-- Footer Starts -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer-wrap">
+                <div class="col-md-7">
+                    <p>&copy;2021 <a href="https://storx.tech" target="_blank">StorX</a>. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-5">
+                    <div class="privacy-terms">
+                        <ul class="list-inline mb-0">
+                        	<li class="list-inline-item"><a href="https://twitter.com/StorXNetwork" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/company/storxnetwork" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.facebook.com/StorXNetwork" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="list-inline-item"><a href="https://t.me/StorXNetwork" target="_blank"><i class="fas fa-paper-plane"></i></a></li>
+                            <li class="list-inline-item"><a href="https://github.com/StorXNetwork" target="_blank"><i class="fab fa-github"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.reddit.com/r/StorXNetwork" target="_blank"><i class="fab fa-reddit-alien"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Ends -->
+    
+    <!-- Back to top -->
+    <a href="#" class="back-to-top" id="back-to-top"> <i class="ti ti-arrow-up"> </i> </a>
+    <!-- Back to top Ends -->
+    
+    
+    <!-- Connect to a wallet modal -->
+	<div class="modal fade" id="centermodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+				<div class="modal-header border-bottom-0">
+                    <h5 class="modal-title" id="exampleModalLabel">Connect to a wallet</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+					<!--<p>Connect to a wallet</p>-->
+					<div class="wallet-connect-block">
+						<button class="wallect-connect-btn">
+							<div class="wallet-name"><h4>XinPay</h4></div>
+							<div class="wallet-icon"><img src="assets/images/wallets/xinpay-logo.png" alt="Icon"></div>
+						</button>
+						<button class="wallect-connect-btn" data-toggle="modal" data-target="#privateKey">
+							<div class="wallet-name"><h4>Private Key</h4></div>
+							<div class="wallet-icon"><img src="assets/images/wallets/privatekey-logo.png" alt="Icon"></div>
+						</button>
+						<button class="wallect-connect-btn" data-toggle="modal" data-target="#keyStore">
+							<div class="wallet-name"><h4>Key Store</h4></div>
+							<div class="wallet-icon"><img src="assets/images/wallets/keystore-logo.png" alt="Icon"></div>
+						</button>
+                        <button class="wallect-connect-btn">
+							<div class="wallet-name"><h4>D'CENT In App</h4></div>
+							<div class="wallet-icon"><img src="assets/images/wallets/dcent-logo.png" alt="Icon"></div>
+						</button>
+					</div>
+				</div>
+                <!--<div class="modal-footer border-top-0 d-flex justify-content-center">
+                  <button type="submit" class="btn btn-info">Close</button>
+                </div>-->
+            </div>
+		</div>
+    </div>
+	<!-- Connect to a wallet modal Ends -->
+    
+    
+    <!-- Connect to Private Key modal -->
+	<div class="modal fade" id="privateKey" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+				<div class="modal-header border-bottom-0">
+                    <h5 class="modal-title" id="exampleModalLabel">Connect with Private Key</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <form class="" role="form" action="staking.html">
+                    <div class="form-group"><label>Enter Private Key</label>
+                    <input type="text" class="form-control" placeholder="Enter Private Key"></div>
+                    <button type="submit" class="btn btn-rounded btn-info mb-2">Submit</button><div>
+                    </div>
+                    </form>
+                </div>
+                <div class="modal-footer border-top-0 d-flex justify-content-center">
+                  <button type="button" class="back" data-dismiss="modal"><i class="fas fa-long-arrow-alt-left"></i> Back</button>
+                </div>
+            </div>
+		</div>
+    </div>
+	<!-- Connect to Private Key modal Ends -->
+
+
+    <!-- Connect to Key Store modal -->
+	<div class="modal fade" id="keyStore" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+				<div class="modal-header border-bottom-0">
+                    <h5 class="modal-title" id="exampleModalLabel">Connect with Key Store</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <form class="" role="form" action="staking.html">
+						<div class="form-group">
+							<input type="file" class="form-file-input form-control">
+						</div>
+                        <div class="form-group"><label>Password</label>
+                    	<input type="password" class="form-control" placeholder="Enter Password"></div>
+                    	<button type="submit" class="btn btn-rounded btn-info mb-2">Submit</button><div>
+                    </div>
+                    </form>
+                </div>
+                <div class="modal-footer border-top-0 d-flex justify-content-center">
+                  <button type="button" class="back" data-dismiss="modal"><i class="fas fa-long-arrow-alt-left"></i> Back</button>
+                </div>
+            </div>
+		</div>
+    </div>
+	<!-- Connect to Key Store modal Ends -->                                                
+
+    <!-- javascript -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/scrollspy.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- custom js -->
+    <script src="assets/js/custom.js"></script>
+    
+    <!-- Theme Switcher js -->
+	<script src="assets/js/switcher/js.cookie.js"></script>
+    <script src="assets/js/switcher/jquery.style.switcher.js"></script>
+
+    <!-- Particles -->
+    <script src="assets/js/particles/particles.js"></script>
+    <script src="assets/js/particles/app-particles.js"></script>
+
+</body>
+
+</html>

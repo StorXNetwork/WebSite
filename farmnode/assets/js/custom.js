@@ -143,7 +143,7 @@
 	
 	
 	
-	SRXMaster.prototype.initThemeSwitcher = function() {		
+	SRXMaster.prototype.initThemeSwitcher = function() {
 	var toggle = document.getElementById("theme-toggle");	
 	var storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: darkTheme)").matches ? "darkTheme" : "lightTheme");
 	const htmlTag = document.getElementsByTagName('body')[0];
@@ -162,6 +162,24 @@
 	
 
 
+    
+	SRXMaster.prototype.initCounterUp = function() {
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000,
+            });
+        });		
+		
+		function numberWithCommas(x) {
+    		return x.toString().replace(/(\d+)(\d{3})/, '$1' + ',' + '$2');
+		}
+		$('.counter').each(function(){
+			var v_pound = $(this).html();
+			v_pound = numberWithCommas(v_pound);
+		$(this).html(v_pound)
+		})
+    },
 
 
 
@@ -175,6 +193,7 @@
 	  this.initDropdown();
 	  this.initTrunc();
 	  this.initThemeSwitcher();
+	  this.initCounterUp();
     },
     //init
     $.SRXMaster = new SRXMaster, $.SRXMaster.Constructor = SRXMaster

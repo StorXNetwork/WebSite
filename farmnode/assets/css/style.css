@@ -653,9 +653,6 @@ figure {
   font-size: 18px;
   margin-bottom: 0px;
 }
-.media-body p span {
-  font-size: 13px;
-}
 .media-body h2 {
   font-size: 14px;
   color: var(--text-color)!important;

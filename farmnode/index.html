@@ -74,6 +74,11 @@
                         <li class="nav-item button">
                             <a href="#" class="btn nav-link" data-toggle="modal" data-target="#centermodal">Connect Wallet</a>
                         </li>
+                        <li class="nav-item button d-none">
+                            <a data-toggle="modal" data-target="#balance" class="btn nav-link" href="#">Balance</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mobile-footer-nav">
                         <li class="nav-item button">
                         	<!--themeSwitcher Start-->
                             <div class="themeSwitcher">
@@ -156,8 +161,8 @@
                                 </div>
                             </figure>
                             <div class="media-body">
-                                <h2 class="font-size-1 text-uppercase text-secondary mb-0">Rewards PA</h2>
-                                <p>6%</p>
+                                <h2 class="font-size-1 text-uppercase text-secondary mb-0">Rewards</h2>
+                                <p>6% <span>P.A (approx)</span></p>
                             </div>
                         </div>
 
@@ -173,10 +178,10 @@
     <!-- Network Stats end -->
 
     <!-- Masternode Tabbed start -->
-    <section class="section-sm pb-0" id="masternode">
+    <section class="section-sm" id="farmnode">
         <div class="container">
             <div class="row">
-                <div class="masternodes-tabbed-section">
+                <div class="farmnodes-tabbed-section">
                     <div class="col-lg-12">
                         <div class="ticker-head mb-2">
                             <ul class="nav nav-tabs ticker-nav form-tabs hidden-xs" role="tablist">
@@ -192,8 +197,8 @@
                             </ul>
                             <div class="d-sm-none">
                                 <select class="mb10 form-control" id="tab_selector">
-                                    <option value="0">Masternodes (6)</option>
-                                    <option value="1">Slashed MNS (4)</option>
+                                    <option value="0">Farm Nodes (6)</option>
+                                    <option value="1">Slashed Nodes (4)</option>
                                     <option value="2">Resigned Nodes (3)</option>
                                 </select>
                             </div>
@@ -225,7 +230,7 @@
                                                     <span class="heartbit"></span>
                                                     <span class="point"></span>
                                                 </div>5000</td>
-                                            <td><span class="btn btn-masternode">Farm Node</span></td>
+                                            <td><span class="btn btn-farmnode">Farm Node</span></td>
                                         </tr>
                                         <tr class="hover-grow">
                                             <td class="truncate"><a href="#">0xb09ef8d9b729767289e83a1f9540fd3488da6374</a></td>
@@ -248,7 +253,7 @@
                                                     <span class="heartbit"></span>
                                                     <span class="point"></span>
                                                 </div>2500</td>
-                                            <td><span class="btn btn-masternode">Farm Node</span></td>
+                                            <td><span class="btn btn-farmnode">Farm Node</span></td>
                                         </tr>
                                         <tr class="hover-grow">
                                             <td class="truncate"><a href="#">0xa6ecad13e4e8eecdfbc0abc517b9ac7322a450d7</a></td>
@@ -259,7 +264,7 @@
                                                     <span class="heartbit"></span>
                                                     <span class="point"></span>
                                                 </div>3000</td>
-                                            <td><span class="btn btn-masternode">Farm Node</span></td>
+                                            <td><span class="btn btn-farmnode">Farm Node</span></td>
                                         </tr>
                                         <tr class="hover-grow">
                                             <td class="truncate"><a href="#">0xffc679dcdf444d2eeb0491a998cdf444d2eeb0491a</a></td>
@@ -451,16 +456,16 @@
 							<div class="wallet-name"><h4>XinPay</h4></div>
 							<div class="wallet-icon"><img src="assets/images/wallets/xinpay-logo.png" alt="Icon"></div>
 						</button>
-						<button class="wallect-connect-btn">
+						<button class="wallect-connect-btn" data-toggle="modal" data-target="#privateKey">
 							<div class="wallet-name"><h4>Private Key</h4></div>
 							<div class="wallet-icon"><img src="assets/images/wallets/privatekey-logo.png" alt="Icon"></div>
 						</button>
-						<button class="wallect-connect-btn">
+						<button class="wallect-connect-btn" data-toggle="modal" data-target="#keyStore">
 							<div class="wallet-name"><h4>Key Store</h4></div>
 							<div class="wallet-icon"><img src="assets/images/wallets/keystore-logo.png" alt="Icon"></div>
 						</button>
                         <button class="wallect-connect-btn">
-							<div class="wallet-name"><h4>D'CENT In App</h4></div>
+							<div class="wallet-name"><h4>D'CENT <span>(Coming soon!)</span></h4></div>
 							<div class="wallet-icon"><img src="assets/images/wallets/dcent-logo.png" alt="Icon"></div>
 						</button>
 					</div>
@@ -472,6 +477,59 @@
 		</div>
     </div>
 	<!-- Connect to a wallet modal Ends -->
+    
+    
+    <!-- Connect to Private Key modal -->
+	<div class="modal fade" id="privateKey" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+				<div class="modal-header border-bottom-0">
+                    <h5 class="modal-title" id="exampleModalLabel">Connect with Private Key</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <form class="" role="form" action="staking.html">
+                    <div class="form-group"><label>Enter Private Key</label>
+                    <input type="text" class="form-control" placeholder="Enter Private Key"></div>
+                    <button type="submit" class="btn btn-rounded btn-info mb-2">Submit</button><div>
+                    </div>
+                    </form>
+                </div>
+                <div class="modal-footer border-top-0 d-flex justify-content-center">
+                  <button type="button" class="back" data-dismiss="modal"><i class="fas fa-long-arrow-alt-left"></i> Back</button>
+                </div>
+            </div>
+		</div>
+    </div>
+	<!-- Connect to Private Key modal Ends -->
+
+
+    <!-- Connect to Key Store modal -->
+	<div class="modal fade" id="keyStore" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+				<div class="modal-header border-bottom-0">
+                    <h5 class="modal-title" id="exampleModalLabel">Connect with Key Store</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <form class="" role="form" action="staking.html">
+						<div class="form-group">
+							<input type="file" class="form-file-input form-control">
+						</div>
+                        <div class="form-group"><label>Password</label>
+                    	<input type="password" class="form-control" placeholder="Enter Password"></div>
+                    	<button type="submit" class="btn btn-rounded btn-info mb-2">Submit</button><div>
+                    </div>
+                    </form>
+                </div>
+                <div class="modal-footer border-top-0 d-flex justify-content-center">
+                  <button type="button" class="back" data-dismiss="modal"><i class="fas fa-long-arrow-alt-left"></i> Back</button>
+                </div>
+            </div>
+		</div>
+    </div>
+	<!-- Connect to Key Store modal Ends -->
 
     <!-- javascript -->
     <script src="assets/js/jquery.min.js"></script>

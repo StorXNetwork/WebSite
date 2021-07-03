@@ -75,6 +75,11 @@
                             <a href="#" class="btn nav-link active">Wallet Connected</a>
                         </li>
                         <li class="nav-item button">
+                            <a data-toggle="modal" data-target="#balance" class="btn nav-link" href="#">Balance</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mobile-footer-nav">
+                        <li class="nav-item button">
                         	<!--themeSwitcher Start-->
                             <div class="themeSwitcher">
                                 <button id="theme-toggle" class="btn btn-link btn-sm small theme-toggle" type="button">
@@ -98,12 +103,75 @@
     </section>
     <!-- home end -->
 
-    <!-- Connect Wallet start -->
+    <!-- Staking Details start -->
     <section class="block-overlap pb-3">
     	<div class="container">
-        	<div class="row">
-            	<div class="col-sm-12 col-md-6 col-lg-6 mb-3">
-                	<div class="stats-box p-4">
+        	<div class="row mb-3">
+            	<div class="col-sm-12 col-md-12 col-lg-12">
+                	<div class="stats-box p-3">
+                    	<h5>Wallet: <span class="walletAddress">xdc5c7257f7088b9bb6939764bf479b4220f52d3857</span></h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+            	<div class="col-lg-12 mb-3">
+                    <div class="stats-box p-4">
+                        <div class="row staking-counter">
+                            <div class="col ver-divider safari-float-left">
+                                <div class="media align-items-center">
+                                    <div class="media-body text-center">
+                                        <h2 class="font-size-1 text-uppercase text-secondary mb-1">Mininimum<br>Reputation</h2>
+                                        <p>000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col ver-divider safari-float-left">
+                                <div class="media align-items-center">
+                                    <div class="media-body text-center">
+                                        <h2 class="font-size-1 text-uppercase text-secondary mb-1">Minimum<br>Stake Amount</h2>
+                                        <p>10000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col ver-divider safari-float-left">
+                                <div class="media align-items-center">
+                                    <div class="media-body text-center">
+                                        <h2 class="font-size-1 text-uppercase text-secondary mb-1">Maximum<br>Stake Amount</h2>
+                                        <p>1000000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col ver-divider safari-float-left">
+                                <div class="media align-items-center">
+                                    <div class="media-body text-center">
+                                        <h2 class="font-size-1 text-uppercase text-secondary mb-1">Current<br>Reputation</h2>
+                                        <p>1111</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col ver-divider safari-float-left">
+                                <div class="media align-items-center">
+                                    <div class="media-body text-center">
+                                        <h2 class="font-size-1 text-uppercase text-secondary mb-1">Hosting<br>Rewards</h2>
+                                        <p>9000 SRX P.A</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col ver-divider safari-float-left">
+                                <div class="media align-items-center">
+                                    <div class="media-body text-center">
+                                        <h2 class="font-size-1 text-uppercase text-secondary mb-1">Farmer Node<br>Status</h2>
+                                        <p class="text-success">True</p>
+                                    </div>
+                                </div>
+                            </div>                    
+                        </div><!-- end row -->
+                	</div>
+            	</div>
+                
+                <div class="col-sm-12 col-md-6 col-lg-6 mb-3">
+                	<div class="stats-box p-3">
                     	<h5 class="mb-2">Stake Details</h5>
                         <ul class="list-group">
                         	<li class="list-group-item d-flex justify-content-between align-items-center">
@@ -125,7 +193,7 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 mb-3">
-                	<div class="stats-box p-4">
+                	<div class="stats-box p-3">
                     	<h5 class="mb-2">Claim Pending</h5>
                         <ul class="list-group">
                         	<li class="list-group-item d-flex justify-content-between align-items-center">
@@ -146,7 +214,7 @@
             </div>
         </div>
     </section>    
-    <!-- Connet Wallet end -->
+    <!-- Staking Details end -->
     
 
     <!-- Footer Starts -->
@@ -178,95 +246,47 @@
     <!-- Back to top Ends -->
     
     
-    <!-- Connect to a wallet modal -->
-	<div class="modal fade" id="centermodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Balance modal -->
+	<div class="modal fade" id="balance" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
 				<div class="modal-header border-bottom-0">
-                    <h5 class="modal-title" id="exampleModalLabel">Connect to a wallet</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Wallet Balance</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>
                 <div class="modal-body">
-					<!--<p>Connect to a wallet</p>-->
-					<div class="wallet-connect-block">
-						<button class="wallect-connect-btn">
-							<div class="wallet-name"><h4>XinPay</h4></div>
-							<div class="wallet-icon"><img src="assets/images/wallets/xinpay-logo.png" alt="Icon"></div>
-						</button>
-						<button class="wallect-connect-btn" data-toggle="modal" data-target="#privateKey">
-							<div class="wallet-name"><h4>Private Key</h4></div>
-							<div class="wallet-icon"><img src="assets/images/wallets/privatekey-logo.png" alt="Icon"></div>
-						</button>
-						<button class="wallect-connect-btn" data-toggle="modal" data-target="#keyStore">
-							<div class="wallet-name"><h4>Key Store</h4></div>
-							<div class="wallet-icon"><img src="assets/images/wallets/keystore-logo.png" alt="Icon"></div>
-						</button>
-                        <button class="wallect-connect-btn">
-							<div class="wallet-name"><h4>D'CENT In App</h4></div>
-							<div class="wallet-icon"><img src="assets/images/wallets/dcent-logo.png" alt="Icon"></div>
-						</button>
-					</div>
+					
+                    <ul class="list-group">
+                    	<li class="list-group-item d-flex justify-content-between align-items-center">
+                        	<div class="wallet-icon-block">
+                            	<div class="wallet-icon" style="float:left;"><img src="assets/images/wallets/xdc-logo.png" alt="Icon"></div>
+                            	<div style="margin-left: 45px;"><h5>XDC</h5><p>XinFin Network</p></div>
+                            </div>
+                            <div class="wallet-icon-block text-right">
+                            	<h5>10933.00</h5>
+                                <p>1013.5 $</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                        	<div class="wallet-icon-block">
+                            	<div class="wallet-icon" style="float:left;"><img src="assets/images/wallets/storx-logo.png" alt="Icon"></div>
+                            	<div style="margin-left: 45px;"><h5>SRX</h5><p>StorX Network</p></div>
+                            </div>
+                            <div class="wallet-icon-block text-right">
+                            	<h5>499779519.00</h5>
+                                <p>2145.5 $</p>
+                            </div>
+                        </li>
+                    </ul>
 				</div>
-                <!--<div class="modal-footer border-top-0 d-flex justify-content-center">
-                  <button type="submit" class="btn btn-info">Close</button>
-                </div>-->
-            </div>
-		</div>
-    </div>
-	<!-- Connect to a wallet modal Ends -->
-    
-    
-    <!-- Connect to Private Key modal -->
-	<div class="modal fade" id="privateKey" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-				<div class="modal-header border-bottom-0">
-                    <h5 class="modal-title" id="exampleModalLabel">Connect with Private Key</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                </div>
-                <div class="modal-body">
-                    <form class="" role="form" action="staking.html">
-                    <div class="form-group"><label>Enter Private Key</label>
-                    <input type="text" class="form-control" placeholder="Enter Private Key"></div>
-                    <button type="submit" class="btn btn-rounded btn-info mb-2">Submit</button><div>
-                    </div>
-                    </form>
-                </div>
                 <div class="modal-footer border-top-0 d-flex justify-content-center">
                   <button type="button" class="back" data-dismiss="modal"><i class="fas fa-long-arrow-alt-left"></i> Back</button>
                 </div>
             </div>
 		</div>
     </div>
-	<!-- Connect to Private Key modal Ends -->
-
-
-    <!-- Connect to Key Store modal -->
-	<div class="modal fade" id="keyStore" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-				<div class="modal-header border-bottom-0">
-                    <h5 class="modal-title" id="exampleModalLabel">Connect with Key Store</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                </div>
-                <div class="modal-body">
-                    <form class="" role="form" action="staking.html">
-						<div class="form-group">
-							<input type="file" class="form-file-input form-control">
-						</div>
-                        <div class="form-group"><label>Password</label>
-                    	<input type="password" class="form-control" placeholder="Enter Password"></div>
-                    	<button type="submit" class="btn btn-rounded btn-info mb-2">Submit</button><div>
-                    </div>
-                    </form>
-                </div>
-                <div class="modal-footer border-top-0 d-flex justify-content-center">
-                  <button type="button" class="back" data-dismiss="modal"><i class="fas fa-long-arrow-alt-left"></i> Back</button>
-                </div>
-            </div>
-		</div>
-    </div>
-	<!-- Connect to Key Store modal Ends -->                                                
+	<!-- Balance Ends -->
+    
 
     <!-- javascript -->
     <script src="assets/js/jquery.min.js"></script>

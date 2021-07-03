@@ -30,20 +30,6 @@
         offset: 50
       });
     },
-	
-	SRXMaster.prototype.initNavtoggler = function () {
-	  $(".nav-toggler").on("click", function() {
-        $(".nav-toggler i").toggleClass("ti-menu")
-      });
-	},
-
-    //truncate long text
-    //SRXMaster.prototype.initTruncate = function () {
-      //$('.truncate').each(function () {
-        //var truncated = $(this).text().substr(0, 20);
-        //$(this).text(truncated + (truncated.length < 20 ? '' : '...'));
-      //});
-    //},
 
     //tab selection with a dropdown list for small devices
     SRXMaster.prototype.initTabselector = function () {
@@ -183,8 +169,6 @@
       this.initStickyMenu();
       this.initSmoothLink();
       this.initScrollspy();
-	  this.initNavtoggler();
-      //this.initTruncate();
       this.initTabselector();
       this.initStacktable();
       this.initBacktoTop();

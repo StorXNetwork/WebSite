@@ -6577,21 +6577,22 @@ table.pricing-table th span.fw-5 {
     color: #254a81;
     padding-bottom: 15px;
 }
-.storx_exchanges .exchanges_item {
+.storx_exchanges .wallet_item {
 	border-radius: 6px;
     position: relative;
-    border: 1px solid #F1F1F5;
-    box-shadow: 0px 12px 24px rgb(18 38 63 / 3%);
+    /*border: 1px solid #F1F1F5;
+    box-shadow: 0px 12px 24px rgb(18 38 63 / 3%);*/
     height: 100%;
     padding: 30px;
     transition: all 300ms linear 0s;
+	background: #FFFFFF;
 	
 	display: -ms-flexbox;
     display: flex;
     -ms-flex-align: start;
     align-items: flex-start;
 }
-.storx_exchanges .exchanges_item .media-left i {
+.storx_exchanges .wallet_item .media-left i {
 	color: #fff;
 	font-size: 20px;
 	padding: 10px;
@@ -6600,50 +6601,50 @@ table.pricing-table th span.fw-5 {
 	height: 96px;
 	border-radius: 8%;
 	text-align: center;
-	background-image: -moz-linear-gradient(139deg, #e6e6e6 0%, #f4f4f4 100%);
-	background-image: -webkit-linear-gradient(139deg, #e6e6e6 0%, #f4f4f4 100%);
-	background-image: -ms-linear-gradient(139deg, #e6e6e6 0%, #f4f4f4 100%);
+	background-image: -moz-linear-gradient(139deg, #f7f8fa 0%, #f7f8fa 100%);
+	background-image: -webkit-linear-gradient(139deg, #f7f8fa 0%, #f7f8fa 100%);
+	background-image: -ms-linear-gradient(139deg, #f7f8fa 0%, #f7f8fa 100%);
 }
-.storx_exchanges .exchanges_item .media-left i img {
+.storx_exchanges .wallet_item .media-left i img {
 	vertical-align: inherit;
 }
-.storx_exchanges .exchanges_item .media-left .c_2 {
+.storx_exchanges .wallet_item .media-left .c_2 {
   background-image: -moz-linear-gradient(139deg, #06bbf8 0%, #04edd5 100%);
   background-image: -webkit-linear-gradient(139deg, #06bbf8 0%, #04edd5 100%);
   background-image: -ms-linear-gradient(139deg, #06bbf8 0%, #04edd5 100%);
 }
-.storx_exchanges .exchanges_item .media-body {
+.storx_exchanges .wallet_item .media-body {
   padding-left: 20px;
 }
-.storx_exchanges .exchanges_item .media-body .heading {
+.storx_exchanges .wallet_item .media-body .heading {
   font: 400 24px/30px "Poppins", sans-serif!important;
     color: rgba(24, 24, 24, 0.7);
     display: block;
     margin-bottom: 10px;
 }
-.storx_exchanges .exchanges_item .media-body .heading:hover, .storx_exchanges .exchanges_item .media-body .heading:focus {
+.storx_exchanges .wallet_item .media-body .heading:hover, .storx_exchanges .wallet_item .media-body .heading:focus {
   color: rgba(24, 24, 24, 0.7);
   text-decoration: none;
 }
-.storx_exchanges .exchanges_item .media-body p {
+.storx_exchanges .wallet_item .media-body p {
   font-size: 16px;
   padding-top: 0;
   padding-bottom: 10px;
 }
-.storx_exchanges .exchanges_item .media-body p.highlight {
+.storx_exchanges .wallet_item .media-body p.highlight {
     font-size: 26px;
     color: #04d414;
     font-weight: 300;
 }
-.storx_exchanges .exchanges_item .media-body .get_btn {
+.storx_exchanges .wallet_item .media-body .get_btn {
   font: 400 16px/1 "Poppins", sans-serif;
   color: #5079f7;
 }
-.storx_exchanges .exchanges_item .media-body .get_btn i {
+.storx_exchanges .wallet_item .media-body .get_btn i {
   color: #1be394;
   padding-left: 5px;
 }
-.storx_exchanges .exchanges_item .media-body .get_btn:hover, .storx_exchanges .exchanges_item .media-body .get_btn:focus {
+.storx_exchanges .wallet_item .media-body .get_btn:hover, .storx_exchanges .wallet_item .media-body .get_btn:focus {
   color: #1be394;
 }
 
@@ -6696,22 +6697,64 @@ table.pricing-table th span.fw-5 {
 	font-weight: normal;
     border-radius: 50px;
 }
+
+.exchanges_item {
+    margin-right: auto;
+    margin-left: auto;
+    width: 19%;
+    display: inline-block;
+    padding: 10px 10px 30px;
+}
+.exchanges_item .logo-box {
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 6px;
+    /*border: 1px solid #dfdfdf;*/
+}
+.exchanges_item .logo-box a {
+    display: block;
+}
+.exchanges_item .trading-pairs {
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.exchanges_item .trading-pairs a {
+    color: #696969;
+    padding-left: 6px;
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+	.exchanges_item {
+		width: 33%!important;
+	}
+}
+@media (max-width: 767px) {
+	.exchanges_item {
+		width: 46.66666666%!important;
+	}
+}
 @media (max-width: 575px) {
-	.storx_exchanges .exchanges_item {
+	.storx_exchanges .wallet_item {
 		padding: 20px;
 		display: block;
 	}
-	.storx_exchanges .exchanges_item .media-body {
+	.storx_exchanges .wallet_item .media-body {
     	padding-top: 20px;
 		padding-left: 0px;
 	}
-	.storx_exchanges .exchanges_item .media-left i {
+	.storx_exchanges .wallet_item .media-left i {
 		line-height: 80px;
     	width: 80px;
     	height: 80px;
 	}
 }
-
+@media (max-width: 400px) {
+	.exchanges_item {
+		width: 100%!important;
+		padding-bottom: 20px!important;
+	}
+}
 
 /*
 .app-btn {

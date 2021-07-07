@@ -2630,12 +2630,13 @@ body a:focus, body a:hover {
 .team-social-icons {
     display: flex;
     justify-content: space-around;
-    width: 40%;
+    width: 115px;
     padding: 0 12px;
 }
 .team-social-icons a {
     color:rgba(0, 123, 255, 0.7);
-	background: #f7f8fa;
+	background: #e9ecf1;
+	border: 1px solid #e9ecf1;
     width: 35px;
     height: 35px;
     line-height: 35px;
@@ -2644,6 +2645,8 @@ body a:focus, body a:hover {
 }
 .team-social-icons a:hover, .team-social-icons a:focus {
     color:rgba(0, 123, 255, 1);
+	background: #f7f8fa;
+	border-color: #e9ecf1;
 }
 /*------------------ About -------------------*/
 

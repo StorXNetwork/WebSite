@@ -575,10 +575,25 @@ label {
 | Network Stats Style
 |----------------------------------------------------------------------------
 */
+.h-0 {
+    height: inherit!important;
+}
+.mh-175 {
+    min-height: 175px;
+}
+.vh-align-center {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    display: inline-block;
+}
 .stats-box {
   background: var(--frontbg);
   border-radius: 12px;
   height: 100%;
+  position: relative;
 }
 .stats-box h5 span.walletAddress {
   font-size: 16px;
@@ -670,6 +685,25 @@ figure {
   border-right: 1px solid var(--border-color);
   content: "";
 }
+.ver-divider:nth-child(2n):after {
+    display: none;
+}
+
+.ver-divider.plus:after {
+  position: absolute;
+  top: calc(50% - 15px);
+  right: 5px;
+  height: 100%;
+  border-right: none;
+  content: "+";
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.ver-divider.plus:nth-child(2n):after {
+    display: none;
+}
+
 .stats-counter .ver-divider:nth-child(4n):after {
   border-right: none;
 }

@@ -155,9 +155,9 @@ For Mega menu and Mobile menu
     StorX.sliderArea = function(){
         if ( $('.testimonial_slid').length ){ 
             $('.testimonial_slid').owlCarousel({
-            	loop: false,
+				loop: true,
             	margin: 30,
-            	nav: false,
+            	nav: true,
 				dots: true,
             	responsive: {
             		0: {

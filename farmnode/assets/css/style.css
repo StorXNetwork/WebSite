@@ -381,7 +381,7 @@ label {
 |----------------------------------------------------------------------------
 */
 .navbar-custom {
-  padding: 20px 0px;
+  padding: 20px 0px!important;
   width: 100%;
   border-radius: 0px;
   z-index: 999;
@@ -1148,6 +1148,10 @@ thead th {
 /*--------------------------
     Wallect connect Styles  
 ---------------------------*/
+body.modal-open {
+    overflow: auto!important;
+    padding: 0px!important;
+}
 .modal-backdrop {
    background-color: var(--text-color);
    opacity: 0.65 !important;
@@ -1457,3 +1461,8 @@ button.back:hover {
 .mobile-footer-block .navbar-nav .nav-item {
 	margin-top: 0px!important;
 }
+
+
+
+
+

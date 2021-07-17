@@ -13,9 +13,46 @@ For Mega menu and Mobile menu
             $(window).on('load', function() {
                 $('.preloader').fadeOut();
                 $('.preloader').delay(50).fadeOut('slow');  
+				
+				//setTimeout(StorX.getStats , 1000)
+
             })   
         }
     }
+	
+	
+    /* ---------------------------------------------- /*
+	 * Stats Counter
+	/* ---------------------------------------------- */	
+	StorX.getStats = function(){
+		fetch("https://farmerapi.storx.io/get-stats").then(x=>x.json()).then(({data}) => {
+			const {staked_amount, stakeholder_count, user_count} = data;
+			const staked_amount_eth = staked_amount / 10**18;
+			console.log("staked_amount, stakeholder_count, user_count", staked_amount_eth, stakeholder_count, user_count);
+			document.getElementById("totalUsers").innerHTML=`${user_count}`;
+			document.getElementById("storageNodes").innerText=stakeholder_count;
+			document.getElementById("srxStaked").innerText=staked_amount_eth;
+
+			$('.counter').counterUp({
+				delay: 10,
+				time: 1000,
+			});
+
+			function numberWithCommas(x) {
+				return x.toString().replace(/(\d+)(\d{3})/, '$1' + ',' + '$2');
+			}
+			$('.counter').each(function(){
+				var v_pound = $(this).html();
+				v_pound = numberWithCommas(v_pound);
+			$(this).html(v_pound)
+			})
+			
+			// $("#totalUsers").text(`${user_count}`)
+		}).catch(console.error)
+		// $.ajax("https://farmerapi.storx.io/get-stats", {
+		// 	success:x => con
+		// })	
+	}
 	
 
 	/* ---------------------------------------------- /*
@@ -246,8 +283,9 @@ For Mega menu and Mobile menu
 	
 	
 	// Document on Ready
-	$(document).on("ready", function(){
+	$(document).on("ready", function(){		
 		StorX.preloader(),
+		StorX.getStats(),
 		StorX.HeaderFixd(),
 		StorX.MenuClose(),
 		StorX.MegaMenu(),

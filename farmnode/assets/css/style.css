@@ -858,9 +858,9 @@ figure {
   color: var(--link-color);
 }
 .table-responsive-stack tr {
-  display: -webkit-box;
+  /*display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: flex;*/ /*---------------- Removed for new table ----------------*/
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
@@ -868,7 +868,7 @@ figure {
   border-radius: 12px!important;
 }
 .table-responsive-stack tbody tr {
-  margin-bottom: 15px;
+  /*margin-bottom: 15px;*/ /*---------------- Removed for new table ----------------*/
 }
 .table-responsive-stack tr th:last-child {
   max-width: 190px;
@@ -882,25 +882,37 @@ figure {
   border-bottom-right-radius: 12px;
   max-width: 190px;
 }
-#tx-history .table-responsive-stack tr th:last-child {
-  max-width: inherit;
+
+#tx-history_block {
+ margin-top: 200px;
 }
 #tx-history .table-responsive-stack tr td:last-child {
-  border-top-right-radius: 12px;
-  border-bottom-right-radius: 12px;
   max-width: inherit;
 }
-#tx-history .table-responsive-stack tr th:nth-child(4n) {
-  width: 225px;
-  min-width: 225px;
+#tx-history .table-responsive-stack tr th,
+#tx-history .table-responsive-stack tr td {
+  width: 20%;
+  max-width: 20%;
 }
+#tx-history .table-responsive-stack tr th:nth-child(4n),
 #tx-history .table-responsive-stack tr td:nth-child(4n) {
-  width: 225px;
-  min-width: 225px;
+  width: 40%;
+  max-width: 40%;
 }
+#tx-history .table-responsive-stack tr td .row {
+  padding: 5px 0px 5px 0px;
+  margin: 0px;
+  border-bottom: 1px solid var(--border-color);
+}
+#tx-history .table-responsive-stack tr td .row:last-child {
+  padding-bottom: 0px;
+  border-bottom: none;
+}
+
+
 .table-responsive-stack td,
 .table-responsive-stack th {
-  vertical-align: bottom!important;
+  vertical-align: middle!important;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
@@ -927,6 +939,10 @@ figure {
 .table {
   font-size: 14px;
   color: var(--text-color);
+  margin-bottom: 0.75rem!important;
+  
+  border-collapse: separate;/*---------------- Added for new table ----------------*/
+  border-spacing: 0 5px;/*---------------- Added for new table ----------------*/
 }
 tbody tr {
   -webkit-transition: all .1s ease-in;
@@ -934,8 +950,8 @@ tbody tr {
   background-color: var(--white);
 }
 tbody tr:hover {
-  -webkit-transform: scale(1.010);
-  transform: scale(1.010);
+  -webkit-transform: scale(1.005);
+  transform: scale(1.005);
   background-color: var(--white);
   -webkit-box-shadow: var(--theme-table-hover-shadow);
   box-shadow: var(--theme-table-hover-shadow);
@@ -946,12 +962,12 @@ tr:hover td {
   background-color: var(--color-theme-table-row-hover);
 }
 tr:hover td:first-child {
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
 }
 tr:hover td:last-child {
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 thead tr {
   background-color: var(--color-theme-table-row-sticky);
@@ -978,6 +994,8 @@ thead th {
 	max-width: 175px!important;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	
+	vertical-align: bottom;
 }
 .truncate-lg {
   color: var(--cyan)!important;
@@ -1462,6 +1480,54 @@ button.back:hover {
 	margin-top: 0px!important;
 }
 
+
+
+
+
+/*--------------------------
+    Pagination Styles  
+---------------------------*/
+.pagination {
+	float: right;
+	margin-bottom: 0px;
+}
+.darkTheme .page-link {
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: var(--text-color);
+    background-color: var(--frontbg);
+    border: 1px solid var(--border-color);
+}
+.darkTheme .page-link:hover {
+    z-index: 2;
+    color: var(--white);
+    text-decoration: none;
+    background-color: var(--frontbg-hover);
+    border-color: var(--frontbg-hover);
+}
+.darkTheme .page-item.active .page-link {
+    z-index: 1;
+    color: var(--white);
+    background-color: var(--dark-green);
+    border-color: var(--dark-green);
+}
+.darkTheme .page-item .page-link:hover, .darkTheme .page-item .page-link:focus, .darkTheme .page-item .page-link.active {
+	box-shadow: none;
+}
+
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: var(--white);
+    background-color: var(--cyan);
+    border-color: var(--cyan);
+}
+.page-item .page-link:hover, .page-item .page-link:focus, .page-item .page-link.active {
+	box-shadow: none;
+}
 
 
 

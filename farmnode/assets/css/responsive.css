@@ -2,6 +2,19 @@
 	Responsive Styles
 -------------------------*/
 
+@media screen and (max-width:1300px) {
+	#tx-history .table-responsive-stack tr th,
+	#tx-history .table-responsive-stack tr td {
+	  width: 17.33%;
+	  max-width: 17.33%;
+	}
+	#tx-history .table-responsive-stack tr th:nth-child(4n),
+	#tx-history .table-responsive-stack tr td:nth-child(4n) {
+	  width: 48%;
+	  max-width: 48%;
+	}
+}
+
 @media (max-width: 1199px) and (min-width: 1024px) {}
 
 @media screen and (max-width: 1199px) {}
@@ -188,10 +201,30 @@
 	  max-width: inherit
 	}
 	
-	#tx-history .table-responsive-stack tr td:nth-child(4n) {
-	  width: inherit
+	#tx-history .table-responsive-stack tr th, #tx-history .table-responsive-stack tr td {
+	  width: inherit!important;
+      max-width: inherit!important;
 	}
-	
+	#tx-history .table-responsive-stack tr th:nth-child(4n), #tx-history .table-responsive-stack tr td:nth-child(4n) {
+	  width: inherit!important;
+      max-width: inherit!important;
+	}
+	#tx-history .table-responsive-stack tr td:nth-child(4n) .table-responsive-stack-thead {
+	  display: none!important;
+	}
+	#tx-history .table-responsive-stack tr td .row .col-xs-8 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 66.66667%;
+      flex: 0 0 66.66667%;
+      max-width: 66.66667%;
+	}
+	#tx-history .table-responsive-stack tr td .row .col-xs-4 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33333%;
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%;
+	}
+		
 	.darkTheme .table-responsive-stack tr td:last-child {
 	  border-bottom-color: var(--border-color)
 	}

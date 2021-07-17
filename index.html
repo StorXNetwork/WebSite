@@ -402,7 +402,42 @@
                 </div>
             </div>
         </section>
-        <!-- Why StorX -->        
+        <!-- Why StorX -->
+        
+        
+        <!-- Conterfact  -->
+        <section id="conterfact_section" class="img-bg-section" data-background="assets/images/world-map.png" style="background-image: url(&quot;assets/images/world-map.png&quot;);">	
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">		
+						<h2 class="mb-1">StorX Statistics</h2>
+					</div>	
+				</div>
+                
+                <div class="row flex-row mt-5">                
+				<div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+					<div class="counterFact">
+                        <div class="factTitle"><span id="totalUsers" class="counter">00</span></div>
+                    	<p>Total Users</p>
+                	</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+					<div class="counterFact">
+                        <div class="factTitle"><span id="storageNodes" class="counter">00</span></div>
+                    	<p>Farm/Storage Nodes</p>
+                	</div>
+				</div>
+                <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+					<div class="counterFact">
+                        <div class="factTitle"><span id="srxStaked" class="counter">00</span></div>
+                    	<p>SRX Staked</p>
+                	</div>
+				</div>
+            </div>
+            					
+			</div>
+        </section>
+        <!-- Conterfact -->
     
 
         <!-- Platform Features -->
@@ -627,5 +662,27 @@
 
         <!-- Theme js / Custom js -->
         <script src="assets/js/theme.js"></script>
+        
+       <!-- Stats Counter js -->
+       <script src="assets/vendors/counterup/jquery.waypoints.min.js"></script>
+       <script src="assets/vendors/counterup/jquery.counterup.min.js"></script>
+       <!--<script>
+           jQuery(document).ready(function($) {
+               $('.counter').counterUp({
+                   delay: 10,
+                   time: 1000,
+               });
+           });		
+		
+		   function numberWithCommas(x) {
+    		   return x.toString().replace(/(\d+)(\d{3})/, '$1' + ',' + '$2');
+		   }
+		   $('.counter').each(function(){
+			   var v_pound = $(this).html();
+			   v_pound = numberWithCommas(v_pound);
+		   $(this).html(v_pound)
+		   })
+       </script>-->
+    
     </body>
 </html>

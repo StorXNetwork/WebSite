@@ -119,72 +119,115 @@
 
     <!-- TX History start -->
     <section class="section-sm pt-3 pb-0" id="tx-history">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
+       <div class="container">
+          <div class="row">
+             <div class="col-lg-12">
                 <table class="table table-responsive-stack">
-                                    <thead>
-                                        <tr>
-                                            <th>BLOCK NUMBER</th>
-                                            <th>NAME</th>
-                                            <th>LINK</th>
-                                            <th>STAKER</th>
-                                            <th>AMOUNT</th>
-                                            <th>PRINCIPAL</th>
-                                            <th>EARNINGS</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="hover-grow">
-                                            <td><a href="#">20286224</a></td>
-                                            <td>Staked</td>
-                                            <td><a href="#">Hash Link</a></td>
-                                            <td class="truncate"><a href="#">0xffc679dcdf444d2eeb0491a998cdf444d2eeb0491a</a></td>
-                                            <td>10000</td>
-                                            <td>1000</td>
-                                            <td>000</td>
-                                        </tr>
-                                        <tr class="hover-grow">
-                                            <td><a href="#">20286224</a></td>
-                                            <td>Staked</td>
-                                            <td><a href="#">Hash Link</a></td>
-                                            <td class="truncate"><a href="#">0xffc679dcdf444d2eeb0491a998cdf444d2eeb0491a</a></td>
-                                            <td>10000</td>
-                                            <td>1000</td>
-                                            <td>000</td>
-                                        </tr>
-                                        <tr class="hover-grow">
-                                            <td><a href="#">20286224</a></td>
-                                            <td>Staked</td>
-                                            <td><a href="#">Hash Link</a></td>
-                                            <td class="truncate"><a href="#">0xffc679dcdf444d2eeb0491a998cdf444d2eeb0491a</a></td>
-                                            <td>10000</td>
-                                            <td>1000</td>
-                                            <td>000</td>
-                                        </tr>
-                                        <tr class="hover-grow">
-                                            <td><a href="#">20286224</a></td>
-                                            <td>Staked</td>
-                                            <td><a href="#">Hash Link</a></td>
-                                            <td class="truncate"><a href="#">0xffc679dcdf444d2eeb0491a998cdf444d2eeb0491a</a></td>
-                                            <td>10000</td>
-                                            <td>1000</td>
-                                            <td>000</td>
-                                        </tr>
-                                        <tr class="hover-grow">
-                                            <td><a href="#">20286224</a></td>
-                                            <td>Staked</td>
-                                            <td><a href="#">Hash Link</a></td>
-                                            <td class="truncate"><a href="#">0xffc679dcdf444d2eeb0491a998cdf444d2eeb0491a</a></td>
-                                            <td>10000</td>
-                                            <td>1000</td>
-                                            <td>000</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                </div>                
-            </div>
-        </div>
+                   <thead>
+                      <tr>
+                         <th>BLOCK NUMBER</th>
+                         <th>NAME</th>
+                         <th>LINK</th>
+                         <th></th>
+                      </tr>
+                   </thead>
+                   <tbody>
+                      <tr class="hover-grow">
+                         <td><a href="#">20286224</a></td>
+                         <td>Staked</td>
+                         <td><a href="#">Hash Link</a></td>
+                         <td>
+                            <div class="row">
+                               <div class="col-lg-4 col-sm-4 col-xs-4 text-left">Staker</div>
+                               <div class="col-lg-8 col-sm-8 col-xs-8"><span class="truncate"><a href="#">0xffc679dcdf444d2eeb0491a998cdf444d2eeb0491a</a></span></div>
+                            </div>
+                            <div class="row">
+                               <div class="col-lg-4 col-sm-4 col-xs-4 text-left">Amount</div>
+                               <div class="col-lg-8 col-sm-8 col-xs-8">10000</div>
+                            </div>
+                         </td>
+                      </tr>
+                      <tr class="hover-grow">
+                         <td><a href="#">20286224</a></td>
+                         <td>Unstaked</td>
+                         <td><a href="#">Hash Link</a></td>
+                         <td>
+                            <div class="row">
+                               <div class="col-lg-4 col-sm-4 col-xs-4 text-left">Staker</div>
+                               <div class="col-lg-8 col-sm-8 col-xs-8"><span class="truncate"><a href="#">0xffc679dcdf444d2eeb0491a998cdf444d2eeb0491a</a></span></div>
+                            </div>
+                            <div class="row">
+                               <div class="col-lg-4 col-sm-4 col-xs-4 text-left">Principle</div>
+                               <div class="col-lg-8 col-sm-8 col-xs-8">10000</div>
+                            </div>
+                            <div class="row">
+                               <div class="col-lg-4 col-sm-4 col-xs-4 text-left">Earnings</div>
+                               <div class="col-lg-8 col-sm-8 col-xs-8">000</div>
+                            </div>
+                         </td>
+                      </tr>
+                      <tr class="hover-grow">
+                         <td><a href="#">20286224</a></td>
+                         <td>Withdraw Stake</td>
+                         <td><a href="#">Hash Link</a></td>
+                         <td>
+                            <div class="row">
+                               <div class="col-lg-4 col-sm-4 col-xs-4 text-left">Staker</div>
+                               <div class="col-lg-8 col-sm-8 col-xs-8"><span class="truncate"><a href="#">0xffc679dcdf444d2eeb0491a998cdf444d2eeb0491a</a></span></div>
+                            </div>
+                            <div class="row">
+                               <div class="col-lg-4 col-sm-4 col-xs-4 text-left">Principle</div>
+                               <div class="col-lg-8 col-sm-8 col-xs-8">10000</div>
+                            </div>
+                            <div class="row">
+                               <div class="col-lg-4 col-sm-4 col-xs-4 text-left">Amount</div>
+                               <div class="col-lg-8 col-sm-8 col-xs-8">10000</div>
+                            </div>
+                            <div class="row">
+                               <div class="col-lg-4 col-sm-4 col-xs-4 text-left">Earnings</div>
+                               <div class="col-lg-8 col-sm-8 col-xs-8">000</div>
+                            </div>
+                         </td>
+                      </tr>
+                      <tr class="hover-grow">
+                         <td><a href="#">20286224</a></td>
+                         <td>Staked</td>
+                         <td><a href="#">Hash Link</a></td>
+                         <td>
+                            <div class="row">
+                               <div class="col-lg-4 col-sm-4 col-xs-4 text-left">Staker</div>
+                               <div class="col-lg-8 col-sm-8 col-xs-8"><span class="truncate"><a href="#">0xffc679dcdf444d2eeb0491a998cdf444d2eeb0491a</a></span></div>
+                            </div>
+                            <div class="row">
+                               <div class="col-lg-4 col-sm-4 col-xs-4 text-left">Amount</div>
+                               <div class="col-lg-8 col-sm-8 col-xs-8">10000</div>
+                            </div>
+                         </td>
+                      </tr>
+                      <tr class="hover-grow">
+                         <td><a href="#">20286224</a></td>
+                         <td>Unstaked</td>
+                         <td><a href="#">Hash Link</a></td>
+                         <td>
+                            <div class="row">
+                               <div class="col-lg-4 col-sm-4 col-xs-4 text-left">Staker</div>
+                               <div class="col-lg-8 col-sm-8 col-xs-8"><span class="truncate"><a href="#">0xffc679dcdf444d2eeb0491a998cdf444d2eeb0491a</a></span></div>
+                            </div>
+                            <div class="row">
+                               <div class="col-lg-4 col-sm-4 col-xs-4 text-left">Principle</div>
+                               <div class="col-lg-8 col-sm-8 col-xs-8">10000</div>
+                            </div>
+                            <div class="row">
+                               <div class="col-lg-4 col-sm-4 col-xs-4 text-left">Earnings</div>
+                               <div class="col-lg-8 col-sm-8 col-xs-8">000</div>
+                            </div>
+                         </td>
+                      </tr>
+                   </tbody>
+                </table>
+             </div>
+          </div>
+       </div>
     </section>
     <!-- TX History end -->
 

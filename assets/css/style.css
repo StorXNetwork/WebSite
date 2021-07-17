@@ -1070,7 +1070,7 @@ body a:focus, body a:hover {
 .why_storx {
   display: block;
   overflow: hidden;
-  padding: 70px 0 80px;
+  padding: 70px 0 60px;
 }
 .why_storx h2 {
   font: 500 36px/45px "Poppins", sans-serif;
@@ -1500,14 +1500,18 @@ body a:focus, body a:hover {
 .platform_features {
   display: block;
   overflow: hidden;
-  padding: 70px 0 70px;
+  padding: 80px 0 70px;
+  
+  margin-top: -350px;
 }
 .platform_features h2 {
   text-align: center;
   font: 500 36px/45px "Poppins", sans-serif;
-  color: #254a81;
+  color: #FFFFFF;
   max-width: 600px;
   margin: 0 auto 60px;
+  
+      position: relative;
 }
 .platform_features .platform_row {
   position: relative;
@@ -6521,26 +6525,7 @@ table.pricing-table th span.fw-5 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*----------------- storx exchanges -----------------*/
 .storx_exchanges {
     display: block;
     overflow: hidden;
@@ -6729,6 +6714,91 @@ table.pricing-table th span.fw-5 {
 		padding-bottom: 20px!important;
 	}
 }
+/*----------------- storx exchanges -----------------*/
+
+
+/*----------------- Counter Stats -----------------*/
+#conterfact_section {
+	text-align: center;
+}
+#conterfact_section h2 {
+    font: 500 36px/45px "Poppins", sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    max-width: 510px;
+    margin: 0 auto;
+}
+.img-bg-section {
+    padding: 60px 0px 350px 0px;
+	width: 100%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.img-bg-section::before {
+	 content: '';
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+	 background-image: linear-gradient(to bottom right, #0030a2, #142757);
+	 opacity: 0.8;
+}
+
+.counterFact {
+	padding: 20px;
+	background: rgba(0,0,0,0.05);
+    border-radius: 12px;
+	height: 100%;
+}
+.counterFact .factTitle {
+    font-size: 30px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+	margin: 0 0 20px;
+    padding-bottom: 10px;
+    position: relative;
+    line-height: inherit;
+    transform: scale(1.1, 1.2);
+    -webkit-transform: scale(1.1, 1.2);
+    -moz-transform: scale(1.1, 1.2);
+    -ms-transform: scale(1.1, 1.2);
+    -o-transform: scale(1.1, 1.2);	
+}
+.counterFact .factTitle .counter {
+    color: #70e5ff;
+	font-weight: 600;
+}
+.counterFact .factTitle:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    margin-left: -15px;
+    width: 30px;
+    height: 2px;
+    background: #FFFFFF;
+}
+.counterFact p {
+    font-size: 18px;
+    margin: 0 0 10px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0;
+}
+/*----------------- Counter Stats -----------------*/
+
 
 /*
 .app-btn {
@@ -6795,3 +6865,12 @@ table.pricing-table th span.fw-5 {
    letter-spacing: 0px;
    text-transform: capitalize;
 }*/
+
+
+
+
+
+
+
+
+

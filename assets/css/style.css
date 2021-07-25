@@ -5134,7 +5134,7 @@ body a:focus, body a:hover {
   padding-bottom:15px;
 }
 .footer_area .footer_widget p {
-  font: 400 13px/20px "Poppins", sans-serif;
+  font: 400 14px/20px "Poppins", sans-serif;
   color: #7e8b9c;
   padding-top: 15px;
   padding-right: 20px;
@@ -6763,7 +6763,7 @@ table.pricing-table th span.fw-5 {
 	height: 100%;
 }
 .counterFact .factTitle {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.8);
 	margin: 0 0 20px;
@@ -6776,7 +6776,10 @@ table.pricing-table th span.fw-5 {
     -ms-transform: scale(1.1, 1.2);
     -o-transform: scale(1.1, 1.2);	
 }
-.counterFact .factTitle .counter {
+.counterFact .factTitle span {
+    font-size: 28px;
+
+}.counterFact .factTitle .counter {
     color: #70e5ff;
 	font-weight: 600;
 }
@@ -6796,6 +6799,11 @@ table.pricing-table th span.fw-5 {
     line-height: 20px;
     color: rgba(255, 255, 255, 0.8);
     margin-bottom: 0;
+}
+@media (max-width: 575px) {
+	.counterFact .factTitle span {
+    	font-size: 24px;
+	}
 }
 /*----------------- Counter Stats -----------------*/
 

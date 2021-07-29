@@ -23,15 +23,17 @@ For Mega menu and Mobile menu
 	
     /* ---------------------------------------------- /*
 	 * Stats Counter
-	/* ---------------------------------------------- */	
+	/* ---------------------------------------------- */
 	StorX.getStats = function(){
 		fetch("https://farmerapi.storx.io/get-stats").then(x=>x.json()).then(({data}) => {
 			const {staked_amount, stakeholder_count, user_count} = data;
 			const staked_amount_eth = staked_amount / 10**18;
 			console.log("staked_amount, stakeholder_count, user_count", staked_amount_eth, stakeholder_count, user_count);
-			document.getElementById("totalUsers").innerHTML=`${user_count}`;
+			//document.getElementById("totalUsers").innerHTML=`${user_count}`;
+			document.getElementById("totalUsers").innerHTML=user_count;
 			document.getElementById("storageNodes").innerText=stakeholder_count;
-			document.getElementById("srxStaked").innerText=staked_amount_eth;
+			document.getElementById("srxStaked").innerText=parseFloat(staked_amount_eth).toFixed(2);
+			//document.getElementById("srxStaked").innerText=staked_amount_eth;
 
 			$('.counter').counterUp({
 				delay: 10,

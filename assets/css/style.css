@@ -2673,7 +2673,7 @@ body a:focus, body a:hover {
 }
 .faq_area .frequently h2 {
   text-align: left;
-  font: 500 26px/28px "Poppins", sans-serif;
+  font: 500 26px/30px "Poppins", sans-serif;
   color: #254a81;
   padding-bottom: 35px;
 }
@@ -5809,6 +5809,27 @@ body a:focus, body a:hover {
     line-height: 32px;
   }
   
+  .about_area h2 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  
+  .storx_exchanges h2 {
+	font-size: 26px!important;
+    line-height: 30px!important;
+  }
+
+  .support-block h2 {
+	font-size: 26px;
+    line-height: 30px;
+  }
+  
+  .support-block .media .media-body .heding {
+    font-size: 26px;
+	line-height: 26px;
+	font-weight: 500;
+  }
+  
   .store-data-block h2 {
     font-size: 26px;
     line-height: 30px;
@@ -6878,7 +6899,97 @@ table.pricing-table th span.fw-5 {
 
 
 
+/*----------------- Assets Download -----------------*/
+.downloads {
+    display: block;
+    overflow: hidden;
+    padding: 80px 0 80px;
+}
+.downloads h2 {
+    font: 500 36px/46px "Poppins", sans-serif;
+    color: #254a81;
+    padding-bottom: 15px;
+}
+.downloads h3 {
+    font: 500 22px/32px "Poppins", sans-serif;
+    color: #254a81;
+    margin-top: 50px;
+	padding-bottom: 5px;
+}
+.downloads .download_box {
+    border-radius: 6px;
+    position: relative;
+    height: 100%;
+    padding: 30px;
+    transition: all 300ms linear 0s;
+    background: #FFFFFF;
+	-webkit-box-shadow:0 1.5rem 4rem rgba(0,0,0,0.05);
+	box-shadow:0 1.5rem 4rem rgba(0,0,0,0.05)
+}
+.downloads .download_box.inverted {
+    background: #3a3a3a;
+}
+.downloads .download_box h4 {
+    color: rgba(24, 24, 24, 0.6);
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+.downloads .download_box .logo_block {
+    text-align: center;
+}
+.downloads .download_box .logo_block img {
+    height: auto;
+	max-height: 80px;
+}
+.downloads .download_box .logo_block .tag a {
+    color: rgba(24, 24, 24, 0.6);
+	font-size: 0.75rem;
+	text-decoration: none;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    margin: 0.5rem 0.10rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1em;
+    vertical-align: middle;
+    min-width: 40px;
+    -webkit-box-shadow: inset 0 0 0 1px rgb(0 0 0 / 15%);
+    box-shadow: inset 0 0 0 1px rgb(0 0 0 / 15%);
+}
+.downloads .download_box .logo_block .tag a:hover {
+    color: rgba(24, 24, 24, 0.6);
+	background-color: #eceef3;
+	text-decoration: none;
+}
 
+
+.downloads .download_box.inverted {
+    background: #3a3a3a;
+}
+.downloads .download_box.inverted h4 {
+    color: rgba(255, 255, 255, 0.85);
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+.downloads .download_box.inverted .logo_block .tag a {
+    color: rgba(255, 255, 255, 0.7);
+    -webkit-box-shadow: inset 0 0 0 1px #4e5064;
+    box-shadow: inset 0 0 0 1px #4e5064;
+}
+.downloads .download_box.inverted .logo_block .tag a:hover {
+    color: rgba(255, 255, 255, 1);
+	background-color: #4e5064;
+}
+@media (max-width: 575px) {
+	.downloads .download_box .logo_block img {
+    	height: auto;
+    	max-height: 60px;
+	}
+}
 
 
 

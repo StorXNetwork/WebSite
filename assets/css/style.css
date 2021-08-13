@@ -5813,6 +5813,11 @@ body a:focus, body a:hover {
     font-size: 26px;
     line-height: 30px;
   }
+
+  .downloads h2 {
+    font-size: 26px!important;
+    line-height: 30px!important;
+  }
   
   .storx_exchanges h2 {
 	font-size: 26px!important;
@@ -6965,6 +6970,11 @@ table.pricing-table th span.fw-5 {
 	background-color: #eceef3;
 	text-decoration: none;
 }
+.downloads .download_box .logo_block .tag a:focus {
+    color: rgba(24, 24, 24, 0.6);
+	background-color: #FFFFFF;
+	text-decoration: none;
+}
 
 
 .downloads .download_box.inverted {
@@ -6979,10 +6989,18 @@ table.pricing-table th span.fw-5 {
     color: rgba(255, 255, 255, 0.7);
     -webkit-box-shadow: inset 0 0 0 1px #4e5064;
     box-shadow: inset 0 0 0 1px #4e5064;
+	background-color: #3a3a3a;
 }
 .downloads .download_box.inverted .logo_block .tag a:hover {
     color: rgba(255, 255, 255, 1);
 	background-color: #4e5064;
+}
+.downloads .download_box.inverted .logo_block .tag a:focus {
+    color: rgba(255, 255, 255, 0.7);
+    -webkit-box-shadow: inset 0 0 0 1px #4e5064;
+    box-shadow: inset 0 0 0 1px #4e5064;
+	background-color: #3a3a3a;
+
 }
 @media (max-width: 575px) {
 	.downloads .download_box .logo_block img {

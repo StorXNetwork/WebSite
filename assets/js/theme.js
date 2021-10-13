@@ -284,6 +284,15 @@ For Mega menu and Mobile menu
     }
 	
 	
+	
+	/* ---------------------------------------------- /*
+	 * tooltip
+	/* ---------------------------------------------- */
+    StorX.toolTip = function(){
+	  $('[data-toggle="tooltip"]').tooltip()
+	}
+	
+	
 	// Document on Ready
 	$(document).on("ready", function(){		
 		StorX.preloader(),
@@ -296,7 +305,8 @@ For Mega menu and Mobile menu
 		StorX.magnificPopup(),
 		StorX.sliderArea(),
 		StorX.clSlide(),
-		StorX.scrollToTop()
+		StorX.scrollToTop(),
+		StorX.toolTip()
 	});
 
 	// Document on Scroll

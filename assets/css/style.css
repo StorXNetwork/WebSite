@@ -224,6 +224,46 @@ body a:focus, body a:hover {
     font-weight: 600 !important;
 }
 
+.tooltip-big {
+	display: inline-block;
+}
+/*tooltip inner*/
+.tooltip > .tooltip-inner {
+  background-color: #ec971f;
+  font-weight: normal;
+}
+
+
+.tooltip > .arrow {
+    background-color: transparent;
+}
+
+.tooltip > .tooltip-inner {
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.15);
+}
+
+.bs-tooltip-top,
+.bs-tooltip-right,
+.bs-tooltip-left,
+.bs-tooltip-bottom {
+  background-color: transparent;
+  opacity: 1!important;
+}
+
+.tooltip.bs-tooltip-top .arrow:before,
+.tooltip.bs-tooltip-bottom .arrow:before {
+    border-top-color: white; 
+    border-right-color: transparent; 
+    border-bottom-color: white; 
+    border-left-color: transparent; 
+}
+		
 /* post_select */
 .post_select {
   position: relative;

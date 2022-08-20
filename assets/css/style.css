@@ -6740,12 +6740,27 @@ table.pricing-table th span.fw-5 {
     border-radius: 50px;
 }
 
+.exchanes-block {
+	-webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+}
 .exchanges_item {
-    margin-right: auto;
+    /*margin-right: auto;
     margin-left: auto;
     width: 19%;
     display: inline-block;
     padding: 10px 10px 30px;
+	vertical-align: top;*/
+	vertical-align: top;
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    width: 20%;
+    padding: 0.75rem;
 }
 .exchanges_item .logo-box {
     background: #FFFFFF;
@@ -6773,7 +6788,7 @@ table.pricing-table th span.fw-5 {
 }
 @media (max-width: 767px) {
 	.exchanges_item {
-		width: 46.66666666%!important;
+		width: 50%!important;
 	}
 }
 @media (max-width: 575px) {

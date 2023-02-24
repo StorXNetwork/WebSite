@@ -5107,6 +5107,10 @@ body a:focus, body a:hover {
 	height: auto;
 }
 
+@media (min-width: 992px) {
+	.trusted-by .col-lg-2 {-ms-flex: 0 0 20%;    flex: 0 0 20%;    max-width: 20%;}
+}
+
 @media (max-width: 575px) {
 	.trusted-by .col-xs-6 {width: 50%;}
 }

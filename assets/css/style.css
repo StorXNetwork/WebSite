@@ -5314,6 +5314,12 @@ body a:focus, body a:hover {
   align-items: center;
   line-height: 22px;
 }
+.footer_2 .cr_2 .copyright a {
+ color: #2582ff;
+}
+.footer_2 .cr_2 .copyright a:focus, .footer_2 .cr_2 .copyright a:hover {
+  color: #2582ff;
+ }
 .footer_2 .cr_2 .footer_social {
   padding: 0;
   display: inline-block;

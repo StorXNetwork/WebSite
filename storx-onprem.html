@@ -1,287 +1,673 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <meta name="description" content="Experience the faster, safer, more affordable and completely decentralized enterprise-grade cloud storage network.">
-		<meta name="keywords" content="storx, blockchain technology in cloud computing, blockchain-based cloud computing, decentralized cloud computing, decentralized cloud storage, distributed cloud storage, cloud storage, storage, secure, faster, encrypted">
-        <title>StorX | Distributed Cloud Storage with Blockchain Technology</title>
-        
-        <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png" />
-        <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png" />
-        <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png" />
-        <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png" />
-        <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png" />
-        <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png" />
-        <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png" />
-        <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png" />
-        <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/android-icon-192x192.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png" />
-        <link rel="manifest" href="assets/images/favicon/manifest.json" />
-        <meta name="msapplication-TileColor" content="#4a46fe" />
-        <meta name="msapplication-TileImage" content="assets/images/favicon/ms-icon-144x144.png" />
-        <meta name="theme-color" content="#4285f4">
-		<meta name="msapplication-navbutton-color" content="#4a46fe">
-		<meta name="apple-mobile-web-app-status-bar-style" content="#4a46fe">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Experience the faster, safer, more affordable and completely decentralized enterprise-grade cloud storage network.">
+    <meta name="keywords" content="storx, blockchain technology in cloud computing, blockchain-based cloud computing, decentralized cloud computing, decentralized cloud storage, distributed cloud storage, cloud storage, storage, secure, faster, encrypted">
 
-        <!-- Main style CSS -->
-        <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
 
-        <!-- Nav CSS -->
-        <link href="assets/css/classy-nav.min.css" rel="stylesheet" />
+    <!-- Style Import -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="./css/all.min.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
 
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-        
-        <!-- Meta Pixel Code -->
-		<script>
+    <title>StorX Network</title>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Meta Pixel Code -->
+    <script>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '749465320016144');
         fbq('track', 'PageView');
-        </script>
-        <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=749465320016144&ev=PageView&noscript=1"
-        /></noscript>
-        <!-- End Meta Pixel Code -->
-        
-        <!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=AW-376604750"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-        
-          gtag('config', 'AW-376604750');
-        </script>
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=749465320016144&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
 
-    </head>
-    <body>
-        <!-- Header -->
-        <header class="header-nav">
-            <div class="top-header-area">Smart Contract Address : <a href="https://xdc.network/token/xdc5d5f074837f5d4618b3916ba74de1bf9662a3fed" target="_blank">xdc5d5f074837f5d4618b3916ba74de1bf9662a3fed</a>
-            <div class="tooltip-big" data-toggle="tooltip" data-placement="bottom" title="Tokens sent to smart contract cannot be retrieved, so please cross check the SRX Address before any transfers."><i class="fas fa-exclamation-circle"></i></div>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-376604750"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-376604750');
+    </script>
+</head>
+<body>
+
+<header id="header">
+    <div class="header-layer"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-5 align-self-center">
+                <a href="index.html" class="logo">
+                    <img src="./images/storx-logo/storx-logo-black.png" alt="logo"/>
+                </a>
             </div>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container">
-                    <!-- Brand -->
-                    <a class="navbar-brand" href="index.html">
-                        <img src="assets/images/storx-logo.png" alt="StorX Logo" class="dark-logo" />
-                        <img src="assets/images/storx-logo-light.png" alt="StorX Logo" class="light-logo" />
+            <div class="col-lg-6 col-1 align-self-center text-end">
+                <div class="navbar-menu">
+                    <a href="index.html" class="logo">
+                        <img src="./images/storx-logo/storx-logo-black.png" alt="logo"/>
                     </a>
-                    <!-- / -->
-                    <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                        <div class="animated-icon1"><span></span><span></span><span></span></div>
-                    </button>
-                    <!-- / -->
-                    <!-- Top Menu -->
-                    <div class="collapse navbar-collapse justify-content-end" id="navbar">
-                        <ul class="navbar-nav ml-auto align-items-lg-center">
-                            <li><a class="nav-link" href="host-node.html">Host a Node</a></li>
-                            <li><a class="nav-link" href="store-data.html">Store Data</a></li>
-                            <li><a class="nav-link" href="community-bounty.html">Community Bounty</a></li>
-                            <li><a class="nav-link" href="support.html">Community Support</a></li>
-                            <li><a class="nav-link" href="https://storx.io">Sign In</a></li>
-                            <li><a href="https://storx.io" class="btn nav-link-btn login-btn">Start for Free</a></li>
-                        </ul>
-                    </div>
-                    <!-- / -->
-                </div>
-                <!-- Container -->
-            </nav>
-            <!-- Navbar -->
-        </header>
-        <!-- Header ends -->
-
-        <!-- Banner Area -->
-        <section class="pages_banner">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-7 col-md-6">
-                        <h2>StorX OnPrem</h2>
-                        <p class="pb-4">StorX OnPrem enables you to run your own private Dropbox-like file storage, sharing and sync solution, integrated with your IT infrastructure and storage on prem.</p>
-						<!--<a href="#" class="theme_btn">Setup Storage Node</a>-->
-                    </div>
-                    <div class="col-lg-5 col-md-6">
-                        <img src="assets/images/storx-onprem-banner.png" alt="" class="images_1" />
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Banner Area -->
-
-
-        <!-- Host Node -->
-        <section class="host-node-block">
-            <div class="container">                
-                <div class="row pb-4">
-                    <div class="col-lg-12">
-                        <h3 class="text-left pb-3">StorX OnPrem offers a Secure, Cloud File Server Solution</h3>
-                        <p>StorX OnPrem enables you to run your own private Dropbox-like file storage, sharing and sync solution, integrated with your IT infrastructure and storage on prem. Access your data securely from any device anywhere and use your local file server as private cloud storage. Built with hyper-security in mind, StorX onPrem  is a powerful on-premise cloud file storage server that helps enterprises manage their file and achieve data governance objectives.</p>
-                        <p class="mt-2">Access is supported from multiple device and anywhere in the world thanks to StorX OnPrem desktop clients, web browser portals, Security features like two-factor authentication (2FA), integrations, and encryption for data at rest and in transit ensure that data is protected and that users are validated before gaining access to the platform.</p>
-                        
-                        <h3 class="text-left mt-5 pb-3">Hybrid Cloud Storage</h3>
-                        <p>With StorX OnPrem, you can run your existing file servers as a local gateway or as cold storage for archived data. The file cloud server can be used to enable remote or collaborative access and to provide data redundancy and disaster recovery.</p>
-                        
-                        <h3 class="text-left mt-5 pb-3">Local File Storage a Solution to Increased Cybersecurity Threats</h3>
-                        <p>StorX OnPrem helps you secure your critical data from. On-premise file server solutions were developed for customers who have increased security demands or compliance requirements. Data protection for critical files ideally includes on-premise infrastructure to minimise the risk of data or financial loss following a cyberattack.</p>
-                        <p class="mt-2">Users and Admins can access the platform through their whitelabel access that provides dashboard views for files and folders, settings, policies, Unlimited, client accounts can also be used to extend security while sharing important data with external users.</p>
-                	</div>
-                </div>
-                
-                <div class="row flex mt-5">
-                    <div class="col-lg-4 mb-4">
-                        <div class="steps-block">
-                            <h3 class="text-left fs-24 pb-3">Best in Class Infra</h3>
-                            <p>StorX OnPrem is located inhouse, So you exercise complete control over selection and deployment of Hardware and Software, This results in incredibly high-performance execution of your storage for access and retrieval.</p>
-                        </div>
-                	</div>
-                    <div class="col-lg-4 mb-4">
-                        <div class="steps-block">
-                            <h3 class="text-left fs-24 pb-3">Maintain full ownership and control of your data</h3>
-                            <p>StorX OnPrem can help you achieve CISPE Code of Conduct (Cloud Infrastructure Services Provider Europe)  identified by a "trust mark". They provide a solution that allows enterprise to store and process their data within the European Economic Area.</p>
-                        </div>
-                	</div>
-                    <div class="col-lg-4 mb-4">
-                        <div class="steps-block">
-                            <h3 class="text-left fs-24 pb-3">High ROI and Unique Value</h3>
-                            <p>StorX OnPrem can be purchased for one time Fees of SRX 10000, Or stake 25000 SRX Tokens and use it for Free.</p>
-                        </div>
-                	</div>
-                </div>
-                
-                <div class="row mt-2">
-                    <div class="col-lg-10 offset-lg-1 text-center">
-                        <a href="https://forms.gle/7871RtiTNA9puhSZ8" target="_blank" class="theme_btn">Register your interest for StorX OnPrem Today!</a>
-                	</div>
-                </div>
-                
-            </div>
-        </section>
-        <!-- Store Data -->
-        
-        <!-- Footer Area -->
-        <footer class="footer_area footer_2">
-            <div class="container">                
-                <div class="footer_inner row">
-                    <div class="footer_widget col-lg-2 col-md-6">
-                        <img src="assets/images/storx-logo-light.png" width="150" height="42">
-                        <p>Build on XinFin (XDC) Blockchain Network as an open source initiative.</p>
-                    </div>
-                    <div class="footer_widget col-lg-2">
-                        <h4>StorX</h4>
-                        <ul class="footer_nav">
-                            <li><a href="host-node.html">Host a Node</a></li>
-                            <li><a href="store-data.html">Store Data</a></li>
-                            <li><a href="srx-token.html">SRX Token</a></li>
-                            <li><a href="https://storx.io/invite">Refer & Earn</a></li>
-                            <li><a href="wallets-&-exchanges.html">Wallets & Exchanges</a></li>
-                            <li><a href="storx-onprem.html">StorX OnPrem</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer_widget col-lg-2 fw_3">
-                        <h4>Community</h4>
-                        <ul class="footer_nav">
-                            <li><a href="community-bounty.html">Community Bounty</a></li>
-                            <li><a href="support.html">Community Support</a></li>
-                            <li><a href="about-team.html">About Team</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer_widget col-lg-2 fw_3">
-                        <h4>Resource</h4>
-                        <ul class="footer_nav">
-                            <li><a href="storx_whitepaper_v1.pdf" target="_blank">Whitepaper</a></li>
-                            <li><a href="roadmap.html">Roadmap</a></li>
-                            <li><a href="applications.html">StorX Applications</a></li>
-                            <li><a href="exchange-listing-resource.html">Exchange Listing Resource</a></li>
-                            <li><a href="bitcoin-technology.html">Bitcoin Technology</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer_widget col-lg-2 fw_3">
-                        <h4>Other Links</h4>
-                        <ul class="footer_nav">
-                            <li><a href="faqs.html">FAQs</a></li>
-                            <li><a href="brand-assets.html">Brand Assets</a></li>
-                            <li><a href="media.html">Media Coverage</a></li>
-                            <li><a href="application-usage-terms.html">Application Usage Terms</a></li>
-                            <li><a href="disclaimer.html">Disclaimer</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="copy_right cr_2">
-                    <div class="row">
-                    <div class="col-xl-7 col-lg-5 col-md-5">
-                            <p class="copyright">Join StorX Community on <a href="https://github.com/StorXNetwork" target="_blank">GitHub</a>.</p>
-                        </div>
-                        <div class="col-xl-5 col-lg-7 col-md-7">
-                            <ul class="footer_social">
-                                <li>
-                                    <a href="https://twitter.com/StorXNetwork" target="_blank"><i class="fab fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/company/storxnetwork" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.facebook.com/StorXNetwork" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://t.me/StorXNetwork" target="_blank"><i class="fab fa-telegram-plane"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.youtube.com/channel/UC5vUiX1eINl0gs6T3mS1CxA" target="_blank"><i class="fab fa-youtube"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://medium.com/storx-network" target="_blank"><i class="fab fa-medium-m"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/StorXNetwork" target="_blank"><i class="fab fa-github"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.reddit.com/r/StorXNetwork" target="_blank"><i class="fab fa-reddit-alien"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://discord.gg/ha4Jufj2Nm" target="_blank"><i class="fab fa-discord"></i></a>
-                                </li>
+                    <ul class="menu">
+                        <li>
+                            <a href="javascript:void(0)" class="link">
+                                Solutions
+                                <img src="./images/icons/arrow-down-icon.svg" alt="icon" class="arrow-icon"></a>
+                            <ul class="submenu">
+                                <li><a href="storx-website-s3-compatible-storage.html">S3 Compatible Storage</a></li>
+                                <li><a href="storx-website-backup-archival.html">Backup & Archival</a></li>
+                                <li><a href="storx-website-google-backup.html">Google Workspace Backup</a></li>
+                                <li><a href="storx-website-kubernetes-backup.html">Kubernetes Backup</a></li>
+                                <li><a href="storx-onprem.html">StorX Self Hosted Cloud</a></li>
                             </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="link">
+                                Resources
+                                <img src="./images/icons/arrow-down-icon.svg" alt="icon" class="arrow-icon">
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="faqs.html">FAQ</a></li>
+                                <li><a href="https://storxnetwork.medium.com/" target="_blank">Blog</a></li>
+                                <li><a href="https://doc.storx.io/" target="_blank">Documentation</a></li>
+                                <li><a href="integrations.html">Integration</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="link">
+                                About
+                                <img src="./images/icons/arrow-down-icon.svg" alt="icon" class="arrow-icon">
+                            </a>
+                            <ul class="submenu">
+                                <li class="manu-link"><a href="about-team.html">Our Story</a></li>
+                                <li class="manu-link"><a href="partners.html">Partners</a></li>
+                                <li class="manu-link"><a href="media.html">Newsroom</a></li>
+                                <li class="manu-link"><a href="contact-us.html">Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li class="desktop"><a href="https://storx.io/login" target="_blank" class="link">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <ul class="auth-options">
+                    <li class="desktop"><a href="https://storx.io/login" class="link">Login</a></li>
+                    <li><a href="https://storx.io/signup" class="btn-style">Signup For Free</a></li>
+                    <li class="mobile">
+                        <div class="hamburger-menu">
+                            <img src="./images/icons/menu-bar-icon.svg" alt="icon">
                         </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="banner banner-bg-v1 inner-banner" style="background: url('./images/self-hosted-banner-img.jpg') no-repeat center;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <div class="content-wrapper">
+                    <h1>StorX Self-Hosted Cloud</h1>
+                    <p class="white">StorX Self Hosted Cloud Is A Dedicated Distributed Cloud
+                        Storage Environment Where The Storage Resources Are Exclusively Dedicated
+                        To One Organization. As Opposed To The StorX Distributed Cloud Available For
+                        General Public, Complete Storage Resource is Setup Exclusively And Managed For
+                        Single Customer And, Therefore, Enterprise Can Maintain Greater Control, Privacy
+                        And Security Of Their Data</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12"></div>
+        </div>
+    </div>
+</section>
+
+<section class="sec-demand-data">
+    <div class="container">
+        <div class="demand-wrapper">
+            <div class="demand-card">
+                <div class="icon-wrapper">
+                    <img src="./images/icons/storx-website-kubernetes-backup/enhanced-data-security-privacy-icon.svg" alt="icon">
+                </div>
+                <div class="content-wrapper">
+                    <h3 class="f-20">Data Sovereignty and Control</h3>
+                    <p>Reclaim ownership of your data. StorX Self-Hosting Cloud lets you keep your data within your own infrastructure, ensuring you have full control and compliance over where your data resides.</p>
+                </div>
+            </div>
+            <div class="demand-card">
+                <div class="icon-wrapper">
+                    <img src="./images/icons/storx-website-kubernetes-backup/improved-reliability-redundancy-icon.svg" alt="icon">
+                </div>
+                <div class="content-wrapper">
+                    <h3 class="f-20">Enhanced Security</h3>
+                    <p>Your data's security is paramount. With StorX, you're not at the mercy of third-party security protocols. Implement your own security measures tailored to your organization's needs.</p>
+                </div>
+            </div>
+            <div class="demand-card">
+                <div class="icon-wrapper">
+                    <img src="./images/icons/storx-website-kubernetes-backup/cost-effective-long-term-storage-icon.svg" alt="icon">
+                </div>
+                <div class="content-wrapper">
+                    <h3 class="f-20">Customization and Flexibility</h3>
+                    <p>Customize your self-hosting environment to match your requirements. Scale resources up or down, integrate and adapt to changing demands seamlessly.</p>
+                </div>
+            </div>
+            <div class="demand-card">
+                <div class="icon-wrapper">
+                    <img src="./images/icons/storx-website-kubernetes-backup/seamless-integration-google-workspace-icon.svg" alt="icon">
+                </div>
+                <div class="content-wrapper">
+                    <h3 class="f-20">Cost Efficiency</h3>
+                    <p>Say goodbye to monthly subscriptions and overage fees. StorX Self-Hosting Cloud offers a cost-effective alternative, allowing you to allocate resources according to your budget.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="sec-about-v1 d-none">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 align-self-center">
+                <div class="img-wrapper">
+                    <img src="./images/roadmap-about-img.png" alt="img">
+                </div>
+            </div>
+            <div class="col-md-6 align-self-center">
+                <div class="content-wrapper">
+                    <p>StorX Self Hosted Cloud environments is ideal for
+                        any type of businesses and projects looking for enhanced
+                        privacy and security of its data. It is one of the most
+                        recommended deployment model to host mission-critical data
+                        in high availability and security levels.</p>
+                    <p>Welcome to StorX Self-Hosting Cloud, where data sovereignty
+                        meets the convenience of the distributed cloud protected by
+                        Blockchain. With StorX, you can liberate your data from the
+                        constraints of traditional cloud providers, where security and
+                        privacy is a daunting task. Our self-hosting cloud solution empowers
+                        you with the tools to securely store, manage, and access your data on
+                        your terms.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="blockchain-future backup-future d-none">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 align-self-center">
+                <div class="inner-wrapper">
+                    <div class="image-wrapper">
+                        <img src="./images/self-future-img.png" alt="image"/>
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- End Footer Area -->
+            <div class="col-md-6 align-self-center">
+                <div class="content-wrapper">
+                    <p>StorX Self Hosted Cloud environments is ideal for
+                        any type of businesses and projects looking for enhanced
+                        privacy and security of its data. It is one of the most
+                        recommended deployment model to host mission-critical data
+                        in high availability and security levels.</p> <br>
+                    <p>Welcome to StorX Self-Hosting Cloud, where data sovereignty
+                        meets the convenience of the distributed cloud protected by
+                        Blockchain. With StorX, you can liberate your data from the
+                        constraints of traditional cloud providers, where security and
+                        privacy is a daunting task. Our self-hosting cloud solution empowers
+                        you with the tools to securely store, manage, and access your data on
+                        your terms.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-        <!-- Scroll Top Button -->
-        <button class="scroll-top">
-            <i class="fas fa-angle-up"></i>
-        </button>
+<section class="sec-build-cloud d-none">
+    <div class="container">
+<!--        <h2><span>Why Choose StorX</span> Self-Hosting Cloud</h2>-->
+        <div class="row row-eq-height">
+            <div class="col-lg-3 col-md-6">
+                <div class="cloud-card">
+                    <div class="icon-wrapper">
+                        <img src="./images/icons/encryption-white-icon.svg" alt="icon">
+                    </div>
+                    <div class="content">
+                        <h4>Data Sovereignty
+                            and Control</h4>
+                        <p class="f-14">Reclaim ownership of your data. StorX Self-Hosting Cloud lets you keep your data within your own infrastructure, ensuring you have full control and compliance over where your data resides.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="cloud-card">
+                    <div class="icon-wrapper">
+                        <img src="./images/icons/data-white-icon.svg" alt="icon">
+                    </div>
+                    <div class="content">
+                        <h4>Enhanced Security</h4>
+                        <p class="f-14">Your data's security is paramount. With StorX, you're not at the mercy of third-party security protocols. Implement your own security measures tailored to your organization's needs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="cloud-card">
+                    <div class="icon-wrapper">
+                        <img src="./images/icons/protected-white-icon.svg" alt="icon">
+                    </div>
+                    <div class="content">
+                        <h4>Customization and
+                            Flexibility</h4>
+                        <p class="f-14">Customize your self-hosting environment to match your requirements. Scale resources up or down, integrate and adapt to changing demands seamlessly.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="cloud-card">
+                    <div class="icon-wrapper">
+                        <img src="./images/icons/verified-white-icon.svg" alt="icon">
+                    </div>
+                    <div class="content">
+                        <h4>Cost Efficiency</h4>
+                        <p class="f-14">Say goodbye to monthly subscriptions and overage fees. StorX Self-Hosting Cloud offers a cost-effective alternative, allowing you to allocate resources according to your budget.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-        <!-- Preloader -->
-        <div class="preloader"></div>
+<section class="cloud-lost self-lost d-none">
+    <div class="container">
+        <h2>Why Choose StorX Self-Hosting Cloud</h2>
+        <div class="cloud-lost-wrapper">
+            <div class="cloud-lost-card">
+                <p class="medium-p">Data Sovereignty <br>
+                    and Control</p>
+                <p>Reclaim ownership of your data. StorX
+                    Self-Hosting Cloud lets you keep your
+                    data within your own infrastructure,
+                    ensuring you have full control and
+                    compliance over where your data resides.</p>
+            </div>
+            <div class="cloud-lost-card">
+                <p class="medium-p">Enhanced Security</p>
+                <p>Your data's security is paramount.
+                    With StorX, you're not at the mercy
+                    of third-party security protocols.
+                    Implement your own security measures
+                    tailored to your organization's needs.</p>
+            </div>
+            <div class="cloud-lost-card">
+                <p class="medium-p">Customization and <br>
+                    Flexibility</p>
+                <p>Customize your self-hosting environment
+                    to match your requirements. Scale resources
+                    up or down, integrate and adapt to changing
+                    demands seamlessly.
+                </p>
+            </div>
+            <div class="cloud-lost-card">
+                <p class="medium-p">Cost Efficiency</p>
+                <p>Say goodbye to monthly subscriptions and
+                    overage fees. StorX Self-Hosting Cloud offers
+                    a cost-effective alternative, allowing you to
+                    allocate resources according to your budget.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-        <!-- jQuery v2.2.4 -->
-        <script src="assets/js/jquery-2.2.4.min.js"></script>
-        <!-- Bootstrap v4.0.0 -->
-        <script src="assets/js/popper.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <!-- Extra Plugin -->
-        <script src="assets/vendors/animate-css/wow.min.js"></script>
-        <script src="assets/vendors/magnify-popup/jquery.magnific-popup.min.js"></script>
+<section class="sec-build-cloud sec-build-benefits">
+    <div class="container">
+        <h2>Features</h2>
+        <div class="row row-eq-height">
+            <div class="col-md-6">
+                <div class="cloud-card">
+                    <div class="content">
+                        <h4>Data Sovereignty
+                            Assurance</h4>
+                        <p class="f-14">In StorX Self Hosted cloud all the Nodes are hosted exclusively for client, This confirms legal and regulatory compliance by ensuring your data remains within your jurisdiction, minimizing risks associated with data governance.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="cloud-card">
+                    <div class="content">
+                        <h4>Resiliency & Redundancy</h4>
+                        <p class="f-14">StorX Distributed Cloud architecture ensure that your data is evenly encrypted, fragmented and replicated before distributed across multiple private locations completely setup and managed by you. Single location failure would not lead to data loss. This ensures that your data backup isn't concentrated on single cloud and prone to failure.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="cloud-card">
+                    <div class="content">
+                        <h4>Privacy and
+                            Confidentiality</h4>
+                        <p class="f-14">Safeguard sensitive information by keeping it within your infrastructure, reducing exposure to external vulnerabilities and breaches.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="cloud-card">
+                    <div class="content">
+                        <h4>Data Integrity</h4>
+                        <p class="f-14">Seamlessly integrate power of Block chain authenticity into storage, With StorX Self-Hosting Cloud your data backups are regularly authenticated by immutable power of blockchains.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-        <!-- Custom js -->
-        <script src="assets/js/theme.js"></script>
-    </body>
+<section class="cloud-lost self-cloud-lost d-none">
+    <div class="container">
+        <h2>Benefits of StorX Self Hosted Cloud</h2>
+        <div class="cloud-lost-wrapper three">
+            <div class="cloud-lost-card">
+                <p class="medium-p">Data Sovereignty <br>
+                    Assurance</p>
+                <p>In StorX Self Hosted cloud all the Nodes are
+                    hosted exclusively for client, This confirms
+                    legal and regulatory compliance by ensuring your
+                    data remains within your jurisdiction, minimizing
+                    risks associated with data governance.</p>
+            </div>
+            <div class="cloud-lost-card">
+                <p class="medium-p">Resiliency & Redundancy</p>
+                <p>StorX Distributed Cloud architecture ensure that
+                    your data is evenly encrypted, fragmented and replicated
+                    before distributed across multiple private locations
+                    completely setup and managed by you. Single location
+                    failure would not lead to data loss. This ensures that
+                    your data backup isn't concentrated on single cloud and
+                    prone to failure.
+                </p>
+            </div>
+            <div class="cloud-lost-card">
+                <p class="medium-p">Privacy and <br>
+                    Confidentiality</p>
+                <p>Safeguard sensitive information by keeping it within
+                    your infrastructure, reducing exposure to external
+                    vulnerabilities and breaches.</p>
+            </div>
+        </div>
+        <div class="cloud-lost-wrapper two">
+            <div class="cloud-lost-card">
+                <p class="medium-p">Reduced Latency</p>
+                <p>Enjoy faster access to your data due to
+                    its proximity, resulting in enhanced performance
+                    for critical applications.</p>
+            </div>
+            <div class="cloud-lost-card">
+                <p class="medium-p">Data Integrity</p>
+                <p>Seamlessly integrate power of Block chain
+                    authenticity into storage, With StorX Self-Hosting
+                    Cloud your data backups are regularly authenticated
+                    by immutable power of blockchains.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="self-hosting bg-primary-1">
+    <div class="container">
+        <h2>Steps in Getting Started with StorX Self-Hosting Cloud:</h2>
+        <div class="self-hosting-wrapper">
+            <div class="self-hosting-card style-v1">
+                <span class="counter">01</span>
+                <div class="img-wrapper">
+                    <img src="./images/self-hosting-card-icon-1.svg" alt="icon">
+                </div>
+                <div class="content-wrapper">
+                    <p class="bold">Assessment and Planning</p>
+                    <p class="small">Evaluate your data storage needs and infrastructure
+                        capabilities. Our experts can guide you through the
+                        process to ensure a seamless deployment.</p>
+                </div>
+            </div>
+            <div class="self-hosting-card style-v1">
+                <span class="counter">02</span>
+                <div class="img-wrapper">
+                    <img src="./images/self-hosting-card-icon-2.svg" alt="icon">
+                </div>
+                <div class="content-wrapper">
+                    <p class="bold">Deployment and Configuration</p>
+                    <p class="small">Deploy the StorX Self-Hosting Cloud solution within
+                        your environment. Configure security measures, access controls,
+                        and data storage settings to match your requirements.</p>
+                </div>
+            </div>
+            <div class="self-hosting-card style-v1">
+                <span class="counter">03</span>
+                <div class="img-wrapper">
+                    <img src="./images/self-hosting-card-icon-3.svg" alt="icon">
+                </div>
+                <div class="content-wrapper">
+                    <p class="bold">Data Migration and Onboarding</p>
+                    <p class="small">Migrate your existing data to the
+                        self-hosted environment. Our team can assist
+                        you in transferring data securely and efficiently.</p>
+                </div>
+            </div>
+            <div class="self-hosting-card style-v1">
+                <span class="counter">04</span>
+                <div class="img-wrapper">
+                    <img src="./images/self-hosting-card-icon-4.svg" alt="icon">
+                </div>
+                <div class="content-wrapper">
+                    <p class="bold">Ongoing Support and Optimization</p>
+                    <p class="small">Benefit from continuous support and
+                        optimization services to ensure your self-hosting
+                        environment operates at its best.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="why self-hosting-why d-none">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 align-self-center">
+                <div class="content-wrapper">
+                    <h4>Secure, Control, and Empower with StorX <br>
+                        Self-Hosted Cloud</h4>
+                    <p class="lite-black">Harness the power of data ownership
+                        and control while enjoying the benefits of the cloud.
+                        Experience the difference with StorX Self-Hosting Cloud
+                        – where your data is truly yours.</p>
+                </div>
+            </div>
+            <div class="col-md-7 align-self-center">
+                <div class="image-wrapper height">
+                    <div class="inner-wrapper">
+                        <img src="./images/self-hosting-why-img.png" alt="why-image"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="explore-plan d-none">
+    <div class="container text-center">
+        <div class="content-wrapper">
+            <h4 class="white">Experience the peace of mind that comes with StorX Network Secured Cloud Storage</h4>
+            <p class="small white">Sign up today to start enjoying
+                the benefits of a secure, private, and user-friendly <br>
+                cloud storage solution</p>
+            <a href="plans.html" class="btn-style white">Explore Our Plans</a>
+        </div>
+    </div>
+</section>
+
+<section class="storx-network">
+    <div class="container">
+        <h2>Difference between StorX Networks And StorX Self Hosted</h2>
+        <div class="storx-network-wrapper">
+            <div class="storx-network-card">
+                <h3>StorX Networks</h3>
+                <ul>
+                    <li>StorX Storage Nodes Setup & Managed by StorX & Nodes Operator</li>
+                    <li>Nodes Hosted by Storage Node Operators</li>
+                    <li>Connectivity over the public Internet</li>
+                    <li>Low initial costs, Pay As You Go(OPEX model)</li>
+                    <li>Platform Setup & Managed by StorX Networks, Nodes by Node Operator</li>
+                    <li>Low visibility and control into the infrastructure</li>
+                    <li>High scalability</li>
+                </ul>
+            </div>
+            <div class="storx-network-card">
+                <h3>StorX Self Hosted Cloud</h3>
+                <ul>
+                    <li>StorX Networks Instance Setup for and managed by Enterprise.</li>
+                    <li>Storage Node Hosted by a Enterprise</li>
+                    <li>Connectivity over the public Internet</li>
+                    <li>Initial Setup Cost, Controlled costs over Long Term (CAPEX model)</li>
+                    <li>Setup by Enterprise, Managed can be outsourced.</li>
+                    <li>High visibility and control into the infrastructure</li>
+                    <li>High scalability & Cost Contol</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="sec-dont-wait">
+    <div class="container">
+        <div class="dont-wait-wrapper">
+            <div class="row">
+                <div class="col-md-8 align-self-center">
+                    <div class="content-wrapper">
+                        <p class="f-18">Don't leave the safety of your critical data to chance. With StorX Network, you can be assured that your Backup & Archival data is secure, accessible, and under your control. Experience the future - more secure, more resilient, and more cost-effective.
+                            Start with the Free Sign Up and safeguard your Google Workspace data with the most advanced backup technology available.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 align-self-center">
+                    <ul class="btn-list">
+                        <li><a href="https://storx.io/signup" target="_blank" class="btn-style orange-btn">Signup For Free</a></li>
+                        <li><a href="contact-us.html" class="btn-style orange-btn">Request a Demo</a></li>
+                        <li><a href="contact-us.html" class="btn-style orange-btn">Talk to Sales</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-md-3">
+                <a href="./index.html" class="footer-logo">
+                    <img src="./images/footer-logo.svg" alt="footer-logo"/>
+                </a>
+                <div class="text-wrapper">
+                    <p>
+                        Build on XinFin (XDC)<br/>
+                        Blockchain Network as an <br/>
+                        open source initiative.
+                    </p>
+                    <ul class="social-media-wrapper">
+                        <li><a href="https://twitter.com/StorXNetwork" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/storxnetwork" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.facebook.com/StorXNetwork" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://t.me/StorXNetwork" target="_blank"><i class="fab fa-telegram-plane"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UC5vUiX1eINl0gs6T3mS1CxA" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="https://medium.com/storx-network" target="_blank"><i class="fab fa-medium-m"></i></a></li>
+                        <li><a href="https://github.com/StorXNetwork" target="_blank"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.reddit.com/r/StorXNetwork" target="_blank"><i class="fab fa-reddit-alien"></i></a></li>
+                        <li><a href="https://discord.gg/ha4Jufj2Nm" target="_blank"><i class="fab fa-discord"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9 my-4 my-md-0">
+                <div class="links-wrapper">
+                    <div class="links-item">
+                        <h4>Solutions</h4>
+                        <ul>
+                            <li><a href="storx-website-s3-compatible-storage.html">S3 Compatible Storage</a></li>
+                            <li><a href="storx-website-backup-archival.html">Backup & Archival</a></li>
+                            <li><a href="storx-website-google-backup.html">Google Workspace Backup</a></li>
+                            <li><a href="storx-website-kubernetes-backup.html">Kubernetes Backup</a></li>
+                            <li><a href="storx-onprem.html">StorX Self Hosted Cloud</a></li>
+                        </ul>
+                    </div>
+                    <div class="links-item">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="faqs.html">FAQ</a></li>
+                            <li><a href="https://blogs.storx.tech/" target="_blank">Blog</a></li>
+                            <li><a href="https://doc.storx.io/" target="_blank">Documentation</a></li>
+                            <li><a href="integrations.html">Integrations</a></li>
+                        </ul>
+                    </div>
+                    <div class="links-item">
+                        <h4>StorX Ecosystem</h4>
+                        <ul>
+                            <li><a href="storx-website-host-storage-node.html">Host a Storage Node</a></li>
+                            <li><a href="srx-token.html">Tokenomics</a></li>
+                            <li><a href="./pdf/storx-whitepaper-1.pdf" download>WhitePaper</a></li>
+                            <li><a href="wallets-&-exchanges.html">Wallet & Exchanges</a></li>
+                            <li><a href="brand-assets.html">Brand Asset</a></li>
+                            <li><a href="roadmap.html">RoadMap</a></li>
+                            <li><a href="community-bounty.html">Community Bounty</a></li>
+                        </ul>
+                    </div>
+                    <div class="links-item">
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="about-team.html">Our Story</a></li>
+                            <li><a href="partners.html">Partners</a></li>
+                            <li><a href="media.html">Newsroom</a></li>
+
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <p class="footer-bottom-text text-center">
+                © Copyright 2025 StorX Foundation, All Rights Reserved. Read <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-of-use.html">Terms of Use</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="./js/jquery-3.7.0.min.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/popper.min.js"></script>
+<script src="./js/owl.carousel.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
 </html>

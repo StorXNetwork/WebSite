@@ -1,411 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <meta name="description" content="Experience the faster, safer, more affordable and completely decentralized enterprise-grade cloud storage network.">
-		<meta name="keywords" content="storx, blockchain technology in cloud computing, blockchain-based cloud computing, decentralized cloud computing, decentralized cloud storage, distributed cloud storage, cloud storage, storage, secure, faster, encrypted">
-        <title>StorX | Distributed Cloud Storage with Blockchain Technology</title>
-        
-        <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png" />
-        <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png" />
-        <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png" />
-        <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png" />
-        <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png" />
-        <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png" />
-        <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png" />
-        <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png" />
-        <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/android-icon-192x192.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png" />
-        <link rel="manifest" href="assets/images/favicon/manifest.json" />
-        <meta name="msapplication-TileColor" content="#4a46fe" />
-        <meta name="msapplication-TileImage" content="assets/images/favicon/ms-icon-144x144.png" /><meta name="theme-color" content="#4285f4">
-		<meta name="msapplication-navbutton-color" content="#4a46fe">
-		<meta name="apple-mobile-web-app-status-bar-style" content="#4a46fe">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Experience the faster, safer, more affordable and completely decentralized enterprise-grade cloud storage network.">
+    <meta name="keywords" content="storx, blockchain technology in cloud computing, blockchain-based cloud computing, decentralized cloud computing, decentralized cloud storage, distributed cloud storage, cloud storage, storage, secure, faster, encrypted">
 
-        <!-- Main style CSS -->
-        <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
 
-        <!-- Nav CSS -->
-        <link href="assets/css/classy-nav.min.css" rel="stylesheet" />
+    <!-- Style Import -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="./css/all.min.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
 
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
+    <title>StorX Network</title>
 
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-        <!-- Meta Pixel Code -->
-		<script>
+    <!-- Meta Pixel Code -->
+    <script>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '749465320016144');
         fbq('track', 'PageView');
-        </script>
-        <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=749465320016144&ev=PageView&noscript=1"
-        /></noscript>
-        <!-- End Meta Pixel Code -->
-        
-        
-        <!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=AW-376604750"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-        
-          gtag('config', 'AW-376604750');
-        </script>
-        
-    </head>
-    <body>
-        <!-- Header -->
-        <header class="header-nav">
-            <div class="top-header-area">Smart Contract Address : <a href="https://xdc.network/token/xdc5d5f074837f5d4618b3916ba74de1bf9662a3fed" target="_blank">xdc5d5f074837f5d4618b3916ba74de1bf9662a3fed</a>
-            <div class="tooltip-big" data-toggle="tooltip" data-placement="bottom" title="Tokens sent to smart contract cannot be retrieved, so please cross check the SRX Address before any transfers."><i class="fas fa-exclamation-circle"></i></div>
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=749465320016144&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-376604750"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-376604750');
+    </script>
+</head>
+<body>
+
+<header id="header">
+    <div class="header-layer"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-5 align-self-center">
+                <a href="index.html" class="logo">
+                    <img src="./images/storx-logo/storx-logo-black.png" alt="logo"/>
+                </a>
             </div>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container">
-                    <!-- Brand -->
-                    <a class="navbar-brand" href="index.html">
-                        <img src="assets/images/storx-logo.png" alt="StorX Logo" class="dark-logo" />
-                        <img src="assets/images/storx-logo-light.png" alt="StorX Logo" class="light-logo" />
+            <div class="col-lg-6 col-1 align-self-center text-end">
+                <div class="navbar-menu">
+                    <a href="index.html" class="logo">
+                        <img src="./images/storx-logo/storx-logo-black.png" alt="logo"/>
                     </a>
-                    <!-- / -->
-                    <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                        <div class="animated-icon1"><span></span><span></span><span></span></div>
-                    </button>
-                    <!-- / -->
-                    <!-- Top Menu -->
-                    <div class="collapse navbar-collapse justify-content-end" id="navbar">
-                        <ul class="navbar-nav ml-auto align-items-lg-center">
-                            <li><a class="nav-link" href="host-node.html">Host a Node</a></li>
-                            <li><a class="nav-link" href="store-data.html">Store Data</a></li>
-                            <li><a class="nav-link" href="community-bounty.html">Community Bounty</a></li>
-                            <li><a class="nav-link" href="support.html">Community Support</a></li>
-                            <li><a class="nav-link" href="https://storx.io">Sign In</a></li>
-                            <li><a href="https://storx.io" class="btn nav-link-btn login-btn">Start for Free</a></li>
-                        </ul>
-                    </div>
-                    <!-- / -->
-                </div>
-                <!-- Container -->
-            </nav>
-            <!-- Navbar -->
-        </header>
-        <!-- Header ends -->
-
-        <!-- Banner Area -->
-        <section class="pages_banner">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-7 col-md-6">
-                        <h2>Wallets & Exchanges</h2>
-                        <p>Exchanges and Wallets supporting SRX.</p>
-                        <div class="btn-block mt-lg-4 mb-4 mb-lg-0 mb-md-0">
-                            <a class="theme_btn popup-youtube" href="https://video.twimg.com/tweet_video/E3arD_7VgAA-Xh3.mp4"><i class="fa fa-play"></i> How to add SRX Token</a>
-                            
-                        </div>
-                    </div>
-                    <div class="col-lg-5 col-md-6">
-                        <img src="assets/images/wallets-exchanges-banner.png" alt="" class="images_1" />
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Banner Area -->
-
-        <!-- Applications Area -->
-        <section class="storx_exchanges grey_bg">
-            <div class="container">
-                <div class="tittle pb-4">
-                    <h2>Wallets</h2>
-                    <p>Your Favourite SRX wallet is now supported by following Crypto Wallets.</p>
-                </div>
-                <div class="row flex-row">
-                    <div class="col-lg-6 col-md-6 mb-4 mt-1">
-                        <div class="wallet_item">
-                                <div class="media-left">  
-                                    <i class="fa"><img src="assets/images/wallets-exchanges/dcent-wallet.png"></i>
-                                </div>
-                                <div class="media-body">
-                                    <a href="https://dcentwallet.com/" target="_blank" class="heading">D'CENT Wallet</a>
-                                    <p>D'CENT Mobile Wallet - Works on iOS and Android.</p>
-                                    <div class="mt-1 download-actions">
-                                        <a href="https://apps.apple.com/kr/app/dcent-hardware-wallet/id1447206611" target="_blank" class="btn btn-primary mt-2"><i class="fab fa-apple"></i> App Store</a>
-                                        <a href="https://play.google.com/store/apps/details?id=com.kr.iotrust.dcent.wallet&utm_source=dcentwallet&utm_campaign=mobileapp" target="_blank" class="btn btn-outline-primary mt-2"><i class="fab fa-google-play"></i> Google Play</a>                                        <!--<a class="app-btn btn-primary" href="#"><div class="btn-body"><i class="fab fa-apple"></i><p>Available on the <br/> <span class="big-txt">App Store</span></p></div></a>
-                                        <a class="app-btn btn-outline-primary" href="#"><div class="btn-body"><i class="fab fa-google-play"></i><p>Get it on <br/> <span class="big-txt">Google Play</span></p></div></a>-->
-                                    </div>
-                                </div>
-                        </div>                        
-                    </div>
-                    <div class="col-lg-6 col-md-6 mb-4 mt-1">
-                        <div class="wallet_item">
-                                <div class="media-left">  
-                                    <i class="fa"><img src="assets/images/wallets-exchanges/guarda-wallet.png"></i>
-                                </div>
-                                <div class="media-body">
-                                    <a href="https://guarda.com/" target="_blank" class="heading">Guarda Wallet</a>
-                                    <p>Available on Windows, macOS, Linux, Chrome, iOS and Android.</p>
-                                    <div class="mt-1 download-actions">
-                                        <a href="https://guarda.com/web-wallet/" target="_blank" class="btn btn-primary mt-2"> Web Wallet</a>
-                                        <a href="https://guarda.com/desktop/" target="_blank" class="btn btn-outline-primary mt-2"> Desktop Wallet</a>
-                                    </div>
-                                </div>
-                        </div>                        
-                    </div>
-                    
-                    <div class="col-lg-6 col-md-6 mb-4 mt-1">
-                        <div class="wallet_item">
-                                <div class="media-left">  
-                                    <i class="fa"><img src="assets/images/wallets-exchanges/ellipal-wallet.png"></i>
-                                </div>
-                                <div class="media-body">
-                                    <a href="https://www.ellipal.com/" target="_blank" class="heading">Ellipal Wallet</a>
-                                    <p>Available on secured offline hardware wallet and Android wallet.</p>
-                                    <div class="mt-1 download-actions">
-                                        <a href="https://www.ellipal.com/pages/coldwallet" target="_blank" class="btn btn-primary mt-2"> Hardware Wallet</a>
-                                        <a href="https://www.ellipal.com/pages/ellipal-wallet-app" target="_blank" class="btn btn-outline-primary mt-2"> Mobile Wallet</a>
-                                    </div>
-                                </div>
-                        </div>                        
-                    </div>
-                    
-                    <div class="col-lg-6 col-md-6 mb-4 mt-1">
-                        <div class="wallet_item">
-                                <div class="media-left">  
-                                    <i class="fa"><img src="assets/images/wallets-exchanges/trezor-wallet.png"></i>
-                                </div>
-                                <div class="media-body">
-                                    <a href="https://trezor.io/" target="_blank" class="heading">Trezor Wallet</a>
-                                    <p>Available on the original and most secure hardware wallet.</p>
-                                    <div class="mt-1 download-actions">
-                                        <a href="https://trezor.io/" target="_blank" class="btn btn-primary mt-2"> Hardware Wallet</a>
-                                    </div>
-                                </div>
-                        </div>                        
-                    </div>
-                    
-                    <div class="col-lg-6 col-md-6 mb-4 mt-1">
-                        <div class="wallet_item">
-                                <div class="media-left">  
-                                    <i class="fa"><img src="assets/images/wallets-exchanges/infinity-wallet.png"></i>
-                                </div>
-                                <div class="media-body">
-                                    <a href="https://infinitywallet.io/" target="_blank" class="heading">Infinity Wallet</a>
-                                    <p>The only digital wallet available on Windows, macOS, and Linux.</p>
-                                    <div class="mt-1 download-actions">
-                                        <a href="https://infinitywallet.io/download/" target="_blank" class="btn btn-primary mt-2"> Web Wallet</a>
-                                    </div>
-                                </div>
-                        </div>                        
-                    </div>
-                    
-                    <div class="col-lg-6 col-md-6 mb-4 mt-1">
-                        <div class="wallet_item">
-                                <div class="media-left">  
-                                    <i class="fa"><img src="assets/images/wallets-exchanges/onto-wallet.png"></i>
-                                </div>
-                                <div class="media-body">
-                                    <a href="https://onto.app/en/" target="_blank" class="heading">ONTO Wallet</a>
-                                    <p>DID-based gateway for identity and asset management, available on Android, iOS, and Chrome Extension.</p>
-                                    <div class="mt-1 download-actions">
-                                        <a href="https://play.google.com/store/apps/details?id=com.github.ontio.onto" target="_blank" class="btn btn-primary mt-2">Android Wallet</a>
-                            			<a href="https://apps.apple.com/us/app/onto-an-ontology-dapp/id1436009823" target="_blank" class="btn btn-primary mt-2">iOS Wallet</a>
-                            			<a href="https://chrome.google.com/webstore/detail/onto-wallet/ifckdpamphokdglkkdomedpdegcjhjdp?" target="_blank" class="btn btn-primary mt-2">Chrome Extension</a>
-                                    </div>
-                                </div>
-                        </div>                        
-                    </div>
-                </div>
-                
-                <div class="tittle pt-5 pb-4">
-                    <h2>Exchanges</h2>
-                    <p>Trade SRX at Following Exchanges.</p>
-                </div>
-                
-                <div class="row flex-row">
-                    <div class="col-lg-12 mb-2 mt-1 exchanes-block">
-                        <div class="exchanges_item text-center">
-                        	<div class="logo-box">
-                            	<a href="https://www.bitrue.com/trade/srx_usdt" target="_blank"><img src="assets/images/wallets-exchanges/bitrue.png" class="img-fluid" alt="bitrue.com"></a>
-                            </div>
-                            <div class="trading-pairs"><a href="https://www.bitrue.com/trade/srx_usdt" target="_blank">SRX-USDT</a></div>
-                    	</div>
-                        
-                        <div class="exchanges_item text-center">
-                        	<div class="logo-box">
-                            	<a href="https://app.liquid.com/exchange/SRXUSDT" target="_blank"><img src="assets/images/wallets-exchanges/liquid.png" class="img-fluid" alt="app.liquid.com"></a>
-                            </div>
-                            <div class="trading-pairs"><a href="https://app.liquid.com/exchange/SRXXDC" target="_blank">SRX-XDC</a>, <a href="https://app.liquid.com/exchange/SRXUSDT" target="_blank">SRX-USDT</a></div>
-                    	</div>
-                        
-                        <div class="exchanges_item text-center">
-                        	<div class="logo-box">
-                            	<a href="https://eu.globiance.com/trade/SRX-XDC" target="_blank"><img src="assets/images/wallets-exchanges/globiance.png" class="img-fluid" alt="eu.globiance.com"></a>
-                            </div>
-                            <div class="trading-pairs"><a href="https://eu.globiance.com/trade/SRX-XDC" target="_blank">SRX-XDC</a></div>
-                    	</div>
-                        
-                        <div class="exchanges_item text-center">
-                        	<div class="logo-box">
-                            	<a href="https://www.bitmart.com/trade/en?layout=pro&symbol=SRX_USDT" target="_blank"><img src="assets/images/wallets-exchanges/bitmart.png" class="img-fluid" alt="bitmart.com"></a>
-                            </div>
-                            <div class="trading-pairs"><a href="https://www.bitmart.com/trade/en?layout=pro&symbol=SRX_USDT" target="_blank">SRX-USDT</a></div>
-                    	</div> 
-                        
-                        <div class="exchanges_item text-center">
-                        	<div class="logo-box">
-                            	<a href="https://hitbtc.com/srx-to-usdt" target="_blank"><img src="assets/images/wallets-exchanges/hitbtc.png" class="img-fluid" alt="hitbtc.com"></a>
-                            </div>
-                            <div class="trading-pairs"><a href="https://hitbtc.com/srx-to-xdc" target="_blank">SRX-XDC</a>, <a href="https://hitbtc.com/srx-to-usdt" target="_blank">SRX-USDT</a></div>
-                    	</div>
-                        
-                        <div class="exchanges_item text-center">
-                        	<div class="logo-box">
-                            	<a href="https://www.coinstore.com/#/spot/SRXUSDT" target="_blank"><img src="assets/images/wallets-exchanges/coinstore.png" class="img-fluid" alt="coinstore.com"></a>
-                            </div>
-                            <div class="trading-pairs"><a href="https://www.coinstore.com/#/spot/SRXUSDT" target="_blank">SRX-USDT</a></div>
-                    	</div>
-                                   
-                    </div>
-                </div>
-                
-            </div>
-        </section>
-        <!-- Applications Area -->
-
-        <!-- Experience Decentralized Cloud Storage -->
-        <section class="experience_cta_block">
-            <div class="container">
-                <h2>Experience Decentralized Cloud Storage</h2>
-                <a href="host-node.html" class="theme_btn">Host a Node</a>
-                <a href="store-data.html" class="theme_btn white-btn">Store Data</a>
-            </div>
-        </section>
-        <!-- Experience Decentralized Cloud Storage -->
-
-        <!-- Footer Area -->
-        <footer class="footer_area footer_2">
-            <div class="container">                
-                <div class="footer_inner row">
-                    <div class="footer_widget col-lg-2 col-md-6">
-                        <img src="assets/images/storx-logo-light.png" width="150" height="42">
-                        <p>Build on XinFin (XDC) Blockchain Network as an open source initiative.</p>
-                    </div>
-                    <div class="footer_widget col-lg-2">
-                        <h4>StorX</h4>
-                        <ul class="footer_nav">
-                            <li><a href="host-node.html">Host a Node</a></li>
-                            <li><a href="store-data.html">Store Data</a></li>
-                            <li><a href="srx-token.html">SRX Token</a></li>
-                            <li><a href="https://storx.io/invite">Refer & Earn</a></li>
-                            <li><a href="wallets-&-exchanges.html">Wallets & Exchanges</a></li>
-                            <li><a href="storx-onprem.html">StorX OnPrem</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer_widget col-lg-2 fw_3">
-                        <h4>Community</h4>
-                        <ul class="footer_nav">
-                            <li><a href="community-bounty.html">Community Bounty</a></li>
-                            <li><a href="support.html">Community Support</a></li>
-                            <li><a href="about-team.html">About Team</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer_widget col-lg-2 fw_3">
-                        <h4>Resource</h4>
-                        <ul class="footer_nav">
-                            <li><a href="storx_whitepaper_v1.pdf" target="_blank">Whitepaper</a></li>
-                            <li><a href="roadmap.html">Roadmap</a></li>
-                            <li><a href="applications.html">StorX Applications</a></li>
-                            <li><a href="exchange-listing-resource.html">Exchange Listing Resource</a></li>
-                            <li><a href="bitcoin-technology.html">Bitcoin Technology</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer_widget col-lg-2 fw_3">
-                        <h4>Other Links</h4>
-                        <ul class="footer_nav">
-                            <li><a href="faqs.html">FAQs</a></li>
-                            <li><a href="brand-assets.html">Brand Assets</a></li>
-                            <li><a href="media.html">Media Coverage</a></li>
-                            <li><a href="application-usage-terms.html">Application Usage Terms</a></li>
-                            <li><a href="disclaimer.html">Disclaimer</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="copy_right cr_2">
-                    <div class="row">
-                    <div class="col-xl-7 col-lg-5 col-md-5">
-                            <p class="copyright">Join StorX Community on <a href="https://github.com/StorXNetwork" target="_blank">GitHub</a>.</p>
-                        </div>
-                        <div class="col-xl-5 col-lg-7 col-md-7">
-                            <ul class="footer_social">
-                                <li>
-                                    <a href="https://twitter.com/StorXNetwork" target="_blank"><i class="fab fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/company/storxnetwork" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.facebook.com/StorXNetwork" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://t.me/StorXNetwork" target="_blank"><i class="fab fa-telegram-plane"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.youtube.com/channel/UC5vUiX1eINl0gs6T3mS1CxA" target="_blank"><i class="fab fa-youtube"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://medium.com/storx-network" target="_blank"><i class="fab fa-medium-m"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/StorXNetwork" target="_blank"><i class="fab fa-github"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.reddit.com/r/StorXNetwork" target="_blank"><i class="fab fa-reddit-alien"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://discord.gg/ha4Jufj2Nm" target="_blank"><i class="fab fa-discord"></i></a>
-                                </li>
+                    <ul class="menu">
+                        <li>
+                            <a href="javascript:void(0)" class="link">
+                                Solutions
+                                <img src="./images/icons/arrow-down-icon.svg" alt="icon" class="arrow-icon"></a>
+                            <ul class="submenu">
+                                <li><a href="storx-website-s3-compatible-storage.html">S3 Compatible Storage</a></li>
+                                <li><a href="storx-website-backup-archival.html">Backup & Archival</a></li>
+                                <li><a href="storx-website-google-backup.html">Google Workspace Backup</a></li>
+                                <li><a href="storx-website-kubernetes-backup.html">Kubernetes Backup</a></li>
+                                <li><a href="storx-onprem.html">StorX Self Hosted Cloud</a></li>
                             </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="link">
+                                Resources
+                                <img src="./images/icons/arrow-down-icon.svg" alt="icon" class="arrow-icon">
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="faqs.html">FAQ</a></li>
+                                <li><a href="https://storxnetwork.medium.com/" target="_blank">Blog</a></li>
+                                <li><a href="https://doc.storx.io/" target="_blank">Documentation</a></li>
+                                <li><a href="integrations.html">Integration</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="link">
+                                About
+                                <img src="./images/icons/arrow-down-icon.svg" alt="icon" class="arrow-icon">
+                            </a>
+                            <ul class="submenu">
+                                <li class="manu-link"><a href="about-team.html">Our Story</a></li>
+                                <li class="manu-link"><a href="partners.html">Partners</a></li>
+                                <li class="manu-link"><a href="media.html">Newsroom</a></li>
+                                <li class="manu-link"><a href="contact-us.html">Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li class="desktop"><a href="https://storx.io/login" target="_blank" class="link">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <ul class="auth-options">
+                    <li class="desktop"><a href="https://storx.io/login" class="link">Login</a></li>
+                    <li><a href="https://storx.io/signup" class="btn-style">Signup For Free</a></li>
+                    <li class="mobile">
+                        <div class="hamburger-menu">
+                            <img src="./images/icons/menu-bar-icon.svg" alt="icon">
                         </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="banner banner-bg-v1 inner-banner" style="background: url('./images/storx-website-s3-compatible-storage-banner-img.jpg') no-repeat center;">
+    <div class="container">
+        <div class="content-wrapper">
+            <h1>Wallets & Exchanges</h1>
+            <p class="white">Exchanges and Wallets supporting SRX.</p>
+        </div>
+    </div>
+</section>
+
+<section class="self-hosting wallet-exchange">
+    <div class="container">
+        <h2>Wallets</h2>
+        <p>Your Favourite SRX wallet is now supported by following Crypto Wallets.</p>
+        <div class="self-hosting-wrapper">
+            <div class="self-hosting-card">
+                <span class="counter">01</span>
+                <div class="img-wrapper">
+                    <img src="./images/icons/exchange-wallet-icon-1.png" alt="icon">
+                </div>
+                <div class="content-wrapper">
+                    <p class="bold">D'CENT Wallet</p>
+                    <p class="small">D'CENT Mobile Wallet - Works on iOS and Android.</p>
+                    <div class="btn-group">
+                        <a href="https://apps.apple.com/kr/app/dcent-hardware-wallet/id1447206611" target="_blank" class="btn-style icon"><i class="fa-brands fa-apple"></i> App Store</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.kr.iotrust.dcent.wallet&utm_source=dcentwallet&utm_campaign=mobileapp&pli=1" target="_blank" class="btn-style icon"><i class="fab fa-google-play"></i> Google Play</a>
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- End Footer Area -->
+            <div class="self-hosting-card">
+                <span class="counter">02</span>
+                <div class="img-wrapper">
+                    <img src="./images/icons/exchange-wallet-icon-2.png" alt="icon">
+                </div>
+                <div class="content-wrapper">
+                    <p class="bold">Guarda Wallet</p>
+                    <p class="small">Available on Windows, macOS, Linux, Chrome, iOS and Android.</p>
+                    <div class="btn-group">
+                        <a href="https://guarda.com/web-wallet/" target="_blank" class="btn-style icon">Web Wallet</a>
+                        <a href="https://guarda.com/desktop/" target="_blank" class="btn-style icon">Desktop Wallet</a>
+                    </div>
+                </div>
+            </div>
+            <div class="self-hosting-card">
+                <span class="counter">03</span>
+                <div class="img-wrapper">
+                    <img src="./images/icons/exchange-wallet-icon-3.png" alt="icon">
+                </div>
+                <div class="content-wrapper">
+                    <p class="bold">Ellipal Wallet</p>
+                    <p class="small">Available on secured offline hardware wallet and Android wallet.</p>
+                    <div class="btn-group">
+                        <a href="https://www.ellipal.com/pages/coldwallet" target="_blank" class="btn-style icon">Hardware Wallet</a>
+                        <a href="https://www.ellipal.com/pages/ellipal-wallet-app" target="_blank" class="btn-style icon">Mobile Wallet</a>
+                    </div>
+                </div>
+            </div>
 
-        <!-- Scroll Top Button -->
-        <button class="scroll-top">
-            <i class="fas fa-angle-up"></i>
-        </button>
+            <div class="self-hosting-card">
+                <span class="counter">04</span>
+                <div class="img-wrapper">
+                    <img src="./images/icons/exchange-wallet-icon-4.png" alt="icon">
+                </div>
+                <div class="content-wrapper">
+                    <p class="bold">Trezor Wallet</p>
+                    <p class="small">Available on the original and most secure hardware wallet.</p>
+                    <div class="btn-group">
+                        <a href="https://trezor.io/" target="_blank" class="btn-style icon">Hardware Wallet</a>
+                    </div>
+                </div>
+            </div>
+            <div class="self-hosting-card">
+                <span class="counter">05</span>
+                <div class="img-wrapper">
+                    <img src="./images/icons/exchange-wallet-icon-5.png" alt="icon">
+                </div>
+                <div class="content-wrapper">
+                    <p class="bold">Infinity Wallet</p>
+                    <p class="small">The only digital wallet available on Windows, macOS, and Linux.</p>
+                    <div class="btn-group">
+                        <a href="https://infinitywallet.io/download/" target="_blank" class="btn-style icon">Web Wallet</a>
+                    </div>
+                </div>
+            </div>
+            <div class="self-hosting-card">
+                <span class="counter">06</span>
+                <div class="img-wrapper">
+                    <img src="./images/icons/exchange-wallet-icon-6.png" alt="icon">
+                </div>
+                <div class="content-wrapper">
+                    <p class="bold">ONTO Wallet</p>
+                    <p class="small">DID-based gateway for identity and asset management, available on Android, iOS, and Chrome Extension.</p>
+                    <div class="btn-group">
+                        <a href="https://play.google.com/store/apps/details?id=com.github.ontio.onto" target="_blank" class="btn-style icon">Android Wallet</a>
+                        <a href="https://apps.apple.com/us/app/onto-an-ontology-dapp/id1436009823" target="_blank" class="btn-style icon">iOS Wallet</a>
+                        <a href="https://chrome.google.com/webstore/detail/onto-wallet/ifckdpamphokdglkkdomedpdegcjhjdp?" target="_blank" class="btn-style icon">Chrome Extension</a>
+                    </div>
+                </div>
+            </div>
 
-        <!-- Preloader -->
-        <div class="preloader"></div>
+        </div>
+    </div>
+</section>
 
-        <!-- jQuery v2.2.4 -->
-        <script src="assets/js/jquery-2.2.4.min.js"></script>
-        <!-- Bootstrap v4.0.0 -->
-        <script src="assets/js/popper.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <!-- Extra Plugin -->
-        <script src="assets/vendors/animate-css/wow.min.js"></script>
-        <script src="assets/vendors/magnify-popup/jquery.magnific-popup.min.js"></script>
+<section class="exchange-listening wallet-exchange">
+    <div class="container">
+        <h2>Exchanges</h2>
+        <p>Trade SRX at Following Exchanges.</p>
+        <div class="row">
 
-        <!-- Custom js -->
-        <script src="assets/js/theme.js"></script>
-    </body>
+            <div class="col-lg-4 col-md-6">
+                <div class="exchange-listening-card">
+                    <div class="content">
+                        <img src="./images/bingx-logo.svg" alt="icon">
+                        <ul class="link">
+                            <li><a href="https://bingx.com/en/spot/SRXUSDT/" target="_blank">SRX-USDT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="col-lg-4 col-md-6">
+                <div class="exchange-listening-card">
+                    <div class="content">
+                        <img src="./images/icons/exchange-icon-2.png" alt="icon">
+                        <ul class="link">
+                            <li><a href="https://app.liquid.com/exchange/SRXXDC" target="_blank">SRX-XDC</a></li>
+                            <li><a href="https://app.liquid.com/exchange/SRXUSDT" target="_blank">SRX-USDT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>-->
+            <div class="col-lg-4 col-md-6">
+                <div class="exchange-listening-card">
+                    <div class="content">
+                        <img src="./images/probit-logo.svg" alt="icon">
+                        <ul class="link">
+                            <li><a href="https://www.probit.com/en-us/app/exchange/SRX-USDT" target="_blank">SRX-USDT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="exchange-listening-card">
+                    <div class="content">
+                        <img src="./images/icons/exchange-icon-4.png" alt="icon">
+                        <ul class="link">
+                            <li><a href="https://www.bitmart.com/trade/en-US?layout=pro&symbol=SRX_USDT" target="_blank">SRX-USDT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="exchange-listening-card">
+                    <div class="content">
+                        <img src="./images/icons/exchange-icon-5.png" alt="icon">
+                        <ul class="link">
+                            <li><a href="https://hitbtc.com/srx-to-xdc" target="_blank">SRX-XDC</a></li>
+                            <li><a href="https://hitbtc.com/srx-to-usdt" target="_blank">SRX-USDT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="exchange-listening-card">
+                    <div class="content">
+                        <img src="./images/icons/exchange-icon-6.png" alt="icon">
+                        <ul class="link">
+                            <li><a href="https://hitbtc.com/srx-to-usdt" target="_blank">SRX-USDT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="exchange-listening-card">
+                    <div class="content">
+                        <img src="./images/icons/exchange-icon-1.png" alt="icon">
+                        <ul class="link">
+                            <li><a href="https://www.bitrue.com/trade/srx_usdt" target="_blank">SRX-USDT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="exchange-listening-card">
+                    <div class="content">
+                        <img src="./images/biconomy-logo.webp" alt="icon">
+                        <ul class="link mt-4">
+                            <li><a href="https://www.biconomy.com/exchange/SRX_USDT" target="_blank">USDT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="exchange-listening-card">
+                    <div class="content">
+                        <img src="./images/icons/exchange-icon-3.png" alt="icon">
+                        <ul class="link">
+                            <li><a href="https://v3.globiance.com/market/SRX-USDG" target="_blank">SRX-USDG</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-md-3">
+                <a href="./index.html" class="footer-logo">
+                    <img src="./images/footer-logo.svg" alt="footer-logo"/>
+                </a>
+                <div class="text-wrapper">
+                    <p>
+                        Build on XinFin (XDC)<br/>
+                        Blockchain Network as an <br/>
+                        open source initiative.
+                    </p>
+                    <ul class="social-media-wrapper">
+                        <li><a href="https://twitter.com/StorXNetwork" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/storxnetwork" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.facebook.com/StorXNetwork" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://t.me/StorXNetwork" target="_blank"><i class="fab fa-telegram-plane"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UC5vUiX1eINl0gs6T3mS1CxA" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="https://medium.com/storx-network" target="_blank"><i class="fab fa-medium-m"></i></a></li>
+                        <li><a href="https://github.com/StorXNetwork" target="_blank"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.reddit.com/r/StorXNetwork" target="_blank"><i class="fab fa-reddit-alien"></i></a></li>
+                        <li><a href="https://discord.gg/ha4Jufj2Nm" target="_blank"><i class="fab fa-discord"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9 my-4 my-md-0">
+                <div class="links-wrapper">
+                    <div class="links-item">
+                        <h4>Solutions</h4>
+                        <ul>
+                            <li><a href="storx-website-s3-compatible-storage.html">S3 Compatible Storage</a></li>
+                            <li><a href="storx-website-backup-archival.html">Backup & Archival</a></li>
+                            <li><a href="storx-website-google-backup.html">Google Workspace Backup</a></li>
+                            <li><a href="storx-website-kubernetes-backup.html">Kubernetes Backup</a></li>
+                            <li><a href="storx-onprem.html">StorX Self Hosted Cloud</a></li>
+                        </ul>
+                    </div>
+                    <div class="links-item">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="faqs.html">FAQ</a></li>
+                            <li><a href="https://blogs.storx.tech/" target="_blank">Blog</a></li>
+                            <li><a href="https://doc.storx.io/" target="_blank">Documentation</a></li>
+                            <li><a href="integrations.html">Integrations</a></li>
+                        </ul>
+                    </div>
+                    <div class="links-item">
+                        <h4>StorX Ecosystem</h4>
+                        <ul>
+                            <li><a href="storx-website-host-storage-node.html">Host a Storage Node</a></li>
+                            <li><a href="srx-token.html">Tokenomics</a></li>
+                            <li><a href="./pdf/storx-whitepaper-1.pdf" download>WhitePaper</a></li>
+                            <li><a href="wallets-&-exchanges.html">Wallet & Exchanges</a></li>
+                            <li><a href="brand-assets.html">Brand Asset</a></li>
+                            <li><a href="roadmap.html">RoadMap</a></li>
+                            <li><a href="community-bounty.html">Community Bounty</a></li>
+                        </ul>
+                    </div>
+                    <div class="links-item">
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="about-team.html">Our Story</a></li>
+                            <li><a href="partners.html">Partners</a></li>
+                            <li><a href="media.html">Newsroom</a></li>
+
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <p class="footer-bottom-text text-center">
+                © Copyright 2025 StorX Foundation, All Rights Reserved. Read <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-of-use.html">Terms of Use</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="./js/jquery-3.7.0.min.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/popper.min.js"></script>
+<script src="./js/owl.carousel.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
 </html>

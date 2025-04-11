@@ -1,330 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-      <meta name="description" content="Experience the faster, safer, more affordable and completely decentralized enterprise-grade cloud storage network.">
-      <meta name="keywords" content="storx, blockchain technology in cloud computing, blockchain-based cloud computing, decentralized cloud computing, decentralized cloud storage, distributed cloud storage, cloud storage, storage, secure, faster, encrypted">
-      <title>StorX | Distributed Cloud Storage with Blockchain Technology</title>
-      
-      <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png" />
-      <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png" />
-      <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png" />
-      <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png" />
-      <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png" />
-      <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png" />
-      <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png" />
-      <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png" />
-      <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png" />
-      <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/android-icon-192x192.png" />
-      <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png" />
-      <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png" />
-      <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png" />
-      <link rel="manifest" href="assets/images/favicon/manifest.json" />
-      <meta name="msapplication-TileColor" content="#4a46fe" />
-      <meta name="msapplication-TileImage" content="assets/images/favicon/ms-icon-144x144.png" />
-      <meta name="theme-color" content="#4285f4">
-      <meta name="msapplication-navbutton-color" content="#4a46fe">
-      <meta name="apple-mobile-web-app-status-bar-style" content="#4a46fe">
-      
-      <!-- Main style CSS -->
-      <link href="assets/css/style.css" rel="stylesheet" />
-      
-      <!-- Nav CSS -->
-      <link href="assets/css/classy-nav.min.css" rel="stylesheet" />
-      
-      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-      <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-      <![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Experience the faster, safer, more affordable and completely decentralized enterprise-grade cloud storage network.">
+    <meta name="keywords" content="storx, blockchain technology in cloud computing, blockchain-based cloud computing, decentralized cloud computing, decentralized cloud storage, distributed cloud storage, cloud storage, storage, secure, faster, encrypted">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
 
-        <!-- Meta Pixel Code -->
-		<script>
+    <!-- Style Import -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="./css/all.min.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+
+    <title>StorX Network</title>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Meta Pixel Code -->
+    <script>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '749465320016144');
         fbq('track', 'PageView');
-        </script>
-        <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=749465320016144&ev=PageView&noscript=1"
-        /></noscript>
-        <!-- End Meta Pixel Code -->
-        
-        
-      <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=AW-376604750"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-        
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=749465320016144&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-376604750"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
         gtag('config', 'AW-376604750');
-      </script>
-        
-   </head>
-   <body>
-      <!-- Header -->
-      <header class="header-nav">
-         <div class="top-header-area">Smart Contract Address : <a href="https://xdc.network/token/xdc5d5f074837f5d4618b3916ba74de1bf9662a3fed" target="_blank">xdc5d5f074837f5d4618b3916ba74de1bf9662a3fed</a>
-         <div class="tooltip-big" data-toggle="tooltip" data-placement="bottom" title="Tokens sent to smart contract cannot be retrieved, so please cross check the SRX Address before any transfers."><i class="fas fa-exclamation-circle"></i></div>
-         </div>
-         <nav class="navbar navbar-expand-lg">
-            <div class="container">
-               <!-- Brand -->
-               <a class="navbar-brand" href="index.html">
-               <img src="assets/images/storx-logo.png" alt="StorX Logo" class="dark-logo" />
-               <img src="assets/images/storx-logo-light.png" alt="StorX Logo" class="light-logo" />
-               </a>
-               <!-- / -->
-               <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                  <div class="animated-icon1"><span></span><span></span><span></span></div>
-               </button>
-               <!-- / -->
-               <!-- Top Menu -->
-               <div class="collapse navbar-collapse justify-content-end" id="navbar">
-                  <ul class="navbar-nav ml-auto align-items-lg-center">
-                     <li><a class="nav-link" href="host-node.html">Host a Node</a></li>
-                     <li><a class="nav-link" href="store-data.html">Store Data</a></li>
-                     <li><a class="nav-link" href="community-bounty.html">Community Bounty</a></li>
-                     <li><a class="nav-link" href="support.html">Community Support</a></li>
-                     <li><a class="nav-link" href="https://storx.io">Sign In</a></li>
-                     <li><a href="https://storx.io" class="btn nav-link-btn login-btn">Start for Free</a></li>
-                  </ul>
-               </div>
-               <!-- / -->
+    </script>
+</head>
+<body>
+
+<header id="header">
+    <div class="header-layer"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-5 align-self-center">
+                <a href="index.html" class="logo">
+                    <img src="./images/storx-logo/storx-logo-black.png" alt="logo"/>
+                </a>
             </div>
-            <!-- Container -->
-         </nav>
-         <!-- Navbar -->
-      </header>
-      <!-- Header ends -->
-      
-      
-      <!-- Banner Area -->
-      <section class="pages_banner">
-         <div class="container">
-            <div class="row align-items-center">
-               <div class="col-lg-7 col-md-6">
-                  <h2>Brand Assets</h2>
-                  <p>Download StorX logotype and symbol.</p>
-                  <div class="btn-block mt-lg-4 mb-4 mb-lg-0 mb-md-0">
-                     <a class="theme_btn" href="assets/images/brand-assets/storx-brand-assets.zip">Download All Assets <i class="fas fa-file-archive"></i></a>
-                  </div>
-               </div>
-               <div class="col-lg-5 col-md-6">
-                  <img src="assets/images/brand-assets-banner.png" alt="" class="images_1" />
-               </div>
+            <div class="col-lg-6 col-1 align-self-center text-end">
+                <div class="navbar-menu">
+                    <a href="index.html" class="logo">
+                        <img src="./images/storx-logo/storx-logo-black.png" alt="logo"/>
+                    </a>
+                    <ul class="menu">
+                        <li>
+                            <a href="javascript:void(0)" class="link">
+                                Solutions
+                                <img src="./images/icons/arrow-down-icon.svg" alt="icon" class="arrow-icon"></a>
+                            <ul class="submenu">
+                                <li><a href="storx-website-s3-compatible-storage.html">S3 Compatible Storage</a></li>
+                                <li><a href="storx-website-backup-archival.html">Backup & Archival</a></li>
+                                <li><a href="storx-website-google-backup.html">Google Workspace Backup</a></li>
+                                <li><a href="storx-website-kubernetes-backup.html">Kubernetes Backup</a></li>
+                                <li><a href="storx-onprem.html">StorX Self Hosted Cloud</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="link">
+                                Resources
+                                <img src="./images/icons/arrow-down-icon.svg" alt="icon" class="arrow-icon">
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="faqs.html">FAQ</a></li>
+                                <li><a href="https://storxnetwork.medium.com/" target="_blank">Blog</a></li>
+                                <li><a href="https://doc.storx.io/" target="_blank">Documentation</a></li>
+                                <li><a href="integrations.html">Integration</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="link">
+                                About
+                                <img src="./images/icons/arrow-down-icon.svg" alt="icon" class="arrow-icon">
+                            </a>
+                            <ul class="submenu">
+                                <li class="manu-link"><a href="about-team.html">Our Story</a></li>
+                                <li class="manu-link"><a href="partners.html">Partners</a></li>
+                                <li class="manu-link"><a href="media.html">Newsroom</a></li>
+                                <li class="manu-link"><a href="contact-us.html">Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li class="desktop"><a href="https://storx.io/login" target="_blank" class="link">Login</a></li>
+                    </ul>
+                </div>
             </div>
-         </div>
-      </section>
-      <!-- Banner Area -->
-      
-      
-      <!-- Downloads Area -->
-      <section class="downloads grey_bg">
-         <div class="container">
+            <div class="col-lg-3 col-6">
+                <ul class="auth-options">
+                    <li class="desktop"><a href="https://storx.io/login" class="link">Login</a></li>
+                    <li><a href="https://storx.io/signup" class="btn-style">Signup For Free</a></li>
+                    <li class="mobile">
+                        <div class="hamburger-menu">
+                            <img src="./images/icons/menu-bar-icon.svg" alt="icon">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="banner banner-bg-v1 inner-banner" style="background: url('./images/brand-asset-banner-img.jpg') no-repeat center;">
+    <div class="container">
+        <div class="content-wrapper">
+            <h1>Brand Assets</h1>
+            <p class="white">Download StorX logotype and symbol.</p>
+        </div>
+    </div>
+</section>
+
+<section class="sec-brand-assets">
+    <div class="container">
+        <h2><span>StorX Logo</span> and Symbol</h2>
+        <p class="f-18">We've provided vector and png versions of our logo and symbol for certain uses listed below. <br>You can use only horizontal placing of our logo.</p>
+        <div class="brand-wrapper">
+            <h3 class="f-20">StorX Primary Logo</h3>
+            <p>Use the logo on white or dark backgrounds only.</p>
             <div class="row">
-               <div class="col-lg-10 col-md-12 offset-lg-1">
-                  <div class="tittle pb-3">
-                     <h2>StorX Logo and Symbol</h2>
-                     <p>We've provided vector and png versions of our logo and symbol for certain uses listed below. You can use only horizontal placing of our logo.</p>
-                     <h3 class="mt-5">StorX Primary Logo</h3>
-                     <p>Use the logo on white or dark backgrounds only.</p>
-                  </div>
-                  <div class="row flex-row">
-                     <div class="col-lg-6 col-md-6 mb-4">
-                        <div class="download_box d-flex align-items-center justify-content-center">
-                           <div class="logo_block">
-                              <img src="assets/images/storx-logo/storx-logo_dark.png">
-                           </div>
+                <div class="col-md-6">
+                    <div class="brand-card">
+                        <div class="img-wrapper">
+                            <img src="./images/storx-logo/storx-logo-black.png" alt="img">
                         </div>
-                        <h4 class="">StorX Logo</h4>
-                        <p>Use the logo on white backgrounds only.</p>
-                        <div class="">
-                           <span class="tag"><a href="assets/images/brand-assets/storx_logo-dark/storx_logo-dark.ai" target="_blank">.ai</a></span>
-                           <span class="tag"><a href="assets/images/brand-assets/storx_logo-dark/storx_logo-dark.eps" target="_blank">.eps</a></span>
-                           <span class="tag"><a href="assets/images/brand-assets/storx_logo-dark/storx_logo-dark.svg" target="_blank">.svg</a></span>
-                           <span class="tag"><a href="assets/images/brand-assets/storx_logo-dark/storx_logo-dark.png" target="_blank">.png</a></span>
+                        <div class="content-wrapper">
+                            <h3 class="f-20">StorX Logo</h3>
+                            <p>Use the logo on white backgrounds only.</p>
+                            <ul class="download-list">
+                                <li><a href="./images/storx-logo/storx-eps-logo-black.eps" download>.AI</a></li>
+                                <li><a href="./images/storx-logo/storx-eps-logo-black.eps" download>.EPS</a></li>
+                                <li><a href="./images/storx-logo/storx-svg-logo-black.svg">.SVG</a></li>
+                                <li><a href="./images/storx-logo/storx-logo-black.png" download>.PNG</a></li>
+                            </ul>
                         </div>
-                     </div>
-                     <div class="col-lg-6 col-md-6 mb-4">
-                        <div class="download_box inverted d-flex align-items-center justify-content-center">
-                           <div class="logo_block">
-                              <img src="assets/images/storx-logo/storx-logo_light.png">
-                           </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="brand-card">
+                        <div class="img-wrapper dark">
+                            <img src="./images/storx-logo/storx-logo-white.png" alt="img">
                         </div>
-                        <h4 class="">StorX Logo Inverted</h4>
-                        <p>Use the logo on dark backgrounds only.</p>
-                        <div class="">
-                           <span class="tag"><a href="assets/images/brand-assets/storx_logo-white/storx_logo-white.ai" target="_blank">.ai</a></span>
-                           <span class="tag"><a href="assets/images/brand-assets/storx_logo-white/storx_logo-white.eps" target="_blank">.eps</a></span>
-                           <span class="tag"><a href="assets/images/brand-assets/storx_logo-white/storx_logo-white.svg" target="_blank">.svg</a></span>
-                           <span class="tag"><a href="assets/images/brand-assets/storx_logo-white/storx_logo-white.png" target="_blank">.png</a></span>
+                        <div class="content-wrapper">
+                            <h3 class="f-20">StorX Logo Inverted</h3>
+                            <p>Use the logo on dark backgrounds only.</p>
+                            <ul class="download-list">
+                                <li><a href="./images/storx-logo/storx-eps-logo-white.eps" download>.AI</a></li>
+                                <li><a href="./images/storx-logo/storx-eps-logo-white.eps" download>.EPS</a></li>
+                                <li><a href="./images/storx-logo/storx-svg-logo-white.svg" download>.SVG</a></li>
+                                <li><a href="./images/storx-logo/storx-logo-white.png" download>.PNG</a></li>
+                            </ul>
                         </div>
-                     </div>
-                  </div>
-                  <div class="tittle mt-4 pb-3">
-                        <h3>StorX Primary Symbol</h3>
-                        <p>Use the symbol on white or dark backgrounds only.</p>
-                  </div>
-                  <div class="row flex-row">
-                     <div class="col-lg-6 col-md-6 mb-4">
-                        <div class="download_box d-flex align-items-center justify-content-center">
-                           <div class="logo_block">
-                              <img src="assets/images/storx-logo/storx-icon.png">
-                           </div>
-                        </div>
-                        <h4 class="">StorX Symbol</h4>
-                        <p>Use the logo on white backgrounds only.</p>
-                        <div class="">
-                        	<span class="tag"><a href="assets/images/brand-assets/storx_symbol/storx_symbol.ai" target="_blank">.ai</a></span>
-                            <span class="tag"><a href="assets/images/brand-assets/storx_symbol/storx_symbol.eps" target="_blank">.eps</a></span>
-                            <span class="tag"><a href="assets/images/brand-assets/storx_symbol/storx_symbol.svg" target="_blank">.svg</a></span>
-                            <span class="tag"><a href="assets/images/brand-assets/storx_symbol/storx_symbol.png" target="_blank">.png</a></span>
-                     </div>
-                     </div>
-                     <div class="col-lg-6 col-md-6 mb-4">
-                        <div class="download_box inverted d-flex align-items-center justify-content-center">
-                           <div class="logo_block">
-                              <img src="assets/images/storx-logo/storx-icon.png">
-                           </div>
-                        </div>
-                        <h4 class="">StorX Symbol Inverted</h4>
-                        <p>Use the symbol on dark backgrounds only.</p>
-                        <div class="">
-                                          <span class="tag"><a href="assets/images/brand-assets/storx_symbol/storx_symbol.ai" target="_blank">.ai</a></span>
-                                          <span class="tag"><a href="assets/images/brand-assets/storx_symbol/storx_symbol.eps" target="_blank">.eps</a></span>
-                                          <span class="tag"><a href="assets/images/brand-assets/storx_symbol/storx_symbol.svg" target="_blank">.svg</a></span>
-                                          <span class="tag"><a href="assets/images/brand-assets/storx_symbol/storx_symbol.png" target="_blank">.png</a></span>
-                                       </div>
-                     </div>
-                     
-                  </div>
-               </div>
+                    </div>
+                </div>
             </div>
-         </div>
-      </section>
-      <!-- Downloads Area -->
-      
-      
-      <!-- Footer Area -->
-      <footer class="footer_area footer_2">
-         <div class="container">
-            <div class="footer_inner row">
-               <div class="footer_widget col-lg-2 col-md-6">
-                  <img src="assets/images/storx-logo-light.png" width="150" height="42">
-                  <p>Build on XinFin (XDC) Blockchain Network as an open source initiative.</p>
-               </div>
-               <div class="footer_widget col-lg-2">
-                  <h4>StorX</h4>
-                  <ul class="footer_nav">
-                     <li><a href="host-node.html">Host a Node</a></li>
-                     <li><a href="store-data.html">Store Data</a></li>
-                     <li><a href="srx-token.html">SRX Token</a></li>
-                     <li><a href="https://storx.io/invite">Refer & Earn</a></li>
-                     <li><a href="wallets-&-exchanges.html">Wallets & Exchanges</a></li>
-                     <li><a href="storx-onprem.html">StorX OnPrem</a></li>
-                  </ul>
-               </div>
-               <div class="footer_widget col-lg-2 fw_3">
-                  <h4>Community</h4>
-                  <ul class="footer_nav">
-                     <li><a href="community-bounty.html">Community Bounty</a></li>
-                     <li><a href="support.html">Community Support</a></li>
-                     <li><a href="about-team.html">About Team</a></li>
-                  </ul>
-               </div>
-               <div class="footer_widget col-lg-2 fw_3">
-                  <h4>Resource</h4>
-                  <ul class="footer_nav">
-                     <li><a href="storx_whitepaper_v1.pdf" target="_blank">Whitepaper</a></li>
-                     <li><a href="roadmap.html">Roadmap</a></li>
-                     <li><a href="applications.html">StorX Applications</a></li>
-                     <li><a href="exchange-listing-resource.html">Exchange Listing Resource</a></li>
-                            <li><a href="bitcoin-technology.html">Bitcoin Technology</a></li>
-                  </ul>
-               </div>
-               <div class="footer_widget col-lg-2 fw_3">
-                  <h4>Other Links</h4>
-                  <ul class="footer_nav">
-                     <li><a href="faqs.html">FAQs</a></li>
-                     <li><a href="brand-assets.html">Brand Assets</a></li>
-                            <li><a href="media.html">Media Coverage</a></li>
-                     <li><a href="application-usage-terms.html">Application Usage Terms</a></li>
-                     <li><a href="disclaimer.html">Disclaimer</a></li>
-                  </ul>
-               </div>
+        </div>
+        <div class="brand-wrapper">
+            <h3 class="f-20">StorX Primary Symbol</h3>
+            <p>Use the symbol on white or dark backgrounds only.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="brand-card">
+                        <div class="img-wrapper">
+                            <img src="./images/storx-logo/storx-logo-icon.png" alt="img">
+                        </div>
+                        <div class="content-wrapper">
+                            <h3 class="f-20">StorX Symbol</h3>
+                            <p>Use the logo on white backgrounds only.</p>
+                            <ul class="download-list">
+                                <li><a href="#">.AI</a></li>
+                                <li><a href="#">.EPS</a></li>
+                                <li><a href="./images/storx-logo/storx-logo-icon.svg" download>.SVG</a></li>
+                                <li><a href="./images/storx-logo/storx-logo-icon.png" download>.PNG</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="brand-card">
+                        <div class="img-wrapper dark">
+                            <img src="./images/storx-logo/storx-logo-icon.png" alt="img">
+                        </div>
+                        <div class="content-wrapper">
+                            <h3 class="f-20">StorX Symbol Inverted</h3>
+                            <p>Use the symbol on dark backgrounds only.</p>
+                            <ul class="download-list">
+                                <li><a href="#">.AI</a></li>
+                                <li><a href="#">.EPS</a></li>
+                                <li><a href="./images/storx-logo/storx-logo-icon.svg" download>.SVG</a></li>
+                                <li><a href="./images/storx-logo/storx-logo-icon.png" download>.PNG</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="copy_right cr_2">
-               <div class="row">
-                  <div class="col-xl-7 col-lg-5 col-md-5">
-                     <p class="copyright">Join StorX Community on <a href="https://github.com/StorXNetwork" target="_blank">GitHub</a>.</p>
-                  </div>
-                  <div class="col-xl-5 col-lg-7 col-md-7">
-                     <ul class="footer_social">
-                        <li>
-                           <a href="https://twitter.com/StorXNetwork" target="_blank"><i class="fab fa-twitter"></i></a>
-                        </li>
-                        <li>
-                           <a href="https://www.linkedin.com/company/storxnetwork" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        </li>
-                        <li>
-                           <a href="https://www.facebook.com/StorXNetwork" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        </li>
-                        <li>
-                           <a href="https://t.me/StorXNetwork" target="_blank"><i class="fab fa-telegram-plane"></i></a>
-                        </li>
-                        <li>
-                           <a href="https://www.youtube.com/channel/UC5vUiX1eINl0gs6T3mS1CxA" target="_blank"><i class="fab fa-youtube"></i></a>
-                        </li>
-                        <li>
-                           <a href="https://medium.com/storx-network" target="_blank"><i class="fab fa-medium-m"></i></a>
-                        </li>
-                        <li>
-                           <a href="https://github.com/StorXNetwork" target="_blank"><i class="fab fa-github"></i></a>
-                        </li>
-                        <li>
-                           <a href="https://www.reddit.com/r/StorXNetwork" target="_blank"><i class="fab fa-reddit-alien"></i></a>
-                        </li>
-                        <li>
-                           <a href="https://discord.gg/ha4Jufj2Nm" target="_blank"><i class="fab fa-discord"></i></a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-md-3">
+                <a href="./index.html" class="footer-logo">
+                    <img src="./images/footer-logo.svg" alt="footer-logo"/>
+                </a>
+                <div class="text-wrapper">
+                    <p>
+                        Build on XinFin (XDC)<br/>
+                        Blockchain Network as an <br/>
+                        open source initiative.
+                    </p>
+                    <ul class="social-media-wrapper">
+                        <li><a href="https://twitter.com/StorXNetwork" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/storxnetwork" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.facebook.com/StorXNetwork" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://t.me/StorXNetwork" target="_blank"><i class="fab fa-telegram-plane"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UC5vUiX1eINl0gs6T3mS1CxA" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="https://medium.com/storx-network" target="_blank"><i class="fab fa-medium-m"></i></a></li>
+                        <li><a href="https://github.com/StorXNetwork" target="_blank"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.reddit.com/r/StorXNetwork" target="_blank"><i class="fab fa-reddit-alien"></i></a></li>
+                        <li><a href="https://discord.gg/ha4Jufj2Nm" target="_blank"><i class="fab fa-discord"></i></a></li>
+                    </ul>
+                </div>
             </div>
-         </div>
-      </footer>
-      <!-- End Footer Area -->
-      
-      <!-- Scroll Top Button -->
-      <button class="scroll-top">
-      	<i class="fas fa-angle-up"></i>
-      </button>
-      
-      <!-- Preloader -->
-      <div class="preloader"></div>
-      
-      
-      <!-- jQuery v2.2.4 -->
-      <script src="assets/js/jquery-2.2.4.min.js"></script>
-      <!-- Bootstrap v4.0.0 -->
-      <script src="assets/js/popper.min.js"></script>
-      <script src="assets/js/bootstrap.min.js"></script>
-      <!-- Extra Plugin -->
-      <script src="assets/vendors/animate-css/wow.min.js"></script>
-      <script src="assets/vendors/magnify-popup/jquery.magnific-popup.min.js"></script>
-      <!-- Custom js -->
-      <script src="assets/js/theme.js"></script>
-   </body>
+            <div class="col-md-9 my-4 my-md-0">
+                <div class="links-wrapper">
+                    <div class="links-item">
+                        <h4>Solutions</h4>
+                        <ul>
+                            <li><a href="storx-website-s3-compatible-storage.html">S3 Compatible Storage</a></li>
+                            <li><a href="storx-website-backup-archival.html">Backup & Archival</a></li>
+                            <li><a href="storx-website-google-backup.html">Google Workspace Backup</a></li>
+                            <li><a href="storx-website-kubernetes-backup.html">Kubernetes Backup</a></li>
+                            <li><a href="storx-onprem.html">StorX Self Hosted Cloud</a></li>
+                        </ul>
+                    </div>
+                    <div class="links-item">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="faqs.html">FAQ</a></li>
+                            <li><a href="https://blogs.storx.tech/" target="_blank">Blog</a></li>
+                            <li><a href="https://doc.storx.io/" target="_blank">Documentation</a></li>
+                            <li><a href="integrations.html">Integrations</a></li>
+                        </ul>
+                    </div>
+                    <div class="links-item">
+                        <h4>StorX Ecosystem</h4>
+                        <ul>
+                            <li><a href="storx-website-host-storage-node.html">Host a Storage Node</a></li>
+                            <li><a href="srx-token.html">Tokenomics</a></li>
+                            <li><a href="./pdf/storx-whitepaper-1.pdf" download>WhitePaper</a></li>
+                            <li><a href="wallets-&-exchanges.html">Wallet & Exchanges</a></li>
+                            <li><a href="brand-assets.html">Brand Asset</a></li>
+                            <li><a href="roadmap.html">RoadMap</a></li>
+                            <li><a href="community-bounty.html">Community Bounty</a></li>
+                        </ul>
+                    </div>
+                    <div class="links-item">
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="about-team.html">Our Story</a></li>
+                            <li><a href="partners.html">Partners</a></li>
+                            <li><a href="media.html">Newsroom</a></li>
+
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <p class="footer-bottom-text text-center">
+                © Copyright 2025 StorX Foundation, All Rights Reserved. Read <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-of-use.html">Terms of Use</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="./js/jquery-3.7.0.min.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/popper.min.js"></script>
+<script src="./js/owl.carousel.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
 </html>

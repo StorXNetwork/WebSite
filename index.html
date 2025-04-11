@@ -1,783 +1,1783 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <meta name="description" content="Experience the faster, safer, more affordable and completely decentralized enterprise-grade cloud storage network.">
-		<meta name="keywords" content="storx, blockchain technology in cloud computing, blockchain-based cloud computing, decentralized cloud computing, decentralized cloud storage, distributed cloud storage, cloud storage, storage, secure, faster, encrypted">
-        <title>StorX | Distributed Cloud Storage with Blockchain Technology</title>
-        
-        <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png" />
-        <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png" />
-        <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png" />
-        <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png" />
-        <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png" />
-        <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png" />
-        <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png" />
-        <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png" />
-        <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/android-icon-192x192.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png" />
-        <link rel="manifest" href="assets/images/favicon/manifest.json" />
-        <meta name="msapplication-TileColor" content="#4a46fe" />
-        <meta name="msapplication-TileImage" content="assets/images/favicon/ms-icon-144x144.png" /><meta name="theme-color" content="#4285f4">
-		<meta name="msapplication-navbutton-color" content="#4a46fe">
-		<meta name="apple-mobile-web-app-status-bar-style" content="#4a46fe">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="StorX is a leading decentralized cloud storage platform, harnessing the power of blockchain technology to provide secure and private data storage solutions. As a pioneer in the DePIN (Decentralized Physical Infrastructure Networks) space, StorX ensures unparalleled data privacy and security for users worldwide.">
+    <meta name="keywords" content="StorX, decentralized storage, blockchain, cloud storage, data privacy, SRX token, DePIN, Decentralized Physical Infrastructure Networks, secure storage, data security">
+    <meta name="author" content="StorX Network">
+    <meta property="og:title" content="StorX - Leading Decentralized Cloud Storage">
+    <meta property="og:description" content="Experience the future of data storage with StorX, a pioneer in decentralized cloud storage and DePIN (Decentralized Physical Infrastructure Networks). Secure, private, and powered by blockchain technology.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://storx.tech">
+    <meta property="og:image" content="https://storx.tech/assets/images/tw-image.jpg">
+    <meta property="og:site_name" content="StorX Network">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="StorX - Leading Decentralized Cloud Storage">
+    <meta name="twitter:description" content="Experience the future of data storage with StorX, a pioneer in decentralized cloud storage and DePIN (Decentralized Physical Infrastructure Networks). Secure, private, and powered by blockchain technology.">
+    <meta name="twitter:image" content="https://storx.tech/assets/images/tw-image.jpg">
+    <meta name="twitter:site" content="@StorXNetwork">
 
-        <!-- Main style CSS -->
-        <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
 
-        <!-- Nav CSS -->
-        <link href="assets/css/classy-nav.min.css" rel="stylesheet" />
+    <!-- Style Import -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="./css/all.min.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
 
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
+    <title>StorX | Distributed Cloud Storage with Blockchain Technology</title>
 
-        <!-- Meta Pixel Code -->
-		<script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Meta Pixel Code -->
+    <script>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '749465320016144');
         fbq('track', 'PageView');
-        </script>
-        <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=749465320016144&ev=PageView&noscript=1"
-        /></noscript>
-        <!-- End Meta Pixel Code -->
-                
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-BNBT7SEPK2"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-        
-          gtag('config', 'G-BNBT7SEPK2');
-        </script>
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=749465320016144&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
 
-    </head>
-    <body>        
-        <!-- Header -->
-        <header class="header-nav">
-        	<div class="top-header-area">Smart Contract Address : <a href="https://xdc.network/token/xdc5d5f074837f5d4618b3916ba74de1bf9662a3fed" target="_blank">xdc5d5f074837f5d4618b3916ba74de1bf9662a3fed</a>
-            	<div class="tooltip-big" data-toggle="tooltip" data-placement="bottom" title="Tokens sent to smart contract cannot be retrieved, so please cross check the SRX Address before any transfers."><i class="fas fa-exclamation-circle"></i></div>
-        	</div>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container">
-                    <!-- Brand -->
-                    <a class="navbar-brand" href="index.html">
-                        <img src="assets/images/storx-logo.png" alt="StorX Logo" class="dark-logo" />
-                        <img src="assets/images/storx-logo-light.png" alt="StorX Logo" class="light-logo" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BNBT7SEPK2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-BNBT7SEPK2');
+    </script>
+</head>
+<body>
+
+<header id="header">
+    <div class="header-layer"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-5 align-self-center">
+                <a href="index.html" class="logo">
+                    <img src="./images/storx-logo/storx-logo-black.png" alt="logo"/>
+                </a>
+            </div>
+            <div class="col-lg-6 col-1 align-self-center text-end">
+                <div class="navbar-menu">
+                    <a href="index.html" class="logo">
+                        <img src="./images/storx-logo/storx-logo-black.png" alt="logo"/>
                     </a>
-                    <!-- / -->
-                    <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                        <div class="animated-icon1"><span></span><span></span><span></span></div>
-                    </button>
-                    <!-- / -->
-                    <!-- Top Menu -->
-                    <div class="collapse navbar-collapse justify-content-end" id="navbar">
-                        <ul class="navbar-nav ml-auto align-items-lg-center">
-                            <li><a class="nav-link" href="host-node.html">Host a Node</a></li>
-                            <li><a class="nav-link" href="store-data.html">Store Data</a></li>
-                            <li><a class="nav-link" href="community-bounty.html">Community Bounty</a></li>
-                            <li><a class="nav-link" href="support.html">Community Support</a></li>
-                            <li><a class="nav-link" href="https://storx.io">Sign In</a></li>
-                            <li><a href="https://storx.io" class="btn nav-link-btn login-btn">Start for Free</a></li>
-                        </ul>
-                    </div>
-                    <!-- / -->
+                    <ul class="menu">
+                        <li>
+                            <a href="javascript:void(0)" class="link">
+                                Solutions
+                                <img src="./images/icons/arrow-down-icon.svg" alt="icon" class="arrow-icon"></a>
+                            <ul class="submenu">
+                                <li><a href="storx-website-s3-compatible-storage.html">S3 Compatible Storage</a></li>
+                                <li><a href="storx-website-backup-archival.html">Backup & Archival</a></li>
+                                <li><a href="storx-website-google-backup.html">Google Workspace Backup</a></li>
+                                <li><a href="storx-website-kubernetes-backup.html">Kubernetes Backup</a></li>
+                                <li><a href="storx-onprem.html">StorX Self Hosted Cloud</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="link">
+                                Resources
+                                <img src="./images/icons/arrow-down-icon.svg" alt="icon" class="arrow-icon">
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="faqs.html">FAQ</a></li>
+                                <li><a href="https://storxnetwork.medium.com/" target="_blank">Blog</a></li>
+                                <li><a href="https://doc.storx.io/" target="_blank">Documentation</a></li>
+                                <li><a href="integrations.html">Integration</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="link">
+                                About
+                                <img src="./images/icons/arrow-down-icon.svg" alt="icon" class="arrow-icon">
+                            </a>
+                            <ul class="submenu">
+                                <li class="manu-link"><a href="about-team.html">Our Story</a></li>
+                                <li class="manu-link"><a href="partners.html">Partners</a></li>
+                                <li class="manu-link"><a href="media.html">Newsroom</a></li>
+                                <li class="manu-link"><a href="contact-us.html">Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li class="desktop"><a href="https://storx.io/login" target="_blank" class="link">Login</a></li>
+                    </ul>
                 </div>
-                <!-- Container -->
-            </nav>
-            <!-- Navbar -->
-        </header>
-        <!-- Header ends -->
-
-        <!-- Banner Area -->
-        <section id="" class="banner_area ba_3">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 banner_con simple-video mb-sx-4">
-                        <h2>Distributed Cloud Storage Powered by XinFin Blockchain Network</h2>                        
-                        <p>The StorX mainnet is here and SRX is a XRC-20 utility token that powers StorX data storage Marketplace. Setup Node and earn SRX and Store Data and pay using SRX token.</p>
-                        <div class="btn-block">
-                            <a href="https://download.storx.io/StorXDesktopApp.exe" class="theme_btn">Download Desktop App (~100 MB) <i class="fa fa-arrow-down"></i></a>
-                            <!---<a class="popup-youtube video-play-button" href="https://www.youtube.com/watch?v=fqZics4LqYE">
-                                <i class="fa fa-play"></i> <span>How to Use<br>StorX Drive</span>
-                            </a>-->
+            </div>
+            <div class="col-lg-3 col-6">
+                <ul class="auth-options">
+                    <li class="desktop"><a href="https://storx.io/login" class="link">Login</a></li>
+                    <li><a href="https://storx.io/signup" class="btn-style">Signup For Free</a></li>
+                    <li class="mobile">
+                        <div class="hamburger-menu">
+                            <img src="./images/icons/menu-bar-icon.svg" alt="icon">
                         </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <!--<div class="banner_i">
-                            <img src="assets/images/cloud-storage-place.png" alt="" class="images" />
-                        </div>-->
-                        <a class="popup-youtube video-play-button" href="https://www.youtube.com/watch?v=fqZics4LqYE"><i class="fas fa-play"></i></a>
-                        <img src="assets/images/cloud-storage-place.png" alt="" class="rs_banner" />
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Banner Area -->
-
-        <!-- About Cloud Storage -->
-        <section id="about" class="welcome_content text-center pt-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h2>Truly Decentralized Cloud Storage</h2>
-                        <p class="t_p no-border">StorX helps you securely encrypt, fragment and then distribute important data across multiple hosting nodes spread worldwide. StorX provides a democratic marketplace for hosting data, replacing the centralized intermediaries with a decentralized blockchain network. Exercise complete control and grant access over your data sets without any centralized intermediary.</p>
-                        <p class="t_p no-border mb-0 fw-6"><a href="host-node.html">Host A node</a> & Earn SRX or Pay SRX and <a href="store-data.html">Store Data</a> over Distributed Cloud Storage.</strong></p>
-                	</div>
-                </div>
-            </div>
-        </section>
-        <!-- About Cloud Storage -->
-
-        <!-- Pricing Comparison 
-        <section id="pricing" class="pricing_area">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 mb-sx-4">
-                        <h2>Cloud Storage Pricing Comparison</h2>
-                        <p>See how AWS S3, Azure, and Google Cloud compare to StorX Cloud Storage.</p>
-                        <p class="mt-4 small">*Price comparison based on anticipated price of SRX Tokens on Exchanges may fluctuate.</p>
-                    </div>
-
-                    <div class="col-lg-8">
-                        <div id="pricing-table-block">
-                            <div class="table-responsive">
-                                <table class="table pricing-table">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col" class="fw-5">Provider</th>
-                                            <th scope="col">
-                                                <img src="assets/images/icons/storage.png" width="40" height="40" /><br />
-                                                <span class="fw-5">Storage</span><br />
-                                                ($/GB/Month)
-                                            </th>
-                                            <th scope="col">
-                                                <img src="assets/images/icons/download.png" width="40" height="40" /><br />
-                                                <span class="fw-5">Download</span><br />
-                                                ($/GB)
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="primary-bg">
-                                            <th scope="row"><img src="assets/images/pricing-logos/storx-logo.png" class="img-responsive b2-comparison-logo" style="width: 125px; height: auto;" alt="StorX Cloud Storage" /></th>
-                                            <td class="bh" style="color: #2aa72a;">$0.010</td>
-                                            <td class="bh" style="color: #2aa72a;">$0.02</td>
-                                        </tr>
-                                        <tr class="secondary-bg">
-                                            <th scope="row"><img src="assets/images/pricing-logos/amazon-logo.png" class="img-responsive b2-comparison-logo" style="width: 125px; height: auto;" alt="Amazon S3 Storage" /></th>
-                                            <td style="line-height: 20px;">
-                                                $0.021
-                                            </td>
-                                            <td>
-                                                $0.09
-                                            </td>
-                                        </tr>
-                                        <tr class="secondary-bg">
-                                            <th scope="row"><img src="assets/images/pricing-logos/microsoft-logo.png" class="img-responsive b2-comparison-logo" style="width: 125px; height: auto;" alt="Microsoft Azure Cloud Storage" /></th>
-                                            <td>
-                                                $0.018
-                                            </td>
-                                            <td>
-                                                $0.087
-                                            </td>
-                                        </tr>
-                                        <tr class="secondary-bg">
-                                            <th scope="row"><img src="assets/images/pricing-logos/google-cloud-logo.png" class="img-responsive b2-comparison-logo" style="width: 125px; height: auto;" alt="Google Cloud Storage" /></th>
-                                            <td>
-                                                $0.020
-                                            </td>
-                                            <td>
-                                                $0.12
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Pricing Comparison -->
-        
-        
-        <!-- Pricing Plans -->
-        <section id="pricing" class="pricing_area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center mb-0">
-                    	<h2 class="text-center">Transparent Pricing Plans</h2>
-                    	<p>Find a plan that works for you. Our storage plans are paid with SRX tokens.</p>
-                    </div>
-                </div>
-                
-                <ul class="nav nav-tabs">
-                    <li><a class="active" data-toggle="tab" href="#individual"><span class="left-text">Individual</span></a></li>
-                    <li><a data-toggle="tab" href="#enterprise"><span class="right-text">Enterprise</span></a></li> 
+                    </li>
                 </ul>
-                <div class="tab-content">
-                    <div class="tab-pane fade show active" id="individual" role="tabpanel">
-                        <div class="row flex pricing_blocks">
-                            <div class="col-sm-gap col-lg-3 col-md-6 col-sm-6 mt-4">
-                                <div class="plan plan_2">
-                                    <h4>Welcome</h4>
-                                    <h1>2 <small>GB</small></h1>
-                                    <ul>
-                                        <li><i class="far fa-check-circle"></i>End-to-End Encryption</li>    
-                                        <li><i class="far fa-check-circle"></i>Private File Sharing</li>  
-                                        <li><i class="far fa-check-circle"></i>No 3rd Party Tracking</li> 
-                                        <li class="c_1"><i class="far fa-times-circle c_2"></i>Unlimited Downloads</li>
-                                         <li><i class="far fa-check-circle"></i>Desktop App <span class="fw-6">(For limited time)</span></li>
-                                    </ul>
-                                    <div class="price-btn-block">
-                                    	<h2 class="gradient-text letter-spacing-2"><span class="token-value">FREE</span></h2>
-                                    	<!--<h6>&nbsp;</h6>-->
-                                    	<a href="https://storx.io" class="theme_btn">Start for Free</a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="col-sm-gap col-lg-3 col-md-6 col-sm-6 mt-4">
-                                <div class="plan plan_2">
-                                    <h4>Basic</h4>
-                                    <h1>20 <small>GB</small></h1>
-                                    <ul>
-                                        <li><i class="far fa-check-circle"></i>End-to-End Encryption</li>    
-                                        <li><i class="far fa-check-circle"></i>Private File Sharing</li>  
-                                        <li><i class="far fa-check-circle"></i>No 3rd Party Tracking</li> 
-                                        <li class="c_1"><i class="far fa-times-circle c_2"></i>Unlimited Downloads</li>
-                                         <li><i class="far fa-check-circle"></i>Desktop App <span class="fw-6">(For limited time)</span></li>
-                                    </ul>
-                                    <div class="price-btn-block">
-                                        <h2><span class="token-value">10</span> SRX<small>/ month</small></h2>
-                                        <h6>Prepay per month</h6>
-                                        <!--<a href="#" class="theme_btn">Buy Storage</a>-->
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="col-sm-gap col-lg-3 col-md-6 col-sm-6 mt-4">
-                                <div class="plan plan_2">
-                                    <h4>PROFESSIONAL</h4>
-                                    <h1>50 <small>GB</small></h1>
-                                    <ul>
-                                        <li><i class="far fa-check-circle"></i>End-to-End Encryption</li>    
-                                        <li><i class="far fa-check-circle"></i>Private File Sharing</li>  
-                                        <li><i class="far fa-check-circle"></i>No 3rd Party Tracking</li> 
-                                        <li><i class="far fa-check-circle"></i>Unlimited Downloads</li>
-                                        <li><i class="far fa-check-circle"></i>Desktop App</li>
-                                    </ul>
-                                    <div class="price-btn-block">
-                                        <h2><span class="token-value">20</span> SRX<small>/ month</small></h2>
-                                        <h6>Prepay per month</h6>
-                                        <!--<a href="#" class="theme_btn">Buy Storage</a>-->
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="col-sm-gap col-lg-3 col-md-6 col-sm-6 mt-4">
-                                <div class="plan plan_2">
-                                    <h4>SMALL BUSINESS</h4>
-                                    <h1>100 <small>GB</small></h1>
-                                    <ul>
-                                        <li><i class="far fa-check-circle"></i>End-to-End Encryption</li>    
-                                        <li><i class="far fa-check-circle"></i>Private File Sharing</li>  
-                                        <li><i class="far fa-check-circle"></i>No 3rd Party Tracking</li> 
-                                        <li><i class="far fa-check-circle"></i>Unlimited Downloads</li>
-                                        <li><i class="far fa-check-circle"></i>Desktop App</li>
-                                    </ul>
-                                    <div class="price-btn-block">
-                                        <h2><span class="token-value">40</span> SRX<small>/ month</small></h2>
-                                        <h6>Prepay per month</h6>
-                                        <!--<a href="#" class="theme_btn">Buy Storage</a>-->
-                                    </div>
-                                </div>
-                            </div>
-                    	</div>
-                    </div>
-                    
-                    <div class="tab-pane fade" id="enterprise" role="tabpanel"> 
-                        <div class="row flex pricing_blocks">
-                            <div class="col-sm-gap col-lg-3 col-md-6 col-sm-6 mt-4">
-                                <div class="plan plan_2">
-                                    <h4>Enterprise</h4>
-                                    <h1>250 <small>GB</small></h1>
-                                    <ul>
-                                        <li><i class="far fa-check-circle"></i>End-to-End Encryption</li>    
-                                        <li><i class="far fa-check-circle"></i>Private File Sharing</li>  
-                                        <li><i class="far fa-check-circle"></i>No 3rd Party Tracking</li> 
-                                        <li><i class="far fa-check-circle"></i>Unlimited Downloads</li>
-                                        <li><i class="far fa-check-circle"></i>Desktop App</li>
-                                    </ul>
-                                    <div class="price-btn-block">
-                                        <h2><span class="token-value">100</span> SRX<small>/ month</small></h2>
-                                        <h6>Prepay per month</h6>
-                                        <!--<a href="#" class="theme_btn">Buy Storage</a>-->
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="col-sm-gap col-lg-3 col-md-6 col-sm-6 mt-4">
-                                <div class="plan plan_2">
-                                    <h4>Enterprise Pro</h4>
-                                    <h1>500 <small>GB</small></h1>
-                                    <ul>
-                                        <li><i class="far fa-check-circle"></i>End-to-End Encryption</li>    
-                                        <li><i class="far fa-check-circle"></i>Private File Sharing</li>  
-                                        <li><i class="far fa-check-circle"></i>No 3rd Party Tracking</li> 
-                                        <li><i class="far fa-check-circle"></i>Unlimited Downloads</li>
-                                        <li><i class="far fa-check-circle"></i>Desktop App</li>
-                                    </ul>
-                                    <div class="price-btn-block">
-                                        <h2><span class="token-value">200</span> SRX<small>/ month</small></h2>
-                                        <h6>Prepay per month</h6>
-                                        <!--<a href="#" class="theme_btn">Buy Storage</a>-->
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="col-sm-gap col-lg-3 col-md-6 col-sm-6 mt-4">
-                                <div class="plan plan_2">
-                                    <h4>Enterprise Elite</h4>
-                                    <h1>1 <small>TB</small></h1>
-                                    <ul>
-                                        <li><i class="far fa-check-circle"></i>End-to-End Encryption</li>    
-                                        <li><i class="far fa-check-circle"></i>Private File Sharing</li>  
-                                        <li><i class="far fa-check-circle"></i>No 3rd Party Tracking</li> 
-                                        <li><i class="far fa-check-circle"></i>Unlimited Downloads</li>
-                                        <li><i class="far fa-check-circle"></i>Desktop App</li>
-                                    </ul>
-                                    <div class="price-btn-block">
-                                        <h2><span class="token-value">400</span> SRX<small>/ month</small></h2>
-                                        <h6>Prepay per month</h6>
-                                        <!--<a href="#" class="theme_btn">Buy Storage</a>-->
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="col-sm-gap col-lg-3 col-md-6 col-sm-6 mt-4">
-                                <div class="plan plan_2">
-                                    <h4>Enterprise ++</h4>
-                                    <h1>25 <small>TB</small></h1>
-                                    <ul>
-                                        <li class="fs-18">All Services of<br><span class="gradient-text fw-5">Enterprise Elite<br>+<br>Customization*</span></li>
-                                    </ul>
-                                    <div class="price-btn-block">
-                                    	<h2 class="fs-22">Custom Pricing</h2>
-                                    	<h6>*By EcoSystem Partner</h6>
-                                    	<!--<a href="mailto:info@storx.io" class="theme_btn">Contact Us</a>-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> 
-                </div>
-    	</div> 
-        </div>           
-        </section>
-        <!-- Pricing Plans -->
-        
-        
-        <!-- Experience Decentralized Cloud Storage -->
-        <section class="experience_cta_block">
-            <div class="container">
-                <h2>Experience Decentralized Cloud Storage</h2>
-                <a href="host-node.html" class="theme_btn">Host a Node</a>
-                <a href="store-data.html" class="theme_btn white-btn">Store Data</a>
             </div>
-        </section>
-        <!-- Experience Decentralized Cloud Storage -->
+        </div>
+    </div>
+</header>
 
-        <!-- Why StorX -->
-        <section id="whyStorX" class="why_storx grey_bg">
-            <div class="container">
-                <h2 class="mb-3">How StorX Works?</h2>
-                <p class="text-center">StorX is a peer to peer decentralized Storage Network.</p>                
-                
-                <div class="row">
-                	<div class="col-lg-12">
-               	    	<div class="how-storx-works-graph text-center">
-                        	<img src="assets/images/how-storx-works.jpg" alt="How StorX Works?" class="img-fluid">
-                            <!--<a class="btn btn-play text-orange popup-youtube" href="https://www.youtube.com/watch?v=GX-0egZEZ0Y"><i class="fas fa-play"></i> SEE HOW IT WORKS</a>-->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Why StorX -->
-        
-        
-        <!-- Conterfact  -->
-        <section id="conterfact_section" class="img-bg-section" data-background="assets/images/world-map.png" style="background-image: url(&quot;assets/images/world-map.png&quot;);">	
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">		
-						<h2 class="mb-1">StorX Statistics</h2>
-					</div>	
-				</div>
-                
-                <div class="row flex-row mt-5">                
-				<div class="col-lg-4 col-md-4 col-sm-12 mb-3">
-					<div class="counterFact">
-                        <div class="factTitle"><span id="totalUsers" class="counter">110,000</span> +</div>
-                    	<p>Total Users</p>
-                	</div>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-12 mb-3">
-					<div class="counterFact">
-                        <div class="factTitle"><span id="storageNodes" class="counter">725</span> +</div>
-                    	<p>Storage Providers</p>
-                	</div>
-				</div>
-                <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
-					<div class="counterFact">
-                        <div class="factTitle"><span id="srxStaked" class="counter">2,229,635</span> +</div>
-                    	<p>SRX Staked</p>
-                	</div>
-				</div>
-            </div>
-            					
-			</div>
-        </section>
-        <!-- Conterfact -->
-    
+<section class="banner">
+    <div class="container">
+        <div class="content-wrapper">
+            <span class="big-span">Store your Data with</span>
+            <h1>Ultimate Privacy <br>& Integrity</h1>
+            <p class="white">Leverage the power of blockchain technology combined <br>
+                with Advanced Encryption, Fragmentation, Replication <br> and Global
+                Distribution for unmatched data protection <br> to store your data</p>
+            <ul class="btn-list">
+                <li><a href="https://storx.io/signup" class="btn-style red cornered-btn text-white">Signup For Free</a></li>
+                <li><a href="#" data-bs-toggle="modal" data-bs-target="#banner-video-modal" class="play-btn"><img src="./images/icons/play-icon-white.svg" alt="icon">See How StorX Secures Your Data</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
 
-        <!-- Platform Features -->
-        <section class="platform_features pf_3 pf_4">
-            <div class="container">
-                <div class="video_row">
-    			<h2 class="mb-5">See How It Works</h2>
-    			<div class="yop_video">
-    				<img src="assets/images/video-screen.jpg" alt="">
-    				<a class="popup-youtube video-play-button" href="https://www.youtube.com/watch?v=GX-0egZEZ0Y"><i class="fas fa-play"></i></a>
-    			</div>
-    		</div>
-                <div class="row platform_row pt-4">
-                    <!-- platform -->
-                    <div class="col-lg-6 col-md-6">
-                        <div class="platform">
-                            <div class="icons i_2">
-                                <i class="flaticon-rule"></i>
-                            </div>
-                            <h3>Open source</h3>
-                            <p>Everything we do is 100% open source. We do not do open core or proprietary extensions. We use and support open standards as much as possible. We don't lock people in to proprietary formats. You can import and export everything.</p>
-                        </div>
-                    </div>
-                    <!-- platform -->
-                    <div class="col-lg-6 col-md-6">
-                        <div class="platform">
-                            <div class="icons i_3">
-                                <i class="flaticon-collaboration"></i>
-                            </div>
-                            <h3>Community Development</h3>
-                            <p>StorX is able to offer new improved features due to ongoing support from its community. Our community members empower our platform and contribute.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Platform Features -->
-        
-        <!-- Ecosystem Partners -->
-        <section class="ecosytem_partners grey_bg">
-            <div class="container">  
-                <!--<div class="row align-items-center">
-					<div class="col-lg-4 mb-5 mb-lg-0">		
-						<h2 class="mb-1">Trusted By</h2>
-                        <p>A broader spectrum of Technology and Creativity.</p>
-					</div>
-                    <div class="col-lg-8">
-                        <div class="row align-items-center">
-                            <div class="col-lg-3 col-md-6 col-sm-6 text-center mb-4 mb-lg-0">
-                                <a href="https://xdsea.com/" target="_blank"><img src="assets/images/trusted/xdsea_logo.png" class="img-fluid partners-logo"></a>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6 text-center mb-4 mb-lg-0">
-                                <a href="https://dlt.mobi/" target="_blank"><img src="assets/images/trusted/mobi_logo.png" class="img-fluid partners-logo"></a>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6 text-center mb-4 mb-lg-0">
-                                <a href="https://itfa.org/" target="_blank"><img src="assets/images/trusted/itfa_logo.png" class="img-fluid partners-logo"></a>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6 text-center mb-4 mb-lg-0">
-                                <a href="https://gemmanetwork.com/" target="_blank"><img src="assets/images/trusted/gemma_logo.png" class="img-fluid partners-logo"></a>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6 text-center mb-4 mb-lg-0">
-                                <h5 class="mb-0 text-info mt-3 mt-lg-0 mt-md-0">Many more coming soon!</h5>
-                            </div>
-                    	</div>
-                	</div>	
-				</div>-->
-                <div class="row align-items-center">
-					<div class="col-lg-12 mb-4">		
-						<h2 class="text-center mb-1">Trusted By</h2>
-                        <p class="text-center">A broader spectrum of Technology and Creativity.</p>
-					</div>
-                    <div class="col-lg-12">
-                        <div class="row trusted-by align-items-center">
-                            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 text-center mb-4">
-                                <a href="https://xdsea.com/" target="_blank"><img src="assets/images/trusted/xdsea_logo.png" class="img-fluid partners-logo"></a>
-                            </div>
-                            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 text-center mb-4">
-                                <a href="https://dlt.mobi/" target="_blank"><img src="assets/images/trusted/mobi_logo.png" class="img-fluid partners-logo"></a>
-                            </div>
-                            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 text-center mb-4">
-                                <a href="https://itfa.org/" target="_blank"><img src="assets/images/trusted/itfa_logo.png" class="img-fluid partners-logo"></a>
-                            </div>
-                            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 text-center mb-4">
-                                <a href="https://gemmanetwork.com/" target="_blank"><img src="assets/images/trusted/gemma_logo.png" class="img-fluid partners-logo"></a>
-                            </div>
-                            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 text-center mb-4">
-                                <a href="https://www.myidfi.com/" target="_blank"><img src="assets/images/trusted/myidfi_logo.png" class="img-fluid partners-logo"></a>
-                            </div>
-                            <div class="col-lg-12 text-center mb-4 mb-lg-0">
-                                <h5 class="mb-0 text-info mt-3 mt-lg-0 mt-md-0">Many more coming soon!</h5>
-                            </div>
-                    	</div>
-                	</div>	
-				</div>
-            </div>
-        </section>
-        <!-- Ecosystem Partners -->
-        
-        <!-- Testimonial Area  -->
-    <section class="testimonial_area text-center">
-    	<div class="container">
-    		<h2>What Our Client Says</h2>
+<section class="sec-growing-cyber">
+    <div class="container">
+        <div class="growing-cyber-wrapper">
+            <h2><span>Growing Cyber Threats</span> for Modern Businesses</h2>
+            <p>Without a reliable data backup strategy, businesses face the threat of costly downtime, data loss and damage to customer trust. Implementing proactive data protection and business continuity solutions is essential to safeguarding your organization and minimizing potential risks</p>
             <div class="row">
-    			<div class="col-lg-10 offset-lg-1">
-    				<div><img src="assets/images/quote.png" width="30" height="30"></div>
-                    <div class="carousel testimonial_s slide" data-ride="carousel">
-    					<div class="carousel-inner">
-    						<div class="carousel-item active">
-   								<p>When I used StorX first time, it was very easy to use and creating an account was much easier than on other platforms. StorX is a Perfect fit for those who are in risk in losing data and being manipulated. With StorX blockchain technology those risks are eliminated.</p>
-   								<div class="author">
-   									<p>Daniel E.</p>
-   									<!--<h6>&nbsp;</h6>
-   									<img src="images/daniel-e.png" alt="">-->
-   								</div>
-    						</div>
-					  </div>
-    					<!--<ol class="carousel-indicators">
-    						<li data-target=".testimonial_s" data-slide-to="0" class="active"></li>
-    						<li data-target=".testimonial_s" data-slide-to="1"></li>
-    						<li data-target=".testimonial_s" data-slide-to="2"></li>
-    					</ol>-->
-   				  </div>
-   			  </div>
-    		</div>
-    	</div>
-    </section>
-    <!-- Testimonial Area  -->
-        
-        
-        
-        <!-- Ecosystem Partners -->
-        <section class="ecosytem_partners grey_bg">
-            <div class="container">
-                <div class="row align-items-center">
-    				<div class="col-lg-6 col-md-12">
-                    	<h2 class="mb-3">Ecosystem Partner</h2>
-                		<p>StorX's extended ecosystem combines technology and business capabilities through a powerful ecosystem of market leaders and innovators.<!-- We combine our deep industry expertise with software development tools and an ecosystem of technology partners to help us attain your business goals.--></p>
+                <div class="col-md-4">
+                    <div class="cyber-card">
+                        <h3><strong>51%</strong><br>Enterprises Breached</h3>
+                        <p>51% of enterprises reported a breach in the past 24 months, resulting in unexpected downtime, data exposure, and financial losses, with only 7% reporting no significant damage.</p>
                     </div>
-                    <div class="col-lg-6 col-md-12">
-                    	<div class="row text-center align-items-center">
-                        	<div class="col-lg-4 col-md-4 col-sm-4">
-                   	    		<a href="https://xinfin.org/" target="_blank"><img src="assets/images/partners/xinfin_logo.png" class="img-fluid partners-logo"></a>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-4">
-                       	    	<a href="https://indsoft.net/" target="_blank"><img src="assets/images/partners/indsoft_logo.png" class="img-fluid partners-logo"></a>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-4">
-                       	    	<a href="https://dcentwallet.com/" target="_blank"><img src="assets/images/partners/dcentwallet_logo.png" class="img-fluid partners-logo"></a>
-                            </div>
-                        </div>
-                    </div>
-    			</div>
-            </div>
-        </section>
-        <!-- Ecosystem Partners -->
-        
-        <!-- Media Logo Area -->    
-        <section class="media_area">
-        	<div class="container">
-                <h2>Media Coverage</h2>
-                <div class="owl-carousel cl_slide">                    
-                    <a href="https://finance.yahoo.com/news/storx-allows-users-money-unused-095600550.html" target="_blank" class="item"><img src="assets/images/media/yahoofinance-logo.png" alt="finance.yahoo.com"></a>
-                    <a href="https://www.benzinga.com/pressreleases/21/11/23784785/storx-allows-users-to-make-money-on-unused-disk-space" target="_blank" class="item"><img src="assets/images/media/benzinga-logo.png" alt="benzinga.com"></a>
-                    <a href="https://www.yahoo.com/news/storx-allows-users-money-unused-095600550.html" target="_blank" class="item"><img src="assets/images/media/yahoonews-logo.png" alt="yahoo.com"></a>
-                    <a href="https://blockchaintimes.news/2022/03/22/storx-network-becomes-the-answer-to-xdsea-marketplaces-storage-needs/" target="_blank" class="item"><img src="assets/images/media/blockchaintimes-logo.png" alt="blockchaintimes.news"></a>
-                    <a href="https://www.digitaljournal.com/pr/storx-allows-users-to-make-money-on-unused-disk-space" target="_blank" class="item"><img src="assets/images/media/digitaljournal-logo.png" alt="digitaljournal.com"></a>
-                    <a href="https://www.bloomberg.com/press-releases/2021-11-01/storx-allows-users-to-make-money-on-unused-disk-space" target="_blank" class="item"><img src="assets/images/media/bloomberg-logo.png" alt="bloomberg.com"></a>
-                    <a href="https://www.nasdaq.com/press-release/storx-allows-users-to-make-money-on-unused-disk-space-2021-11-01" target="_blank" class="item"><img src="assets/images/media/nasdaq-logo.png" alt="nasdaq.com"></a>
-                    <a href="https://www.cryptodaily.co.uk/2021/08/which-decentralized-data-storage-service-to-choose" target="_blank" class="item"><img src="assets/images/media/cryptodaily-logo.png" alt="cryptodaily.co.uk"></a>
-                    <a href="https://www.ibtimes.com/top-leading-blockchain-projects-follow-2021-3259859" target="_blank" class="item"><img src="assets/images/media/ibtimes-logo.png" alt="ibtimes.com"></a>                  
-                    <a href="https://www.entrepreneur.com/amphtml/380150" target="_blank" class="item"><img src="assets/images/media/entrepreneur-logo.png" alt="entrepreneur.com"></a>
-                    <a href="https://techbullion.com/race-for-decentralized-storage-leads-to-a-new-era-of-storage-with-filecoin-sia-and-storx/" target="_blank" class="item"><img src="assets/images/media/techbullion-logo.png" alt="techbullion.com"></a>
-                    <a href="https://coinmarketcap.com/headlines/news/xinfin-blockchains-xrc20-token-standard-is-now-supported-on-dcent-biometrics-wallet/" target="_blank" class="item"><img src="assets/images/media/coinmarketcap-logo.png" alt="coinmarketcap.com"></a>
-                    <a href="https://www.thaifrx.com/%E0%B8%A1%E0%B8%B2%E0%B8%95%E0%B8%A3%E0%B8%90%E0%B8%B2%E0%B8%99%E0%B9%82%E0%B8%97%E0%B9%80%E0%B8%84%E0%B9%87%E0%B8%99-xrc20-%E0%B8%82%E0%B8%AD%E0%B8%87-xinfin-blockchain-%E0%B9%84%E0%B8%94%E0%B9%89/" target="_blank" class="item"><img src="assets/images/media/thaifrx-logo.png" alt="thaifrx.com"></a>
-                    <a href="https://www.kultejas.com/xinfin-blockchains-xrc20-token-standard-now-supported-on-dcent-biometrics-wallet/" target="_blank" class="item"><img src="assets/images/media/kultejas-logo.png" alt="kultejas.com"></a>
-                    <a href="https://news.chastin.com/la-norme-de-jeton-xrc20-de-xinfin-blockchain-est-desormais-prise-en-charge-sur-le-portefeuille-biometrique-dcent/" target="_blank" class="item"><img src="assets/images/media/newschastin-logo.png" alt="news.chastin.com"></a>
-                    <a href="https://www.newsbtc.com/news/company/xinfin-blockchains-xrc20-token-standard-is-now-supported-on-dcent-biometrics-wallet/" target="_blank" class="item"><img src="assets/images/media/newsbtc-logo.png" alt="newsbtc.com"></a>
-                    <a href="https://thecryptonewstoday.com/xinfin-blockchains-xrc20-token-standard-is-now-supported-on-dcent-biometrics-wallet/" target="_blank" class="item"><img src="assets/images/media/thecryptonewstoday-logo.png" alt="thecryptonewstoday.com"></a>
-                    <a href="https://www.cryptoninjas.net/2021/06/05/advantages-of-decentralized-cloud-and-how-it-will-disrupt-data-storage/" target="_blank" class="item"><img src="assets/images/media/cryptoninjas-logo.png" alt="cryptoninjas.net"></a>
-                    <a href="https://ext-5710399.livejournal.com/1699.html" target="_blank" class="item"><img src="assets/images/media/livejournal-logo.png" alt="livejournal.com"></a>
-                    <a href="https://www.investing.com/news/cryptocurrency-news/storx-cofounder-handy-barot-provides-valuable-insights-on-blockchain-technology-and-the-future-of-decentralized-storage-2488371" target="_blank" class="item"><img src="assets/images/media/investing-logo.png" alt="investing.com"></a>
-                    <a href="https://coinquora.com/storx-co-founder-handy-barot-provides-valuable-insights-on-blockchain-technology-and-the-future-of-decentralized-storage/" target="_blank" class="item"><img src="assets/images/media/coinquora-logo.png" alt="coinquora.com"></a>
-                    <a href="https://hackernoon.com/36-million-websites-went-offline-due-to-a-fire-how-decentralized-cloud-wouldve-prevented-it-o91e35ey" target="_blank" class="item"><img src="assets/images/media/hackernoon-logo.png" alt="hackernoon.com"></a>
-                    <a href="https://vocal.media/theChain/how-to-protect-your-data-from-tech-giants-with-decentralized-cloud-storage" target="_blank" class="item"><img src="assets/images/media/vocalmedia-logo.png" alt="vocal.media"></a>
                 </div>
-            </div>
-        </section>
-        <!-- Media Logo Area -->
+                <div class="col-md-4">
+                    <div class="cyber-card">
+                        <h3><strong>70%</strong><br>SMBs Attacked</h3>
+                        <p>Small and medium-sized businesses are the primary targets of human-operated ransomware, with 70% experiencing attacks, according to the Microsoft 2023 Digital Defense Report.</p>
+                    </div>
+                </div>
 
-        <!-- Footer Area -->
-        <footer class="footer_area footer_2">
-            <div class="container">                
-                <div class="footer_inner row">
-                    <div class="footer_widget col-lg-2 col-md-6">
-                        <img src="assets/images/storx-logo-light.png" width="150" height="42">
-                        <p>Build on XinFin (XDC) Blockchain Network as an open source initiative.</p>
+                <div class="col-md-4">
+                    <div class="cyber-card">
+                        <h3><strong>60%</strong><br>Human Error Breaches</h3>
+                        <p>The Verizon Data Breach Report shows that 60% of breaches involve a non-malicious human element, such as falling for social engineering or making mistakes often within 60 sec of a phishing email.</p>
                     </div>
-                    <div class="footer_widget col-lg-2">
-                        <h4>StorX</h4>
-                        <ul class="footer_nav">
-                            <li><a href="host-node.html">Host a Node</a></li>
-                            <li><a href="store-data.html">Store Data</a></li>
-                            <li><a href="srx-token.html">SRX Token</a></li>
-                            <li><a href="https://storx.io/invite">Refer & Earn</a></li>
-                            <li><a href="wallets-&-exchanges.html">Wallets & Exchanges</a></li>
-                            <li><a href="storx-onprem.html">StorX OnPrem</a></li>
+                </div>
+                <!--<div class="col-md-6">
+                  <div class="cyber-card">
+                    <h3><strong>69%</strong><br>Disruption Due to Natural Disaster</h3>
+                    <p><strong>Disaster Recovery Preparedness (DRP) Survey</strong> from <strong>Continuity Central</strong> revealed 69% Businesses without Backup plan are exposed to risk of significant data loss when natural events like hurricanes, floods and power outages strikes.</p>
+                  </div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="sec-build-cloud">
+    <div class="container">
+        <h2>StorX <span> Cloud storage built better</span></h2>
+        <div class="row row-eq-height">
+            <div class="col-lg-3 col-md-6">
+                <div class="cloud-card">
+                    <div class="icon-wrapper">
+                        <img src="./images/icons/encryption-white-icon.svg" alt="icon">
+                    </div>
+                    <div class="content">
+                        <h4>Your Data. Your Encryption</h4>
+                        <p class="f-14">With end-to-end encryption at the source, your data is protected with you private key phrase before it leave your device. Only you hold the key to unlock it.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="cloud-card">
+                    <div class="icon-wrapper">
+                        <img src="./images/icons/data-white-icon.svg" alt="icon">
+                    </div>
+                    <div class="content">
+                        <h4>Your Data, Always Available</h4>
+                        <p class="f-14">Geo-Redundancy of data safely stored across multiple location ensures your data is never lost, even in the event of an outage or disaster in single location.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="cloud-card">
+                    <div class="icon-wrapper">
+                        <img src="./images/icons/protected-white-icon.svg" alt="icon">
+                    </div>
+                    <div class="content">
+                        <h4>Your Data, Always Protected </h4>
+                        <p class="f-14">Unique Architecture of encryption, fragmentation, replication and global distribution ensure that you are always protected by and out of reach of virus infection and ransomware</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="cloud-card">
+                    <div class="icon-wrapper">
+                        <img src="./images/icons/verified-white-icon.svg" alt="icon">
+                    </div>
+                    <div class="content">
+                        <h4>Your Data, Always Verified</h4>
+                        <p class="f-14">Integration of blockchain mechanism for verification and audits of data fragments ensures that all information stored on the block remains intact and available for use</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="how-works">
+    <div class="container text-center">
+        <h2><span>How</span> StorX Works?</h2>
+        <p>StorX is A Decentralized Cloud Storage Network</p>
+        <div class="img-wrapper">
+            <img src="./images/how-works-explain-image.png" alt="how-works"/>
+        </div>
+        <div class="content-wrapper">
+            <p>
+                Uploaded Files <br> are Encrypted
+            </p>
+            <p>
+                Encrypted Files <br>
+                are Fragmented</p>
+            <p>
+                Fragmented Files <br>
+                are Replicated
+            </p>
+            <p>
+                Distributed Across <br>
+                Multiple Storage Nodes
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="image-wrapper">
+                    <div class="inner-wrapper">
+                        <img
+                                src="./images/features-left-image.png"
+                                alt="features-image"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 text-center">
+                <div class="content-wrapper">
+                    <h2><span>StorX</span> Features </h2>
+                    <div class="feature-card-wrapper">
+                        <a href="#" class="feature-card">
+                            <div class="img-wrapper">
+                                <img
+                                        src="./images/icons/feature-icon-1.svg"
+                                        alt="feature-1"
+                                />
+                            </div>
+                            <div class="card-title">
+                                <p>Advance <br>
+                                    Encryption</p>
+                            </div>
+                        </a>
+                        <a href="#" class="feature-card">
+                            <div class="img-wrapper">
+                                <img
+                                        src="./images/icons/feature-icon-2.svg"
+                                        alt="feature-2"
+                                />
+                            </div>
+                            <div class="card-title">
+                                <p>Integrity <br>
+                                    Audits</p>
+                            </div>
+                        </a>
+                        <a href="#" class="feature-card">
+                            <div class="img-wrapper">
+                                <img
+                                        src="./images/icons/feature-icon-3.svg"
+                                        alt="feature-3"
+                                />
+                            </div>
+                            <div class="card-title">
+                                <p>Geo <br>
+                                    Redundant</p>
+                            </div>
+                        </a>
+                        <a href="#" class="feature-card">
+                            <div class="img-wrapper">
+                                <img
+                                        src="./images/icons/feature-icon-4.svg"
+                                        alt="feature-4"
+                                />
+                            </div>
+                            <div class="card-title">
+                                <p>
+                                    Ransomware <br>
+                                    Protection
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="feature-card">
+                            <div class="img-wrapper">
+                                <img
+                                        src="./images/icons/feature-icon-5.svg"
+                                        alt="feature-5"
+                                />
+                            </div>
+                            <div class="card-title">
+                                <p>Cost <br>
+                                    Effective</p>
+                            </div>
+                        </a>
+                        <a href="#" class="feature-card">
+                            <div class="img-wrapper">
+                                <img
+                                        src="./images/icons/feature-icon-6.svg"
+                                        alt="feature-6"
+                                />
+                            </div>
+                            <div class="card-title">
+                                <p>Environment <br>Friendly</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="sec-how-customers-use">
+    <div class="container">
+        <h2><span>How Customers </span> Use StorX</h2>
+        <div class="cloud-card-wrapper">
+            <div class="cloud-card">
+                <div class="icon-wrapper">
+                    <img src="./images/icons/file-icon.svg" alt="icon">
+                </div>
+                <div class="content">
+                    <p>File Storage</p>
+                </div>
+            </div>
+            <div class="cloud-card">
+                <div class="icon-wrapper">
+                    <img src="./images/icons/data-black-icon.svg" alt="icon">
+                </div>
+                <div class="content">
+                    <p>S3 Compatible <br> Storage</p>
+                </div>
+            </div>
+            <div class="cloud-card">
+                <div class="icon-wrapper">
+                    <img src="./images/icons/backup-icon.svg" alt="icon">
+                </div>
+                <div class="content">
+                    <p>Backup & <br> Archival</p>
+                </div>
+            </div>
+            <div class="cloud-card">
+                <div class="icon-wrapper">
+                    <img src="./images/icons/google-workspace-icon.svg" alt="icon">
+                </div>
+                <div class="content">
+                    <p>Google Workspace <br> Backup</p>
+                </div>
+            </div>
+            <div class="cloud-card">
+                <div class="icon-wrapper">
+                    <img src="./images/icons/kubernetes-black-icon.svg" alt="icon">
+                </div>
+                <div class="content">
+                    <p>KuberNetes <br> BackUp</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="statistics">
+    <div class="container small">
+        <h2 class="text-center"><span>StorX</span> Statistics</h2>
+        <div class="statistics-wrapper d-none">
+            <div class="row gy-3 g-3">
+                <div class="col-lg col-md-4 col-sm-6">
+                    <div class="statistics-card">
+                        <h3>1,17,066+</h3>
+                        <p class="big-p">Total Users </p>
+                    </div>
+                </div>
+                <div class="col-lg col-md-4 col-sm-6">
+                    <div class="statistics-card">
+                        <h3>4,046+</h3>
+                        <p class="big-p">Storage Providers</p>
+                    </div>
+                </div>
+                <div class="col-lg col-md-4 col-sm-6">
+                    <div class="statistics-card">
+                        <h3>33,067,278.65+</h3>
+                        <p class="big-p">SRX Staked</p>
+                    </div>
+                </div>
+                <!--<div class="col-lg col-md-6 col-sm-6">
+                  <div class="statistics-card">
+                    <h3>100%</h3>
+                    <p class="big-p">Satisfaction</p>
+                  </div>
+                </div>-->
+            </div>
+        </div>
+        <ul class="statistics-list">
+            <li>
+                <strong>117,000+</strong>
+                <p>Users Secured</p>
+            </li>
+            <li>
+                <strong>5+ PB</strong>
+                <p>Storage Deployed</p>
+            </li>
+            <li>
+                <strong>50+</strong>
+                <p>Storage Location</p>
+            </li>
+            <li>
+                <strong>2500+</strong>
+                <p>Storage Nodes</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="sec-popular-integrations">
+    <div class="container">
+        <h2><span>Our most</span> popular integrations</h2>
+        <div class="row row-eq-height">
+            <div class="col-md-3">
+                <a href="#" target="_blank" class="integration-card">
+                    <div class="icon-wrapper">
+                        <img src="./images/google-workspace-logo.png" alt="icon">
+                    </div>
+                    <div class="content">
+                        <p>Backup critical data from Gmail, Drive,Photos</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="#" target="_blank" class="integration-card">
+                    <div class="icon-wrapper">
+                        <img src="./images/kubernetes-logo-1.svg" alt="icon">
+                    </div>
+                    <div class="content">
+                        <p>Backup critical data from Kubernetes</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="#" target="_blank" class="integration-card">
+                    <div class="icon-wrapper">
+                        <img src="./images/aws-cloud-brand-logo.svg" alt="icon">
+                    </div>
+                    <div class="content">
+                        <p>Protection with trusted solution for AWS environments</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="integrations.html" class="integration-card">
+                    <div class="icon-wrapper">
+                        <img src="./images/icons/explore-icon.svg" alt="icon">
+                    </div>
+                    <div class="content">
+                        <p>Click here to Explore our 40+ Integrations</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="price-plan" id="price-plan">
+    <div class="container text-center">
+        <h2><span>Transparent</span> Pricing Plans</h2>
+        <p>Find a plan that works best for you. We also accept payment in SRX Tokens.</p>
+        <nav>
+            <div
+                    class="nav nav-tabs border-0 choose-plan-wrapper"
+                    id="nav-tab"
+                    role="tablist"
+            >
+                <label
+                        for="price-plan"
+                        class="nav-link active p bg-transparent border-0"
+                        id="nav-home-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#individual-tab"
+                        type="button"
+                        role="tab"
+                        aria-controls="individual-tab"
+                        aria-selected="true"
+                >Individual</label
+                >
+                <span class="check-btn price-toggle active"></span>
+
+                <label
+                        for="price-plan"
+                        class="nav-link p bg-transparent border-0"
+                        id="nav-profile-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#enterprise-tab"
+                        type="button"
+                        role="tab"
+                        aria-controls="enterprise-tab"
+                        aria-selected="false"
+                >Enterprise</label
+                >
+            </div>
+        </nav>
+
+        <div class="tab-content" id="nav-tabContent">
+            <div
+                    class="tab-pane fade show active"
+                    id="individual-tab"
+                    role="tabpanel"
+                    aria-labelledby="nav-home-tab"
+            >
+                <div class="price-plan-wrapper">
+                    <div class="row gy-3 row-eq-height">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="pricing-card-v2">
+                                <div class="pricing-header">
+                                    <p class="plan-tag">Welcome</p>
+                                    <div class="total-price">
+                                        <p class="f-14 price-symbol">€</p>
+                                        <strong class="price">9.99</strong>
+                                    </div>
+                                    <div class="total-price cut-price">
+                                        <p class="f-12 price-symbol">€</p>
+                                        <strong class="price">5</strong>
+                                    </div>
+                                    <div class="discount-wrapper">
+                                        <p class="f-12 one-time">One-time payment</p>
+                                        <p class="f-14 discount-tag">70% off</p>
+                                    </div>
+                                    <div class="select-plan">
+                                        <a href="#" class="btn-style transparent">Select plan</a>
+                                    </div>
+                                </div>
+                                <div class="pricing-body">
+                                    <ul class="feature-list">
+                                        <li>20 GB Encrypted Storage</li>
+                                        <li>Zero-knowledge encryption</li>
+                                        <li>Password-protected file sharing</li>
+                                        <li>Access your files from any device</li>
+                                        <li>Two-factor authentication (2FA)</li>
+                                        <li>Email Support</li>
+                                        <li>30-day money-back guarantee</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="price-plan-card d-none">
+                                <p class="medium-p mb-0">Welcome</p>
+                                <h3 class="big-h3 mt-0">2<span>GB</span></h3>
+                                <p>
+                                    End to End Encryption <br>
+                                    Private File Sharing <br>
+                                    5 GB Bandwidth
+                                </p>
+                                <p class="medium-p blue-p mb-0"></p>
+                                <a href="https://storx.io/signup" class="btn-style p pill-btn mt-1 free-btn">
+                                    Start For Free
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="pricing-card-v2">
+                                <div class="pricing-header">
+                                    <p class="plan-tag">Basic</p>
+                                    <div class="total-price">
+                                        <p class="f-14 price-symbol">€</p>
+                                        <strong class="price">49.99</strong>
+                                    </div>
+                                    <div class="total-price cut-price">
+                                        <p class="f-12 price-symbol">€</p>
+                                        <strong class="price">24.99</strong>
+                                    </div>
+                                    <div class="discount-wrapper">
+                                        <p class="f-12 one-time">One-time payment</p>
+                                        <p class="f-14 discount-tag">70% off</p>
+                                    </div>
+                                    <div class="select-plan">
+                                        <a href="#" class="btn-style transparent">Select plan</a>
+                                    </div>
+                                </div>
+                                <div class="pricing-body">
+                                    <ul class="feature-list">
+                                        <li>250 GB Encrypted Storage</li>
+                                        <li>Zero-knowledge encryption</li>
+                                        <li>Password-protected file sharing</li>
+                                        <li>Access your files from any device</li>
+                                        <li>Two-factor authentication (2FA)</li>
+                                        <li>Email Support</li>
+                                        <li>30-day money-back guarantee</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="price-plan-card d-none">
+                                <p class="medium-p mb-0">Basic</p>
+                                <h3 class="big-h3 mt-0">20<span>GB</span></h3>
+                                <p>
+                                    End to End Encryption <br>
+                                    Private File Sharing <br>
+                                    50 GB Bandwidth <br>
+                                    Email Support
+                                </p>
+                                <h3 class="big-h3 blue-text border-0 p-0 mb-0">
+                                    9.99<span class=""
+                                >USD <span class="fw-medium">/per month</span></span
+                                >
+                                </h3>
+                                <!--                    <p class="lt-green-p mb-0">Prepay per month</p>-->
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="pricing-card-v2">
+                                <div class="pricing-header">
+                                    <p class="plan-tag">Professional</p>
+                                    <div class="total-price">
+                                        <p class="f-14 price-symbol">€</p>
+                                        <strong class="price">99.99</strong>
+                                    </div>
+                                    <div class="total-price cut-price">
+                                        <p class="f-12 price-symbol">€</p>
+                                        <strong class="price">49.99</strong>
+                                    </div>
+                                    <div class="discount-wrapper">
+                                        <p class="f-12 one-time">One-time payment</p>
+                                        <p class="f-14 discount-tag">70% off</p>
+                                    </div>
+                                    <div class="select-plan">
+                                        <a href="#" class="btn-style transparent">Select plan</a>
+                                    </div>
+                                </div>
+                                <div class="pricing-body">
+                                    <ul class="feature-list">
+                                        <li>500 GB Encrypted Storage</li>
+                                        <li>Zero-knowledge encryption</li>
+                                        <li>Password-protected file sharing</li>
+                                        <li>Access your files from any device</li>
+                                        <li>Two-factor authentication (2FA)</li>
+                                        <li>Email Support</li>
+                                        <li>30-day money-back guarantee</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="price-plan-card d-none">
+                                <p class="medium-p mb-0">Professional</p>
+                                <h3 class="big-h3 mt-0">50<span>GB</span></h3>
+                                <p>
+                                    End to End Encryption <br>
+                                    Private File Sharing <br>
+                                    250 GB Bandwidth <br>
+                                    Email Support
+                                </p>
+                                <h3 class="big-h3 blue-text border-0 p-0 mb-0">
+                                    29.99<span class=""
+                                >USD <span class="fw-medium">/per month</span></span
+                                >
+                                </h3>
+                                <!--                    <p class="lt-green-p">Prepay per month</p>-->
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="pricing-card-v2">
+                                <div class="pricing-header">
+                                    <p class="plan-tag">Small Business</p>
+                                    <div class="total-price">
+                                        <p class="f-14 price-symbol">€</p>
+                                        <strong class="price">199.99</strong>
+                                    </div>
+                                    <div class="total-price cut-price">
+                                        <p class="f-12 price-symbol">€</p>
+                                        <strong class="price">99.99</strong>
+                                    </div>
+                                    <div class="discount-wrapper">
+                                        <p class="f-12 one-time">One-time payment</p>
+                                        <p class="f-14 discount-tag">70% off</p>
+                                    </div>
+                                    <div class="select-plan">
+                                        <a href="#" class="btn-style transparent">Select plan</a>
+                                    </div>
+                                </div>
+                                <div class="pricing-body">
+                                    <ul class="feature-list">
+                                        <li>1 TB Encrypted Storage</li>
+                                        <li>Zero-knowledge encryption</li>
+                                        <li>Password-protected file sharing</li>
+                                        <li>Access your files from any device</li>
+                                        <li>Two-factor authentication (2FA)</li>
+                                        <li>Email Support</li>
+                                        <li>30-day money-back guarantee</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="price-plan-card d-none">
+                                <p class="medium-p mb-0">Small Business</p>
+                                <h3 class="big-h3 mt-0">100<span>GB</span></h3>
+                                <p>
+                                    End to End Encryption <br>
+                                    Private File Sharing <br>
+                                    500 GB Bandwidth <br>
+                                    Email Support
+                                </p>
+                                <h3 class="big-h3 blue-text border-0 p-0 mb-0">
+                                    49.99<span class=""
+                                >USD <span class="fw-medium">/per month</span></span
+                                >
+                                </h3>
+                                <!--                    <p class="lt-green-p">Prepay per month</p>-->
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="pricing-card-v2 pricing-free">
+                                <div class="pricing-header">
+                                    <p class="plan-tag">StorX Free</p>
+                                    <div class="free-text">
+                                        <p>Free Get 1GB of encrypted cloud storage for free</p>
+                                    </div>
+                                    <div class="select-plan">
+                                        <a href="#" class="btn-style transparent">Select plan</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                    class="tab-pane fade"
+                    id="enterprise-tab"
+                    role="tabpanel"
+                    aria-labelledby="nav-profile-tab"
+            >
+                <div class="price-plan-wrapper">
+                    <div class="row gy-3">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="price-plan-card">
+                                <p class="medium-p mb-0">Starter</p>
+                                <h3 class="big-h3 mt-0">500<span>GB</span></h3>
+                                <p>
+                                    End to End Encryption <br>
+                                    Private File Sharing <br>
+                                    5 TB Bandwidth <br>
+                                    Email Support
+                                </p>
+                                <h3 class="big-h3 blue-text border-0 p-0 mb-0">
+                                    59.99<span class=""
+                                >USD <span class="fw-medium">/per month</span></span
+                                >
+                                </h3>
+                                <!--                    <p class="lt-green-p mb-0">Prepay per month</p>-->
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="price-plan-card">
+                                <p class="medium-p mb-0">Standard</p>
+                                <h3 class="big-h3 mt-0">1<span>TB</span></h3>
+                                <p>
+                                    End to End Encryption <br>
+                                    Private File Sharing <br>
+                                    10 GB Bandwidth <br>
+                                    Email Support
+                                </p>
+                                <h3 class="big-h3 blue-text border-0 p-0 mb-0">
+                                    79.99<span class=""
+                                >USD <span class="fw-medium">/per month</span></span
+                                >
+                                </h3>
+                                <!--                    <p class="lt-green-p mb-0">Prepay per month</p>-->
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="price-plan-card">
+                                <p class="medium-p mb-0">Professional</p>
+                                <h3 class="big-h3 mt-0">5<span>TB</span></h3>
+                                <p>
+                                    End to End Encryption <br>
+                                    Private File Sharing <br>
+                                    25 TB Bandwidth <br>
+                                    Email Support
+                                </p>
+                                <h3 class="big-h3 blue-text border-0 p-0 mb-0">
+                                    99.99<span class=""
+                                >USD <span class="fw-medium">/per month</span></span
+                                >
+                                </h3>
+                                <!--                    <p class="lt-green-p">Prepay per month</p>-->
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="price-plan-card">
+                                <p class="medium-p mb-0">Enterprise</p>
+                                <h3 class="big-h3 mt-0">10<span>TB</span></h3>
+                                <p>
+                                    End to End Encryption <br>
+                                    Private File Sharing <br>
+                                    100 TB Bandwidth <br>
+                                    Email Support
+                                </p>
+                                <h3 class="big-h3 blue-text border-0 p-0 mb-0">
+                                    149.99<span class=""
+                                >USD <span class="fw-medium">/per month</span></span
+                                >
+                                </h3>
+                                <!--                    <p class="lt-green-p">Prepay per month</p>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="sec-client">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-lg-3 align-self-center">
+                <div class="side-content">
+                    <h2><span>Don’t just</span> take our word for it</h2>
+                    <!--<p class="f-14">Lorem ipsum dolor sit amet consectetur. Lectus senectus elit ut tempor neque non. Tempor massa
+                      nam sed laoreet platea tempor. Lectus dui gravida cursus non fames imperdiet. A arcu mattis
+                      facilisi.</p>-->
+                </div>
+            </div>
+            <div class="col-md-8 col-lg-9 align-self-center">
+                <div id="testimonial" class="owl-carousel">
+                    <div class="item">
+                        <div class="review-card">
+                            <div class="content">
+                                <!--                    <p class="title">The only backup solution I recommend</p>-->
+                                <p class="review">We were backing up with tape. We constantly dealt with issues, tape drive maintenance, and dealing with failed backup messages. Backing up with StorX has solved all these issues and restores are done with ease and speed. StorX gives me a piece of mind that my data is protected and is there when I need it.</p>
+                                <p class="name">Zach Jason</p>
+                                <!--                    <p class="job">Principal, Information Technology</p>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="review-card">
+                            <div class="content">
+                                <p class="review">StorX had easy to use Documentation and technical support was outstanding, guiding me meticulously through the process via email. Excellent service, thanks to the entire StorX team!</p>
+                                <p class="name">Tomaz Demirjian</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="review-card">
+                            <div class="content">
+                                <p class="review">Reliable and predictable service that makes me feel safe. Being always aware that my data is taken care with highest safety is very important. </p>
+                                <p class="name">Steve Nevil</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="review-card">
+                            <div class="content">
+                                <p class="review">StorX was extremely easy to set up and start, works flawlessly. Intergrates very well with our Backup App</p>
+                                <p class="name">Marbel Conceptz</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="review-card">
+                            <div class="content">
+                                <p class="review">I would recommend StorX backup solution for any user that needs seemless backup for SAAS application, They were very easy to work with and answered all of my questions. Backups to the secured vault are seamless and faster than tape.</p>
+                                <p class="name">J. Raymond Pearson</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="review-card">
+                            <div class="content">
+                                <p class="review">I will continue to recommend StorX to my friends and colleagues. The backups of everything stored were helpful. When I needed it, it was spot on.</p>
+                                <p class="name">Darren Goulston</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="review-card">
+                            <div class="content">
+                                <p class="review">Your service has also just got better and better, with more features added and an increasingly user-friendly system developing. This has come at absolutely no extra cost. I remain a very satisfied customer.
+                                </p>
+                                <p class="name">Bryan Weir</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="review-card">
+                            <div class="content">
+                                <p class="review">I just wanted to say Thank You. I was recommended to use Storx as they are reliable and offer great value, But the icing on the cake for me is the excellent friendly support that helps and resolves queries.
+
+                                    Great service! Keep it up guys.</p>
+                                <p class="name">Michael Sandes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="review-card">
+                            <div class="content">
+                                <p class="review">As a software engineer/web designer I am always looking for the best but have never found anyone that can offer me what I want, and after having bad experiences in the past.
+
+                                    Finding one that is always reliable, very friendly and has everything I could ask for. I can not do anything but praise. 5 star recommendation for sure.</p>
+                                <p class="name">Alistair Martin</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="review-card">
+                            <div class="content">
+                                <p class="review">Best affordable and quality provider!
+                                    I was looking for an affordable but also a quality backup provider. After comparing some service, I decided to try storx. And without any regrets. Everything went well and above all very quickly. Very good website with very clear explanation about settings.</p>
+                                <p class="name">Ryan McDowell</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--<section class="sec-purchase-srx" id="xswap-section">
+    <div class="container">
+        <h2><span>Purchase</span> SRX Token</h2>
+        <p>Swap your existing crypto assets for SRX tokens seamlessly.</p>
+        <div class="iframe-wrapper">
+            <iframe id="myiFrame" class="xswap-iframe"
+                    src="https://swap.xdcobserver.io/exchange/b19768a4-2782-495c-8760-1a7597616e14"
+                    width="100%" height="400"
+                    title="Xswap-exchange"
+                    style="border-radius: 25px;">
+            </iframe>
+            <p>Powered by XDC Anyswap</p>
+        </div>
+    </div>
+</section>-->
+
+<section class="sec-dont-wait">
+    <div class="container">
+        <div class="dont-wait-wrapper">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="content-wrapper">
+                        <h2>Act Before Disaster Strikes</h2>
+                        <p class="f-18">Partnering with StorX Network means entrusting your data backup to experts who prioritize security. Our comprehensive solutions provide peace of mind by ensuring your data is fully protected and resilient against any unforeseen challenges.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <ul class="btn-list">
+                        <li><a href="https://storx.io/signup" target="_blank" class="btn-style orange-btn">Signup For Free</a></li>
+                        <li><a href="contact-us.html" class="btn-style orange-btn">Request a Demo</a></li>
+                        <li><a href="contact-us.html" class="btn-style orange-btn">Talk to Sales</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="join">
+    <div class="container text-center">
+        <h2 class="text-white">Become A Storage Node Operator & Earn</h2>
+        <ul class="btn-list">
+            <li><a href="storx-website-host-storage-node.html" class="btn-style orange-btn">Click Here</a></li>
+        </ul>
+        <div class="action-wrapper d-none">
+            <a href="https://StorX.io" target="_blank" class="btn-style height-btn cornered-btn icon-btn active">
+                <img src="./images/icons/store-icon.svg" alt="store"/>
+                <span>Store Data</span>
+            </a>
+            <!--          <a href="https://storx.tech/store-data.html" target="_blank" class="btn-style height-btn cornered-btn icon-btn">-->
+            <a href="https://farmer.storx.io" target="_blank" class="btn-style height-btn cornered-btn icon-btn">
+                <img src="./images/icons/host-icon.svg" alt="store"/>
+                <span>Host Nodes</span>
+            </a>
+            <a href="wallets-&-exchanges.html" class="btn-style height-btn cornered-btn icon-btn">
+                <img src="./images/icons/buy-icon.svg" alt="store"/>
+                <span> Buy SRX</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="Partnerships">
+    <div class="container">
+        <h2>Partnerships</h2>
+        <div class="partnership-grid">
+            <div class="partnership-card">
+                <a href="https://dlt.mobi/" target="_blank">
+                    <img src="./images/partner-mobi.svg" alt=""/>
+                </a>
+            </div>
+            <div class="partnership-card">
+                <a href="https://itfa.org/" target="_blank">
+                    <img src="./images/partner-itfa.svg" alt="" class="fixed-height"/>
+                </a>
+            </div>
+            <div class="partnership-card">
+                <a href="https://depinunion.org/union" target="_blank">
+                    <img src="./images/union-logo.svg" alt="" class="fixed-height"/>
+                </a>
+            </div>
+            <div class="partnership-card">
+                <a href="https://depinhub.io/" target="_blank">
+                    <img src="./images/hotspotty-logo.avif" alt="" class="fixed-height"/>
+                </a>
+            </div>
+            <div class="partnership-card">
+                <a href="https://www.depinassociation.com/" target="_blank">
+                    <img src="./images/depin-association-logo.png" alt="" class="fixed-height"/>
+                </a>
+            </div>
+        </div>
+        <!--<div class="partnership-wrapper owl-carousel">
+          <div class="item">
+            <a href="https://dlt.mobi/" target="_blank">
+              <img src="./images/partner-mobi.svg" alt="" />
+            </a>
+          </div>
+          <div class="item">
+            <a href="https://itfa.org/" target="_blank">
+              <img src="./images/partner-itfa.svg" alt="" class="fixed-height" />
+            </a>
+          </div>
+          <div class="item">
+            <a href="https://depinunion.org/union" target="_blank">
+              <img src="./images/union-logo.svg" alt="" class="fixed-height" />
+            </a>
+          </div>
+          <div class="item">
+            <a href="https://depinhub.io/" target="_blank">
+              <img src="./images/hotspotty-logo.avif" alt="" class="fixed-height" />
+            </a>
+          </div>
+          <div class="item">
+            <a href="https://depinhub.io/" target="_blank">
+              <img src="./images/depin-association-logo.png" alt="" class="fixed-height" />
+            </a>
+          </div>
+          &lt;!&ndash;<div class="item">
+            <a href="https://xdsea.com/" target="_blank">
+              <img src="./images/partner-sea.png" alt="" class="fixed-height" />
+            </a>
+          </div>
+          <div class="item">
+            <a href="https://www.myidfi.com/" target="_blank">
+              <img src="./images/paertner-idfi.png" alt="" />
+            </a>
+          </div>
+          <div class="item">
+            <a href="https://gemmanetwork.com/" target="_blank">
+              <img src="./images/paertner-gemma.svg" alt="" />
+            </a>
+          </div>&ndash;&gt;
+        </div>-->
+    </div>
+</section>
+
+<section class="media">
+    <div class="container">
+        <h2 class="text-center"><span>Media</span> Coverage</h2>
+        <div class="media-wrapper owl-carousel">
+            <!--<div class="item">
+              <div class="img-wrapper">
+                <a href="#" target="_blank">
+                  <img src="./images/media-partner-1.svg" alt="media-partner" />
+                </a>
+              </div>
+            </div>-->
+            <div class="item">
+                <div class="img-wrapper">
+                    <a href="https://blockchaintimes.news/2022/03/22/storx-network-becomes-the-answer-to-xdsea-marketplaces-storage-needs/" target="_blank">
+                        <img src="./images/media-partner-2.svg" alt="Brand Logos"/>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-wrapper">
+                    <a href="https://www.newsbtc.com/news/company/xinfin-blockchains-xrc20-token-standard-is-now-supported-on-dcent-biometrics-wallet/" target="_blank">
+                        <img src="./images/media-partner-3.svg" alt="Brand Logos"/>
+                    </a>
+                </div>
+            </div>
+            <!--<div class="item">
+              <div class="img-wrapper">
+                <a href="#" target="_blank">
+                  <img src="./images/media-partner-4.svg" alt="" />
+                </a>
+              </div>
+            </div>-->
+            <div class="item">
+                <div class="img-wrapper">
+                    <a href="https://www.digitaljournal.com/pr/storx-allows-users-to-make-money-on-unused-disk-space" target="_blank">
+                        <img src="./images/media-partner-5.png" alt="Brand Logos"/>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-wrapper">
+                    <a href="https://cryptodaily.co.uk/2021/08/which-decentralized-data-storage-service-to-choose" target="_blank">
+                        <img src="./images/media-partner-6.png" alt="Brand Logos"/>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-wrapper">
+                    <a href="https://www.ibtimes.com/top-leading-blockchain-projects-follow-2021-3259859" target="_blank">
+                        <img src="./images/media-partner-7.svg" class="width" alt="Brand Logos"/>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-wrapper">
+                    <a href="https://www.entrepreneur.com/en-in/entrepreneurs/this-startup-is-disrupting-decentralized-data-storage/380150" target="_blank">
+                        <img src="./images/media-partner-8.svg" alt="Brand Logos"/>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-wrapper">
+                    <a href="https://techbullion.com/race-for-decentralized-storage-leads-to-a-new-era-of-storage-with-filecoin-sia-and-storx/" target="_blank">
+                        <img src="./images/media-partner-9.png" alt="Brand Logos"/>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-wrapper">
+                    <a href="https://techbullion.com/race-for-decentralized-storage-leads-to-a-new-era-of-storage-with-filecoin-sia-and-storx/" target="_blank">
+                        <img src="./images/media-partner-10.png" alt="Brand Logos"/>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-wrapper">
+                    <a href="https://ext-5710399.livejournal.com/1699.html" target="_blank">
+                        <img src="./images/media-partner-11.png" alt="Brand Logos"/>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-wrapper">
+                    <a href="https://www.investing.com/news/cryptocurrency-news/storx-cofounder-handy-barot-provides-valuable-insights-on-blockchain-technology-and-the-future-of-decentralized-storage-2488371" target="_blank">
+                        <img src="./images/media-partner-12.png" alt="Brand Logos"/>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-wrapper">
+                    <a href="https://cointelegraph.com/news/what-is-decentralized-storage-and-how-does-it-work" target="_blank">
+                        <img src="./images/media-partner-13.png" alt="Brand Logos"/>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-wrapper">
+                    <a href="https://hackernoon.com/36-million-websites-went-offline-due-to-a-fire-how-decentralized-cloud-wouldve-prevented-it-o91e35ey" target="_blank">
+                        <img src="./images/media-partner-14.png" alt="Brand Logos"/>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-wrapper">
+                    <a href="https://vocal.media/theChain/how-to-protect-your-data-from-tech-giants-with-decentralized-cloud-storage" target="_blank">
+                        <img src="./images/media-partner-15.png" alt="Brand Logos"/>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-wrapper">
+                    <a href="https://finance.yahoo.com/news/storx-allows-users-money-unused-095600550.html?guccounter=1&guce_referrer=aHR0cHM6Ly9zdG9yeC50ZWNoLw&guce_referrer_sig=AQAAAHAk8k6SCCmx9mE2GNj43mVOp36cIK6Hnhzn-ulexe-qvGwHawRNsYdnMQE4AYW5thLP7xdyRSdVlVkBI6gHyiUFlfXTe8WfOocl-x2_7jiun3IIv3TKsSfsf655juBUKt5Eh5uOCnmFf9aGpcMZPjzcMoJv8MPUnIUt3rwirxjb" target="_blank">
+                        <img src="./images/media-partner-16.png" alt="Brand Logos"/>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-wrapper">
+                    <a href="https://www.benzinga.com/pressreleases/21/11/23784785/storx-allows-users-to-make-money-on-unused-disk-space" target="_blank">
+                        <img src="./images/media-partner-17.svg" alt="Brand Logos"/>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-wrapper">
+                    <a href="https://thecryptobasic.com/2023/02/01/storx-network-storx-committed-to-building-a-secure-green-decentralized-cloud-storage-network/" target="_blank">
+                        <img src="./images/media-partner-18.png" class="width" alt="Brand Logos"/>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-wrapper">
+                    <a href="https://bitcoinist.com/storx-reaches-2000-storage-node-network-becomes-fastest-growing-decentralized-storage-network/" target="_blank">
+                        <img src="./images/media-partner-19.png" alt="Brand Logos"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="sec-storage-calculator d-none">
+    <div class="container">
+        <div class="storage-calculator-wrapper">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="select-storage-wrapper">
+                        <h3>Explore Your Potential Savings <br>
+                            with Amove Tiered Storage</h3>
+                        <ul class="cloud-list">
+                            <li>
+                                <div class="select-card">
+                                    <div class="select-dropdown">
+                                        <button href="#" role="button" data-value="" class="select-dropdown__button start-button">
+                                            <span><img src="./images/icons/clouds/wasabi-icon.svg" alt="icon" class="icon"> Wasabi</span>
+                                            <img src="./images/icons/clouds/arrow-down-icon.svg" alt="icon" class="arrow">
+                                        </button>
+                                        <ul class="select-dropdown__list">
+                                            <li data-value="1" class="select-dropdown__list-item">
+                                                <img src="./images/icons/clouds/aws-icon.svg" alt="icon" class="icon"><span>AWS S3</span>
+                                            </li>
+                                            <li data-value="2" class="select-dropdown__list-item">
+                                                <img src="./images/icons/clouds/azure-icon.svg" alt="icon" class="icon"><span>Azure</span>
+                                            </li>
+                                            <li data-value="3" class="select-dropdown__list-item">
+                                                <img src="./images/icons/clouds/lucidlink-icon.svg" alt="icon" class="icon"><span>LucidLink IBM</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="select-card">
+                                    <div class="select-dropdown">
+                                        <button href="#" role="button" data-value="" class="select-dropdown__button end-button">
+                                            <span><img src="./images/icons/clouds/wasabi-icon.svg" alt="icon" class="icon"> Wasabi</span>
+                                            <img src="./images/icons/clouds/arrow-down-icon.svg" alt="icon" class="arrow">
+                                        </button>
+                                        <ul class="select-dropdown__list">
+                                            <li data-value="1" class="select-dropdown__list-item">
+                                                <img src="./images/icons/clouds/aws-icon.svg" alt="icon" class="icon"><span>AWS S3</span>
+                                            </li>
+                                            <li data-value="2" class="select-dropdown__list-item">
+                                                <img src="./images/icons/clouds/azure-icon.svg" alt="icon" class="icon"><span>Azure</span>
+                                            </li>
+                                            <li data-value="3" class="select-dropdown__list-item">
+                                                <img src="./images/icons/clouds/lucidlink-icon.svg" alt="icon" class="icon"><span>LucidLink IBM</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
-                    </div>
-                    <div class="footer_widget col-lg-2 fw_3">
-                        <h4>Community</h4>
-                        <ul class="footer_nav">
-                            <li><a href="community-bounty.html">Community Bounty</a></li>
-                            <li><a href="support.html">Community Support</a></li>
-                            <li><a href="about-team.html">About Team</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer_widget col-lg-2 fw_3">
-                        <h4>Resource</h4>
-                        <ul class="footer_nav">
-                            <li><a href="storx_whitepaper_v1.pdf" target="_blank">Whitepaper</a></li>
-                            <li><a href="roadmap.html">Roadmap</a></li>
-                            <li><a href="applications.html">StorX Applications</a></li>
-                            <li><a href="exchange-listing-resource.html">Exchange Listing Resource</a></li>
-                            <li><a href="bitcoin-technology.html">Bitcoin Technology</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer_widget col-lg-2 fw_3">
-                        <h4>Other Links</h4>
-                        <ul class="footer_nav">
-                            <li><a href="faqs.html">FAQs</a></li>
-                            <li><a href="brand-assets.html">Brand Assets</a></li>
-                            <li><a href="media.html">Media Coverage</a></li>
-                            <li><a href="application-usage-terms.html">Application Usage Terms</a></li>
-                            <li><a href="disclaimer.html">Disclaimer</a></li>
+                        <div class="content-size-wrapper">
+                            <p>Content Size</p>
+                            <ul class="size-list">
+                                <li>
+                                    <div class="input-form">
+                                        <input type="text" value="1">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="select-dropdown">
+                                        <button href="#" role="button" data-value="" class="select-dropdown__button start-button">
+                                            <span>TB</span>
+                                            <img src="./images/icons/clouds/arrow-down-icon.svg" alt="icon" class="arrow">
+                                        </button>
+                                        <ul class="select-dropdown__list">
+                                            <li data-value="1" class="select-dropdown__list-item">TB</li>
+                                            <li data-value="1" class="select-dropdown__list-item">PT</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="contact">
+                            <li><a href="#" class="storage-btn">Start For Free</a></li>
+                            <li><a href="#" class="storage-btn orange">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="copy_right cr_2">
-                    <div class="row">
-                    <div class="col-xl-7 col-lg-5 col-md-5">
-                            <p class="copyright">Join StorX Community on <a href="https://github.com/StorXNetwork" target="_blank">GitHub</a>.</p>
+                <div class="col-lg-6">
+                    <div class="storage-total-wrapper">
+                        <div class="total-card">
+                            <div class="title-wrapper">
+                                <span>Annual Storage Costs</span>
+                            </div>
+                            <ul class="total-list">
+                                <li>
+                                    <div class="input-card">
+                                        <strong>Amove Storage</strong>
+                                        <div class="total-cost">
+                                            <span>$480,000</span>
+                                        </div>
+                                        <p>1PB</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="input-card">
+                                        <strong>Amove Storage</strong>
+                                        <div class="total-cost">
+                                            <span>$480,000</span>
+                                        </div>
+                                        <p>1PB</p>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="col-xl-5 col-lg-7 col-md-7">
-                            <ul class="footer_social">
+                        <div class="total-card">
+                            <div class="title-wrapper">
+                    <span>Incredible Savings and <br>
+                      More Features with StorX</span>
+                            </div>
+                            <ul class="total-list">
                                 <li>
-                                    <a href="https://twitter.com/StorXNetwork" target="_blank"><i class="fab fa-twitter"></i></a>
+                                    <div class="input-card">
+                                        <strong>Amove Storage</strong>
+                                        <div class="total-cost">
+                                            <span>$480,000</span>
+                                        </div>
+                                        <p>1PB</p>
+                                    </div>
                                 </li>
                                 <li>
-                                    <a href="https://www.linkedin.com/company/storxnetwork" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.facebook.com/StorXNetwork" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://t.me/StorXNetwork" target="_blank"><i class="fab fa-telegram-plane"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.youtube.com/channel/UC5vUiX1eINl0gs6T3mS1CxA" target="_blank"><i class="fab fa-youtube"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://medium.com/storx-network" target="_blank"><i class="fab fa-medium-m"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/StorXNetwork" target="_blank"><i class="fab fa-github"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.reddit.com/r/StorXNetwork" target="_blank"><i class="fab fa-reddit-alien"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://discord.gg/ha4Jufj2Nm" target="_blank"><i class="fab fa-discord"></i></a>
+                                    <div class="input-card">
+                                        <strong>Amove Storage</strong>
+                                        <div class="total-cost">
+                                            <span>$480,000</span>
+                                        </div>
+                                        <p>1PB</p>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- End Footer Area -->
+        </div>
+    </div>
+</section>
 
-        <!-- Scroll Top Button -->
-        <button class="scroll-top">
-            <i class="fas fa-angle-up"></i>
-        </button>
+<section class="why d-none">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="content-wrapper">
+                    <span class="medium-span">Why You Need</span>
+                    <h2>StorX to Protect What Matters</h2>
+                    <p class="lite-black">In today’s digital world, data is everything. Losing your data can lead to costly and sometimes irreversible consequences. Storing your data on Traditional cloud storage can leave your digital assets vulnerable to</p>
+                    <ul class="feature-list">
+                        <li><p class="lite-black">Data loss by Human Error</p></li>
+                        <li><p class="lite-black">Data loss by Software Malfunction</p></li>
+                        <li><p class="lite-black">Malicious Insiders</p></li>
+                        <li><p class="lite-black">Malware and Ransomware</p></li>
+                        <li><p class="lite-black">Disaster</p></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="image-wrapper">
+                    <div class="inner-wrapper">
+                        <img src="./images/why-left-image.png" alt="why-image"/>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <!-- Preloader -->
-        <div class="preloader"></div>
+        <div class="why-need-card-wrapper">
+            <div class="row gy-3 g-3">
+                <div class="col-lg col-md-6 col-sm-6">
+                    <a href="#" class="why-card">
+                        <div class="card-inner-body">
+                            <div class="img-wrapper">
+                                <img
+                                        src="./images/icons/human-error-icon-1.svg"
+                                        alt="icon"
+                                />
+                            </div>
+                            <div class="card-title">
+                                <p>Human Error</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg col-md-6 col-sm-6">
+                    <a href="#" class="why-card">
+                        <div class="card-inner-body">
+                            <div class="img-wrapper">
+                                <img src="./images/icons/malfunction-icon.svg" alt="icon"/>
+                            </div>
+                            <div class="card-title">
+                                <p>
+                                    Software <br/>
+                                    Malfunction
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg col-md-6 col-sm-6">
+                    <a href="#" class="why-card">
+                        <div class="card-inner-body">
+                            <div class="img-wrapper">
+                                <img
+                                        src="./images/icons/human-error-icon-2.svg"
+                                        alt="icon"
+                                />
+                            </div>
+                            <div class="card-title">
+                                <p>
+                                    Malicious <br/>
+                                    Insiders
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg col-md-6 col-sm-6">
+                    <a href="#" class="why-card">
+                        <div class="card-inner-body">
+                            <div class="img-wrapper">
+                                <img
+                                        src="./images/icons/malware-attack-iocn.svg"
+                                        alt="icon"
+                                />
+                            </div>
+                            <div class="card-title">
+                                <p>
+                                    Malware/ <br/>
+                                    Ransomware <br/>
+                                    Attacks
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg col-md-6 col-sm-6">
+                    <a href="#" class="why-card">
+                        <div class="card-inner-body">
+                            <div class="img-wrapper">
+                                <img
+                                        src="./images/icons/human-error-icon-3.svg"
+                                        alt="icon"
+                                />
+                            </div>
+                            <div class="card-title">
+                                <p>Natural Disasters</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-        <!-- jQuery v2.2.4 -->
-        <script src="assets/js/jquery-2.2.4.min.js"></script>
-        <!-- Bootstrap v4.0.0 -->
-        <script src="assets/js/popper.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <!-- Extra Plugin -->
-        <script src="assets/vendors/animate-css/wow.min.js"></script>
-        <script src="assets/vendors/owl-carousel/owl.carousel.min.js"></script>  
-        <script src="assets/vendors/magnify-popup/jquery.magnific-popup.min.js"></script>
+<section class="protection d-none">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 align-self-center">
+                <span class="medium-span">How Does StorX Ensure</span>
+                <h2>Protection of User Data</h2>
+                <div class="protection-key-wrapper">
+                    <div class="protection-key">
+                        <div class="img-wrapper">
+                            <img src="./images/icons/encryption-icon.svg" alt=""/>
+                        </div>
+                        <p>Encryption of <br>
+                            User Data</p>
+                    </div>
+                    <div class="protection-key">
+                        <div class="img-wrapper">
+                            <img src="./images/icons/private-key-icon.svg" alt=""/>
+                        </div>
+                        <p>Private Key</p>
+                    </div>
+                    <div class="protection-key">
+                        <div class="img-wrapper">
+                            <img src="./images/icons/twofector-icon.svg" alt=""/>
+                        </div>
+                        <p>
+                            Two Factor <br>
+                            Authentication
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 align-self-center">
+                <div class="image-wrapper">
+                    <div class="inner-wrapper">
+                        <img
+                                src="./images/production-left-image.png"
+                                alt="protection-image"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-        <!-- Theme js / Custom js -->
-        <script src="assets/js/theme.js"></script>
-        
-       <!-- Stats Counter js -->
-       <script src="assets/vendors/counterup/jquery.waypoints.min.js"></script>
-       <script src="assets/vendors/counterup/jquery.counterup.min.js"></script>
-       <!--<script>
-           jQuery(document).ready(function($) {
-               $('.counter').counterUp({
-                   delay: 10,
-                   time: 1000,
-               });
-           });		
-		
-		   function numberWithCommas(x) {
-    		   return x.toString().replace(/(\d+)(\d{3})/, '$1' + ',' + '$2');
-		   }
-		   $('.counter').each(function(){
-			   var v_pound = $(this).html();
-			   v_pound = numberWithCommas(v_pound);
-		   $(this).html(v_pound)
-		   })
-       </script>-->
-    
-    </body>
+<section class="testimonial d-none">
+    <div class="container">
+        <h2 class="text-center"><span>Customer</span> Testimonials</h2>
+        <div class="testimonial-wrapper owl-carousel">
+            <div class="item">
+                <div class="testimonial-item">
+                    <p>
+                        “When I used StorX first time, it was very easy to use and
+                        creating an account was much <br> easier than on other platforms.
+                        StorX is a Perfect fit for those who are in risk in losing data <br>
+                        and being manipulated. With StorX blockchain technology those risks
+                        are eliminated.”
+                    </p>
+                    <p class="testimonial-by">Daniel E.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="blog d-none">
+    <div class="container">
+        <h2 class="text-center"><span>Latest</span> Blog</h2>
+        <div class="blog-wrapper">
+            <div class="row gy-3 g-3">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog-card">
+                        <div class="img-wrapper">
+                            <img src="./images/blog-image-1.png" alt="blog-image"/>
+                        </div>
+                        <div class="content-wrapper">
+                            <p class="fw-bold">
+                                Analyzing the Market Trends and<br/>
+                                Growth Potential of the Decentralized Cloud Storage Industry
+                            </p>
+                            <small
+                            >The cloud storage industry has experienced remarkable
+                                growth and innovation over the past decade.</small
+                            >
+                            <div class="updated-by">
+                                <span>BY: ADMIN</span>
+                                <span>JANUARY 1, 2022</span>
+                            </div>
+                            <div class="btn-wtapper">
+                                <a href="https://medium.com/storx-network/analyzing-the-market-trends-and-growth-potential-of-the-decentralized-cloud-storage-industry-33007e8fa" target="_blank" class="btn-style pill-btn">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog-card">
+                        <div class="img-wrapper">
+                            <img src="./images/blog-image-2.png" alt="blog-image"/>
+                        </div>
+                        <div class="content-wrapper">
+                            <p class="fw-bold">
+                                Cloud Storage Reimagined with StorX Network
+                            </p>
+                            <small
+                            >Cloud storage has become an integral part of our digital
+                                lives, allowing us to store and access our data including
+                                files</small
+                            >
+                            <div class="updated-by">
+                                <span>BY: ADMIN</span>
+                                <span>JANUARY 1, 2022</span>
+                            </div>
+                            <div class="btn-wtapper">
+                                <a href="https://medium.com/storx-network/cloud-storage-reimagined-with-storx-network-5c28296ac25f" target="_blank" class="btn-style pill-btn">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog-card">
+                        <div class="img-wrapper">
+                            <img src="./images/blog-image-3.png" alt="blog-image"/>
+                        </div>
+                        <div class="content-wrapper">
+                            <p class="fw-bold">StorX Network Community Q&A — June 2023</p>
+                            <small
+                            >Before we could proceed to the questions in this AMA, We
+                                extend our deepest gratitude to each and every
+                                participant</small
+                            >
+                            <div class="updated-by">
+                                <span>BY: ADMIN</span>
+                                <span>JANUARY 1, 2022</span>
+                            </div>
+                            <div class="btn-wtapper">
+                                <a href="https://medium.com/storx-network/storx-network-community-q-a-june-2023-dcdcf2aa810e" target="_blank" class="btn-style pill-btn">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-md-3">
+                <a href="./index.html" class="footer-logo">
+                    <img src="./images/footer-logo.svg" alt="footer-logo"/>
+                </a>
+                <div class="text-wrapper">
+                    <p>
+                        Build on XinFin (XDC)<br/>
+                        Blockchain Network as an <br/>
+                        open source initiative.
+                    </p>
+                    <ul class="social-media-wrapper">
+                        <li><a href="https://twitter.com/StorXNetwork" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/storxnetwork" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.facebook.com/StorXNetwork" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://t.me/StorXNetwork" target="_blank"><i class="fab fa-telegram-plane"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UC5vUiX1eINl0gs6T3mS1CxA" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="https://medium.com/storx-network" target="_blank"><i class="fab fa-medium-m"></i></a></li>
+                        <li><a href="https://github.com/StorXNetwork" target="_blank"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.reddit.com/r/StorXNetwork" target="_blank"><i class="fab fa-reddit-alien"></i></a></li>
+                        <li><a href="https://discord.gg/ha4Jufj2Nm" target="_blank"><i class="fab fa-discord"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9 my-4 my-md-0">
+                <div class="links-wrapper">
+                    <div class="links-item">
+                        <h4>Solutions</h4>
+                        <ul>
+                            <li><a href="storx-website-s3-compatible-storage.html">S3 Compatible Storage</a></li>
+                            <li><a href="storx-website-backup-archival.html">Backup & Archival</a></li>
+                            <li><a href="storx-website-google-backup.html">Google Workspace Backup</a></li>
+                            <li><a href="storx-website-kubernetes-backup.html">Kubernetes Backup</a></li>
+                            <li><a href="storx-onprem.html">StorX Self Hosted Cloud</a></li>
+                        </ul>
+                    </div>
+                    <div class="links-item">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="faqs.html">FAQ</a></li>
+                            <li><a href="https://blogs.storx.tech/" target="_blank">Blog</a></li>
+                            <li><a href="https://doc.storx.io/" target="_blank">Documentation</a></li>
+                            <li><a href="integrations.html">Integrations</a></li>
+                        </ul>
+                    </div>
+                    <div class="links-item">
+                        <h4>StorX Ecosystem</h4>
+                        <ul>
+                            <li><a href="storx-website-host-storage-node.html">Host a Storage Node</a></li>
+                            <li><a href="srx-token.html">Tokenomics</a></li>
+                            <li><a href="./pdf/storx-whitepaper-1.pdf" download>WhitePaper</a></li>
+                            <li><a href="wallets-&-exchanges.html">Wallet & Exchanges</a></li>
+                            <li><a href="brand-assets.html">Brand Asset</a></li>
+                            <li><a href="roadmap.html">RoadMap</a></li>
+                            <li><a href="community-bounty.html">Community Bounty</a></li>
+                        </ul>
+                    </div>
+                    <div class="links-item">
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="about-team.html">Our Story</a></li>
+                            <li><a href="partners.html">Partners</a></li>
+                            <li><a href="media.html">Newsroom</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <p class="footer-bottom-text text-center">
+                © Copyright 2025 StorX Foundation, All Rights Reserved. Read <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-of-use.html">Terms of Use</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Modal -->
+<div class="modal fade banner-video-modal" id="banner-video-modal" tabindex="-1" aria-labelledby="videoModal" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="cross-icon">
+                    <a href="#" data-bs-dismiss="modal" aria-label="Close"><img src="./images/icons/cross-white-icon.svg" alt="icon"></a>
+                </div>
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YO9aDSOP698?si=HeU0TgUYl7NN8lgX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Buy SRX Token -->
+
+<div class="buy-srx-widget" data-bs-toggle="modal" data-bs-target="#buy-srx-modal">
+    <div class="icon-wrapper">
+        <img src="./images/storx-logo/storx-logo-icon.png" alt="icon">
+    </div>
+    <div class="content">
+        <p>Buy SRX</p>
+    </div>
+</div>
+
+<div class="modal fade buy-srx-modal" id="buy-srx-modal" tabindex="-1" aria-labelledby="videoModal" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="cross-icon">
+                    <a href="#" data-bs-dismiss="modal" aria-label="Close"><img src="./images/icons/cross-white-icon.svg" alt="icon"></a>
+                </div>
+                <div class="video-wrapper">
+                    <iframe id="myiFrame" class="xswap-iframe"
+                            src="https://swap.xdcobserver.io/exchange/b19768a4-2782-495c-8760-1a7597616e14"
+                            width="100%" height="400"
+                            title="Xswap-exchange"
+                            style="border-radius: 25px;">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="./js/jquery-3.7.0.min.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/popper.min.js"></script>
+<script src="./js/owl.carousel.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
 </html>

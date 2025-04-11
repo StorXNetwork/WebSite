@@ -1,400 +1,619 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <meta name="description" content="Experience the faster, safer, more affordable and completely decentralized enterprise-grade cloud storage network.">
-		<meta name="keywords" content="storx, blockchain technology in cloud computing, blockchain-based cloud computing, decentralized cloud computing, decentralized cloud storage, distributed cloud storage, cloud storage, storage, secure, faster, encrypted">
-        <title>StorX | Distributed Cloud Storage with Blockchain Technology</title>
-        
-        <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png" />
-        <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png" />
-        <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png" />
-        <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png" />
-        <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png" />
-        <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png" />
-        <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png" />
-        <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png" />
-        <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/android-icon-192x192.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png" />
-        <link rel="manifest" href="assets/images/favicon/manifest.json" />
-        <meta name="msapplication-TileColor" content="#4a46fe" />
-        <meta name="msapplication-TileImage" content="assets/images/favicon/ms-icon-144x144.png" /><meta name="theme-color" content="#4285f4">
-		<meta name="msapplication-navbutton-color" content="#4a46fe">
-		<meta name="apple-mobile-web-app-status-bar-style" content="#4a46fe">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Experience the faster, safer, more affordable and completely decentralized enterprise-grade cloud storage network.">
+    <meta name="keywords" content="storx, blockchain technology in cloud computing, blockchain-based cloud computing, decentralized cloud computing, decentralized cloud storage, distributed cloud storage, cloud storage, storage, secure, faster, encrypted">
 
-        <!-- Main style CSS -->
-        <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
 
-        <!-- Nav CSS -->
-        <link href="assets/css/classy-nav.min.css" rel="stylesheet" />
+    <!-- Style Import -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="./css/all.min.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
 
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
+    <title>StorX Network</title>
 
-        <!-- Meta Pixel Code -->
-		<script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Meta Pixel Code -->
+    <script>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '749465320016144');
         fbq('track', 'PageView');
-        </script>
-        <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=749465320016144&ev=PageView&noscript=1"
-        /></noscript>
-        <!-- End Meta Pixel Code -->
-                
-        <!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=AW-376604750"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-        
-          gtag('config', 'AW-376604750');
-        </script>
-        
-    </head>
-    <body>
-        <!-- Header -->
-        <header class="header-nav">
-            <div class="top-header-area">Smart Contract Address : <a href="https://xdc.network/token/xdc5d5f074837f5d4618b3916ba74de1bf9662a3fed" target="_blank">xdc5d5f074837f5d4618b3916ba74de1bf9662a3fed</a>
-            <div class="tooltip-big" data-toggle="tooltip" data-placement="bottom" title="Tokens sent to smart contract cannot be retrieved, so please cross check the SRX Address before any transfers."><i class="fas fa-exclamation-circle"></i></div>
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=749465320016144&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-376604750"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-376604750');
+    </script>
+</head>
+<body>
+
+<header id="header">
+    <div class="header-layer"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-5 align-self-center">
+                <a href="index.html" class="logo">
+                    <img src="./images/storx-logo/storx-logo-black.png" alt="logo"/>
+                </a>
             </div>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container">
-                    <!-- Brand -->
-                    <a class="navbar-brand" href="index.html">
-                        <img src="assets/images/storx-logo.png" alt="StorX Logo" class="dark-logo" />
-                        <img src="assets/images/storx-logo-light.png" alt="StorX Logo" class="light-logo" />
+            <div class="col-lg-6 col-1 align-self-center text-end">
+                <div class="navbar-menu">
+                    <a href="index.html" class="logo">
+                        <img src="./images/storx-logo/storx-logo-black.png" alt="logo"/>
                     </a>
-                    <!-- / -->
-                    <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                        <div class="animated-icon1"><span></span><span></span><span></span></div>
-                    </button>
-                    <!-- / -->
-                    <!-- Top Menu -->
-                    <div class="collapse navbar-collapse justify-content-end" id="navbar">
-                        <ul class="navbar-nav ml-auto align-items-lg-center">
-                            <li><a class="nav-link" href="host-node.html">Host a Node</a></li>
-                            <li><a class="nav-link" href="store-data.html">Store Data</a></li>
-                            <li><a class="nav-link" href="community-bounty.html">Community Bounty</a></li>
-                            <li><a class="nav-link" href="support.html">Community Support</a></li>
-                            <li><a class="nav-link" href="https://storx.io">Sign In</a></li>
-                            <li><a href="https://storx.io" class="btn nav-link-btn login-btn">Start for Free</a></li>
-                        </ul>
-                    </div>
-                    <!-- / -->
+                    <ul class="menu">
+                        <li>
+                            <a href="javascript:void(0)" class="link">
+                                Solutions
+                                <img src="./images/icons/arrow-down-icon.svg" alt="icon" class="arrow-icon"></a>
+                            <ul class="submenu">
+                                <li><a href="storx-website-s3-compatible-storage.html">S3 Compatible Storage</a></li>
+                                <li><a href="storx-website-backup-archival.html">Backup & Archival</a></li>
+                                <li><a href="storx-website-google-backup.html">Google Workspace Backup</a></li>
+                                <li><a href="storx-website-kubernetes-backup.html">Kubernetes Backup</a></li>
+                                <li><a href="storx-onprem.html">StorX Self Hosted Cloud</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="link">
+                                Resources
+                                <img src="./images/icons/arrow-down-icon.svg" alt="icon" class="arrow-icon">
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="faqs.html">FAQ</a></li>
+                                <li><a href="https://storxnetwork.medium.com/" target="_blank">Blog</a></li>
+                                <li><a href="https://doc.storx.io/" target="_blank">Documentation</a></li>
+                                <li><a href="integrations.html">Integration</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="link">
+                                About
+                                <img src="./images/icons/arrow-down-icon.svg" alt="icon" class="arrow-icon">
+                            </a>
+                            <ul class="submenu">
+                                <li class="manu-link"><a href="about-team.html">Our Story</a></li>
+                                <li class="manu-link"><a href="partners.html">Partners</a></li>
+                                <li class="manu-link"><a href="media.html">Newsroom</a></li>
+                                <li class="manu-link"><a href="contact-us.html">Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li class="desktop"><a href="https://storx.io/login" target="_blank" class="link">Login</a></li>
+                    </ul>
                 </div>
-                <!-- Container -->
-            </nav>
-            <!-- Navbar -->
-        </header>
-        <!-- Header ends -->
+            </div>
+            <div class="col-lg-3 col-6">
+                <ul class="auth-options">
+                    <li class="desktop"><a href="https://storx.io/login" class="link">Login</a></li>
+                    <li><a href="https://storx.io/signup" class="btn-style">Signup For Free</a></li>
+                    <li class="mobile">
+                        <div class="hamburger-menu">
+                            <img src="./images/icons/menu-bar-icon.svg" alt="icon">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
 
-        <!-- Banner Area -->
-        <section class="pages_banner">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-7 col-md-6">
-                        <h2>Roadmap</h2>
-                        <p>The journey so far, milestones achieved and the roadmap for the year 2023.</p>
-                    </div>
-                    <div class="col-lg-5 col-md-6">
-                        <img src="assets/images/token-banner.png" alt="" class="images_1" />
+<section class="banner banner-bg-v1 inner-banner" style="background: url('./images/brand-asset-banner-img.jpg') no-repeat center;">
+    <div class="container">
+        <div class="content-wrapper">
+            <h1>Roadmap</h1>
+            <p class="white">The journey so far, milestones achieved and the roadmap for the year 2023.</p>
+        </div>
+    </div>
+</section>
+
+<section class="sec-about-v1 d-none">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 align-self-center">
+                <div class="img-wrapper">
+                    <img src="./images/roadmap-about-img.png" alt="img">
+                </div>
+            </div>
+            <div class="col-md-6 align-self-center">
+                <div class="content-wrapper">
+                    <p>We as StorX Team want to extend heartfelt gratitude to all our
+                        Storage Node Operators, and Community Supporters for your engagement
+                        and support of the StorX Network, We are all here because of you. The
+                        True Pioneers of the Decentralize Movement. As we venture out into the
+                        future let's all continue to build StorX Network Together.</p>
+
+                    <p>We are pleased with the rapid growth of StorX Network. Since StorX Network
+                        is adaptable and expanding quickly, we are confident that it will soon become
+                        well-known for enabling people just like you.</p>
+
+                    <p>We anticipate a new year full of possibilities and opportunities with
+                        excitement. We pledge to keep developing and creating fresh, private-protecting
+                        goods and services. You will always come first to us, and we will act morally at
+                        all times.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="blockchain-future backup-future d-none">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 align-self-center">
+                <div class="inner-wrapper">
+                    <div class="image-wrapper">
+                        <img src="./images/backup-future-img.png" alt="image"/>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Banner Area -->
+            <div class="col-md-6 align-self-center">
+                <div class="content-wrapper">
+                    <p>We as StorX Team want to extend heartfelt gratitude to all our
+                        Storage Node Operators, and Community Supporters for your engagement
+                        and support of the StorX Network, We are all here because of you. The
+                        True Pioneers of the Decentralize Movement. As we venture out into the
+                        future let's all continue to build StorX Network Together.</p> <br>
 
-        <!-- Roadmap Area -->
-        <section class="faq_area roadmap">
-            <div class="container">
-                <div class="tittle pb-1">
-                    <h2>ROADMAP 2023</h2>
+                    <p>We are pleased with the rapid growth of StorX Network. Since StorX Network
+                        is adaptable and expanding quickly, we are confident that it will soon become
+                        well-known for enabling people just like you.</p> <br>
+
+                    <p>We anticipate a new year full of possibilities and opportunities with
+                        excitement. We pledge to keep developing and creating fresh, private-protecting
+                        goods and services. You will always come first to us, and we will act morally at
+                        all times.</p>
                 </div>
-                <div class="accordion frequently">
-                    <p>As we embark on our 2023 journey, we are excited to share our roadmap with you. This roadmap outlines the key initiatives and milestones we will be focusing on over the next 12 months to help us achieve our goals and drive our business forward. From new product launches to strategic partnerships, this roadmap is designed to give you a clear understanding of what to expect from us in the coming year and how we plan to continue delivering value to our customers.</p>
-                    <div class="faq">
-                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#faq_1">Converting $SRX StorX Network into Deflationary Token</a>
-                        <div id="faq_1" class="faq-ans collapse" data-parent=".frequently">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="sec-faq">
+    <div class="container">
+        <div class="sec-heading">
+            <h2>ROADMAP
+                <script> document.write(new Date().getFullYear()) </script>
+            </h2>
+            <p>As we embark on our 2023 journey, we are excited to share our roadmap with you.
+                This roadmap outlines the key initiatives and milestones we will be focusing on
+                over the next 12 months to help us achieve our goals and drive our business forward.
+                From new product launches to strategic partnerships, this roadmap is designed to give
+                you a clear understanding of what to expect from us in the coming year and how we plan
+                to continue delivering value to our customers.</p>
+        </div>
+        <div class="faq-wrapper">
+            <div class="accordion" id="accordionExample1">
+                <!--<div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1.1" aria-expanded="false" aria-controls="collapse1.1">
+                            Converting $SRX StorX Network into Deflationary Token
+                        </button>
+                    </h2>
+                    <div id="collapse1.1" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                        <div class="accordion-body">
                             <p>We at StorX Network would like to extend our sincere gratitude to our Twitter Community for their recent vote on whether our token should become deflationary. The overwhelming response in favor of this change has inspired us to take the necessary steps to implement this transformation. Our team is hard at work researching and developing a secureand sustainable deflationary model to ensure the long-term success of our network. We are committed to ensuring a seamless transition for our community and will keep you updated on our progress. Thank you for your continued support and for being a part of the StorX Network community.</p>
                         </div>
                     </div>
-                    <div class="faq">
-                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#faq_2">Recruit Sales Partners Worldwide</a>
-                        <div id="faq_2" class="faq-ans collapse" data-parent=".frequently">
+                </div>-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1.2" aria-expanded="false" aria-controls="collapse1.2">
+                            Recruit Sales Partners Worldwide
+                        </button>
+                    </h2>
+                    <div id="collapse1.2" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                        <div class="accordion-body">
                             <p>StorX Network will be looking to bring on individuals or organizations that will help promote and sell their products or services. These sales partners would be responsible for identifying potential customers and closing deals on behalf of the StorX Network. By recruiting sales partners worldwide, the StorX Network would be able to expand its reach and increase its revenue.</p>
                             <p>The sales partners might be incentivized with a commission based on the sales they bring in, or some other form of compensation. This would allow them to earn money by helping the network grow and expand. Sales partners could be independent sales people, existing businesses, ororganizations that have a large customer base that could benefit from StorX Network's offerings.</p>
                             <p>This approach can help the StorX Network to reach a wider audience, expand its customer base, and generate more revenue, as the sales partners can leverage their existing relationships, networks, and expertise.</p>
                             <p>It's important to note that the selection of the sales partners should be done carefully and with clear criteria and that they should be trained and given the necessary tools to represent the network in a professional way.</p>
                         </div>
                     </div>
-                    <div class="faq">
-                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#faq_3">Launch of MainNet (Q1-Q2 2023)</a>
-                        <div id="faq_3" class="faq-ans collapse" data-parent=".frequently">
-                            <p>We are thrilled to announce that StorX Network will be launching its MainNet in Q1 - Q2 2023. This marks a significant milestone for our project and is a testament to the hard work and dedication of our team. The MainNet launch will bring our decentralized storage platform to life, allowing users to take advantage of our advanced features, such as sharding, smart contracts, and tokenized storage, which will enhance the overall user experience. We are excited to see our vision come to fruition and can't wait for our community to join us on this journey. We will be releasing more information on the launch in the coming months, so stay tuned for updates and details on how to participate.</p>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1.3" aria-expanded="false" aria-controls="collapse1.3">
+                            Launch of MainNet Q4 2023
+                        </button>
+                    </h2>
+                    <div id="collapse1.3" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                        <div class="accordion-body">
+                            <p>We are thrilled to announce that StorX Network will be launching its MainNet in Q4 2023.</p>
                         </div>
                     </div>
-                    <div class="faq">
-                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#faq_4">Expand Developer Resources and Programs</a>
-                        <div id="faq_4" class="faq-ans collapse" data-parent=".frequently">
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1.4" aria-expanded="false" aria-controls="collapse1.4">
+                            Expand Developer Resources and Programs
+                        </button>
+                    </h2>
+                    <div id="collapse1.4" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                        <div class="accordion-body">
                             <p>StorX Network will be expanding its developer resources and programs in the coming months. Our goal is to empower developers to build cutting-edge decentralized applications and services on our platform, and we believe that by providing more resources and support, we can help drive innovation and drive the adoption of decentralized technology.</p>
                             <p>As part of this expansion, we will be launching new developer documentation, tutorials, and sample code, as well as hosting hackathons, meetups, and other events to bring together developers and help them collaborate and share knowledge. We are excited about this next step in our journey and look forward to seeing the amazing things our developer community will build on StorX Network.</p>
                         </div>
                     </div>
-                    <div class="faq">
-                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#faq_5">Run Hackathons for Project Enhancement and Busines Use Cases</a>
-                        <div id="faq_5" class="faq-ans collapse" data-parent=".frequently">
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1.5" aria-expanded="false" aria-controls="collapse1.5">
+                            Run Hackathons for Project Enhancement and Busines Use Cases
+                        </button>
+                    </h2>
+                    <div id="collapse1.5" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                        <div class="accordion-body">
                             <p>We are thrilled to announce that StorX Network will be running a series of hackathons to enhance our project and explore new business use cases. These hackathons will provide an opportunity for developers, entrepreneurs, and other industry experts to come together and collaborate on innovative solutions that will help us to further advance our technology and discover new ways to use it in the real world.</p>
                             <p>Participants will have the chance to work with our team and access our cutting-edge technology, with the goal of developing new applications and use cases that can be integrated into our platform. We believe that this event will drive innovation and accelerate the development of our project.</p>
                             <p>We welcome anyone who is interested in participating in this event and contributing their skills and expertise to the StorX Network community. We look forward to seeing the great ideas and solutions that will emerge from these hackathons and how they will help to shape the future of our project.</p>
                         </div>
                     </div>
-                    <div class="faq">
-                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#faq_6">Use StorX Platform to Create Niche Products for Targeted usage</a>
-                        <div id="faq_6" class="faq-ans collapse" data-parent=".frequently">
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1.6" aria-expanded="false" aria-controls="collapse1.6">
+                            Use StorX Platform to Create Niche Products for Targeted usage
+                        </button>
+                    </h2>
+                    <div id="collapse1.6" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                        <div class="accordion-body">
                             <p>StorX platform will allow you to create niche products for targeted usage. With StorX, you have the flexibility to customize your product offerings to meet the specific needs of your target market. This means that you can create products that are tailored to your customer's unique requirements, giving you a competitive edge in your industry. Whether you're looking to expand into new markets or increase sales in existing ones, the StorX platform can help you achieve your goals.</p>
                         </div>
                     </div>
-                    <div class="faq">
-                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#faq_7">Start On-boarding Paid Customers</a>
-                        <div id="faq_7" class="faq-ans collapse" data-parent=".frequently">
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1.7" aria-expanded="false" aria-controls="collapse1.7">
+                            Start On-boarding Paid Customers
+                        </button>
+                    </h2>
+                    <div id="collapse1.7" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                        <div class="accordion-body">
                             <p>StorX Network will be starting to onboard paid customers! This marks a significant milestone for us as we have been working hard to develop and test our platform to ensure it meets the needs of our customers. We have received positive feedback from our beta testers and are confident that our paid customers will have a great experience using our platform. We are committed to providing a secure, reliable and user-friendly service to our customers and we are looking forward to seeing them benefit from our platform.</p>
                         </div>
                     </div>
-                    <div class="faq">
-                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#faq_8">Partnerships with other ecosystems/web2/web3 Project to Drive in Usage</a>
-                        <div id="faq_8" class="faq-ans collapse" data-parent=".frequently">
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1.8" aria-expanded="false" aria-controls="collapse1.8">
+                            Partnerships with other ecosystems/web2/web3 Project to Drive in Usage
+                        </button>
+                    </h2>
+                    <div id="collapse1.8" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                        <div class="accordion-body">
                             <p>StorX Network will be partnering with other ecosystems and projects in both the Web2 and Web3 space to drive usage and adoption of our platform. These partnerships will allow us to expand our reach and provide our users with even more opportunities to utilize the StorX Network to its fullest potential. By working with other leading projects in the space, we will be able to bring new and innovative use cases to our platform and provide our users with access to a wider range of services and tools. We look forward to sharing more information about these partnerships in the coming weeks and months, and we believe that this is a key step in our journey toward mass adoption.</p>
                         </div>
                     </div>
-                    <div class="faq">
-                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#faq_9">Launching StorX in Multiple Exchanges</a>
-                        <div id="faq_9" class="faq-ans collapse" data-parent=".frequently">
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1.9" aria-expanded="false" aria-controls="collapse1.9">
+                            Launching StorX in Multiple Exchanges
+                        </button>
+                    </h2>
+                    <div id="collapse1.9" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                        <div class="accordion-body">
                             <p>StorX Network, will soon be listed on multiple exchanges. This will greatly increase the accessibility and liquidity of StorX, making it easier for individuals and institutions to buy, sell, and trade the currency. Our team has been working tirelessly to secure these partnerships and we are thrilled to provide our community with more opportunities to participate in the growth of StorX Network.</p>
                         </div>
                     </div>
-                    <div class="faq">
-                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#faq_10">Form Industry Partnerships</a>
-                        <div id="faq_10" class="faq-ans collapse" data-parent=".frequently">
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2.0" aria-expanded="false" aria-controls="collapse2.0">
+                            Form Industry Partnerships
+                        </button>
+                    </h2>
+                    <div id="collapse2.0" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                        <div class="accordion-body">
                             <p>StorX Network team is actively working on forming industry partnerships to further enhance our platform and provide even more value to our users. By joining forces with leading companies in various industries, we will be able to bring new features, services, and opportunities to the StorX Network ecosystem. These partnerships will not only benefit our users but also help to drive the adoption and mainstream usage of decentralized storage solutions.</p>
                         </div>
                     </div>
-                    <div class="faq">
-                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#faq_11">Aim for Global Exposures by Participating in Exhibitions</a>
-                        <div id="faq_11" class="faq-ans collapse" data-parent=".frequently">
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2.1" aria-expanded="false" aria-controls="collapse2.1">
+                            Aim for Global Exposures by Participating in Exhibitions
+                        </button>
+                    </h2>
+                    <div id="collapse2.1" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                        <div class="accordion-body">
                             <p>We will be participating in several upcoming exhibitions to showcase our innovative storage solutions and gain global exposure. We understand the importance of reaching a wider audience and establishing ourselves as a leading player in the storage industry. By participating in these exhibitions, we will be able to connect with potential customers, partners, and investors from all over the world. We look forward to showcasing our cutting-edge technology and expanding our reach to new markets.</p>
                         </div>
                     </div>
-                    
-                    <p class="mt-4">We as StorX Team want to extend heartfelt gratitude to all our Storage Node Operators, and Community Supporters for your engagement and support of the StorX Network, We are all here because of you. The True Pioneers of the Decentralize Movement. As we venture out into the future let's all continue to build StorX Network Together.</p>
-                    <p>We are pleased with the rapid growth of StorX Network. Since StorX Network is adaptable and expanding quickly, we are confident that it will soon become well-known for enabling people just like you.</p>
-                    <p>We anticipate a new year full of possibilities and opportunities with excitement. We pledge to keep developing and creating fresh, private-protecting goods and services. You will always come first to us, and we will act morally at all times.</p>
                 </div>
-                
-                
-                
-                
-                
-                <!--<div class="pt-5 pb-5">&nbsp;</div><div class="pt-5 pb-5">&nbsp;</div><div class="pt-5 pb-5">&nbsp;</div><div class="pt-5 pb-5">&nbsp;</div>
-                
-                
-                <div class="tittle pb-5">
-                    <h2>ROADMAP 2023</h2>
-                    <p class="mb-4">As we embark on our 2023 journey, we are excited to share our roadmap with you. This roadmap outlines the key initiatives and milestones we will be focusing on over the next 12 months to help us achieve our goals and drive our business forward. From new product launches to strategic partnerships, this roadmap is designed to give you a clear understanding of what to expect from us in the coming year and how we plan to continue delivering value to our customers.</p>
-                    
-                    <h5 class="pb-1">Converting $SRX StorX Network into Deflationary Token</h5>
-                    <p class="mb-4">We at StorX Network would like to extend our sincere gratitude to our Twitter Community for their recent vote on whether our token should become deflationary. The overwhelming response in favor of this change has inspired us to take the necessary steps to implement this transformation. Our team is hard at work researching and developing a secureand sustainable deflationary model to ensure the long-term success of our network. We are committed to ensuring a seamless transition for our community and will keep you updated on our progress. Thank you for your continued support and for being a part of the StorX Network community.</p>
-                    
-                    <h5 class="pb-1">Recruit Sales Partners Worldwide</h5>
-                    <p class="mb-2">StorX Network will be looking to bring on individuals or organizations that will help promote and sell their products or services. These sales partners would be responsible for identifying potential customers and closing deals on behalf of the StorX Network. By recruiting sales partners worldwide, the StorX Network would be able to expand its reach and increase its revenue.</p>
-                    <p class="mb-2">The sales partners might be incentivized with a commission based on the sales they bring in, or some other form of compensation. This would allow them to earn money by helping the network grow and expand. Sales partners could be independent sales people, existing businesses, ororganizations that have a large customer base that could benefit from StorX Network's offerings.</p>
-                    <p class="mb-2">This approach can help the StorX Network to reach a wider audience, expand its customer base, and generate more revenue, as the sales partners can leverage their existing relationships, networks, and expertise.</p>
-                    <p class="mb-4">It's important to note that the selection of the sales partners should be done carefully and with clear criteria and that they should be trained and given the necessary tools to represent the network in a professional way.</p>
-                    
-                    <h5 class="pb-1">Launch of MainNet (Q1-Q2 2023)</h5>
-                    <p class="mb-4">We are thrilled to announce that StorX Network will be launching its MainNet in Q1 - Q2 2023. This marks a significant milestone for our project and is a testament to the hard work and dedication of our team. The MainNet launch will bring our decentralized storage platform to life, allowing users to take advantage of our advanced features, such as sharding, smart contracts, and tokenized storage, which will enhance the overall user experience. We are excited to see our vision come to fruition and can't wait for our community to join us on this journey. We will be releasing more information on the launch in the coming months, so stay tuned for updates and details on how to participate.</p>
-                    
-                    <h5 class="pb-1">Expand Developer Resources and Programs</h5>
-                    <p class="mb-2">StorX Network will be expanding its developer resources and programs in the coming months. Our goal is to empower developers to build cutting-edge decentralized applications and services on our platform, and we believe that by providing more resources and support, we can help drive innovation and drive the adoption of decentralized technology.</p>
-                    <p class="mb-4">As part of this expansion, we will be launching new developer documentation, tutorials, and sample code, as well as hosting hackathons, meetups, and other events to bring together developers and help them collaborate and share knowledge. We are excited about this next step in our journey and look forward to seeing the amazing things our developer community will build on StorX Network.</p>
-                    
-                    <h5 class="pb-1">Run Hackathons for Project Enhancement and Busines Use Cases</h5>
-                    <p class="mb-2">We are thrilled to announce that StorX Network will be running a series of hackathons to enhance our project and explore new business use cases. These hackathons will provide an opportunity for developers, entrepreneurs, and other industry experts to come together and collaborate on innovative solutions that will help us to further advance our technology and discover new ways to use it in the real world.</p>
-                    <p class="mb-2">Participants will have the chance to work with our team and access our cutting-edge technology, with the goal of developing new applications and use cases that can be integrated into our platform. We believe that this event will drive innovation and accelerate the development of our project.</p>
-                    <p class="mb-4">We welcome anyone who is interested in participating in this event and contributing their skills and expertise to the StorX Network community. We look forward to seeing the great ideas and solutions that will emerge from these hackathons and how they will help to shape the future of our project.</p>
-                    
-                    <h5 class="pb-1">Use StorX Platform to Create Niche Products for Targeted usage</h5>
-                    <p class="mb-4">StorX platform will allow you to create niche products for targeted usage. With StorX, you have the flexibility to customize your product offerings to meet the specific needs of your target market. This means that you can create products that are tailored to your customer's unique requirements, giving you a competitive edge in your industry. Whether you're looking to expand into new markets or increase sales in existing ones, the StorX platform can help you achieve your goals.</p>
-                    
-                    <h5 class="pb-1">Start On-boarding Paid Customers</h5>
-                    <p class="mb-4">StorX Network will be starting to onboard paid customers! This marks a significant milestone for us as we have been working hard to develop and test our platform to ensure it meets the needs of our customers. We have received positive feedback from our beta testers and are confident that our paid customers will have a great experience using our platform. We are committed to providing a secure, reliable and user-friendly service to our customers and we are looking forward to seeing them benefit from our platform.</p>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <h5 class="pb-1">Partnerships with other ecosystems/web2/web3 Project to Drive in Usage</h5>
-                    <p class="mb-4">StorX Network will be partnering with other ecosystems and projects in both the Web2 and Web3 space to drive usage and adoption of our platform. These partnerships will allow us to expand our reach and provide our users with even more opportunities to utilize the StorX Network to its fullest potential. By working with other leading projects in the space, we will be able to bring new and innovative use cases to our platform and provide our users with access to a wider range of services and tools. We look forward to sharing more information about these partnerships in the coming weeks and months, and we believe that this is a key step in our journey toward mass adoption.</p>
-                    
-                    <h5 class="pb-1">Launching StorX in Multiple Exchanges</h5>
-                    <p class="mb-4">StorX Network, will soon be listed on multiple exchanges. This will greatly increase the accessibility and liquidity of StorX, making it easier for individuals and institutions to buy, sell, and trade the currency. Our team has been working tirelessly to secure these partnerships and we are thrilled to provide our community with more opportunities to participate in the growth of StorX Network.</p>
-                    
-                    <h5 class="pb-1">Form Industry Partnerships</h5>
-                    <p class="mb-4">StorX Network team is actively working on forming industry partnerships to further enhance our platform and provide even more value to our users. By joining forces with leading companies in various industries, we will be able to bring new features, services, and opportunities to the StorX Network ecosystem. These partnerships will not only benefit our users but also help to drive the adoption and mainstream usage of decentralized storage solutions.</p>
-                    
-                    <h5 class="pb-1">Aim for Global Exposures by Participating in Exhibitions</h5>
-                    <p class="mb-4">We will be participating in several upcoming exhibitions to showcase our innovative storage solutions and gain global exposure. We understand the importance of reaching a wider audience and establishing ourselves as a leading player in the storage industry. By participating in these exhibitions, we will be able to connect with potential customers, partners, and investors from all over the world. We look forward to showcasing our cutting-edge technology and expanding our reach to new markets.</p>
-                    
-                    <p class="mb-2">We as StorX Team want to extend heartfelt gratitude to all our Storage Node Operators, and Community Supporters for your engagement and support of the StorX Network, We are all here because of you. The True Pioneers of the Decentralize Movement. As we venture out into the future let's all continue to build StorX Network Together.</p>
-                    <p class="mb-2">We are pleased with the rapid growth of StorX Network. Since StorX Network is adaptable and expanding quickly, we are confident that it will soon become well-known for enabling people just like you.</p>
-                    <p class="mb-2">We anticipate a new year full of possibilities and opportunities with excitement. We pledge to keep developing and creating fresh, private-protecting goods and services. You will always come first to us, and we will act morally at all times.</p>
-                </div>-->
-            </div>
-        </section>
-        <!-- Roadmap Area -->
-        
-        <!-- Experience Decentralized Cloud Storage -->
-        <section class="experience_cta_block">
-            <div class="container">
-                <h2>Experience Decentralized Cloud Storage</h2>
-                <a href="host-node.html" class="theme_btn">Host a Node</a>
-                <a href="store-data.html" class="theme_btn white-btn">Store Data</a>
-            </div>
-        </section>
-        <!-- Experience Decentralized Cloud Storage -->
 
-        <!-- Footer Area -->
-        <footer class="footer_area footer_2">
-            <div class="container">                
-                <div class="footer_inner row">
-                    <div class="footer_widget col-lg-2 col-md-6">
-                        <img src="assets/images/storx-logo-light.png" width="150" height="42">
-                        <p>Build on XinFin (XDC) Blockchain Network as an open source initiative.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="more-faq roadmap-faq d-none">
+    <div class="container">
+        <h2>ROADMAP
+            <script> document.write(new Date().getFullYear()) </script>
+        </h2>
+        <p>As we embark on our 2023 journey, we are excited to share our roadmap with you.
+            This roadmap outlines the key initiatives and milestones we will be focusing on
+            over the next 12 months to help us achieve our goals and drive our business forward.
+            From new product launches to strategic partnerships, this roadmap is designed to give
+            you a clear understanding of what to expect from us in the coming year and how we plan
+            to continue delivering value to our customers.</p>
+        <div class="accordion" id="accordionExample-3">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+                        Converting $SRX StorX Network into Deflationary Token
+                    </button>
+                </h2>
+                <div id="collapse-1" class="accordion-collapse collapse " aria-labelledby="heading-1" data-bs-parent="#accordionExample-1">
+                    <div class="accordion-body">
+                        <p>We at StorX Network would like to extend our sincere gratitude to our Twitter Community for their recent vote on whether our token should become deflationary. The overwhelming response in favor of this change has inspired us to take the necessary steps to implement this transformation. Our team is hard at work researching and developing a secureand sustainable deflationary model to ensure the long-term success of our network. We are committed to ensuring a seamless transition for our community and will keep you updated on our progress. Thank you for your continued support and for being a part of the StorX Network community.</p>
                     </div>
-                    <div class="footer_widget col-lg-2">
-                        <h4>StorX</h4>
-                        <ul class="footer_nav">
-                            <li><a href="host-node.html">Host a Node</a></li>
-                            <li><a href="store-data.html">Store Data</a></li>
-                            <li><a href="srx-token.html">SRX Token</a></li>
-                            <li><a href="https://storx.io/invite">Refer & Earn</a></li>
-                            <li><a href="wallets-&-exchanges.html">Wallets & Exchanges</a></li>
-                            <li><a href="storx-onprem.html">StorX OnPrem</a></li>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="true" aria-controls="collapse-2">
+                        Recruit Sales Partners Worldwide
+                    </button>
+                </h2>
+                <div id="collapse-2" class="accordion-collapse collapse " aria-labelledby="heading-2" data-bs-parent="#accordionExample-2">
+                    <div class="accordion-body">
+                        <p>StorX Network will be looking to bring on individuals or organizations that will help promote and sell their products or services. These sales partners would be responsible for identifying potential customers and closing deals on behalf of the StorX Network. By recruiting sales partners worldwide, the StorX Network would be able to expand its reach and increase its revenue.</p>
+                        <p>The sales partners might be incentivized with a commission based on the sales they bring in, or some other form of compensation. This would allow them to earn money by helping the network grow and expand. Sales partners could be independent sales people, existing businesses, ororganizations that have a large customer base that could benefit from StorX Network's offerings.</p>
+                        <p>This approach can help the StorX Network to reach a wider audience, expand its customer base, and generate more revenue, as the sales partners can leverage their existing relationships, networks, and expertise.</p>
+                        <p>It's important to note that the selection of the sales partners should be done carefully and with clear criteria and that they should be trained and given the necessary tools to represent the network in a professional way.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="true" aria-controls="collapse-3">
+                        Launch of MainNet Q4 2023
+                    </button>
+                </h2>
+                <div id="collapse-3" class="accordion-collapse collapse " aria-labelledby="heading-3" data-bs-parent="#accordionExample-3">
+                    <div class="accordion-body">
+                        <p>We are thrilled to announce that StorX Network will be launching its MainNet in Q4 2023.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="true" aria-controls="collapse-4">
+                        Expand Developer Resources and Programs
+                    </button>
+                </h2>
+                <div id="collapse-4" class="accordion-collapse collapse " aria-labelledby="heading-4" data-bs-parent="#accordionExample-4">
+                    <div class="accordion-body">
+                        <p>StorX Network will be expanding its developer resources and programs in the coming months. Our goal is to empower developers to build cutting-edge decentralized applications and services on our platform, and we believe that by providing more resources and support, we can help drive innovation and drive the adoption of decentralized technology.</p>
+                        <p>As part of this expansion, we will be launching new developer documentation, tutorials, and sample code, as well as hosting hackathons, meetups, and other events to bring together developers and help them collaborate and share knowledge. We are excited about this next step in our journey and look forward to seeing the amazing things our developer community will build on StorX Network.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-5">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-5" aria-expanded="true" aria-controls="collapse-5">
+                        Run Hackathons for Project Enhancement and Busines Use Cases
+                    </button>
+                </h2>
+                <div id="collapse-5" class="accordion-collapse collapse " aria-labelledby="heading-5" data-bs-parent="#accordionExample-5">
+                    <div class="accordion-body">
+                        <p>We are thrilled to announce that StorX Network will be running a series of hackathons to enhance our project and explore new business use cases. These hackathons will provide an opportunity for developers, entrepreneurs, and other industry experts to come together and collaborate on innovative solutions that will help us to further advance our technology and discover new ways to use it in the real world.</p>
+                        <p>Participants will have the chance to work with our team and access our cutting-edge technology, with the goal of developing new applications and use cases that can be integrated into our platform. We believe that this event will drive innovation and accelerate the development of our project.</p>
+                        <p>We welcome anyone who is interested in participating in this event and contributing their skills and expertise to the StorX Network community. We look forward to seeing the great ideas and solutions that will emerge from these hackathons and how they will help to shape the future of our project.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-6">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-6" aria-expanded="true" aria-controls="collapse-6">
+                        Use StorX Platform to Create Niche Products for Targeted usage
+                    </button>
+                </h2>
+                <div id="collapse-6" class="accordion-collapse collapse " aria-labelledby="heading-6" data-bs-parent="#accordionExample-6">
+                    <div class="accordion-body">
+                        <p>StorX platform will allow you to create niche products for targeted usage. With StorX, you have the flexibility to customize your product offerings to meet the specific needs of your target market. This means that you can create products that are tailored to your customer's unique requirements, giving you a competitive edge in your industry. Whether you're looking to expand into new markets or increase sales in existing ones, the StorX platform can help you achieve your goals.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-7">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-7" aria-expanded="true" aria-controls="collapse-7">
+                        Start On-boarding Paid Customers
+                    </button>
+                </h2>
+                <div id="collapse-7" class="accordion-collapse collapse " aria-labelledby="heading-7" data-bs-parent="#accordionExample-7">
+                    <div class="accordion-body">
+                        <p>StorX Network will be starting to onboard paid customers! This marks a significant milestone for us as we have been working hard to develop and test our platform to ensure it meets the needs of our customers. We have received positive feedback from our beta testers and are confident that our paid customers will have a great experience using our platform. We are committed to providing a secure, reliable and user-friendly service to our customers and we are looking forward to seeing them benefit from our platform.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-8">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-8" aria-expanded="true" aria-controls="collapse-8">
+                        Partnerships with other ecosystems/web2/web3 Project to Drive in Usage
+                    </button>
+                </h2>
+                <div id="collapse-8" class="accordion-collapse collapse " aria-labelledby="heading-8" data-bs-parent="#accordionExample-8">
+                    <div class="accordion-body">
+                        <p>StorX Network will be partnering with other ecosystems and projects in both the Web2 and Web3 space to drive usage and adoption of our platform. These partnerships will allow us to expand our reach and provide our users with even more opportunities to utilize the StorX Network to its fullest potential. By working with other leading projects in the space, we will be able to bring new and innovative use cases to our platform and provide our users with access to a wider range of services and tools. We look forward to sharing more information about these partnerships in the coming weeks and months, and we believe that this is a key step in our journey toward mass adoption.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-9">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-9" aria-expanded="true" aria-controls="collapse-9">
+                        Launching StorX in Multiple Exchanges
+                    </button>
+                </h2>
+                <div id="collapse-9" class="accordion-collapse collapse " aria-labelledby="heading-9" data-bs-parent="#accordionExample-9">
+                    <div class="accordion-body">
+                        <p>StorX Network, will soon be listed on multiple exchanges. This will greatly increase the accessibility and liquidity of StorX, making it easier for individuals and institutions to buy, sell, and trade the currency. Our team has been working tirelessly to secure these partnerships and we are thrilled to provide our community with more opportunities to participate in the growth of StorX Network.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-10">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-10" aria-expanded="true" aria-controls="collapse-10">
+                        Form Industry Partnerships
+                    </button>
+                </h2>
+                <div id="collapse-10" class="accordion-collapse collapse " aria-labelledby="heading-10" data-bs-parent="#accordionExample-10">
+                    <div class="accordion-body">
+                        <p>StorX Network team is actively working on forming industry partnerships to further enhance our platform and provide even more value to our users. By joining forces with leading companies in various industries, we will be able to bring new features, services, and opportunities to the StorX Network ecosystem. These partnerships will not only benefit our users but also help to drive the adoption and mainstream usage of decentralized storage solutions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-11">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-11" aria-expanded="true" aria-controls="collapse-11">
+                        Aim for Global Exposures by Participating in Exhibitions
+                    </button>
+                </h2>
+                <div id="collapse-11" class="accordion-collapse collapse " aria-labelledby="heading-11" data-bs-parent="#accordionExample-11">
+                    <div class="accordion-body">
+                        <p>We will be participating in several upcoming exhibitions to showcase our innovative storage solutions and gain global exposure. We understand the importance of reaching a wider audience and establishing ourselves as a leading player in the storage industry. By participating in these exhibitions, we will be able to connect with potential customers, partners, and investors from all over the world. We look forward to showcasing our cutting-edge technology and expanding our reach to new markets.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="explore-plan">
+    <div class="container text-center">
+        <div class="content-wrapper">
+            <h4 class="white">Experience the peace of mind that comes with StorX Network Secured Cloud Storage</h4>
+            <p class="small white">Sign up today to start enjoying
+                the benefits of a secure, private, and user-friendly <br>
+                cloud storage solution</p>
+            <a href="index.html#price-plan" class="btn-style white">Explore Our Plans</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-md-3">
+                <a href="./index.html" class="footer-logo">
+                    <img src="./images/footer-logo.svg" alt="footer-logo"/>
+                </a>
+                <div class="text-wrapper">
+                    <p>
+                        Build on XinFin (XDC)<br/>
+                        Blockchain Network as an <br/>
+                        open source initiative.
+                    </p>
+                    <ul class="social-media-wrapper">
+                        <li><a href="https://twitter.com/StorXNetwork" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/storxnetwork" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.facebook.com/StorXNetwork" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://t.me/StorXNetwork" target="_blank"><i class="fab fa-telegram-plane"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UC5vUiX1eINl0gs6T3mS1CxA" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="https://medium.com/storx-network" target="_blank"><i class="fab fa-medium-m"></i></a></li>
+                        <li><a href="https://github.com/StorXNetwork" target="_blank"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.reddit.com/r/StorXNetwork" target="_blank"><i class="fab fa-reddit-alien"></i></a></li>
+                        <li><a href="https://discord.gg/ha4Jufj2Nm" target="_blank"><i class="fab fa-discord"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9 my-4 my-md-0">
+                <div class="links-wrapper">
+                    <div class="links-item">
+                        <h4>Solutions</h4>
+                        <ul>
+                            <li><a href="storx-website-s3-compatible-storage.html">S3 Compatible Storage</a></li>
+                            <li><a href="storx-website-backup-archival.html">Backup & Archival</a></li>
+                            <li><a href="storx-website-google-backup.html">Google Workspace Backup</a></li>
+                            <li><a href="storx-website-kubernetes-backup.html">Kubernetes Backup</a></li>
+                            <li><a href="storx-onprem.html">StorX Self Hosted Cloud</a></li>
                         </ul>
                     </div>
-                    <div class="footer_widget col-lg-2 fw_3">
-                        <h4>Community</h4>
-                        <ul class="footer_nav">
+                    <div class="links-item">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="faqs.html">FAQ</a></li>
+                            <li><a href="https://blogs.storx.tech/" target="_blank">Blog</a></li>
+                            <li><a href="https://doc.storx.io/" target="_blank">Documentation</a></li>
+                            <li><a href="integrations.html">Integrations</a></li>
+                        </ul>
+                    </div>
+                    <div class="links-item">
+                        <h4>StorX Ecosystem</h4>
+                        <ul>
+                            <li><a href="storx-website-host-storage-node.html">Host a Storage Node</a></li>
+                            <li><a href="srx-token.html">Tokenomics</a></li>
+                            <li><a href="./pdf/storx-whitepaper-1.pdf" download>WhitePaper</a></li>
+                            <li><a href="wallets-&-exchanges.html">Wallet & Exchanges</a></li>
+                            <li><a href="brand-assets.html">Brand Asset</a></li>
+                            <li><a href="roadmap.html">RoadMap</a></li>
                             <li><a href="community-bounty.html">Community Bounty</a></li>
-                            <li><a href="support.html">Community Support</a></li>
-                            <li><a href="about-team.html">About Team</a></li>
                         </ul>
                     </div>
-                    <div class="footer_widget col-lg-2 fw_3">
-                        <h4>Resource</h4>
-                        <ul class="footer_nav">
-                            <li><a href="storx_whitepaper_v1.pdf" target="_blank">Whitepaper</a></li>
-                            <li><a href="roadmap.html">Roadmap</a></li>
-                            <li><a href="applications.html">StorX Applications</a></li>
-                            <li><a href="exchange-listing-resource.html">Exchange Listing Resource</a></li>
-                            <li><a href="bitcoin-technology.html">Bitcoin Technology</a></li>
+                    <div class="links-item">
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="about-team.html">Our Story</a></li>
+                            <li><a href="partners.html">Partners</a></li>
+                            <li><a href="media.html">Newsroom</a></li>
+
+                            <li><a href="contact-us.html">Contact Us</a></li>
                         </ul>
-                    </div>
-                    <div class="footer_widget col-lg-2 fw_3">
-                        <h4>Other Links</h4>
-                        <ul class="footer_nav">
-                            <li><a href="faqs.html">FAQs</a></li>
-                            <li><a href="brand-assets.html">Brand Assets</a></li>
-                            <li><a href="media.html">Media Coverage</a></li>
-                            <li><a href="application-usage-terms.html">Application Usage Terms</a></li>
-                            <li><a href="disclaimer.html">Disclaimer</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="copy_right cr_2">
-                    <div class="row">
-                    <div class="col-xl-7 col-lg-5 col-md-5">
-                            <p class="copyright">Join StorX Community on <a href="https://github.com/StorXNetwork" target="_blank">GitHub</a>.</p>
-                        </div>
-                        <div class="col-xl-5 col-lg-7 col-md-7">
-                            <ul class="footer_social">
-                                <li>
-                                    <a href="https://twitter.com/StorXNetwork" target="_blank"><i class="fab fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/company/storxnetwork" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.facebook.com/StorXNetwork" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://t.me/StorXNetwork" target="_blank"><i class="fab fa-telegram-plane"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.youtube.com/channel/UC5vUiX1eINl0gs6T3mS1CxA" target="_blank"><i class="fab fa-youtube"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://medium.com/storx-network" target="_blank"><i class="fab fa-medium-m"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/StorXNetwork" target="_blank"><i class="fab fa-github"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.reddit.com/r/StorXNetwork" target="_blank"><i class="fab fa-reddit-alien"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://discord.gg/ha4Jufj2Nm" target="_blank"><i class="fab fa-discord"></i></a>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- End Footer Area -->
+        </div>
+        <div class="row">
+            <p class="footer-bottom-text text-center">
+                © Copyright 2025 StorX Foundation, All Rights Reserved. Read <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-of-use.html">Terms of Use</a>
+            </p>
+        </div>
+    </div>
+</footer>
 
-        <!-- Scroll Top Button -->
-        <button class="scroll-top">
-            <i class="fas fa-angle-up"></i>
-        </button>
-
-        <!-- Preloader -->
-        <div class="preloader"></div>
-
-        <!-- jQuery v2.2.4 -->
-        <script src="assets/js/jquery-2.2.4.min.js"></script>
-        <!-- Bootstrap v4.0.0 -->
-        <script src="assets/js/popper.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <!-- Extra Plugin -->
-        <script src="assets/vendors/animate-css/wow.min.js"></script>
-        <script src="assets/vendors/magnify-popup/jquery.magnific-popup.min.js"></script>
-        
-        <!-- Highchart Plugin -->
-		<script src="assets/vendors/highchart/highcharts.js"></script>
-        <script src="assets/vendors/highchart/main.js"></script>
-
-        <!-- Custom js -->
-        <script src="assets/js/theme.js"></script>
-    </body>
+<script src="./js/jquery-3.7.0.min.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/popper.min.js"></script>
+<script src="./js/owl.carousel.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
 </html>

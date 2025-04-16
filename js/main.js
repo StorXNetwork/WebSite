@@ -259,3 +259,9 @@ $(".submenu li").click(function () {
     $(".navbar-menu").removeClass("active");
     $(".header-layer").removeClass("active");
 });
+
+
+$('.pricing-plan-btn').on('click', function () {
+    const finalUrl = 'https://storx.io/login?redirect_url=/plans';
+    window.open(finalUrl, '_blank');
+});

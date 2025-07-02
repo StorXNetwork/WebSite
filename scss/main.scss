@@ -1837,9 +1837,13 @@ body {
   .media-grid{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     justify-content: space-between;
     margin-top: 41px;
+    @media screen and (max-width: 991px) and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(3, calc(33% - 19px));
+    }
     @media screen and (max-width: $screen-xs) {
       display: grid;
       grid-template-columns: repeat(2, calc(50% - 19px));
@@ -1850,7 +1854,7 @@ body {
         display: inline-block;
         img {
           width: 100%;
-          max-width: 200px;
+          max-width: 170px;
           display: block;
           margin: auto;
           max-height: 60px;

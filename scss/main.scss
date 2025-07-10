@@ -4272,7 +4272,7 @@ header {
           margin: 0 11px 0 0;
         }
         @media screen and (max-width: 399px) {
-          margin: 0 12px 0 0;
+          margin: 0 6px 0 0;
         }
       }
       &.desktop {
@@ -4306,6 +4306,12 @@ header {
             line-height: 20px;
             padding: 4px 12px 5px;
             height: 35px;
+          }
+          @media screen and (max-width: 400px) {
+            font-size: 11px;
+            line-height: 20px;
+            padding: 4px 10px 5px;
+            height: 30px;
           }
           &:hover{
             color: $white;

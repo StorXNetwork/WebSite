@@ -5124,7 +5124,7 @@ header ul.auth-options li:not(:last-of-type) {
 }
 @media screen and (max-width: 399px) {
   header ul.auth-options li:not(:last-of-type) {
-    margin: 0 12px 0 0;
+    margin: 0 6px 0 0;
   }
 }
 header ul.auth-options li.desktop {
@@ -5167,6 +5167,14 @@ header ul.auth-options li a.btn-style {
     line-height: 20px;
     padding: 4px 12px 5px;
     height: 35px;
+  }
+}
+@media screen and (max-width: 400px) {
+  header ul.auth-options li a.btn-style {
+    font-size: 11px;
+    line-height: 20px;
+    padding: 4px 10px 5px;
+    height: 30px;
   }
 }
 header ul.auth-options li a.btn-style:hover {

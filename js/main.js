@@ -261,7 +261,7 @@ $(".submenu li").click(function () {
 });
 
 
-$('.pricing-plan-btn').on('click', function () {
+/*$('.pricing-plan-btn').on('click', function () {
     const finalUrl = 'https://storx.io/login?redirect_url=/plans';
     window.open(finalUrl, '_blank');
-});
+});*/
